@@ -1,0 +1,112 @@
+name: ingest (jnj + immatics)
+
+on:
+  workflow_dispatch:
+    inputs:
+      persist_db:
+        description: "Persist intel.db to data-snapshots branch"
+        required: true
+        default: "true"
+        type: choice
+        options: ["true", "false"]
+  schedule:
+    # Runs daily at 04:30 UTC (Berlin time varies with DST)
+    - cron: "30 4 * * *"
+
+concurrency:
+  group: ingest
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    env:
+      # Set a real contact string (recommended when scraping public sites)
+      PHARMA_INTEL_HTTP_USER_AGENT: "pharma-intel-mvp/0.1 (contact: YOUR_EMAIL_OR_URL)"
+      # Safety caps to keep runs bounded
+      PHARMA_INTEL_CTG_MAX_PAGES_PER_QUERY: "20"
+      PHARMA_INTEL_CTG_SLEEP_S: "0.3"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Restore previous DB from data-snapshots (if it exists)
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin data-snapshots --depth=1 || true
+          mkdir -p data
+          if git cat-file -e origin/data-snapshots:data/intel.db 2>/dev/null; then
+            echo "Restoring prior data/intel.db"
+            git show origin/data-snapshots:data/intel.db > data/intel.db
+          else
+            echo "No prior DB found (first run)."
+          fi
+
+      - name: Run ingestion
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m intel.cli init-db
+          python -m intel.cli ingest-pipeline --company jnj
+          python -m intel.cli ingest-pipeline --company immatics
+          python -m intel.cli ingest-trials --company jnj
+          python -m intel.cli ingest-trials --company immatics
+
+      - name: Upload artifacts (DB + evidence)
+        uses: actions/upload-artifact@v4
+        with:
+          name: pharma-intel-output
+          path: |
+            data/intel.db
+            data/evidence/
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Persist DB to data-snapshots branch
+        if: github.event_name == 'schedule' || github.event.inputs.persist_db == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # Save DB away before switching branches
+          cp data/intel.db "$RUNNER_TEMP/intel.db"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Create/switch to data-snapshots branch
+          git fetch origin data-snapshots --depth=1 || true
+          if git show-ref --verify --quiet refs/remotes/origin/data-snapshots; then
+            git checkout -B data-snapshots origin/data-snapshots
+          else
+            git checkout --orphan data-snapshots
+          fi
+
+          # Keep ONLY the DB on this branch
+          git rm -rf . || true
+          mkdir -p data
+          cp "$RUNNER_TEMP/intel.db" data/intel.db
+
+          git add data/intel.db
+          git commit -m "Update intel.db ($(date -u +%Y-%m-%dT%H:%M:%SZ))" || echo "No changes to commit"
+          git push -u origin data-snapshots
