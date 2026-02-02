@@ -1,0 +1,28 @@
+companies:
+  - company_id: jnj
+    name: Johnson & Johnson
+    pipeline_sources:
+      - type: html_pdf_link
+        url: https://www.investor.jnj.com/pipeline/development-pipeline/default.aspx
+        label: J&J Development pipeline (downloadable PDF)
+    trial_sponsor_aliases:
+      - Johnson & Johnson
+      - Janssen
+      - Janssen Research & Development
+      - Janssen Pharmaceutica
+      - Janssen Pharmaceuticals
+      - Janssen-Cilag
+      - Janssen Biotech
+
+  - company_id: immatics
+    name: Immatics
+    pipeline_sources:
+      - type: html_image
+        url: https://immatics.com/our-pipeline/
+        label: Immatics pipeline page (image-based)
+    trial_sponsor_aliases:
+      - Immatics
+      - Immatics Biotechnologies
+      - Immatics US
+      - Immatics N.V.
+    curated_assets_file: configs/immatics_curated_assets.yaml

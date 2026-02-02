@@ -1,0 +1,29 @@
+from __future__ import annotations
+
+from pydantic_settings import BaseSettings, SettingsConfigDict
+from pathlib import Path
+
+
+class Settings(BaseSettings):
+    model_config = SettingsConfigDict(env_prefix="PHARMA_INTEL_", env_file=".env", extra="ignore")
+
+    # where we keep the SQLite DB by default
+    db_url: str = "sqlite:///data/intel.db"
+
+    # evidence store root
+    evidence_root: Path = Path("data/evidence")
+
+    # network
+    http_timeout_s: int = 45
+    http_user_agent: str = "pharma-intel-mvp/0.1 (contact: you@example.com)"
+
+    # ingestion throttling
+    ctg_page_size: int = 100
+    ctg_max_pages_per_query: int = 50  # safety cap to avoid unbounded loops
+    ctg_sleep_s: float = 0.2
+
+    # matching
+    fuzzy_threshold: int = 92
+    min_alias_len_for_trial_search: int = 4
+
+settings = Settings()

@@ -1,0 +1,92 @@
+# Curated extraction from Immatics pipeline image on https://immatics.com/our-pipeline/
+# This is used because the primary pipeline visualization is an image, not an HTML table.
+# The system stores the image as Evidence and links these rows to that Evidence.
+
+assets:
+  - name: anzu-cel (IMA203)
+    modality: Cell therapy
+    target: PRAME
+    aliases:
+      - anzu-cel
+      - anzu-cel (anzutresgene autoleucel)
+      - anzu-tresgene autoleucel
+      - anzu tresgene autoleucel
+      - IMA203
+    indications:
+      - indication: 2L melanoma
+        stage: Phase 1
+        therapeutic_area: Oncology
+      - indication: Uveal melanoma
+        stage: Phase 1
+        therapeutic_area: Oncology
+      - indication: Solid cancers (in combination with mRNA-4203)
+        stage: Phase 1
+        therapeutic_area: Oncology
+
+  - name: mRNA-4203
+    modality: Combination (mRNA)
+    target: PRAME
+    aliases:
+      - mRNA-4203
+    indications:
+      - indication: Solid cancers (combo with anzu-cel / IMA203)
+        stage: Phase 1
+        therapeutic_area: Oncology
+
+  - name: IMA203CD8
+    modality: Cell therapy
+    target: PRAME
+    aliases:
+      - IMA203CD8
+    indications:
+      - indication: Gynecologic cancers; other solid cancers
+        stage: Phase 1
+        therapeutic_area: Oncology
+
+  - name: IMA402
+    modality: Bispecific (TCER)
+    target: PRAME
+    aliases:
+      - IMA402
+    indications:
+      - indication: Melanoma, gynecologic cancers, other solid cancers
+        stage: Phase 1
+        therapeutic_area: Oncology
+
+  - name: IMA402 + ICI
+    modality: Bispecific (TCER) + checkpoint inhibitor
+    target: PRAME
+    aliases:
+      - IMA402 + ICI
+    indications:
+      - indication: Melanoma, gynecologic cancers, other solid cancers (combo)
+        stage: Phase 1
+        therapeutic_area: Oncology
+
+  - name: IMA401
+    modality: Bispecific (TCER)
+    target: MAGEA4/8
+    aliases:
+      - IMA401
+    indications:
+      - indication: HNSCC, sqNSCLC, other solid cancers
+        stage: Phase 1
+        therapeutic_area: Oncology
+
+  - name: Undisclosed bispecific
+    modality: Bispecific (TCER)
+    target: other
+    is_disclosed: false
+    indications:
+      - indication: Undisclosed
+        stage: Preclinical
+        therapeutic_area: Oncology
+
+  - name: Undisclosed cell therapy
+    modality: Cell therapy
+    target: other
+    is_disclosed: false
+    indications:
+      - indication: Undisclosed
+        stage: Preclinical
+        therapeutic_area: Oncology
