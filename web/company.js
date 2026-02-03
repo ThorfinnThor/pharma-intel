@@ -44,13 +44,54 @@ function uniq(arr) {
 }
 
 function formatIndications(indications) {
-  // Deduplicate indication strings to avoid repeated text
   const names = indications.map((x) => x.indication).filter(Boolean);
   return uniq(names).slice(0, 3).join("; ");
 }
 
 function safeText(x) {
   return (x === null || x === undefined) ? "" : String(x);
+}
+
+function formatChange(ch) {
+  const et = safeText(ch.event_type);
+  const p = ch.payload || {};
+  if (et === "pipeline_ingested") {
+    return `pipeline_ingested — as_of=${p.as_of_date || "?"} assets_seen=${p.assets_seen ?? "?"}`;
+  }
+  if (et === "asset_added") {
+    return `asset_added — ${p.asset || ""}`;
+  }
+  if (et === "asset_indication_added") {
+    return `indication_added — ${p.asset || ""}: ${p.indication || ""} (${p.stage || ""})`;
+  }
+  if (et === "asset_indication_removed") {
+    return `indication_removed — ${p.asset || ""}: ${p.indication || ""} (${p.stage || ""})`;
+  }
+  if (et === "trials_ingested") {
+    return `trials_ingested — seen=${p.trials_seen ?? "?"} inserted=${p.inserted ?? "?"} updated=${p.updated ?? "?"} status_changed=${p.status_changed ?? "?"} bad_aliases=${p.bad_aliases ?? "?"}`;
+  }
+  // fallback
+  return `${et} ${ch.payload ? JSON.stringify(ch.payload) : ""}`.trim();
+}
+
+function compactRecentChanges(changes) {
+  // Hide ultra-noisy types, and dedupe repeated trials_ingested
+  const NOISE = new Set(["trial_assets_linked"]);
+  let lastTrialsIngested = null;
+
+  const out = [];
+  for (const ch of changes || []) {
+    if (NOISE.has(ch.event_type)) continue;
+    if (ch.event_type === "trials_ingested") {
+      lastTrialsIngested = ch; // keep only newest
+      continue;
+    }
+    out.push(ch);
+    if (out.length >= 40) break;
+  }
+
+  if (lastTrialsIngested) out.unshift(lastTrialsIngested);
+  return out.slice(0, 40);
 }
 
 async function loadCompany() {
@@ -89,15 +130,14 @@ async function loadCompany() {
     assetsBody.appendChild(tr);
   }
 
-  // Recent changes
+  // Recent changes (cleaned)
   const changesEl = document.getElementById("changes");
   changesEl.innerHTML = "";
-  for (const ch of (page.recent_changes || []).slice(0, 50)) {
+  const cleaned = compactRecentChanges(page.recent_changes || []);
+  for (const ch of cleaned) {
     const li = document.createElement("li");
-    const ts = safeText(ch.created_at);
-    const et = safeText(ch.event_type);
-    const payload = ch.payload ? JSON.stringify(ch.payload) : "";
-    li.innerHTML = `<code>${ts}</code> <strong>${et}</strong> ${payload}`;
+    const ts = safeText(ch.created_at || ch.occurred_at || "");
+    li.innerHTML = `<code>${ts}</code> ${formatChange(ch)}`;
     changesEl.appendChild(li);
   }
 
