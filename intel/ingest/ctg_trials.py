@@ -15,6 +15,9 @@ from ..settings import settings
 from ..normalize import norm_text
 from .. import models
 
+from sqlalchemy.dialects.sqlite import insert as sqlite_insert
+from sqlalchemy.exc import IntegrityError
+
 
 CTG_STUDIES_ENDPOINT = "https://clinicaltrials.gov/api/v2/studies"
 
