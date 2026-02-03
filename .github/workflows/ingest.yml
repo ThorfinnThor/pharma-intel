@@ -100,6 +100,11 @@ jobs:
           mkdir -p "$RUNNER_TEMP/exports"
           cp -r exports/. "$RUNNER_TEMP/exports/"
 
+          # ✅ IMPORTANT: remove any local modifications/untracked files (e.g. __pycache__/*.pyc)
+          # so git can switch branches safely.
+          git reset --hard
+          git clean -fdx
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
