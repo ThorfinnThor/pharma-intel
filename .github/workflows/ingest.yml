@@ -4,14 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       persist_db:
-        description: "Persist intel.db to data-snapshots branch"
+        description: "Persist intel.db + exports/ to data-snapshots branch"
         required: true
         default: "true"
         type: choice
         options: ["true", "false"]
   schedule:
-    # Runs daily at 04:30 UTC
-    - cron: "30 4 * * *"
+    - cron: "30 4 * * *"  # daily 04:30 UTC
 
 concurrency:
   group: ingest
@@ -43,7 +42,9 @@ jobs:
           cache: "pip"
 
       - name: Install
+        shell: bash
         run: |
+          set -euo pipefail
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
@@ -70,14 +71,12 @@ jobs:
           python -m intel.cli ingest-trials --company jnj
           python -m intel.cli ingest-trials --company immatics
 
-      # ✅ A) NEW STEP: Generate exports
       - name: Generate exports (JSON + CSV)
         shell: bash
         run: |
           set -euo pipefail
           python -m intel.export --db data/intel.db --outdir exports --companies jnj immatics
 
-      # ✅ B) UPDATED: Include exports/ in artifact upload
       - name: Upload artifacts (DB + evidence + exports)
         uses: actions/upload-artifact@v4
         with:
@@ -89,14 +88,17 @@ jobs:
           if-no-files-found: error
           retention-days: 30
 
-      - name: Persist DB to data-snapshots branch
+      - name: Persist DB + exports to data-snapshots branch
         if: github.event_name == 'schedule' || github.event.inputs.persist_db == 'true'
         shell: bash
         run: |
           set -euo pipefail
 
-          # Save DB away before switching branches
+          # Save outputs aside before switching branches
           cp data/intel.db "$RUNNER_TEMP/intel.db"
+          rm -rf "$RUNNER_TEMP/exports"
+          mkdir -p "$RUNNER_TEMP/exports"
+          cp -r exports/. "$RUNNER_TEMP/exports/"
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -109,11 +111,13 @@ jobs:
             git checkout --orphan data-snapshots
           fi
 
-          # Keep ONLY the DB on this branch
+          # Keep ONLY the snapshot outputs on this branch
           git rm -rf . || true
-          mkdir -p data
+          mkdir -p data exports
           cp "$RUNNER_TEMP/intel.db" data/intel.db
+          cp -r "$RUNNER_TEMP/exports/." exports/
 
-          git add data/intel.db
-          git commit -m "Update intel.db ($(date -u +%Y-%m-%dT%H:%M:%SZ))" || echo "No changes to commit"
+          # Commit snapshot
+          git add data/intel.db exports
+          git commit -m "Update snapshot ($(date -u +%Y-%m-%dT%H:%M:%SZ))" || echo "No changes to commit"
           git push -u origin data-snapshots
