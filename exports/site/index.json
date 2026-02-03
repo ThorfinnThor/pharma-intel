@@ -1,18 +1,21 @@
 {
   "generated_at": "2026-02-03T11:03:52Z",
-  "db": "data/intel.db",
   "companies": [
     {
       "company_id": "immatics",
       "company_name": "Immatics",
-      "asset_count": 8,
-      "change_count": 35
+      "assets_total": 8,
+      "trials_total": 5,
+      "path_json": "immatics.json",
+      "path_md": "immatics.md"
     },
     {
       "company_id": "jnj",
       "company_name": "Johnson & Johnson",
-      "asset_count": 45,
-      "change_count": 688
+      "assets_total": 45,
+      "trials_total": 196,
+      "path_json": "jnj.json",
+      "path_md": "jnj.md"
     }
   ]
 }

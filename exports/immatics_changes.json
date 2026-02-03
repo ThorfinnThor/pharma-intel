@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-03T10:37:09Z",
+  "generated_at": "2026-02-03T11:03:52Z",
   "company_id": "immatics",
   "company_name": "Immatics",
   "changes": [
@@ -10,6 +10,20 @@
         "trials_seen": 5,
         "inserted": 5,
         "updated": 0,
+        "status_changed": 0,
+        "bad_aliases": 0
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trials_ingested",
+      "created_at": null,
+      "payload": {
+        "trials_seen": 5,
+        "inserted": 0,
+        "updated": 5,
         "status_changed": 0,
         "bad_aliases": 0
       },
@@ -72,6 +86,28 @@
         "linked_assets": 1
       },
       "evidence_id": 406,
+      "asset_id": null,
+      "trial_id": 199
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06946225",
+        "linked_assets": 2
+      },
+      "evidence_id": 608,
+      "asset_id": null,
+      "trial_id": 197
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06743126",
+        "linked_assets": 1
+      },
+      "evidence_id": 610,
       "asset_id": null,
       "trial_id": 199
     },
@@ -151,6 +187,18 @@
         "assets_seen": 8
       },
       "evidence_id": 207,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "pipeline_ingested",
+      "created_at": null,
+      "payload": {
+        "pipeline_page": "https://immatics.com/our-pipeline/",
+        "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
+        "assets_seen": 8
+      },
+      "evidence_id": 411,
       "asset_id": null,
       "trial_id": null
     },

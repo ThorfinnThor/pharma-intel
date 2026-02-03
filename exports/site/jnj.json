@@ -1,0 +1,3304 @@
+{
+  "generated_at": "2026-02-03T11:03:52Z",
+  "company_id": "jnj",
+  "company_name": "Johnson & Johnson",
+  "kpis": {
+    "assets_total": 45,
+    "assets_with_trials": 11,
+    "trials_total": 196,
+    "trials_by_status": {
+      "ACTIVE_NOT_RECRUITING": 81,
+      "RECRUITING": 103,
+      "NOT_YET_RECRUITING": 12
+    },
+    "assets_by_stage": {
+      "Registrationion": 7,
+      "Phase 1": 14,
+      "Phase 3": 18,
+      "Phase 2": 6
+    }
+  },
+  "top_assets": [
+    {
+      "asset_id": 25,
+      "asset_name": "TREMFYA",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 23,
+      "indications": [
+        {
+          "indication": "Pediatric Ulcerative",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Pediatric Ulcerative",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Pediatric Ulcerative",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Ulcerative Colitis",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Ulcerative Colitis",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 8,
+      "asset_name": "system) RYBREVANT",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 22,
+      "indications": [
+        {
+          "indication": "Frontline Non Small",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Frontline Non Small",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Frontline Non Small",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 10,
+      "asset_name": "ERLEADA",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 20,
+      "indications": [
+        {
+          "indication": "ASCT Localized Prostate",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "ASCT Localized Prostate",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "ASCT Localized Prostate",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 27,
+      "asset_name": "nipocalimab​",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 10,
+      "indications": [
+        {
+          "indication": "Hemolytic Disease",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Hemolytic Disease",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Hemolytic Disease",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Fetal and Neonatal",
+          "stage": "Phase 3",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Fetal and Neonatal",
+          "stage": "Phase 3",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 19,
+      "asset_name": "bleximenib",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 4,
+      "indications": [
+        {
+          "indication": "Relapsed Refractory 1)",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Relapsed Refractory 1)",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Relapsed Refractory 1)",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 37,
+      "asset_name": "SPRAVATO",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 1,
+      "indications": [
+        {
+          "indication": "Major Depressive Disorder Pediatrics",
+          "stage": "Phase 3",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        },
+        {
+          "indication": "Major Depressive Disorder Pediatrics",
+          "stage": "Phase 3",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        },
+        {
+          "indication": "Major Depressive Disorder Pediatrics",
+          "stage": "Phase 3",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 12,
+      "asset_name": "TALVEY + TECVAYLI",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "Relapsed Refractory",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Relapsed Refractory",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Relapsed Refractory",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Relapsed Refractory",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Relapsed Refractory",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 11,
+      "asset_name": "system) INLEXZO (gemcitabine",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "High Risk High Risk Non Muscle",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "High Risk High Risk Non Muscle",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "High Risk High Risk Non Muscle",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 43,
+      "asset_name": "S I R T U R O",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "L e p r o s y under review by regulatory bodies. Inclusion in the & Johnson assumes no obligation to update Long acting HIV injectible treatment regimen",
+          "stage": "Phase 3",
+          "therapeutic_area": null,
+          "as_of_date": null
+        },
+        {
+          "indication": "L e p r o s y under review by regulatory bodies. Inclusion in the & Johnson assumes no obligation to update Long acting HIV injectible treatment regimen",
+          "stage": "Phase 3",
+          "therapeutic_area": null,
+          "as_of_date": null
+        },
+        {
+          "indication": "L e p r o s y under review by regulatory bodies. Inclusion in the & Johnson assumes no obligation to update Long acting HIV injectible treatment regimen",
+          "stage": "Phase 3",
+          "therapeutic_area": null,
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 5,
+      "asset_name": "RYBREVANT",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "Colorectal Cancer",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Colorectal Cancer",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Colorectal Cancer",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 44,
+      "asset_name": "MorphoSys AG; JNJ-2113: Protagonist Therapeutics;",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "and Memorial Sload Kettering; CARVYKTI: Legend XmAb CD28 bispecific antibodies; Xencor;",
+          "stage": "Phase 3",
+          "therapeutic_area": null,
+          "as_of_date": null
+        },
+        {
+          "indication": "and Memorial Sload Kettering; CARVYKTI: Legend XmAb CD28 bispecific antibodies; Xencor;",
+          "stage": "Phase 3",
+          "therapeutic_area": null,
+          "as_of_date": null
+        },
+        {
+          "indication": "and Memorial Sload Kettering; CARVYKTI: Legend XmAb CD28 bispecific antibodies; Xencor;",
+          "stage": "Phase 3",
+          "therapeutic_area": null,
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 22,
+      "asset_name": "JNJ-7446",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "Lung Cancer",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Lung Cancer",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Lung Cancer",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 28,
+      "asset_name": "JNJ-4804 Co-antibody",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "Psoriatic Arthritis",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Psoriatic Arthritis",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Psoriatic Arthritis",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Crohn's Disease",
+          "stage": "Phase 3",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Crohn's Disease",
+          "stage": "Phase 3",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 21,
+      "asset_name": "JNJ-4681",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "Hematological Malignancies",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Hematological Malignancies",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Hematological Malignancies",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 20,
+      "asset_name": "JNJ-2175",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "Solid Tumors",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Solid Tumors",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Solid Tumors",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 36,
+      "asset_name": "JNJ-1887​ sCD59",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "Geographic Atrophy",
+          "stage": "Phase 3",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        },
+        {
+          "indication": "Geographic Atrophy",
+          "stage": "Phase 3",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        },
+        {
+          "indication": "Geographic Atrophy",
+          "stage": "Phase 3",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 33,
+      "asset_name": "ITI-1284",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "Alzheimer's Disease-Related",
+          "stage": "Phase 1",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        },
+        {
+          "indication": "Alzheimer's Disease-Related",
+          "stage": "Phase 1",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        },
+        {
+          "indication": "Alzheimer's Disease-Related",
+          "stage": "Phase 1",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        },
+        {
+          "indication": "with Generalized Anxiety",
+          "stage": "Phase 3",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        },
+        {
+          "indication": "with Generalized Anxiety",
+          "stage": "Phase 3",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 9,
+      "asset_name": "Bleximenib",
+      "highest_stage": "Phase 3",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "Newly Diagnosed AML, with Venetoclax and",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Newly Diagnosed AML, with Venetoclax and",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Newly Diagnosed AML, with Venetoclax and",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 42,
+      "asset_name": "UCL Business Plc; JNJ-1887: Hemera Biosciences;",
+      "highest_stage": "Phase 2",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "and Mitsubishi Tanabe Pharma Corporation; TREMFYA: Genmab A/S; ERLEADA: Regents of California Genmab A/S; ENHANZE platform; Halozyme Therapeutics;",
+          "stage": "Phase 2",
+          "therapeutic_area": null,
+          "as_of_date": null
+        },
+        {
+          "indication": "and Mitsubishi Tanabe Pharma Corporation; TREMFYA: Genmab A/S; ERLEADA: Regents of California Genmab A/S; ENHANZE platform; Halozyme Therapeutics;",
+          "stage": "Phase 2",
+          "therapeutic_area": null,
+          "as_of_date": null
+        },
+        {
+          "indication": "and Mitsubishi Tanabe Pharma Corporation; TREMFYA: Genmab A/S; ERLEADA: Regents of California Genmab A/S; ENHANZE platform; Halozyme Therapeutics;",
+          "stage": "Phase 2",
+          "therapeutic_area": null,
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 7,
+      "asset_name": "intravesical delivery",
+      "highest_stage": "Phase 2",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "Bladder Cancer BCG-naïve",
+          "stage": "Phase 2",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Bladder Cancer BCG-naïve",
+          "stage": "Phase 2",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Bladder Cancer BCG-naïve",
+          "stage": "Phase 2",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 35,
+      "asset_name": "Indications",
+      "highest_stage": "Phase 2",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "for Major Depressive Disorder",
+          "stage": "Phase 2",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        },
+        {
+          "indication": "for Major Depressive Disorder",
+          "stage": "Phase 2",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        },
+        {
+          "indication": "for Major Depressive Disorder",
+          "stage": "Phase 2",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 29,
+      "asset_name": "Colitis",
+      "highest_stage": "Phase 2",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "Psoriatic Arthritis",
+          "stage": "Phase 2",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Psoriatic Arthritis",
+          "stage": "Phase 2",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Psoriatic Arthritis",
+          "stage": "Phase 2",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 6,
+      "asset_name": "autoleucel)",
+      "highest_stage": "Phase 2",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "Myeloma Transplant Eligible vs",
+          "stage": "Phase 2",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Myeloma Transplant Eligible vs",
+          "stage": "Phase 2",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Myeloma Transplant Eligible vs",
+          "stage": "Phase 2",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 41,
+      "asset_name": "a c t o r X l a )",
+      "highest_stage": "Phase 2",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "i o n through clinical trials as well as those to the best of the Company's knowledge. Johnson",
+          "stage": "Phase 2",
+          "therapeutic_area": null,
+          "as_of_date": null
+        },
+        {
+          "indication": "i o n through clinical trials as well as those to the best of the Company's knowledge. Johnson",
+          "stage": "Phase 2",
+          "therapeutic_area": null,
+          "as_of_date": null
+        },
+        {
+          "indication": "i o n through clinical trials as well as those to the best of the Company's knowledge. Johnson",
+          "stage": "Phase 2",
+          "therapeutic_area": null,
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    },
+    {
+      "asset_id": 2,
+      "asset_name": "TECVAYLI",
+      "highest_stage": "Phase 1",
+      "linked_trials_count": 30,
+      "indications": [
+        {
+          "indication": "Multiple Myeloma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Multiple Myeloma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Multiple Myeloma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Relapsed Refractory",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Relapsed Refractory",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ],
+      "last_change_at": null
+    }
+  ],
+  "recent_changes": [
+    {
+      "event_type": "trials_ingested",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": null,
+      "payload": {
+        "trials_seen": 196,
+        "inserted": 196,
+        "updated": 0,
+        "status_changed": 0,
+        "bad_aliases": 2
+      }
+    },
+    {
+      "event_type": "trials_ingested",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": null,
+      "payload": {
+        "trials_seen": 196,
+        "inserted": 0,
+        "updated": 196,
+        "status_changed": 0,
+        "bad_aliases": 2
+      }
+    },
+    {
+      "event_type": "trials_ingested",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": null,
+      "payload": {
+        "trials_seen": 196,
+        "inserted": 0,
+        "updated": 196,
+        "status_changed": 0,
+        "bad_aliases": 2
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 1,
+      "payload": {
+        "nct_id": "NCT05972135",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 2,
+      "payload": {
+        "nct_id": "NCT06285318",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 3,
+      "payload": {
+        "nct_id": "NCT06208150",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 7,
+      "payload": {
+        "nct_id": "NCT04267887",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 8,
+      "payload": {
+        "nct_id": "NCT05818683",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 9,
+      "payload": {
+        "nct_id": "NCT05901649",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 10,
+      "payload": {
+        "nct_id": "NCT05884398",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 11,
+      "payload": {
+        "nct_id": "NCT04557059",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 12,
+      "payload": {
+        "nct_id": "NCT03523442",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 13,
+      "payload": {
+        "nct_id": "NCT03767244",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 14,
+      "payload": {
+        "nct_id": "NCT04108208",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 15,
+      "payload": {
+        "nct_id": "NCT04325828",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 16,
+      "payload": {
+        "nct_id": "NCT04662580",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 17,
+      "payload": {
+        "nct_id": "NCT07002320",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 18,
+      "payload": {
+        "nct_id": "NCT05960578",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 19,
+      "payload": {
+        "nct_id": "NCT06274047",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 21,
+      "payload": {
+        "nct_id": "NCT04181203",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 22,
+      "payload": {
+        "nct_id": "NCT06067269",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 24,
+      "payload": {
+        "nct_id": "NCT02913196",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 25,
+      "payload": {
+        "nct_id": "NCT03903835",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 26,
+      "payload": {
+        "nct_id": "NCT03902951",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 29,
+      "payload": {
+        "nct_id": "NCT03141671",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 30,
+      "payload": {
+        "nct_id": "NCT03899077",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 32,
+      "payload": {
+        "nct_id": "NCT03466411",
+        "linked_assets": 2
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 34,
+      "payload": {
+        "nct_id": "NCT03218488",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 36,
+      "payload": {
+        "nct_id": "NCT06934226",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 37,
+      "payload": {
+        "nct_id": "NCT05092269",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 38,
+      "payload": {
+        "nct_id": "NCT04372108",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 41,
+      "payload": {
+        "nct_id": "NCT05083182",
+        "linked_assets": 2
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 42,
+      "payload": {
+        "nct_id": "NCT06807593",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 43,
+      "payload": {
+        "nct_id": "NCT03941132",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 44,
+      "payload": {
+        "nct_id": "NCT05299931",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 45,
+      "payload": {
+        "nct_id": "NCT02103361",
+        "linked_assets": 2
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 47,
+      "payload": {
+        "nct_id": "NCT05387031",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 48,
+      "payload": {
+        "nct_id": "NCT04496063",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 49,
+      "payload": {
+        "nct_id": "NCT04033445",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 50,
+      "payload": {
+        "nct_id": "NCT03451851",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 52,
+      "payload": {
+        "nct_id": "NCT06663332",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 53,
+      "payload": {
+        "nct_id": "NCT05242471",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 54,
+      "payload": {
+        "nct_id": "NCT05049798",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 55,
+      "payload": {
+        "nct_id": "NCT07141004",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 56,
+      "payload": {
+        "nct_id": "NCT04929210",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 58,
+      "payload": {
+        "nct_id": "NCT06408935",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 59,
+      "payload": {
+        "nct_id": "NCT05347095",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 61,
+      "payload": {
+        "nct_id": "NCT05242484",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 63,
+      "payload": {
+        "nct_id": "NCT05923073",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "asset_id": null,
+      "trial_id": 64,
+      "payload": {
+        "nct_id": "NCT04936308",
+        "linked_assets": 1
+      }
+    }
+  ],
+  "trials": [
+    {
+      "trial_id": 32,
+      "nct_id": "NCT03466411",
+      "title": "A Phase 2/3, Randomized, Double-blind, Placebo- and Active-controlled, Parallel-group, Multicenter Protocol to Evaluate the Efficacy and Safety of Guselkumab in Participants With Moderately to Severely Active Crohn's Disease",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2,PHASE3",
+      "last_update_posted": "2026-02-02",
+      "linked_assets": [
+        "STELARA",
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 49,
+      "nct_id": "NCT04033445",
+      "title": "A Phase 2b/3, Randomized, Double-blind, Placebo-controlled, Parallel-group, Multicenter Protocol to Evaluate the Efficacy and Safety of Guselkumab in Participants With Moderately to Severely Active Ulcerative Colitis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2,PHASE3",
+      "last_update_posted": "2026-02-02",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 50,
+      "nct_id": "NCT03451851",
+      "title": "A Phase 3, Multicenter, Randomized, Placebo- and Active Comparator-Controlled Study Evaluating the Efficacy, Safety, and Pharmacokinetics of Subcutaneously Administered Guselkumab for the Treatment of Chronic Plaque Psoriasis in Pediatric Subjects (>=6 To <18 Years of Age)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-02-02",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 77,
+      "nct_id": "NCT03596645",
+      "title": "A Phase 3 Randomized, Open-Label Study to Assess the Efficacy, Safety, and Pharmacokinetics of Golimumab Treatment, a Human Anti-TNFα Monoclonal Antibody, Administered Subcutaneously in Pediatric Participants With Moderately to Severely Active Ulcerative Colitis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-02-02",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 89,
+      "nct_id": "NCT06266663",
+      "title": "Social Determinants of Health, Medication Use, and Quality of Life in Inflammatory Bowel Disease",
+      "overall_status": "RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-02-02",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 90,
+      "nct_id": "NCT03901963",
+      "title": "A Randomized Study of Daratumumab Plus Lenalidomide Versus Lenalidomide Alone as Maintenance Treatment in Patients With Newly Diagnosed Multiple Myeloma Who Are Minimal Residual Disease Positive After Frontline Autologous Stem Cell Transplant",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-02-02",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 91,
+      "nct_id": "NCT03462719",
+      "title": "A Randomized, Open-label, Phase 3 Study of the Combination of Ibrutinib Plus Venetoclax Versus Chlorambucil Plus Obinutuzumab for the First-line Treatment of Subjects With Chronic Lymphocytic Leukemia (CLL)/Small Lymphocytic Lymphoma (SLL).",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-02-02",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 92,
+      "nct_id": "NCT03390504",
+      "title": "A Phase 3 Study of Erdafitinib Compared With Vinflunine or Docetaxel or Pembrolizumab in Subjects With Advanced Urothelial Cancer and Selected FGFR Gene Aberrations",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-02-02",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 150,
+      "nct_id": "NCT05388669",
+      "title": "A Phase 3, Open-label, Randomized Study of Lazertinib With Subcutaneous Amivantamab Compared With Intravenous Amivantamab in Patients With EGFR-mutated Advanced or Metastatic Non-small Cell Lung Cancer After Progression on Osimertinib and Chemotherapy",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-02-02",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 93,
+      "nct_id": "NCT02365597",
+      "title": "A Phase 2, Two-arm Multicenter, Open-Label Study to Determine the Efficacy and the Safety of Two Different Dose Regimens of a Pan-FGFR Tyrosine Kinase Inhibitor JNJ-42756493 in Subjects With Metastatic or Surgically Unresectable Urothelial Cancer With FGFR Genomic Alterations",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-30",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 94,
+      "nct_id": "NCT03301220",
+      "title": "A Phase 3 Randomized, Multicenter Study of Subcutaneous Daratumumab Versus Active Monitoring in Subjects With High-Risk Smoldering Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-30",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 95,
+      "nct_id": "NCT03881098",
+      "title": "The Lung PCA: A Multi-Dimensional Atlas of Pulmonary Premalignancy",
+      "overall_status": "RECRUITING",
+      "phase": "NA",
+      "last_update_posted": "2026-01-29",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 109,
+      "nct_id": "NCT05421663",
+      "title": "A Phase 1b/2, Multicenter, Open-label, Study of JNJ-90014496, an Autologous CD19/CD20 Bi-specific CAR-T Cell Therapy in Adult Participants With B-cell Non-Hodgkin Lymphoma",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-27",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 124,
+      "nct_id": "NCT04557098",
+      "title": "A Phase 1/2, First-in-Human, Open-Label, Dose Escalation Study of Teclistamab, a Humanized BCMA x CD3 Bispecific Antibody, in Subjects With Relapsed or Refractory Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-27",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 194,
+      "nct_id": "NCT06319820",
+      "title": "A Phase 3, Randomized Study Evaluating the Efficacy and Safety of TAR-210 Erdafitinib Intravesical Delivery System Versus Single Agent Intravesical Chemotherapy in Participants With Intermediate-risk Non-muscle Invasive Bladder Cancer (IR-NMIBC) and Susceptible FGFR Alterations",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-27",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 96,
+      "nct_id": "NCT05289687",
+      "title": "A Phase II Study of Daratumumab-Hyaluronidase for Chemotherapy-Relapsed/Refractory Minimal Residual Disease (MRD) in T Cell Acute Lymphoblastic Leukemia (T-ALL",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-26",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 33,
+      "nct_id": "NCT07245394",
+      "title": "SHIFT-IBD: Switching to High-efficacy Anti-IL-23 Guselkumab in Ustekinumab-exposed Persons With Active IBD",
+      "overall_status": "RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-23",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 97,
+      "nct_id": "NCT06193863",
+      "title": "Special Drug Use Investigation of Rivaroxaban in Pediatric Patients With Congenital Heart Disease (CHD) Who Had Undergone the Fontan Procedure",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-23",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 98,
+      "nct_id": "NCT05316155",
+      "title": "Phase 1/2 Study of Erdafitinib Intravesical Delivery System (TAR-210) in Participants With Non-Muscle-Invasive or Muscle-Invasive Bladder Cancer",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-22",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 99,
+      "nct_id": "NCT05900388",
+      "title": "Xarelto Paediatric VTE PASS Drug Utilization Study: An Observational, Longitudinal, Multi-source Drug Utilization Safety Study to Evaluate the Drug Use Patterns and Safety of Rivaroxaban Oral Suspension in Children Under Two Years With Venous Thromboembolism",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-21",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 100,
+      "nct_id": "NCT05601973",
+      "title": "A Multicentre Single-arm Phase II Trial of Amivantamab, Lazertinib Plus Bevacizumab in Patients With EGFR-mutant Advanced NSCLC With Progression on Previous Third-generation EGFR-TKI",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-21",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 1,
+      "nct_id": "NCT05972135",
+      "title": "Outpatient Administration of Teclistamab or Talquetamab for Multiple Myeloma",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-20",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 7,
+      "nct_id": "NCT04267887",
+      "title": "Advanced ChemoHormonal Therapy for Treatment Naïve Metastatic Prostate Cancer: Apalutamide and Abiraterone Acetate With Prednisone and Androgen Deprivation Therapy After Treatment With Docetaxel and Androgen Deprivation Therapy",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-20",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 2,
+      "nct_id": "NCT06285318",
+      "title": "A Retrospective, Multicountry Study of Clinical Outcomes in Patients With Relapsed/Refractory Multiple Myeloma Treated With T-cell Redirectors Outside of Clinical Trials",
+      "overall_status": "RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 3,
+      "nct_id": "NCT06208150",
+      "title": "A Phase 3 Randomized Study Comparing Talquetamab in Combination With Pomalidomide (Tal-P), Talquetamab in Combination With Teclistamab (Tal-Tec), and Investigator's Choice of Either Elotuzumab, Pomalidomide, and Dexamethasone (EPd) or Pomalidomide, Bortezomib, and Dexamethasone (PVd) in Participants With Relapsed or Refractory Myeloma Who Have Received 1 to 4 Prior Lines of Therapy Including an Anti-CD38 Antibody and Lenalidomide",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 5,
+      "nct_id": "NCT04892173",
+      "title": "A Phase 3 Study of NBTXR3 Activated by Investigator's Choice of Radiotherapy Alone or Radiotherapy in Combination With Cetuximab for Platinum-based Chemotherapy-Ineligible Elderly Patients With LA-HNSCC",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 6,
+      "nct_id": "NCT07219212",
+      "title": "A Study of JNJ-90301900 in Combination With Concurrent Chemoradiation Therapy in Participants With Locally Advanced Head and Neck Squamous Cell Carcinoma",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 8,
+      "nct_id": "NCT05818683",
+      "title": "A Phase 1b Study of JNJ-78278343, a T-cell Redirecting Agent Targeting Human Kallikrein 2 (KLK2), in Combination With Either JNJ-63723283 (Cetrelimab), Taxane Chemotherapy, or Androgen Receptor Pathway Inhibitors for Metastatic Prostate Cancer",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 9,
+      "nct_id": "NCT05901649",
+      "title": "Prospective, Multi-Country, Observational Study of Clinical Outcomes for Participants With Metastatic Hormone Sensitive Prostate Cancer (mHSPC) Treated With ADT Plus Apalutamide or Enzalutamide Under Routine Clinical Practice (ArtemisPRO)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 10,
+      "nct_id": "NCT05884398",
+      "title": "A Phase 3, Open-label, Randomized, Prospective Study of Apalutamide With Continued Versus Intermittent Androgen-Deprivation Therapy (ADT) Following PSA Response in Participants With Metastatic Castration-Sensitive Prostate Cancer (mCSPC)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 11,
+      "nct_id": "NCT04557059",
+      "title": "A Randomized, Controlled, Multicenter, Open-label Study to Investigate the Efficacy and Safety of Adding Apalutamide to Radiotherapy and LHRH Agonist in High-Risk Patients With Hormone-Sensitive Prostate Cancer, Assessed by PSMA-PET With an Observational Cohort",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 12,
+      "nct_id": "NCT03523442",
+      "title": "A Phase 1 Study of Androgen Receptor (AR) Antagonist Apalutamide in Chinese Subjects With Metastatic Castration-Resistant Prostate Cancer",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 13,
+      "nct_id": "NCT03767244",
+      "title": "A Randomized, Double-blind, Placebo-controlled, Phase 3 Study of Apalutamide in Subjects With High-risk, Localized or Locally Advanced Prostate Cancer Who Are Candidates for Radical Prostatectomy",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 34,
+      "nct_id": "NCT03218488",
+      "title": "An Observational Post-authorization Safety Study of Ustekinumab in the Treatment of Pediatric Patients Aged 6 Years and Older With Moderate to Severe Plaque Psoriasis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "STELARA"
+      ]
+    },
+    {
+      "trial_id": 35,
+      "nct_id": "NCT00508547",
+      "title": "A Multicenter, Open Registry of Patients With Plaque Psoriasis Who Are Candidates for Systemic Therapy Including Biologics",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 36,
+      "nct_id": "NCT06934226",
+      "title": "A Phase 3 Multicenter, Randomized, Double-blind, Placebo-controlled and Ustekinumab Active Comparator-controlled Study to Evaluate the Efficacy and Safety of JNJ-77242113 for the Treatment of Participants With Moderate to Severe Plaque Psoriasis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "STELARA"
+      ]
+    },
+    {
+      "trial_id": 37,
+      "nct_id": "NCT05092269",
+      "title": "A Phase 3, Multicenter, Open-label, Basket, Long-term Extension Study of Ustekinumab in Pediatric Clinical Study Participants (2 to <18 Years of Age)",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "STELARA"
+      ]
+    },
+    {
+      "trial_id": 38,
+      "nct_id": "NCT04372108",
+      "title": "An Observational Study to Assess the Long-term Safety of Ustekinumab Versus Other Biologic Therapies Among Patients With Crohn's Disease and Ulcerative Colitis: A New-User Cohort Study Using the Department of Defense Electronic Health Records Database",
+      "overall_status": "RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "STELARA"
+      ]
+    },
+    {
+      "trial_id": 51,
+      "nct_id": "NCT07242248",
+      "title": "Real World Observation of Guselkumab Treatment in Patients With Ulcerative Colitis and Crohn's Disease - a Study of Treatment Outcomes in the UK",
+      "overall_status": "RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 52,
+      "nct_id": "NCT06663332",
+      "title": "A Phase 3, Multicenter, Open-label, Basket, LTE Study to Evaluate the Safety of Guselkumab in Pediatric Participants With Crohn's Disease, Ulcerative Colitis, or Juvenile Psoriatic Arthritis",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 53,
+      "nct_id": "NCT05242471",
+      "title": "A Phase 2b Randomized, Double-blind, Active-and Placebo-controlled, Parallel-group, Multicenter Study to Evaluate the Efficacy and Safety of Induction and Maintenance Combination Therapy With Guselkumab and Golimumab in Participants With Moderately to Severely Active Crohn's Disease",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 54,
+      "nct_id": "NCT05049798",
+      "title": "Assessment of Guselkumab (Tremfya) and IL-17 Inhibitor Therapies in Patients With Psoriatic Arthritis in Routine Clinical Practice; A Prospective, Observational Cohort Study",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 55,
+      "nct_id": "NCT07141004",
+      "title": "A Phase-IV, Multicenter, Non-Comparative, Open-Label Study Evaluating the Safety and Efficacy of Guselkumab Administered Subcutaneously in the Treatment of Indian Patients With Psoriatic Arthritis",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE4",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 56,
+      "nct_id": "NCT04929210",
+      "title": "A Phase 4, Multicenter, Randomized, Double-blind, Placebo-controlled Study Evaluating the Efficacy and Safety of Guselkumab Administered Subcutaneously in Bio-naive Participants With Active Psoriatic Arthritis Axial Disease",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE4",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 57,
+      "nct_id": "NCT07102368",
+      "title": "Generation of Real-world Evidence of Guselkumab in IBD Evaluating Effectiveness, Early Outcomes and Patient Relevant Aspects",
+      "overall_status": "RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 58,
+      "nct_id": "NCT06408935",
+      "title": "A Phase 3b, Open-label, Multicenter Study to Evaluate Transmural Healing and Disease Modifying Effect of Guselkumab in Crohn's Disease Patients",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 59,
+      "nct_id": "NCT05347095",
+      "title": "A Phase 3, Randomized, Placebo-controlled, Parallel-group, Multicenter Study to Evaluate the Efficacy and Safety of Guselkumab in Participants With Fistulizing, Perianal Crohn's Disease",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 60,
+      "nct_id": "NCT07220824",
+      "title": "GUselkumab for the Treatment of PsA: Effectiveness Results by Ultrasound",
+      "overall_status": "RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 61,
+      "nct_id": "NCT05242484",
+      "title": "A Phase 2b Randomized, Double-blind, Active-and Placebo-controlled, Parallel-group, Multicenter Study to Evaluate the Efficacy and Safety of Induction and Maintenance Combination Therapy With Guselkumab and Golimumab in Participants With Moderately to Severely Active Ulcerative Colitis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 62,
+      "nct_id": "NCT06260163",
+      "title": "A Phase 3 Randomized, Open-label Induction, Double-blind Maintenance, Parallel-group, Multicenter Protocol to Evaluate the Efficacy, Safety, and Pharmacokinetics of Guselkumab in Pediatric Participants With Moderately to Severely Active Ulcerative Colitis",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 63,
+      "nct_id": "NCT05923073",
+      "title": "A Phase 3, Multicenter, Randomized, Platform Study of p19 Inhibition of the IL-23 Pathway to Establish Efficacy in Pediatric Crohn's Disease",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 78,
+      "nct_id": "NCT07196748",
+      "title": "A Phase 3 Randomized, Double-blind, Placebo-Controlled, Parallel Group, Multicenter Protocol in Adults With an Open Label Study in Adolescents to Evaluate the Efficacy and Safety of Induction and Maintenance Therapy With Icotrokinra in Participants With Moderately to Severely Active Ulcerative Colitis",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "icotrokinra"
+      ]
+    },
+    {
+      "trial_id": 79,
+      "nct_id": "NCT00606346",
+      "title": "A Multicenter, Prospective, Long-term, Observational Registry of Pediatric Patients With Inflammatory Bowel Disease",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 80,
+      "nct_id": "NCT02808780",
+      "title": "Long-term Exposure Registry of Adult Patients With Moderate-to-Severe Ulcerative Colitis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 86,
+      "nct_id": "NCT07227454",
+      "title": "A Double-blind, Randomized, Psychoactive Placebo-controlled Study to Evaluate the Efficacy and Safety of Intranasal Esketamine 84 mg in Addition to Comprehensive Standard of Care for the Rapid Reduction of the Symptoms of Major Depressive Disorder in Adolescent Participants With Acute Suicidal Ideation or Behavior",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "SPRAVATO"
+      ]
+    },
+    {
+      "trial_id": 87,
+      "nct_id": "NCT07053345",
+      "title": "An Interventional, Open-label, Single Arm, Multicenter Study to Evaluate the Efficacy and Safety of Esketamine Nasal Spray in Korean Participants With Treatment-Resistant Depression(TRD)",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE4",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 101,
+      "nct_id": "NCT07227025",
+      "title": "A Phase 1/2 Study Evaluating the Safety and Efficacy of Amivantamab and Olomorasib Combination Therapy in Metastatic Non-small Cell Lung Cancer",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 102,
+      "nct_id": "NCT05379595",
+      "title": "A Phase 1b/2, Open-Label Study of Amivantamab Monotherapy and in Addition to Standard-of-Care Chemotherapy in Participants With Advanced or Metastatic Colorectal Cancer",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 104,
+      "nct_id": "NCT07225946",
+      "title": "A Phase 3 Randomized, Open-label Study of Pasritamig (JNJ-78278343), a T-cell-redirecting Agent Targeting Human Kallikrein 2, With Docetaxel Versus Docetaxel for Metastatic Castration-resistant Prostate Cancer",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "pasritamig"
+      ]
+    },
+    {
+      "trial_id": 105,
+      "nct_id": "NCT06095089",
+      "title": "A Phase 1 Study of JNJ-87189401 (PSMA-CD28 Bispecific Antibody) Combined With JNJ-78278343 (KLK2-CD3 Bispecific Antibody) for Advanced Prostate Cancer",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 106,
+      "nct_id": "NCT07319871",
+      "title": "A Phase 1b Study of Pasritamig (JNJ-78278343), a T-cell Redirecting Agent Targeting Human Kallikrein 2 (KLK2), in Combination With JNJ-86974680, an A2a Receptor (A2aR) Antagonist, for Prostate Cancer",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "pasritamig"
+      ]
+    },
+    {
+      "trial_id": 107,
+      "nct_id": "NCT07082920",
+      "title": "A Phase 1b Study of JNJ-78278343, a T-cell Redirecting Agent Targeting Human Kallikrein 2 (KLK2), in Combination With JNJ-95298177, an Antibody Drug Conjugate Targeting Prostate Specific Membrane Antigen, for Prostate Cancer",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 110,
+      "nct_id": "NCT05201781",
+      "title": "Long-term Follow-up Study for Participants Previously Treated With Ciltacabtagene Autoleucel",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE4",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 111,
+      "nct_id": "NCT07149857",
+      "title": "A Phase 2 Multicohort Trial to Further Characterize the Efficacy and Safety of Ciltacabtagene Autoleucel",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 112,
+      "nct_id": "NCT06577025",
+      "title": "A Phase 2, Open-label Study to Evaluate the Efficacy and Safety of Different Sequences of Ciltacabtagene Autoleucel (Cilta-cel), Talquetamab SC in Combination With Daratumumab SC (Tal-D) and Teclistamab SC in Combination With Daratumumab SC (Tec-D) Following Induction With Daratumumab, Bortezomib, Lenalidomide and Dexamethasone (DVRd) in Participants With Standard-risk Newly Diagnosed Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 113,
+      "nct_id": "NCT04923893",
+      "title": "A Phase 3 Randomized Study Comparing Bortezomib, Lenalidomide and Dexamethasone (VRd) Followed by Ciltacabtagene Autoleucel, a Chimeric Antigen Receptor T Cell (CAR-T) Therapy Directed Against BCMA Versus Bortezomib, Lenalidomide, and Dexamethasone (VRd) Followed by Lenalidomide and Dexamethasone (Rd) Therapy in Participants With Newly Diagnosed Multiple Myeloma for Whom Hematopoietic Stem Cell Transplant is Not Planned as Initial Therapy",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 114,
+      "nct_id": "NCT04133636",
+      "title": "A Phase 2, Multicohort Open-Label Study of JNJ-68284528, a Chimeric Antigen Receptor T Cell (CAR-T) Therapy Directed Against BCMA in Subjects With Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 115,
+      "nct_id": "NCT06550895",
+      "title": "A Phase 2, Open-Label, Multicenter Study of Ciltacabtagene Autoleucel and Talquetamab for the Treatment of Participants With High-Risk Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 119,
+      "nct_id": "NCT07295951",
+      "title": "An Open-Label Study to Investigate the Absorption, Metabolism, And Excretion (AME) Of 14C-Bleximenib (JNJ-75276617) in Participants With Acute Leukemia",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "bleximenib"
+      ]
+    },
+    {
+      "trial_id": 120,
+      "nct_id": "NCT04811560",
+      "title": "A Phase 1/2, First-in-Human Study of the Menin-KMT2A (MLL1) Inhibitor Bleximenib in Participants With Acute Leukemia (cAMeLot-1)",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "bleximenib"
+      ]
+    },
+    {
+      "trial_id": 121,
+      "nct_id": "NCT06852222",
+      "title": "A Phase 3 Randomized, Double-Blind, Placebo-Controlled, Study of Bleximenib, Venetoclax and Azacitidine for the Treatment of Participants With Newly Diagnosed Acute Myeloid Leukemia Harboring KMT2A Rearrangements or NPM1 Mutations Who Are Ineligible for Intensive Chemotherapy",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "bleximenib"
+      ]
+    },
+    {
+      "trial_id": 122,
+      "nct_id": "NCT05453903",
+      "title": "A Phase 1b Study of Bleximenib in Combination With AML-Directed Therapies for Participants With Acute Myeloid Leukemia Harboring KMT2A or NPM1 Alterations",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "bleximenib"
+      ]
+    },
+    {
+      "trial_id": 125,
+      "nct_id": "NCT05338775",
+      "title": "A Phase 1b Study of Bispecific T Cell Redirection Antibodies in Combination With Checkpoint Inhibition for the Treatment of Participants With Relapsed or Refractory Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 126,
+      "nct_id": "NCT03145181",
+      "title": "A Phase 1, First-in-Human, Open-Label, Dose Escalation Study of Teclistamab, a Humanized BCMA x CD3 Bispecific Antibody in Subjects With Relapsed or Refractory Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 127,
+      "nct_id": "NCT05552222",
+      "title": "A Phase 3 Randomized Study Comparing Teclistamab in Combination With Daratumumab SC and Lenalidomide (Tec-DR) and Talquetamab in Combination With Daratumumab SC and Lenalidomide (Tal-DR) Versus Daratumumab SC, Lenalidomide, and Dexamethasone (DRd) in Participants With Newly Diagnosed Multiple Myeloma Who Are Either Ineligible or Not Intended for Autologous Stem Cell Transplant as Initial Therapy",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 128,
+      "nct_id": "NCT05083169",
+      "title": "A Phase 3 Randomized Study Comparing Teclistamab in Combination With Daratumumab SC (Tec-Dara) Versus Daratumumab SC, Pomalidomide, and Dexamethasone (DPd) or Daratumumab SC, Bortezomib, and Dexamethasone (DVd) in Participants With Relapsed or Refractory Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 129,
+      "nct_id": "NCT04586426",
+      "title": "A Phase 1b/2 Dose Escalation and Expansion Study of the Combination of the Bispecific T Cell Redirection Antibodies Talquetamab and Teclistamab in Participants With Relapsed or Refractory Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 130,
+      "nct_id": "NCT06425991",
+      "title": "A Phase 1 Randomized, Open Label Pharmacokinetic Comparability Study Comparing Pre- and Post-change Teclistamab in Participants With Relapsed/Refractory Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 131,
+      "nct_id": "NCT05572515",
+      "title": "A Phase 3 Randomized Study Comparing Teclistamab Monotherapy Versus Pomalidomide, Bortezomib, Dexamethasone (PVd) or Carfilzomib, Dexamethasone (Kd) in Participants With Relapsed or Refractory Multiple Myeloma Who Have Received 1 to 3 Prior Lines of Therapy, Including an Anti-CD38 Monoclonal Antibody and Lenalidomide",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 132,
+      "nct_id": "NCT04722146",
+      "title": "A Multi-arm Phase 1b Study of Teclistamab With Other Anticancer Therapies in Participants With Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 133,
+      "nct_id": "NCT04108195",
+      "title": "A Phase 1b Study of Subcutaneous Daratumumab Regimens in Combination With Bispecific T Cell Redirection Antibodies for the Treatment of Subjects With Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 134,
+      "nct_id": "NCT04696809",
+      "title": "A Phase 1/2 Study of JNJ-64007957, a Humanized BCMA * CD3 Bispecific Antibody in Japanese Patients With Relapsed or Refractory Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 151,
+      "nct_id": "NCT06662786",
+      "title": "A Randomized, Open-label Phase 3 Study of Amivantamab and mFOLFOX6 or FOLFIRI Versus Cetuximab and mFOLFOX6 or FOLFIRI as First-line Treatment in Participants With KRAS/NRAS and BRAF Wild-type Unresectable or Metastatic Left-sided Colorectal Cancer",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 152,
+      "nct_id": "NCT05908734",
+      "title": "A Phase 1/2 Study Evaluating the Safety and Efficacy of Amivantamab and Cetrelimab Combination Therapy in Metastatic Non-small Cell Lung Cancer",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 153,
+      "nct_id": "NCT06532032",
+      "title": "A Phase 1/2 Study Evaluating the Safety and Efficacy of Amivantamab and Docetaxel Combination Therapy in Metastatic Non-small Cell Lung Cancer",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 154,
+      "nct_id": "NCT05498428",
+      "title": "A Phase 2, Open-Label, Parallel Cohort Study of Subcutaneous Amivantamab in Multiple Regimens in Patients With Advanced or Metastatic Solid Tumors Including EGFR-mutated Non-Small Cell Lung Cancer",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 155,
+      "nct_id": "NCT06750094",
+      "title": "A Randomized, Open-label Phase 3 Study of Amivantamab + FOLFIRI Versus Cetuximab/Bevacizumab + FOLFIRI in Participants With KRAS/NRAS and BRAF Wild-type Recurrent, Unresectable or Metastatic Colorectal Cancer Who Have Received Prior Chemotherapy",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 156,
+      "nct_id": "NCT06667076",
+      "title": "A Phase 2b, Open-Label, Two-cohort Study of Subcutaneous Amivantamab in Combination With Lazertinib as First-Line Treatment, or Subcutaneous Amivantamab in Combination With Platinum-Based Chemotherapy as Second-line Treatment, for Common EGFR-Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 157,
+      "nct_id": "NCT06385080",
+      "title": "A Phase 1b/2, Open-label Study of Amivantamab Monotherapy and Amivantamab in Addition to Other Therapeutic Agents in Participants With Head and Neck Squamous Cell Carcinoma",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 158,
+      "nct_id": "NCT06120140",
+      "title": "A Phase 2, Open-Label, Randomized Trial Evaluating the Impact of Enhanced Versus Standard Dermatologic Management on Selected Dermatologic Adverse Events Among Patients With Locally Advanced or Metastatic EGFR-Mutated NSCLC Treated First-Line With Amivantamab + Lazertinib",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 159,
+      "nct_id": "NCT07230691",
+      "title": "Prospective, Multi Country, Observational Study of Clinical Outcomes in EGFR-mutated, Advanced Non-Small Cell Lung Cancer (NSCLC) Patients Treated With Approved Amivantamab-containing Regimens Under Standard Clinical Practice",
+      "overall_status": "RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 160,
+      "nct_id": "NCT05488314",
+      "title": "A Phase 1/2 Study Evaluating the Safety and Efficacy of Amivantamab and Capmatinib Combination Therapy in Unresectable Metastatic Non-small Cell Lung Cancer",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 161,
+      "nct_id": "NCT02609776",
+      "title": "A Phase 1, First-in-Human, Open-Label, Dose Escalation Study of JNJ-61186372, a Human Bispecific EGFR and cMet Antibody, in Subjects With Advanced Non-Small Cell Lung Cancer",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 175,
+      "nct_id": "NCT06878404",
+      "title": "A Phase 3, Multicenter, Randomized, Double-blind, Placebo-controlled Study Evaluating the Efficacy and Safety of JNJ-77242113 for the Treatment of Biologic-naïve Participants With Active Psoriatic Arthritis",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "icotrokinra"
+      ]
+    },
+    {
+      "trial_id": 176,
+      "nct_id": "NCT07196722",
+      "title": "A Phase 2b/3 Randomized, Double-blind, Placebo-Controlled, Parallel Group, Multicenter Protocol to Evaluate the Efficacy and Safety of Icotrokinra in Participants With Moderately to Severely Active Crohn's Disease",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2,PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "icotrokinra"
+      ]
+    },
+    {
+      "trial_id": 177,
+      "nct_id": "NCT06807424",
+      "title": "A Phase 3, Multicenter, Randomized, Double-blind, Placebo-controlled Study Evaluating the Efficacy and Safety of JNJ-77242113 for the Treatment of Biologic-experienced Participants With Active Psoriatic Arthritis",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "icotrokinra"
+      ]
+    },
+    {
+      "trial_id": 178,
+      "nct_id": "NCT06559306",
+      "title": "A Two-Part Multicenter, Double-Blind, Randomized Placebo-Controlled Study to Evaluate Efficacy and Safety and the Maintenance of Effect of 20-(Milligram) mg Seltorexant as Adjunctive Therapy to Antidepressants in Adult and Elderly Patients With Major Depressive Disorder With Insomnia Symptoms",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "seltorexant"
+      ]
+    },
+    {
+      "trial_id": 179,
+      "nct_id": "NCT04898634",
+      "title": "A Phase 1 Study of JNJ-78278343, a T-Cell-Redirecting Agent Targeting Human Kallikrein 2 (KLK2), for Advanced Prostate Cancer",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 183,
+      "nct_id": "NCT05912517",
+      "title": "A Phase 3 Randomized, Placebo-Controlled, Double-Blind, Multicenter Study to Evaluate the Efficacy and Safety of Nipocalimab in Pregnancies at Risk for Severe Hemolytic Disease of the Fetus and Newborn (HDFN)",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "nipocalimab​"
+      ]
+    },
+    {
+      "trial_id": 184,
+      "nct_id": "NCT04119050",
+      "title": "Efficacy and Safety of M281 in Adults With Warm Autoimmune Hemolytic Anemia: A Multicenter, Randomized, Double-blind, Placebo-controlled Study With a Long-term Open-label Extension",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2,PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 185,
+      "nct_id": "NCT05327114",
+      "title": "Phase 2/3, Multistage, Multicenter, Randomized, Double-Blind, Placebo-Controlled Parallel Group Withdrawal Study to Evaluate the Efficacy and Safety of Nipocalimab Administered to Adults With Chronic Inflammatory Demyelinating Polyneuropathy (CIDP)",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2,PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "nipocalimab​"
+      ]
+    },
+    {
+      "trial_id": 186,
+      "nct_id": "NCT06741969",
+      "title": "A Randomized, Placebo-controlled, Double-blind, Multicenter Phase 3 Protocol to Assess the Efficacy and Safety of Nipocalimab in Adults With Moderate to Severe Sjogren's Disease (SjD)",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "nipocalimab​"
+      ]
+    },
+    {
+      "trial_id": 187,
+      "nct_id": "NCT06449651",
+      "title": "Double-blind, Randomized, Placebo-controlled Study Evaluating the Safety and Efficacy of Nipocalimab in Reducing the Risk of Fetal and Neonatal Alloimmune Thrombocytopenia (FNAIT) in At-risk Pregnancies",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "nipocalimab​"
+      ]
+    },
+    {
+      "trial_id": 188,
+      "nct_id": "NCT05379634",
+      "title": "A Phase 2, Multicenter, Randomized, Double-blind, Placebo-controlled, Parallel-group Study to Evaluate the Efficacy and Safety of Nipocalimab in Participants With Active Idiopathic Inflammatory Myopathies",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "nipocalimab​"
+      ]
+    },
+    {
+      "trial_id": 189,
+      "nct_id": "NCT06533098",
+      "title": "Multicenter, Open-Label, Randomized Study of Nipocalimab or Intravenous Immunoglobulin (IVIG) in Pregnancies At Risk of Fetal and Neonatal Alloimmune Thrombocytopenia (FNAIT)",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "nipocalimab​"
+      ]
+    },
+    {
+      "trial_id": 195,
+      "nct_id": "NCT06919965",
+      "title": "A Phase 3, Randomized, Open-label, Multicenter Study Evaluating the Efficacy and Safety of TAR-210 Erdafitinib Intravesical Delivery System Versus Investigator's Choice of Intravesical Chemotherapy in Participants With High-risk Non-muscle-invasive Bladder Cancer With Susceptible FGFR Alterations Who Had Received Intravesical Bacillus Calmette-Guérin (BCG)",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 135,
+      "nct_id": "NCT07105059",
+      "title": "Teclistamab and Mezigdomide for Relapsed/Refractory Multiple Myeloma",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-15",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 162,
+      "nct_id": "NCT05845671",
+      "title": "A Phase 1 / 2, Open Label, Study of Amivantamab (JNJ-61186372) Among Participants With Advanced NSCLC Harboring ALK, ROS1, and RET Gene Fusions in Combination With Tyrosine Kinase Inhibitors",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-14",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 190,
+      "nct_id": "NCT07217587",
+      "title": "Efficacy and Safety of Nipocalimab vs Efgartigimod for Patients With Generalized Myasthenia Gravis in a Randomized, Open-label, Phase 3b, Interventional Trial Including Within Class Switching From Efgartigimod to Nipocalimab",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-14",
+      "linked_assets": [
+        "nipocalimab​"
+      ]
+    },
+    {
+      "trial_id": 163,
+      "nct_id": "NCT04606381",
+      "title": "An Open-label, Multicenter, Dose Escalation Phase 1b Study to Assess the Safety and Pharmacokinetics of Subcutaneous Delivery of Amivantamab, a Human Bispecific EGFR and cMet Antibody for the Treatment of Advanced Solid Malignancies",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-13",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 14,
+      "nct_id": "NCT04108208",
+      "title": "A Multicenter, Randomized, Double-Blind, Placebo-Controlled, Phase IV Study of Apalutamide in Chinese Participants With Non-Metastatic Castration-Resistant Prostate Cancer (NM-CRPC)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE4",
+      "last_update_posted": "2026-01-12",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 64,
+      "nct_id": "NCT04936308",
+      "title": "A Phase 3B, Multicenter, Randomized, Double-blind, Placebo-controlled Study Evaluating the Efficacy and Safety of Guselkumab Administered Subcutaneously in Participants With Active Psoriatic Arthritis Who Had an Inadequate Response and/or Intolerance to One Prior Anti-Tumor Necrosis Factor Alpha Agent",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-12",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 65,
+      "nct_id": "NCT05528510",
+      "title": "A Phase 3, Randomized, Double-blind, Placebo-controlled, Parallel-group, Multicenter Study to Evaluate the Efficacy and Safety of Guselkumab Subcutaneous Induction Therapy in Participants With Moderately to Severely Active Ulcerative Colitis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-12",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 136,
+      "nct_id": "NCT07030517",
+      "title": "An Open Label, Multicenter, Phase IV Study of Teclistamab to Evaluate Its Safety in Indian Participants With Relapsed and Refractory Multiple Myeloma Who Have Previously Received at Least 3 Prior Lines of Therapy Including an Immunomodulatory Agent, a Proteasome Inhibitor and an Anti-CD38 Antibody and Have Demonstrated Disease Progression on the Last Therapy",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE4",
+      "last_update_posted": "2026-01-09",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 137,
+      "nct_id": "NCT05231629",
+      "title": "MRD-Guided Sequential Therapy For Deep Response in Newly Diagnosed Multiple Myeloma - MASTER-2 Trial",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-09",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 39,
+      "nct_id": "NCT07310095",
+      "title": "Efficacy of Guselkumab in Chinese Participants With Crohn's Disease Following Loss of Response to Ustekinumab",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phase": "PHASE4",
+      "last_update_posted": "2025-12-30",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 123,
+      "nct_id": "NCT05243797",
+      "title": "Phase 3 Study of Teclistamab in Combination With Lenalidomide and Teclistamab Alone Versus Lenalidomide Alone in Participants With Newly Diagnosed Multiple Myeloma as Maintenance Therapy Following Autologous Stem Cell Transplantation - MajesTEC-4",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-12-30",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 40,
+      "nct_id": "NCT07303686",
+      "title": "Pilot Study to Assess De-escalation of Ustekinumab Therapy in Patients With Crohn's Disease and Ulcerative Colitis",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE4",
+      "last_update_posted": "2025-12-26",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 66,
+      "nct_id": "NCT07302360",
+      "title": "Guselkumab Real-world Effectiveness Among Bio-NaÏve Patients With Moderate-to-severe Ulcerative Colitis in China: A Multicenter, Non-interventional, Prospective Study",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phase": null,
+      "last_update_posted": "2025-12-24",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 138,
+      "nct_id": "NCT05695508",
+      "title": "A Phase 2 Study to Evaluate Safety and Efficacy of Teclistamab-, Talquetamab-, and JNJ-79635322-based Combination Regimens in Participants With Newly Diagnosed Transplant Eligible Multiple Myeloma",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-12-24",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 164,
+      "nct_id": "NCT04077463",
+      "title": "An Open-label Phase 1/1b Study to Evaluate the Safety and Pharmacokinetics of JNJ-73841937 (Lazertinib), a Third Generation EGFR-TKI, as Monotherapy or in Combinations With JNJ-61186372, a Human Bispecific EGFR and cMet Antibody in Participants With Advanced Non-Small Cell Lung Cancer",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2025-12-24",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 67,
+      "nct_id": "NCT05197049",
+      "title": "A Randomized, Double-blind, Placebo-controlled, Parallel-group, Multicenter Study to Evaluate the Efficacy and Safety of Guselkumab Subcutaneous Induction Therapy in Participants With Moderately to Severely Active Crohn's Disease",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-12-23",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 116,
+      "nct_id": "NCT04181827",
+      "title": "A Phase 3 Randomized Study Comparing JNJ-68284528, a Chimeric Antigen Receptor T Cell (CAR-T) Therapy Directed Against BCMA, Versus Pomalidomide, Bortezomib and Dexamethasone (PVd) or Daratumumab, Pomalidomide and Dexamethasone (DPd) in Subjects With Relapsed and Lenalidomide-Refractory Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-12-23",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 165,
+      "nct_id": "NCT04988295",
+      "title": "A Phase 3, Open-Label, Randomized Study of Amivantamab and Lazertinib in Combination With Platinum-Based Chemotherapy Compared With Platinum-Based Chemotherapy in Patients With EGFR-Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer After Osimertinib Failure",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-12-23",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 166,
+      "nct_id": "NCT04487080",
+      "title": "A Phase 3, Randomized Study of Amivantamab and Lazertinib Combination Therapy Versus Osimertinib Versus Lazertinib as First-Line Treatment in Patients With EGFR-Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer.",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-12-23",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 167,
+      "nct_id": "NCT05663866",
+      "title": "Subcutaneous Methotrexate, Oral Dexamethasone or Oral Montelukast for the Prevention of Infusion Related Reaction Associated With Amivantamab, an EGFR-MET Bispecific Antibody, Among Post-osimertinib Treated EGFRm NSCLC; SKIPPirr, a Phase 2 Study",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-12-23",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 168,
+      "nct_id": "NCT04538664",
+      "title": "A Randomized, Open-label Phase 3 Study of Combination Amivantamab and Carboplatin-Pemetrexed Therapy, Compared With Carboplatin-Pemetrexed, in Patients With EGFR Exon 20ins Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-12-23",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 15,
+      "nct_id": "NCT04325828",
+      "title": "An Open-label Phase 2 Study to Evaluate the Efficacy and Safety of Apalutamide in Combination With Gonadotropin-releasing Hormone (GnRH) Agonist in Subjects With Locally Advanced or Recurrent/Metastatic and Androgen Receptor (AR) Expressing Salivary Gland Carcinoma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-12-19",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 41,
+      "nct_id": "NCT05083182",
+      "title": "A Phase 3 Multicenter, Open-label Study to Evaluate the Efficacy, Pharmacokinetics, Safety, and Immunogenicity of Subcutaneously Administered Ustekinumab or Guselkumab in Pediatric Participants With Active Juvenile Psoriatic Arthritis (PSUMMIT-Jr)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-12-19",
+      "linked_assets": [
+        "STELARA",
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 81,
+      "nct_id": "NCT06049017",
+      "title": "A Phase 2b Multicenter, Randomized, Placebo- Controlled, Dose-Ranging Study to Evaluate the Efficacy and Safety of JNJ-77242113 for the Treatment of Moderately to Severely Active Ulcerative Colitis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-12-19",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 103,
+      "nct_id": "NCT07276399",
+      "title": "A Phase 3, Randomized, Open-Label, Multicenter Study of Amivantamab in Addition to Carboplatin and Pembrolizumab, Compared to Standard of Care Platinum and Pembrolizumab and 5-FU, in Participants With Treatment-Naïve Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-12-19",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 108,
+      "nct_id": "NCT07164443",
+      "title": "A Phase 3 Randomized, Double-blind, Placebo-controlled Study of Pasritamig (JNJ-78278343), a T Cell Redirecting Agent Targeting Human Kallikrein 2, + Best Supportive Care Versus Best Supportive Care for Metastatic Castration-resistant Prostate Cancer",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-12-19",
+      "linked_assets": [
+        "pasritamig"
+      ]
+    },
+    {
+      "trial_id": 117,
+      "nct_id": "NCT05257083",
+      "title": "A Phase 3 Randomized Study Comparing Daratumumab, Bortezomib, Lenalidomide and Dexamethasone (DVRd) Followed by Ciltacabtagene Autoleucel Versus Daratumumab, Bortezomib, Lenalidomide and Dexamethasone (DVRd) Followed by Autologous Stem Cell Transplant (ASCT) in Participants With Newly Diagnosed Multiple Myeloma Who Are Transplant Eligible",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-12-18",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 180,
+      "nct_id": "NCT06827860",
+      "title": "A Phase 2 Single-Arm Study of Subcutaneous Talquetamab in Elderly Patients With Multiple Myeloma in Early Relapse",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-12-18",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 196,
+      "nct_id": "NCT05567185",
+      "title": "A Phase 1 Study to Evaluate the Tolerability, Safety, and Pharmacokinetics of TAR-210 in Japanese Participants With Bladder Cancer and Selected FGFR Mutations or Fusions",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2025-12-11",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 83,
+      "nct_id": "NCT06251076",
+      "title": "Outpatient-based Teclistamab Step-up Dosing in Patients With Relapsed/Refractory Multiple Myeloma: Process Development in Academic and Community Centres, and Evaluating Impact on Caregiver Burden",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE4",
+      "last_update_posted": "2025-12-10",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 16,
+      "nct_id": "NCT04662580",
+      "title": "A Phase 1, Multicenter, Open-Label, Dose-Escalation, and Dose-Expansion Study to Evaluate the Safety, Pharmacokinetics, and Anti-Tumor Activity of ARX517 as Monotherapy and in Combination With Androgen Receptor Pathway Inhibitors in Subjects With Metastatic Prostate Cancer",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2025-12-05",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 68,
+      "nct_id": "NCT04882098",
+      "title": "A Phase 3b, Multicenter, Randomized, Double-blind, Placebo-controlled Study Evaluating the Efficacy and Safety of Subcutaneously Administered Guselkumab in Improving the Signs and Symptoms and Inhibiting Radiographic Progression in Participants With Active Psoriatic Arthritis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-12-05",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 139,
+      "nct_id": "NCT07258511",
+      "title": "A Phase 3 Randomized Study Comparing JNJ-79635322 and an Anti-BCMAxCD3 Bispecific Antibody in Participants With Relapsed or Refractory Multiple Myeloma Who Have Received at Least 3 Prior Lines of Therapy Including a PI, an IMiD, and an Anti CD38 Antibody",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-12-05",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 191,
+      "nct_id": "NCT05265273",
+      "title": "An Open-Label Uncontrolled Multicenter Study to Evaluate the Pharmacokinetics, Pharmacodynamics, Safety and Activity of Nipocalimab in Children Aged 2 to Less Than 18 Years With Generalized Myasthenia Gravis",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2,PHASE3",
+      "last_update_posted": "2025-12-05",
+      "linked_assets": [
+        "nipocalimab​"
+      ]
+    },
+    {
+      "trial_id": 192,
+      "nct_id": "NCT04883619",
+      "title": "A Phase 2, Multicenter, Randomized, Double-Blind, Placebo-Controlled Study of Nipocalimab in Adult Participants With Active Lupus Nephritis",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-12-05",
+      "linked_assets": [
+        "nipocalimab​"
+      ]
+    },
+    {
+      "trial_id": 17,
+      "nct_id": "NCT07002320",
+      "title": "ASpiRE: A Proof-of-mechanism and Proof-of-concept Clinical Trial Evaluating the Safety, Tolerability, Biological and Anti-tumour Activity of Apalutamide With Dual CXCR1 and CXCR2 Blockade by SX-682 for Men Suffering From Metastatic Castration-resistant Prostate Cancer (mCRPC)",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2025-12-04",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 69,
+      "nct_id": "NCT06651489",
+      "title": "Efficacy of Guselkumab in the Treatment of Hailey Hailey Disease: An Open-label, Proof of Concept Study",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-12-04",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 70,
+      "nct_id": "NCT07255781",
+      "title": "Shared Mechanisms Contributing to Non-Alcoholic Fatty Liver Disease (NAFLD) and Psoriatic Disease (PD) Severity With Guselkumab Therapy [EMERGE]",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phase": null,
+      "last_update_posted": "2025-12-01",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 84,
+      "nct_id": "NCT07110844",
+      "title": "A Phase 2 Clinical Trial of Teclistamab and Daratumumab in Previously Untreated AL Amyloidosis",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-11-19",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 193,
+      "nct_id": "NCT04951622",
+      "title": "Phase 3, Multicenter, Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Efficacy, Safety, Pharmacokinetics, and Pharmacodynamics of Nipocalimab Administered to Adults With Generalized Myasthenia Gravis",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-11-13",
+      "linked_assets": [
+        "nipocalimab​"
+      ]
+    },
+    {
+      "trial_id": 4,
+      "nct_id": "NCT07029776",
+      "title": "A Phase 2 Study Exploring the Use of Bispecific Antibodies to Improve Progression Free Survival in Patients With High-Risk Newly Diagnosed Multiple Myeloma (MMulti-Immune HR)",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-11-06",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 18,
+      "nct_id": "NCT05960578",
+      "title": "TRAMP: Tumor Necrosis Factor- α Blockade and AR Inhibition in Men With CRPC",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-11-03",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 19,
+      "nct_id": "NCT06274047",
+      "title": "PROSTATE-IQ: Parallel RandOmized STudy of Personalized Apalutamide Treatment and Evaluation to Improve Quality of Life in Post-Operative Radiation With Androgen Axis Suppression. A Phase III Multi-center Study for Men With Detectable PSA After Prostatectomy for Prostate Cancer.",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-10-30",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 71,
+      "nct_id": "NCT05669833",
+      "title": "Guselkumab vs Golimumab in PsA TNF Inadequate Responder Patients: a Pragmatic Trial (EVOLUTION)",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-10-09",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 42,
+      "nct_id": "NCT06807593",
+      "title": "Treatment of Immune Checkpoint Inhibitor-related Diarrhea and/ or Colitis With Ustekinumab in Cancer Patients",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-10-07",
+      "linked_assets": [
+        "STELARA"
+      ]
+    },
+    {
+      "trial_id": 169,
+      "nct_id": "NCT05299125",
+      "title": "A Single Arm, Phase 2 Study of Amivantamab, Lazertinib and Pemetrexed for First-line Treatment of Recurrent/Metastatic Non-small Cell Lung Cancers (NSCLCs) With EGFR Mutations",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-10-01",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 140,
+      "nct_id": "NCT06649695",
+      "title": "A Phase II Trial of Teclistamab in Participants With Previously Treated Immunoglobulin Light-chain (AL) Amyloidosis",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-09-25",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 82,
+      "nct_id": "NCT07191106",
+      "title": "Pilot Feasibility and Impact Study of a Remote Adapted Physical Activity Program on the Quality of Life of Patients With Inflammatory Bowel Disease (IBD)",
+      "overall_status": "RECRUITING",
+      "phase": "NA",
+      "last_update_posted": "2025-09-24",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 20,
+      "nct_id": "NCT06019676",
+      "title": "Impact of Apalutamide in Metastatic Hormone Sensitive Prostate Cancer Patients, a Multicentre Prospective Observational Study",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": null,
+      "last_update_posted": "2025-09-18",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 141,
+      "nct_id": "NCT05572229",
+      "title": "A Phase 2 Study of Teclistamab in Combination With Daratumumab or Lenalidomide in Elderly Patients With Newly Diagnosed Multiple Myeloma",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-09-17",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 118,
+      "nct_id": "NCT05767359",
+      "title": "CAR- PRISM (PRecision Intervention Smoldering Myeloma): A Chimeric Antigen Receptor T Cell (CAR-T) Therapy Directed Against BCMA in High-Risk Smoldering Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-09-11",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 142,
+      "nct_id": "NCT06993675",
+      "title": "Improving MRD Negativity Rates in Newly Diagnosed Multiple Myeloma Patients: a Response-adaptive Approach of Consolidation With One or Two Bispecific T-cell Engagers Against GPRC5D or BCMA",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-08-29",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 143,
+      "nct_id": "NCT07107529",
+      "title": "EFfIcacy and Tolerability of FIXed Duration Teclistamab and Talquetamab FOR FRAIL Patients With Newly Diagnosed Multiple Myeloma (2 Cohort Study) - the EMN 37 FITFIX FOR FRAIL Trial",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-08-12",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 21,
+      "nct_id": "NCT04181203",
+      "title": "An Open Label, Randomized, Phase III Study, Evaluating the Efficacy of a Combination of Apalutamide With Radiotherapy and LHRH Agonist in High-risk Postprostatectomy Biochemically Relapsed Prostate Cancer Patients",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-07-30",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 170,
+      "nct_id": "NCT05117931",
+      "title": "Phase II Study of Amivantamab in EGFR or MET- Amplified Esophagogastric Cancer",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-07-20",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 22,
+      "nct_id": "NCT06067269",
+      "title": "High Precision Stereotactic Radiotherapy to the Whole Prostate With Focal Boost and Varying Hormonal Therapy (HEATWAVE)",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-07-15",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 171,
+      "nct_id": "NCT07062354",
+      "title": "A Phase II Study of Combined Amivantamab, Carboplatin and Paclitaxel in Unresectable Locally Recurrent or Metastatic Head and Neck Cancer",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-07-14",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 23,
+      "nct_id": "NCT05191680",
+      "title": "Targeted Drug Intervention in Men at Risk of Progression on Active Surveillance for Early Prostate Cancer: A Randomised Trial - Therapeutics in Active Prostate Cancer Surveillance (TAPS02).",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-06-20",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 72,
+      "nct_id": "NCT05004727",
+      "title": "Preventing Arthritis in a Multi-Center Psoriasis At-Risk Cohort",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE4",
+      "last_update_posted": "2025-05-31",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 24,
+      "nct_id": "NCT02913196",
+      "title": "A Phase I Trial of Apalutamide Plus Abiraterone Acetate, Docetaxel, and Prednisone in Patients With Metastatic Castrate Resistant Prostate Cancer (mCRPC)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2025-05-23",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 144,
+      "nct_id": "NCT06062537",
+      "title": "Analysis of Effectiveness and Safety of Teclistamab in Relapsed and Refractory Multiple Myeloma Patients: a Collaborative Janssen - IFM Study IFM 2023-01: TEC-CARE",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": null,
+      "last_update_posted": "2025-05-23",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 172,
+      "nct_id": "NCT06632236",
+      "title": "5G-EMERALD: A Phase 1 Trial of Amivantamab in High Grade Malignant Brain Tumours Within the 5G Platform",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2025-04-25",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 145,
+      "nct_id": "NCT05469893",
+      "title": "Immuno-PRISM (PRecision Intervention Smoldering Myeloma): A Randomized Phase II Platform Study of Select Immunotherapies for High-Risk Smoldering Myeloma",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-04-24",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 25,
+      "nct_id": "NCT03903835",
+      "title": "ProBio: An Outcome-adaptive and Randomized Multi-arm Biomarker Driven Study in Patients With Metastatic Prostate Cancer",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-04-09",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 73,
+      "nct_id": "NCT06586281",
+      "title": "Elucidating Shared Mechanisms Contributing to Non-Alcoholic Fatty Liver Disease (NAFLD) and Psoriatic Arthritis (PsA) Disease Severity With Guselkumab Therapy",
+      "overall_status": "RECRUITING",
+      "phase": "NA",
+      "last_update_posted": "2025-04-03",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 181,
+      "nct_id": "NCT06697093",
+      "title": "Polish Nationwide Registry of Diagnostics, Treatment and Outcome in Patients With Cardiogenic Shock CaS-POL",
+      "overall_status": "RECRUITING",
+      "phase": null,
+      "last_update_posted": "2025-04-02",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 173,
+      "nct_id": "NCT06816992",
+      "title": "Phase 1b Study of ORIC-114 in Combination with Amivantamab in Patients with EGFR Exon20 Insertion Mutant NSCLC",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2025-03-20",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 146,
+      "nct_id": "NCT05849610",
+      "title": "An Open Label, Multicenter, Phase 2, Pilot Study, Evaluating Early Treatment With Bispecific T-cell Redirectors (Teclistamab and Talquetamab) in the Frontline Therapy of Newly Diagnosed High-risk Multiple Myeloma",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-03-19",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 147,
+      "nct_id": "NCT06353022",
+      "title": "Minimal Residual Disease-based Strategy with T-Cell Redirector After Treatment with Daratumumab, Bortezomib, Lenalidomide, and Dexamethasone (D-VRd) in Newly Diagnosed Multiple Myeloma: a Phase 2 (IFM 2022-01)",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-03-13",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 85,
+      "nct_id": "NCT06477783",
+      "title": "Prospective Observational Study on the Clinical Efficacy of Teclistamab in Patients With Relapsed and Refractory Multiple Myeloma in Belgium",
+      "overall_status": "RECRUITING",
+      "phase": null,
+      "last_update_posted": "2025-03-12",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 43,
+      "nct_id": "NCT03941132",
+      "title": "Clinical Phase II/III Trial of Ustekinumab to Treat Type 1 Diabetes (UST1D2)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2,PHASE3",
+      "last_update_posted": "2025-02-24",
+      "linked_assets": [
+        "STELARA"
+      ]
+    },
+    {
+      "trial_id": 148,
+      "nct_id": "NCT06100237",
+      "title": "Teclistamab or Talquetamab in Combination With Daratumumab SC for High-Risk Smoldering Myeloma: A Clinical and Correlative Phase 2 Sequential Cohort Immuno-Oncology Study to REVIVE Early Myeloma",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-02-20",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 44,
+      "nct_id": "NCT05299931",
+      "title": "An Open-Label Extension and Long-term Efficacy and Safety Monitoring Study of Patients with Crohn's Disease Previously Included in the Loss of RESponse to Ustekinumab Treated by Dose Escalation Study (REScUE-OLE)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-02-05",
+      "linked_assets": [
+        "STELARA"
+      ]
+    },
+    {
+      "trial_id": 26,
+      "nct_id": "NCT03902951",
+      "title": "A Single-Arm, Open-Label, Phase II Study of Systemic and Tumor Directed Therapy for Recurrent Oligometastatic M1 Prostate Cancer",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-01-28",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 45,
+      "nct_id": "NCT02103361",
+      "title": "Stelara® and Tremfya® Pregnancy Exposure Registry: OTIS Autoimmune Diseases in Pregnancy Project",
+      "overall_status": "RECRUITING",
+      "phase": null,
+      "last_update_posted": "2025-01-28",
+      "linked_assets": [
+        "STELARA",
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 46,
+      "nct_id": "NCT01848028",
+      "title": "Long-Term Benefits and Safety of Systemic Psoriasis Therapy: German Registry on the Treatment of Psoriasis With Biologics and Systemic Therapeutics",
+      "overall_status": "RECRUITING",
+      "phase": null,
+      "last_update_posted": "2025-01-27",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 27,
+      "nct_id": "NCT04812366",
+      "title": "Genomic Biomarker-Selected Umbrella Neoadjuvant Study for High Risk Localized Prostate Cancer",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2024-12-16",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 182,
+      "nct_id": "NCT05546242",
+      "title": "A Phase 3b Randomised, Multicentre, Open-label Study Evaluating the Effectiveness of Switching to Two-monthly Long-acting Injectable Cabotegravir and Rilpivirine from First-line Oral Antiretroviral Therapy in HIV-1 Positive Virologically Suppressed Adults with a History Of, or At Risk Of, Sub-optimal HIV Control in Sub-Saharan Africa",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2024-09-27",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 74,
+      "nct_id": "NCT06563323",
+      "title": "A Single-arm Open-label Study Assessing Short-term (Week 6, 16) and Long-term (Week 32) Efficacy of Guselkumab in Adult Participants With Pyoderma Gangrenosum",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2024-08-27",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 47,
+      "nct_id": "NCT05387031",
+      "title": "Efficacy of Ustekinumab-based Integrated Medicine Therapy in Patients With Symptomatic Stricturing Crohn's Disease: a Multicenter, Prospective, Observational Cohort Study",
+      "overall_status": "RECRUITING",
+      "phase": null,
+      "last_update_posted": "2024-08-01",
+      "linked_assets": [
+        "STELARA"
+      ]
+    },
+    {
+      "trial_id": 48,
+      "nct_id": "NCT04496063",
+      "title": "USTekinumab in Fistulising Perianal Crohn's Disease (CD): The USTAP CD Study",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE4",
+      "last_update_posted": "2024-07-22",
+      "linked_assets": [
+        "STELARA"
+      ]
+    },
+    {
+      "trial_id": 149,
+      "nct_id": "NCT06505369",
+      "title": "A Phase II Study Measuring MRD Negativity After Bispecific T-cell Redirectors Talquetamab and Teclistamab Consolidation in Sequence as Part of First Line Treatment in Transplant Eligible Multiple Myeloma Patients",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2024-07-17",
+      "linked_assets": [
+        "TECVAYLI"
+      ]
+    },
+    {
+      "trial_id": 28,
+      "nct_id": "NCT04295447",
+      "title": "A Randomized, Open-label, Phase 2 Study of Adjuvant Apalutamide or Standard of Care in Subjects With High-risk, Localized or Locally Advanced Prostate Cancer After Radical Prostatectomy",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2024-06-20",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 88,
+      "nct_id": "NCT06103760",
+      "title": "Positioning of Esketamine Treatment in the Real-world Management of Depression",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE4",
+      "last_update_posted": "2024-05-17",
+      "linked_assets": []
+    },
+    {
+      "trial_id": 29,
+      "nct_id": "NCT03141671",
+      "title": "Randomized Phase II Study of Salvage XRT + ADT +/- Abiraterone Acetate and Apalutamide (ARN-509) for Rising PSA After Radical Prostatectomy With Adverse Features.(FORMULA-509 Trial)",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2024-05-14",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 174,
+      "nct_id": "NCT03767075",
+      "title": "Basket of Baskets: A Modular, Open-label, Phase II, Multicentre Study To Evaluate Targeted Agents in Molecularly Selected Populations With Advanced Solid Tumours",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2024-04-25",
+      "linked_assets": [
+        "system) RYBREVANT"
+      ]
+    },
+    {
+      "trial_id": 75,
+      "nct_id": "NCT04645355",
+      "title": "Immunogenetic Profiling of Guselkumab for the Treatment of Plaque and Guttate Psoriasis",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE4",
+      "last_update_posted": "2024-03-08",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 30,
+      "nct_id": "NCT03899077",
+      "title": "A Phase II Study Comparing Salvage Radiotherapy in Combination With 6 Months of Androgen-deprivation Therapy Versus Anti-androgen Therapy With Apalutamide in Patients With Biochemical Progression After Radical Prostatectomy",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2024-02-07",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "trial_id": 76,
+      "nct_id": "NCT05858632",
+      "title": "Immune Spatial Features of Guselkumab Cutaneous Response",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE4",
+      "last_update_posted": "2023-08-28",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "trial_id": 31,
+      "nct_id": "NCT05778097",
+      "title": "Adjuvant Androgen Deprivation Therapy Combined With Apalutamide for Prostate Cancer Patients Post Radical-prostatectomy With High-risk of Reoccurrence: a Prospective, Single-arm, Multicenter Trial (ARES Study)",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2023-03-21",
+      "linked_assets": []
+    }
+  ]
+}
