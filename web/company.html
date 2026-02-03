@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pharma Intel – Company</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <a class="link" href="./index.html">← Back to index</a>
+      <h1 id="title">Company</h1>
+      <p id="subtitle" class="muted"></p>
+      <div class="row">
+        <button id="refreshBtn" class="btn">Refresh</button>
+        <span id="status" class="muted"></span>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>KPIs</h2>
+        <div id="kpis" class="kpi-grid"></div>
+      </section>
+
+      <section class="card">
+        <h2>Top assets</h2>
+        <div class="table-wrap">
+          <table id="assetsTable">
+            <thead>
+              <tr>
+                <th>Asset</th>
+                <th>Highest stage</th>
+                <th class="num">Linked trials</th>
+                <th>Example indications</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Recent changes</h2>
+        <ul id="changes" class="list"></ul>
+      </section>
+
+      <section class="card">
+        <h2>Trials (latest)</h2>
+        <div class="table-wrap">
+          <table id="trialsTable">
+            <thead>
+              <tr>
+                <th>NCT</th>
+                <th>Status</th>
+                <th>Phase</th>
+                <th>Last update</th>
+                <th>Linked assets</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="./company.js"></script>
+  </body>
+</html>
