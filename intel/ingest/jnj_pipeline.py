@@ -2,22 +2,113 @@ from __future__ import annotations
 
 import re
 import io
+import os
 import datetime as dt
 from typing import Any
 
 import pdfplumber
+import requests
 from bs4 import BeautifulSoup
 from loguru import logger
 from sqlalchemy.orm import Session
 
 from ..http import get
+from ..settings import settings
 from ..evidence import store_bytes
 from ..repo import add_evidence, ensure_company, upsert_asset, ensure_alias, replace_asset_indications, emit_change
-from ..normalize import split_asset_aliases, norm_text
+from ..normalize import split_asset_aliases
 from ..diff import latest_indications_before, current_indications_for_evidence, diff_sets
 
 
 JNICALL_PIPELINE_PAGE = "https://www.investor.jnj.com/pipeline/development-pipeline/default.aspx"
+
+# J&J also hosts the pipeline PDF on its IR CDN (Q4 / s203.q4cdn.com). Investor-facing
+# HTML pages are sometimes protected and may return 403 from hosted CI runners.
+Q4CDN_BASE = "https://s203.q4cdn.com/636242992/files/doc_financials"
+
+
+def _iter_recent_quarters(n: int = 10) -> list[tuple[int, int]]:
+    """Return (year, quarter) pairs, starting from the previous quarter going backwards."""
+    today = dt.datetime.utcnow().date()
+    q = (today.month - 1) // 3 + 1
+    y = today.year
+
+    # start from previous quarter (pipeline PDFs are typically posted after quarter close)
+    if q == 1:
+        y -= 1
+        q = 4
+    else:
+        q -= 1
+
+    out: list[tuple[int, int]] = []
+    for _ in range(max(1, n)):
+        out.append((y, q))
+        if q == 1:
+            y -= 1
+            q = 4
+        else:
+            q -= 1
+    return out
+
+
+def _candidate_jnj_pdf_urls(max_quarters: int = 10) -> list[str]:
+    """Generate likely pipeline PDF URLs on the q4cdn host.
+
+    Observed pattern (example):
+      .../2025/q4/JNJ-Pipeline-4Q25.pdf
+    """
+    urls: list[str] = []
+    for year, quarter in _iter_recent_quarters(max_quarters):
+        yy = str(year)[2:]
+        folder_variants = [
+            f"{Q4CDN_BASE}/{year}/q{quarter}",
+            f"{Q4CDN_BASE}/{year}/Q{quarter}",
+        ]
+        filename_variants = [
+            f"JNJ-Pipeline-{quarter}Q{yy}.pdf",
+            f"JNJ-Pipeline-{quarter}Q{year}.pdf",
+        ]
+        for folder in folder_variants:
+            for fname in filename_variants:
+                urls.append(f"{folder}/{fname}")
+    return urls
+
+
+def _url_looks_like_pdf(url: str) -> bool:
+    """Cheaply validate that a URL is an accessible PDF without downloading the whole file."""
+    headers = {
+        "User-Agent": settings.http_user_agent,
+        "Accept": "application/pdf,application/octet-stream;q=0.9,*/*;q=0.8",
+        # Try range request to avoid full download; many CDNs support 206.
+        "Range": "bytes=0-1023",
+    }
+    timeout = min(int(settings.http_timeout_s), 15)
+    try:
+        r = requests.get(url, headers=headers, timeout=timeout, stream=True, allow_redirects=True)
+        if r.status_code not in (200, 206):
+            return False
+        ctype = (r.headers.get("Content-Type") or "").lower()
+        # Some CDNs return octet-stream for PDFs; accept based on extension as well.
+        if "pdf" in ctype:
+            return True
+        return url.lower().endswith(".pdf")
+    except Exception:
+        return False
+    finally:
+        try:
+            r.close()  # type: ignore[name-defined]
+        except Exception:
+            pass
+
+
+def discover_jnj_pipeline_pdf_url(max_quarters: int = 10) -> str:
+    """Find the most recent accessible J&J pipeline PDF on q4cdn."""
+    candidates = _candidate_jnj_pdf_urls(max_quarters=max_quarters)
+    for url in candidates:
+        if _url_looks_like_pdf(url):
+            logger.info("Discovered J&J pipeline PDF URL via q4cdn: {}", url)
+            return url
+    raise RuntimeError("Could not discover a J&J pipeline PDF URL from q4cdn candidates")
 
 
 def _find_pdf_url(html: str) -> str:
@@ -160,13 +251,13 @@ def _is_asset_line(line: dict[str, Any], median_size: float) -> bool:
 
 
 def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
-    '''
+    """
     Returns:
     {
       "as_of_date": "YYYY-MM-DD" | None,
       "rows": [ {asset_label, stage, indication, therapeutic_area}, ... ]
     }
-    '''
+    """
     rows: list[dict[str, str]] = []
     as_of_date = None
 
@@ -187,7 +278,7 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
 
             # compute median size for heuristic
             sizes = sorted(float(w.get("size") or 0) for w in body_words if w.get("size"))
-            median = sizes[len(sizes)//2] if sizes else 10.0
+            median = sizes[len(sizes) // 2] if sizes else 10.0
 
             for stage, (x0, x1) in cols.items():
                 col_words = [w for w in body_words if (x0 <= w["x0"] < x1)]
@@ -200,12 +291,14 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
                     if _is_asset_line(ln, median):
                         # flush previous
                         if current_asset and indication_parts:
-                            rows.append({
-                                "asset_label": current_asset,
-                                "stage": stage,
-                                "indication": " ".join(indication_parts).strip(),
-                                "therapeutic_area": ta or None,
-                            })
+                            rows.append(
+                                {
+                                    "asset_label": current_asset,
+                                    "stage": stage,
+                                    "indication": " ".join(indication_parts).strip(),
+                                    "therapeutic_area": ta or None,
+                                }
+                            )
                         current_asset = ln["text"].strip()
                         indication_parts = []
                     else:
@@ -214,12 +307,14 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
 
                 # flush end
                 if current_asset and indication_parts:
-                    rows.append({
-                        "asset_label": current_asset,
-                        "stage": stage,
-                        "indication": " ".join(indication_parts).strip(),
-                        "therapeutic_area": ta or None,
-                    })
+                    rows.append(
+                        {
+                            "asset_label": current_asset,
+                            "stage": stage,
+                            "indication": " ".join(indication_parts).strip(),
+                            "therapeutic_area": ta or None,
+                        }
+                    )
 
     # remove junk rows where indication looks like footer
     cleaned = []
@@ -237,12 +332,31 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
 def ingest_jnj_pipeline(session: Session, company_id: str = "jnj") -> int:
     ensure_company(session, company_id, "Johnson & Johnson")
 
-    # 1) fetch pipeline page and locate PDF URL
-    html = get(JNICALL_PIPELINE_PAGE).text
-    pdf_url = _find_pdf_url(html)
-    if pdf_url.startswith("/"):
-        # q4 often uses absolute but just in case
-        pdf_url = "https://www.investor.jnj.com" + pdf_url
+    # 1) Determine the pipeline PDF URL.
+    #
+    # Some investor relations sites (including investor.jnj.com) may return 403 to
+    # GitHub-hosted runners or other datacenter IPs. The PDF itself is commonly
+    # hosted on the q4cdn domain and is often accessible from CI.
+    #
+    # Priority order:
+    #   (a) explicit override via env PHARMA_INTEL_JNJ_PIPELINE_PDF_URL
+    #   (b) parse the investor pipeline page for a PDF link
+    #   (c) discover the latest PDF on q4cdn using common naming patterns
+
+    pdf_url = os.getenv("PHARMA_INTEL_JNJ_PIPELINE_PDF_URL")
+
+    if not pdf_url:
+        try:
+            html = get(JNICALL_PIPELINE_PAGE).text
+            pdf_url = _find_pdf_url(html)
+            if pdf_url.startswith("/"):
+                pdf_url = "https://www.investor.jnj.com" + pdf_url
+        except Exception as e:
+            logger.warning(
+                "Failed to fetch/parse J&J pipeline HTML ({}). Falling back to q4cdn discovery.",
+                e,
+            )
+            pdf_url = discover_jnj_pipeline_pdf_url(max_quarters=10)
 
     # 2) download PDF and store as evidence
     pdf_bytes = get(pdf_url).content
@@ -261,35 +375,59 @@ def ingest_jnj_pipeline(session: Session, company_id: str = "jnj") -> int:
     for r in rows:
         by_asset.setdefault(r["asset_label"], []).append(r)
 
-    inserted_assets = 0
-
     for asset_label, recs in by_asset.items():
         canonical, aliases = split_asset_aliases(asset_label)
         asset = upsert_asset(session, company_id, canonical)
         for a in aliases:
             ensure_alias(session, asset.id, a)
 
-        # build indications list for this snapshot
-        indications = [{"indication": r["indication"], "stage": r["stage"], "therapeutic_area": r.get("therapeutic_area")} for r in recs]
+        indications = [
+            {"indication": r["indication"], "stage": r["stage"], "therapeutic_area": r.get("therapeutic_area")}
+            for r in recs
+        ]
 
-        # diff vs prior snapshot for this asset
         old = latest_indications_before(session, asset.id, evidence.id)
 
-        # replace snapshot indications for this evidence
-        replace_asset_indications(session, asset.id, indications, evidence_id=evidence.id, as_of_date=as_of_date, therapeutic_area=None)
+        replace_asset_indications(
+            session,
+            asset.id,
+            indications,
+            evidence_id=evidence.id,
+            as_of_date=as_of_date,
+            therapeutic_area=None,
+        )
 
         new = current_indications_for_evidence(session, asset.id, evidence.id)
         added, removed = diff_sets(old, new)
 
         if not old and new:
-            inserted_assets += 1
             emit_change(session, company_id, "asset_added", {"asset": canonical}, evidence_id=evidence.id, asset_id=asset.id)
 
         for (ind, stage, ta) in added:
-            emit_change(session, company_id, "asset_indication_added", {"asset": canonical, "indication": ind, "stage": stage, "therapeutic_area": ta}, evidence_id=evidence.id, asset_id=asset.id)
+            emit_change(
+                session,
+                company_id,
+                "asset_indication_added",
+                {"asset": canonical, "indication": ind, "stage": stage, "therapeutic_area": ta},
+                evidence_id=evidence.id,
+                asset_id=asset.id,
+            )
 
         for (ind, stage, ta) in removed:
-            emit_change(session, company_id, "asset_indication_removed", {"asset": canonical, "indication": ind, "stage": stage, "therapeutic_area": ta}, evidence_id=evidence.id, asset_id=asset.id)
+            emit_change(
+                session,
+                company_id,
+                "asset_indication_removed",
+                {"asset": canonical, "indication": ind, "stage": stage, "therapeutic_area": ta},
+                evidence_id=evidence.id,
+                asset_id=asset.id,
+            )
 
-    emit_change(session, company_id, "pipeline_ingested", {"as_of_date": as_of_date, "pdf_url": pdf_url, "assets_seen": len(by_asset)}, evidence_id=evidence.id)
+    emit_change(
+        session,
+        company_id,
+        "pipeline_ingested",
+        {"as_of_date": as_of_date, "pdf_url": pdf_url, "assets_seen": len(by_asset)},
+        evidence_id=evidence.id,
+    )
     return len(by_asset)
