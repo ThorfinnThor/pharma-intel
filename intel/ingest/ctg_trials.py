@@ -4,6 +4,7 @@ import time
 from typing import Any, Iterable
 
 from loguru import logger
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 from rapidfuzz import fuzz
@@ -14,9 +15,6 @@ from ..repo import add_evidence, emit_change, start_run, finish_run
 from ..settings import settings
 from ..normalize import norm_text
 from .. import models
-
-from sqlalchemy.dialects.sqlite import insert as sqlite_insert
-from sqlalchemy.exc import IntegrityError
 
 
 CTG_STUDIES_ENDPOINT = "https://clinicaltrials.gov/api/v2/studies"
@@ -140,12 +138,36 @@ def _build_alias_index(session: Session, company_id: str) -> dict[str, int]:
 
 
 def _link_assets_for_trial(session: Session, company_id: str, trial: models.Trial, interventions: list[dict[str, Any]]) -> int:
-    alias_idx = _build_alias_index(session, company_id)
-    linked = 0
+    """Link interventions to company assets.
 
-    # clear existing links and rebuild (MVP simplicity)
+    Important: A single trial can mention the same asset multiple times (e.g.,
+    multiple intervention rows, combo arms, alternate spellings). The database
+    enforces a UNIQUE constraint on (trial_id, asset_id), so we must de-duplicate
+    links before inserting.
+    """
+
+    alias_idx = _build_alias_index(session, company_id)  # alias_norm -> asset_id
+
+    # Clear existing links and rebuild (MVP simplicity). Do NOT commit here;
+    # keep deletion + inserts in the same transaction so a failure does not
+    # leave the trial with zero links.
     session.query(models.TrialAssetLink).filter(models.TrialAssetLink.trial_id == trial.id).delete()
-    session.commit()
+
+    def _rank(mt: str) -> int:
+        return 2 if mt == "exact" else 1
+
+    def _choose_better(existing: tuple[str, int] | None, candidate: tuple[str, int]) -> tuple[str, int]:
+        if existing is None:
+            return candidate
+        # Prefer exact over fuzzy; otherwise higher score wins.
+        if _rank(candidate[0]) > _rank(existing[0]):
+            return candidate
+        if _rank(candidate[0]) < _rank(existing[0]):
+            return existing
+        return candidate if candidate[1] > existing[1] else existing
+
+    # asset_id -> (match_type, score)
+    best_for_asset: dict[int, tuple[str, int]] = {}
 
     for it in interventions:
         name = (it.get("name") or "").strip()
@@ -153,14 +175,14 @@ def _link_assets_for_trial(session: Session, company_id: str, trial: models.Tria
             continue
         n = norm_text(name)
 
-        # exact
+        # Exact match
         if n in alias_idx:
-            session.add(models.TrialAssetLink(trial_id=trial.id, asset_id=alias_idx[n], match_type="exact", match_score=100))
-            linked += 1
+            aid = alias_idx[n]
+            best_for_asset[aid] = _choose_better(best_for_asset.get(aid), ("exact", 100))
             continue
 
-        # fuzzy to protect against minor spelling differences
-        best_aid = None
+        # Fuzzy match to protect against minor spelling differences
+        best_aid: int | None = None
         best_score = 0
         for alias_norm, aid in alias_idx.items():
             # cheap pruning
@@ -170,12 +192,20 @@ def _link_assets_for_trial(session: Session, company_id: str, trial: models.Tria
             if sc > best_score:
                 best_score = sc
                 best_aid = aid
-        if best_aid is not None and best_score >= settings.fuzzy_threshold:
-            session.add(models.TrialAssetLink(trial_id=trial.id, asset_id=best_aid, match_type="fuzzy", match_score=int(best_score)))
-            linked += 1
 
-    session.commit()
-    return linked
+        if best_aid is not None and best_score >= settings.fuzzy_threshold:
+            best_for_asset[best_aid] = _choose_better(best_for_asset.get(best_aid), ("fuzzy", int(best_score)))
+
+    for aid, (mt, sc) in best_for_asset.items():
+        session.add(models.TrialAssetLink(trial_id=trial.id, asset_id=aid, match_type=mt, match_score=sc))
+
+    try:
+        session.commit()
+    except IntegrityError:
+        session.rollback()
+        raise
+
+    return len(best_for_asset)
 
 
 def ingest_trials_for_company(
@@ -187,6 +217,7 @@ def ingest_trials_for_company(
 ) -> dict[str, Any]:
     statuses = statuses or DEFAULT_ACTIVE_STATUSES
     run = start_run(session, company_id, "trials")
+    run_id = int(run.id)
     try:
         alias_terms = _get_asset_alias_terms(session, company_id)
         logger.info("CTG: querying {} alias terms for {}", len(alias_terms), company_id)
@@ -297,9 +328,22 @@ def ingest_trials_for_company(
                     break
 
         emit_change(session, company_id, "trials_ingested", {"trials_seen": len(seen_nct), "inserted": inserted, "updated": updated, "status_changed": status_changed})
-        finish_run(session, run.id, "ok", notes=f"seen={len(seen_nct)} inserted={inserted} updated={updated}")
+        finish_run(session, run_id, "ok", notes=f"seen={len(seen_nct)} inserted={inserted} updated={updated}")
         return {"seen": len(seen_nct), "inserted": inserted, "updated": updated, "status_changed": status_changed}
 
     except Exception as e:
-        finish_run(session, run.id, "error", notes=str(e))
+        # If the exception happened during a flush/commit, SQLAlchemy requires a
+        # rollback before any further DB work (including updating the run row).
+        try:
+            session.rollback()
+        except Exception:
+            pass
+        try:
+            finish_run(session, run_id, "error", notes=str(e))
+        except Exception:
+            # Don't mask the original failure
+            try:
+                session.rollback()
+            except Exception:
+                pass
         raise
