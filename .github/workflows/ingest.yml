@@ -71,6 +71,13 @@ jobs:
           python -m intel.cli ingest-trials --company jnj
           python -m intel.cli ingest-trials --company immatics
 
+      - name: Clean DB (sanitize asset names + merge duplicates)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m intel.cleanup --db data/intel.db --companies jnj immatics
+
+
       - name: Generate exports (JSON + CSV)
         shell: bash
         run: |
