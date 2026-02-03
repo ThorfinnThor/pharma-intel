@@ -1,0 +1,211 @@
+{
+  "generated_at": "2026-02-03T10:37:09Z",
+  "company_id": "immatics",
+  "company_name": "Immatics",
+  "asset_count": 8,
+  "change_count": 31,
+  "assets": [
+    {
+      "asset_id": 48,
+      "asset_name": "IMA203CD8",
+      "aliases": [
+        "IMA203CD8"
+      ],
+      "indications": [
+        {
+          "indication": "Gynecologic cancers; other solid cancers",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Gynecologic cancers; other solid cancers",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ]
+    },
+    {
+      "asset_id": 51,
+      "asset_name": "IMA401",
+      "aliases": [
+        "IMA401"
+      ],
+      "indications": [
+        {
+          "indication": "HNSCC, sqNSCLC, other solid cancers",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "HNSCC, sqNSCLC, other solid cancers",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ]
+    },
+    {
+      "asset_id": 49,
+      "asset_name": "IMA402",
+      "aliases": [
+        "IMA402"
+      ],
+      "indications": [
+        {
+          "indication": "Melanoma, gynecologic cancers, other solid cancers",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Melanoma, gynecologic cancers, other solid cancers",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ]
+    },
+    {
+      "asset_id": 50,
+      "asset_name": "IMA402 + ICI",
+      "aliases": [
+        "ICI",
+        "IMA402",
+        "IMA402 + ICI"
+      ],
+      "indications": [
+        {
+          "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ]
+    },
+    {
+      "asset_id": 52,
+      "asset_name": "Undisclosed bispecific",
+      "aliases": [
+        "Undisclosed bispecific"
+      ],
+      "indications": [
+        {
+          "indication": "Undisclosed",
+          "stage": "Preclinical",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Undisclosed",
+          "stage": "Preclinical",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ]
+    },
+    {
+      "asset_id": 53,
+      "asset_name": "Undisclosed cell therapy",
+      "aliases": [
+        "Undisclosed cell therapy"
+      ],
+      "indications": [
+        {
+          "indication": "Undisclosed",
+          "stage": "Preclinical",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Undisclosed",
+          "stage": "Preclinical",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ]
+    },
+    {
+      "asset_id": 46,
+      "asset_name": "anzu-cel",
+      "aliases": [
+        "anzu tresgene autoleucel",
+        "anzu-cel",
+        "anzu-cel (anzutresgene autoleucel)",
+        "anzu-cel (anzutresgene autoleucel, IMA203)",
+        "anzu-cel (IMA203)",
+        "anzu-tresgene autoleucel",
+        "anzutresgene autoleucel",
+        "IMA203",
+        "IMA203CD8"
+      ],
+      "indications": [
+        {
+          "indication": "2L melanoma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "2L melanoma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Solid cancers (in combination with mRNA-4203)",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Solid cancers (in combination with mRNA-4203)",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Uveal melanoma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Uveal melanoma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ]
+    },
+    {
+      "asset_id": 47,
+      "asset_name": "mRNA-4203",
+      "aliases": [
+        "mRNA-4203"
+      ],
+      "indications": [
+        {
+          "indication": "Solid cancers (combo with anzu-cel / IMA203)",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Solid cancers (combo with anzu-cel / IMA203)",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        }
+      ]
+    }
+  ]
+}

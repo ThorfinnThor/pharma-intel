@@ -1,0 +1,113 @@
+company_id,asset_id,asset_name,aliases,stage,therapeutic_area,as_of_date,indication
+jnj,23,(MajesTEC-4),(MajesTEC-4),Registration,Oncology,,Acute Myeloid Leukemia (cAMeLot-
+jnj,23,(MajesTEC-4),(MajesTEC-4),Registration,Oncology,,Acute Myeloid Leukemia (cAMeLot-
+jnj,14,(ORIGAMI-2),(ORIGAMI-2),Registration,Oncology,,Multiple Myeloma CD38 exposed
+jnj,14,(ORIGAMI-2),(ORIGAMI-2),Registration,Oncology,,Multiple Myeloma CD38 exposed
+jnj,34,* JNJ-5120,* JNJ-5120,Phase 1,Neuroscience,,Major Depressive
+jnj,34,* JNJ-5120,* JNJ-5120,Phase 1,Neuroscience,,Major Depressive
+jnj,9,Bleximenib,Bleximenib,Phase 3,Oncology,,"Newly Diagnosed AML, with Venetoclax and"
+jnj,9,Bleximenib,Bleximenib,Phase 3,Oncology,,"Newly Diagnosed AML, with Venetoclax and"
+jnj,31,CAPLYTA,CAPLYTA; CAPLYTA (lumateperone); lumateperone,Phase 1,Neuroscience,,Pediatric Psychiatric
+jnj,31,CAPLYTA,CAPLYTA; CAPLYTA (lumateperone); lumateperone,Phase 1,Neuroscience,,Pediatric Psychiatric
+jnj,3,CARVYKTI (Ciltacabtagene,CARVYKTI (Ciltacabtagene,Phase 1,Oncology,,Frontline Multiple
+jnj,3,CARVYKTI (Ciltacabtagene,CARVYKTI (Ciltacabtagene,Phase 1,Oncology,,Frontline Multiple
+jnj,29,Colitis,Colitis; Colitis (PURSUIT 2); PURSUIT 2,Phase 2,Immunology,,Psoriatic Arthritis
+jnj,29,Colitis,Colitis; Colitis (PURSUIT 2); PURSUIT 2,Phase 2,Immunology,,Psoriatic Arthritis
+jnj,39,Disorder,Disorder,Registration,Neuroscience,,with Suicidal Ideation
+jnj,39,Disorder,Disorder,Registration,Neuroscience,,with Suicidal Ideation
+jnj,10,ERLEADA,apalutamide; ERLEADA; ERLEADA (apalutamide),Phase 3,Oncology,,ASCT Localized Prostate
+jnj,10,ERLEADA,apalutamide; ERLEADA; ERLEADA (apalutamide),Phase 3,Oncology,,ASCT Localized Prostate
+jnj,38,Gravis Pediatrics,Gravis Pediatrics; Gravis Pediatrics (VIBRANCE MG); VIBRANCE MG,Registration,Neuroscience,,Demyelinating Polyneuropathy
+jnj,38,Gravis Pediatrics,Gravis Pediatrics; Gravis Pediatrics (VIBRANCE MG); VIBRANCE MG,Registration,Neuroscience,,Demyelinating Polyneuropathy
+jnj,30,Hemolytic Anemia,ENERGY; Hemolytic Anemia; Hemolytic Anemia (ENERGY),Registration,Immunology,,Alloimmune Thrombocytopenia
+jnj,30,Hemolytic Anemia,ENERGY; Hemolytic Anemia; Hemolytic Anemia (ENERGY),Registration,Immunology,,Alloimmune Thrombocytopenia
+jnj,1,INLEXZO (gemcitabine,INLEXZO (gemcitabine,Phase 1,Oncology,,Non Muscle Invasive
+jnj,1,INLEXZO (gemcitabine,INLEXZO (gemcitabine,Phase 1,Oncology,,Non Muscle Invasive
+jnj,1,INLEXZO (gemcitabine,INLEXZO (gemcitabine,Phase 1,Oncology,,Non Muscle Invasive
+jnj,1,INLEXZO (gemcitabine,INLEXZO (gemcitabine,Phase 1,Oncology,,Non Muscle Invasive
+jnj,33,ITI-1284,ITI-1284,Phase 1,Neuroscience,,Alzheimer's Disease-Related
+jnj,33,ITI-1284,ITI-1284,Phase 1,Neuroscience,,Alzheimer's Disease-Related
+jnj,33,ITI-1284,ITI-1284,Phase 3,Neuroscience,,with Generalized Anxiety
+jnj,33,ITI-1284,ITI-1284,Phase 3,Neuroscience,,with Generalized Anxiety
+jnj,35,Indications,Indications,Phase 2,Neuroscience,,for Major Depressive Disorder
+jnj,35,Indications,Indications,Phase 2,Neuroscience,,for Major Depressive Disorder
+jnj,36,JNJ-1887​ sCD59,JNJ-1887​ sCD59,Phase 3,Neuroscience,,Geographic Atrophy
+jnj,36,JNJ-1887​ sCD59,JNJ-1887​ sCD59,Phase 3,Neuroscience,,Geographic Atrophy
+jnj,15,JNJ-1900,JNJ-1900; JNJ-1900 (NBTXR3); NBTXR3,Phase 1,Oncology,,Lung Cancer
+jnj,15,JNJ-1900,JNJ-1900; JNJ-1900 (NBTXR3); NBTXR3,Phase 1,Oncology,,Lung Cancer
+jnj,20,JNJ-2175,JNJ-2175,Phase 3,Oncology,,Solid Tumors
+jnj,20,JNJ-2175,JNJ-2175,Phase 3,Oncology,,Solid Tumors
+jnj,16,JNJ-2761,JNJ-2761,Phase 1,Oncology,,Multiple Myeloma
+jnj,16,JNJ-2761,JNJ-2761,Phase 1,Oncology,,Multiple Myeloma
+jnj,17,JNJ-4680,JNJ-4680,Phase 1,Oncology,,Lung Cancer
+jnj,17,JNJ-4680,JNJ-4680,Phase 1,Oncology,,Lung Cancer
+jnj,21,JNJ-4681,JNJ-4681,Phase 3,Oncology,,Hematological Malignancies
+jnj,21,JNJ-4681,JNJ-4681,Phase 3,Oncology,,Hematological Malignancies
+jnj,28,JNJ-4804 Co-antibody,JNJ-4804 Co-antibody,Phase 1,Immunology,,Psoriatic Arthritis
+jnj,28,JNJ-4804 Co-antibody,JNJ-4804 Co-antibody,Phase 1,Immunology,,Psoriatic Arthritis
+jnj,28,JNJ-4804 Co-antibody,JNJ-4804 Co-antibody,Phase 3,Immunology,,Crohn's Disease
+jnj,28,JNJ-4804 Co-antibody,JNJ-4804 Co-antibody,Phase 3,Immunology,,Crohn's Disease
+jnj,18,JNJ-5322,JNJ-5322,Phase 1,Oncology,,Multiple Myeloma
+jnj,18,JNJ-5322,JNJ-5322,Phase 1,Oncology,,Multiple Myeloma
+jnj,22,JNJ-7446,JNJ-7446,Phase 3,Oncology,,Lung Cancer
+jnj,22,JNJ-7446,JNJ-7446,Phase 3,Oncology,,Lung Cancer
+jnj,44,MorphoSys AG; JNJ-2113: Protagonist Therapeutics;,MorphoSys AG; JNJ-2113: Protagonist Therapeutics;,Phase 3,,,and Memorial Sload Kettering; CARVYKTI: Legend XmAb CD28 bispecific antibodies; Xencor;
+jnj,44,MorphoSys AG; JNJ-2113: Protagonist Therapeutics;,MorphoSys AG; JNJ-2113: Protagonist Therapeutics;,Phase 3,,,and Memorial Sload Kettering; CARVYKTI: Legend XmAb CD28 bispecific antibodies; Xencor;
+jnj,5,RYBREVANT,amivantamab; RYBREVANT; RYBREVANT (amivantamab),Phase 3,Oncology,,Colorectal Cancer
+jnj,5,RYBREVANT,amivantamab; RYBREVANT; RYBREVANT (amivantamab),Phase 3,Oncology,,Colorectal Cancer
+jnj,43,S I R T U R O,S I R T U R O,Phase 3,,,L e p r o s y under review by regulatory bodies. Inclusion in the & Johnson assumes no obligation to update Long acting HIV injectible treatment regimen
+jnj,43,S I R T U R O,S I R T U R O,Phase 3,,,L e p r o s y under review by regulatory bodies. Inclusion in the & Johnson assumes no obligation to update Long acting HIV injectible treatment regimen
+jnj,37,SPRAVATO,esketamine; SPRAVATO; SPRAVATO (esketamine),Phase 3,Neuroscience,,Major Depressive Disorder Pediatrics
+jnj,37,SPRAVATO,esketamine; SPRAVATO; SPRAVATO (esketamine),Phase 3,Neuroscience,,Major Depressive Disorder Pediatrics
+jnj,24,STELARA,STELARA; STELARA (ustekinumab); ustekinumab,Phase 1,Immunology,,Pediatric Juvenile
+jnj,24,STELARA,STELARA; STELARA (ustekinumab); ustekinumab,Phase 1,Immunology,,Pediatric Juvenile
+jnj,12,TALVEY + TECVAYLI,TALVEY; TALVEY + TECVAYLI; TECVAYLI,Phase 3,Oncology,,Relapsed Refractory
+jnj,12,TALVEY + TECVAYLI,TALVEY; TALVEY + TECVAYLI; TECVAYLI,Phase 3,Oncology,,Relapsed Refractory
+jnj,12,TALVEY + TECVAYLI,TALVEY; TALVEY + TECVAYLI; TECVAYLI,Phase 3,Oncology,,Relapsed Refractory
+jnj,12,TALVEY + TECVAYLI,TALVEY; TALVEY + TECVAYLI; TECVAYLI,Phase 3,Oncology,,Relapsed Refractory
+jnj,2,TECVAYLI,teclistamab; TECVAYLI; TECVAYLI (teclistamab),Phase 1,Oncology,,Multiple Myeloma
+jnj,2,TECVAYLI,teclistamab; TECVAYLI; TECVAYLI (teclistamab),Phase 1,Oncology,,Multiple Myeloma
+jnj,2,TECVAYLI,teclistamab; TECVAYLI; TECVAYLI (teclistamab),Phase 1,Oncology,,Relapsed Refractory
+jnj,2,TECVAYLI,teclistamab; TECVAYLI; TECVAYLI (teclistamab),Phase 1,Oncology,,Relapsed Refractory
+jnj,25,TREMFYA,guselkumab; TREMFYA; TREMFYA (guselkumab),Phase 1,Immunology,,Pediatric Ulcerative
+jnj,25,TREMFYA,guselkumab; TREMFYA; TREMFYA (guselkumab),Phase 1,Immunology,,Pediatric Ulcerative
+jnj,25,TREMFYA,guselkumab; TREMFYA; TREMFYA (guselkumab),Phase 1,Immunology,,Ulcerative Colitis
+jnj,25,TREMFYA,guselkumab; TREMFYA; TREMFYA (guselkumab),Phase 1,Immunology,,Ulcerative Colitis
+jnj,25,TREMFYA,guselkumab; TREMFYA; TREMFYA (guselkumab),Phase 3,Immunology,,Pediatric Juvenile Psoriatic
+jnj,25,TREMFYA,guselkumab; TREMFYA; TREMFYA (guselkumab),Phase 3,Immunology,,Pediatric Juvenile Psoriatic
+jnj,25,TREMFYA,guselkumab; TREMFYA; TREMFYA (guselkumab),Phase 3,Immunology,,Pediatric Psoriasis
+jnj,25,TREMFYA,guselkumab; TREMFYA; TREMFYA (guselkumab),Phase 3,Immunology,,Pediatric Psoriasis
+jnj,42,UCL Business Plc; JNJ-1887: Hemera Biosciences;,UCL Business Plc; JNJ-1887: Hemera Biosciences;,Phase 2,,,and Mitsubishi Tanabe Pharma Corporation; TREMFYA: Genmab A/S; ERLEADA: Regents of California Genmab A/S; ENHANZE platform; Halozyme Therapeutics;
+jnj,42,UCL Business Plc; JNJ-1887: Hemera Biosciences;,UCL Business Plc; JNJ-1887: Hemera Biosciences;,Phase 2,,,and Mitsubishi Tanabe Pharma Corporation; TREMFYA: Genmab A/S; ERLEADA: Regents of California Genmab A/S; ENHANZE platform; Halozyme Therapeutics;
+jnj,41,a c t o r X l a ),a c t o r X l a ),Phase 2,,,i o n through clinical trials as well as those to the best of the Company's knowledge. Johnson
+jnj,41,a c t o r X l a ),a c t o r X l a ),Phase 2,,,i o n through clinical trials as well as those to the best of the Company's knowledge. Johnson
+jnj,6,autoleucel),autoleucel),Phase 2,Oncology,,Myeloma Transplant Eligible vs
+jnj,6,autoleucel),autoleucel),Phase 2,Oncology,,Myeloma Transplant Eligible vs
+jnj,19,bleximenib,bleximenib,Phase 3,Oncology,,Relapsed Refractory 1)
+jnj,19,bleximenib,bleximenib,Phase 3,Oncology,,Relapsed Refractory 1)
+jnj,26,icotrokinra,icotrokinra,Phase 1,Immunology,,Psoriatic Arthritis
+jnj,26,icotrokinra,icotrokinra,Phase 1,Immunology,,Psoriatic Arthritis
+jnj,7,intravesical delivery,intravesical delivery,Phase 2,Oncology,,Bladder Cancer BCG-naïve
+jnj,7,intravesical delivery,intravesical delivery,Phase 2,Oncology,,Bladder Cancer BCG-naïve
+jnj,13,intravesical delivery system),intravesical delivery system),Registration,Oncology,,Invasive Bladder Cancer BCG
+jnj,13,intravesical delivery system),intravesical delivery system),Registration,Oncology,,Invasive Bladder Cancer BCG
+jnj,40,m i l v e x i a n ( F,m i l v e x i a n ( F,Phase 1,,,"A t r i a l F i b r i l l a t assets. The pipeline includes assets currently progressing This information is as of January 21, 2026 -milvexian: Bristol Myers Squibb; AAV-RPGR: Company, a subsidiary of Merck & Co., Inc. BTG International; DARZALEX and DARZALEX FASPRO: Duobody Platform bispecific antibody programs:"
+jnj,40,m i l v e x i a n ( F,m i l v e x i a n ( F,Phase 1,,,"A t r i a l F i b r i l l a t assets. The pipeline includes assets currently progressing This information is as of January 21, 2026 -milvexian: Bristol Myers Squibb; AAV-RPGR: Company, a subsidiary of Merck & Co., Inc. BTG International; DARZALEX and DARZALEX FASPRO: Duobody Platform bispecific antibody programs:"
+jnj,27,nipocalimab​,nipocalimab​,Phase 1,Immunology,,Hemolytic Disease
+jnj,27,nipocalimab​,nipocalimab​,Phase 1,Immunology,,Hemolytic Disease
+jnj,27,nipocalimab​,nipocalimab​,Phase 3,Immunology,,Fetal and Neonatal
+jnj,27,nipocalimab​,nipocalimab​,Phase 3,Immunology,,Fetal and Neonatal
+jnj,27,nipocalimab​,nipocalimab​,Phase 3,Immunology,,Warm Autoimmune
+jnj,27,nipocalimab​,nipocalimab​,Phase 3,Immunology,,Warm Autoimmune
+jnj,27,nipocalimab​,nipocalimab​,Phase 3,Neuroscience,,Chronic Inflammatory
+jnj,27,nipocalimab​,nipocalimab​,Phase 3,Neuroscience,,Chronic Inflammatory
+jnj,4,pasritamig,pasritamig,Phase 1,Oncology,,Prostate Cancer
+jnj,4,pasritamig,pasritamig,Phase 1,Oncology,,Prostate Cancer
+jnj,32,seltorexant,seltorexant,Phase 1,Neuroscience,,Adjunctive Treatment Insomnia Symptoms
+jnj,32,seltorexant,seltorexant,Phase 1,Neuroscience,,Adjunctive Treatment Insomnia Symptoms
+jnj,11,system) INLEXZO (gemcitabine,system) INLEXZO (gemcitabine,Phase 3,Oncology,,High Risk High Risk Non Muscle
+jnj,11,system) INLEXZO (gemcitabine,system) INLEXZO (gemcitabine,Phase 3,Oncology,,High Risk High Risk Non Muscle
+jnj,8,system) RYBREVANT,amivantamab; system) RYBREVANT; system) RYBREVANT (amivantamab),Phase 3,Oncology,,Frontline Non Small
+jnj,8,system) RYBREVANT,amivantamab; system) RYBREVANT; system) RYBREVANT (amivantamab),Phase 3,Oncology,,Frontline Non Small
+jnj,45,y p e r t e n s i o n 7 5 m g,U N I S U S; y p e r t e n s i o n 7 5 m g; y p e r t e n s i o n 7 5 m g ( U N I S U S ),Registration,,,"pipeline is based on the current status of these this information. *AC Immune ACI-35.030. of rilpivirine and cabotegravir: ViiV Healthcare; Tau Immunotherapy: AC Immune SA; Biotech; AKEEGA: TESARO, an oncology- iPSC-derived chimeric antigen receptor"
+jnj,45,y p e r t e n s i o n 7 5 m g,U N I S U S; y p e r t e n s i o n 7 5 m g; y p e r t e n s i o n 7 5 m g ( U N I S U S ),Registration,,,"pipeline is based on the current status of these this information. *AC Immune ACI-35.030. of rilpivirine and cabotegravir: ViiV Healthcare; Tau Immunotherapy: AC Immune SA; Biotech; AKEEGA: TESARO, an oncology- iPSC-derived chimeric antigen receptor"
