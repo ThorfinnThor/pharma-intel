@@ -1,557 +1,316 @@
 from __future__ import annotations
 
 import argparse
-import datetime as dt
 import json
+import os
 import sqlite3
-from collections import Counter, defaultdict
+from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Tuple
 
+from intel.sanitize import sanitize_asset_label, is_plausible_asset_label
 
-# ---------- utilities ----------
-
-def utc_now_iso() -> str:
-    return dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
-
-
-def ensure_dir(p: Path) -> None:
-    p.mkdir(parents=True, exist_ok=True)
-
-
-def table_exists(conn: sqlite3.Connection, name: str) -> bool:
-    cur = conn.execute(
-        "SELECT 1 FROM sqlite_master WHERE type='table' AND name=? LIMIT 1", (name,)
-    )
-    return cur.fetchone() is not None
-
-
-def get_columns(conn: sqlite3.Connection, table: str) -> List[str]:
-    cur = conn.execute(f"PRAGMA table_info({table})")
-    return [r[1] for r in cur.fetchall()]
-
-
-def pick_column(cols: List[str], candidates: List[str]) -> Optional[str]:
-    for c in candidates:
-        if c in cols:
-            return c
-    return None
-
-
-def safe_json_loads(x: Any) -> Any:
-    if x is None:
-        return None
-    if isinstance(x, (dict, list)):
-        return x
-    if isinstance(x, (bytes, bytearray)):
-        try:
-            x = x.decode("utf-8", errors="replace")
-        except Exception:
-            return str(x)
-    if isinstance(x, str):
-        s = x.strip()
-        if not s:
-            return None
-        try:
-            return json.loads(s)
-        except Exception:
-            return s
-    return x
-
-
-# ---------- stage ranking ----------
 
 STAGE_RANK = {
-    # early
-    "discovery": 10,
-    "preclinical": 20,
-    # clinical
-    "phase 1": 30,
-    "phase 1/2": 35,
-    "phase 2": 40,
-    "phase 2/3": 45,
-    "phase 3": 50,
-    # late
-    "registration": 60,
-    "filed": 60,
-    "approved": 70,
+    "Discovery": 0,
+    "Preclinical": 1,
+    "Phase 1": 2,
+    "Phase 2": 3,
+    "Phase 3": 4,
+    "Registration": 5,
+    "Approved": 6,
+    "Unknown": -1,
 }
 
-def normalize_stage(stage: Optional[str]) -> Optional[str]:
+
+def now_iso() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def stage_rank(stage: str | None) -> int:
     if not stage:
-        return None
-    s = str(stage).strip().lower()
-    s = s.replace("phase i", "phase 1").replace("phase ii", "phase 2").replace("phase iii", "phase 3")
-    s = s.replace("ph1", "phase 1").replace("ph2", "phase 2").replace("ph3", "phase 3")
-    s = s.replace("registrat", "registration")
-    # keep original-like capitalization for display later
-    return s
-
-def best_stage(stages: List[Optional[str]]) -> Optional[str]:
-    best = None
-    best_rank = -1
-    for st in stages:
-        n = normalize_stage(st)
-        if not n:
-            continue
-        r = STAGE_RANK.get(n, 0)
-        if r > best_rank:
-            best_rank = r
-            best = n
-    return best
+        return -1
+    return STAGE_RANK.get(stage.strip(), -1)
 
 
-def display_stage(norm_stage: Optional[str]) -> str:
-    if not norm_stage:
-        return ""
-    # Title-case for common phases
-    if norm_stage.startswith("phase "):
-        return norm_stage.title().replace("Phase ", "Phase ")
-    if norm_stage == "registration":
-        return "Registration"
-    return norm_stage.title()
+def db_connect(db_path: str) -> sqlite3.Connection:
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    return conn
 
 
-# ---------- DB fetchers ----------
-
-def fetch_companies(conn: sqlite3.Connection) -> List[Dict[str, Any]]:
-    if table_exists(conn, "companies"):
-        cols = get_columns(conn, "companies")
-        id_col = pick_column(cols, ["id", "company_id"])
-        name_col = pick_column(cols, ["name", "company_name"])
-        if not id_col:
-            raise RuntimeError("companies table exists but no id/company_id column found")
-        q = f"SELECT {id_col} as company_id, {name_col or id_col} as company_name FROM companies ORDER BY company_id"
-        rows = conn.execute(q).fetchall()
-        return [{"company_id": r[0], "company_name": r[1]} for r in rows]
-
-    if table_exists(conn, "assets"):
-        cols = get_columns(conn, "assets")
-        cid = pick_column(cols, ["company_id"])
-        if not cid:
-            return []
-        rows = conn.execute(f"SELECT DISTINCT {cid} FROM assets ORDER BY {cid}").fetchall()
-        return [{"company_id": r[0], "company_name": r[0]} for r in rows]
-
-    return []
+def table_columns(conn: sqlite3.Connection, table: str) -> set[str]:
+    rows = conn.execute(f"PRAGMA table_info({table})").fetchall()
+    return {r["name"] for r in rows}
 
 
-def fetch_assets_with_indications(conn: sqlite3.Connection, company_id: str) -> List[Dict[str, Any]]:
-    if not table_exists(conn, "assets"):
-        return []
-
-    asset_cols = get_columns(conn, "assets")
-    a_id = pick_column(asset_cols, ["id"])
-    a_company = pick_column(asset_cols, ["company_id"])
-    a_name = pick_column(asset_cols, ["name", "asset_name", "canonical_name"])
-    if not (a_id and a_company and a_name):
-        return []
-
-    assets = conn.execute(
-        f"SELECT {a_id} as asset_id, {a_name} as asset_name FROM assets WHERE {a_company}=? ORDER BY {a_name}",
-        (company_id,),
-    ).fetchall()
-
-    out = [{"asset_id": r[0], "asset_name": r[1], "indications": []} for r in assets]
-
-    # attach indications (supports either asset_indications or indications)
-    ind_table = "asset_indications" if table_exists(conn, "asset_indications") else ("indications" if table_exists(conn, "indications") else None)
-    if not ind_table:
-        return out
-
-    cols = get_columns(conn, ind_table)
-    aid = pick_column(cols, ["asset_id"])
-    indication = pick_column(cols, ["indication", "condition"])
-    stage = pick_column(cols, ["stage", "phase"])
-    ta = pick_column(cols, ["therapeutic_area", "ta"])
-    as_of = pick_column(cols, ["as_of_date", "asof_date", "as_of"])
-
-    if not (aid and indication):
-        return out
-
-    select_cols = [aid, indication]
-    if stage: select_cols.append(stage)
-    if ta: select_cols.append(ta)
-    if as_of: select_cols.append(as_of)
-
-    rows = conn.execute(f"SELECT {', '.join(select_cols)} FROM {ind_table}").fetchall()
-
-    asset_map = {a["asset_id"]: a for a in out}
-    idx_a = 0
-    idx_i = 1
-    idx_s = select_cols.index(stage) if stage in select_cols else None
-    idx_t = select_cols.index(ta) if ta in select_cols else None
-    idx_d = select_cols.index(as_of) if as_of in select_cols else None
-
-    for r in rows:
-        asset_id = r[idx_a]
-        if asset_id not in asset_map:
-            continue
-        ind = r[idx_i]
-        if not ind:
-            continue
-        asset_map[asset_id]["indications"].append({
-            "indication": ind,
-            "stage": r[idx_s] if idx_s is not None else None,
-            "therapeutic_area": r[idx_t] if idx_t is not None else None,
-            "as_of_date": r[idx_d] if idx_d is not None else None,
-        })
-
-    # stable sort indications
-    for a in out:
-        a["indications"].sort(key=lambda x: (
-            str(x.get("stage") or ""),
-            str(x.get("therapeutic_area") or ""),
-            str(x.get("indication") or ""),
-            str(x.get("as_of_date") or ""),
-        ))
-
-    return out
+def load_company(conn: sqlite3.Connection, company_id: str) -> dict[str, Any]:
+    row = conn.execute("SELECT id, name FROM companies WHERE id = ?", (company_id,)).fetchone()
+    if not row:
+        raise SystemExit(f"Unknown company_id in DB: {company_id}")
+    return {"company_id": row["id"], "company_name": row["name"]}
 
 
-def fetch_recent_changes(conn: sqlite3.Connection, company_id: str, limit: int = 100) -> List[Dict[str, Any]]:
-    if not table_exists(conn, "change_events"):
-        return []
+def fetch_assets(conn: sqlite3.Connection, company_id: str) -> list[dict[str, Any]]:
+    cols = table_columns(conn, "assets")
+    name_col = "canonical_name" if "canonical_name" in cols else ("name" if "name" in cols else "asset_name")
+    disclosed_col = "is_disclosed" if "is_disclosed" in cols else None
 
-    cols = get_columns(conn, "change_events")
-    cid = pick_column(cols, ["company_id"])
-    etype = pick_column(cols, ["event_type", "type"])
-    created = pick_column(cols, ["created_at", "ts", "timestamp"])
-    payload = pick_column(cols, ["payload", "payload_json", "data"])
-    asset_id = pick_column(cols, ["asset_id"])
-    trial_id = pick_column(cols, ["trial_id"])
-
-    if not (cid and etype):
-        return []
-
-    select_cols = [etype]
-    if created: select_cols.append(created)
-    if payload: select_cols.append(payload)
-    if asset_id: select_cols.append(asset_id)
-    if trial_id: select_cols.append(trial_id)
-
-    order_by = created or etype
-
-    q = f"""
-    SELECT {', '.join(select_cols)}
-    FROM change_events
-    WHERE {cid}=?
-    ORDER BY {order_by} DESC
-    LIMIT ?
-    """
-    rows = conn.execute(q, (company_id, limit)).fetchall()
-
-    i_type = 0
-    i_created = select_cols.index(created) if created in select_cols else None
-    i_payload = select_cols.index(payload) if payload in select_cols else None
-    i_asset = select_cols.index(asset_id) if asset_id in select_cols else None
-    i_trial = select_cols.index(trial_id) if trial_id in select_cols else None
-
-    out = []
-    for r in rows:
-        out.append({
-            "event_type": r[i_type],
-            "created_at": r[i_created] if i_created is not None else None,
-            "asset_id": r[i_asset] if i_asset is not None else None,
-            "trial_id": r[i_trial] if i_trial is not None else None,
-            "payload": safe_json_loads(r[i_payload]) if i_payload is not None else None,
-        })
-    return out
-
-
-def fetch_trials(conn: sqlite3.Connection, company_id: str) -> List[Dict[str, Any]]:
-    if not table_exists(conn, "trials"):
-        return []
-
-    tcols = get_columns(conn, "trials")
-    t_id = pick_column(tcols, ["id"])
-    t_company = pick_column(tcols, ["company_id"])
-    nct = pick_column(tcols, ["nct_id", "nctId"])
-    status = pick_column(tcols, ["overall_status", "status"])
-    phase = pick_column(tcols, ["phase"])
-    last_upd = pick_column(tcols, ["last_update_posted", "last_update"])
-    title = pick_column(tcols, ["title"])
-    if not (t_id and t_company and nct):
-        return []
-
-    select_cols = [t_id, nct]
-    if title: select_cols.append(title)
-    if status: select_cols.append(status)
-    if phase: select_cols.append(phase)
-    if last_upd: select_cols.append(last_upd)
+    sel = ["id", name_col]
+    if disclosed_col:
+        sel.append(disclosed_col)
 
     rows = conn.execute(
-        f"SELECT {', '.join(select_cols)} FROM trials WHERE {t_company}=? ORDER BY {last_upd or nct} DESC",
+        f"SELECT {', '.join(sel)} FROM assets WHERE company_id = ?",
         (company_id,),
     ).fetchall()
 
-    i_id = 0
-    i_nct = 1
-    i_title = select_cols.index(title) if title in select_cols else None
-    i_status = select_cols.index(status) if status in select_cols else None
-    i_phase = select_cols.index(phase) if phase in select_cols else None
-    i_last = select_cols.index(last_upd) if last_upd in select_cols else None
-
     out = []
     for r in rows:
-        out.append({
-            "trial_id": r[i_id],
-            "nct_id": r[i_nct],
-            "title": r[i_title] if i_title is not None else None,
-            "overall_status": r[i_status] if i_status is not None else None,
-            "phase": r[i_phase] if i_phase is not None else None,
-            "last_update_posted": r[i_last] if i_last is not None else None,
-            "linked_assets": [],
-        })
+        raw = r[name_col]
+        clean = sanitize_asset_label(raw) or raw
+        if not is_plausible_asset_label(clean):
+            continue
+        if disclosed_col and int(r[disclosed_col]) == 0:
+            continue
+        out.append({"asset_id": r["id"], "asset_name": clean})
     return out
 
 
-def attach_trial_asset_links(conn: sqlite3.Connection, assets: List[Dict[str, Any]], trials: List[Dict[str, Any]]) -> None:
-    if not (table_exists(conn, "trial_asset_links") and table_exists(conn, "assets")):
-        return
+def fetch_indications(conn: sqlite3.Connection, asset_ids: list[int]) -> dict[int, list[dict[str, Any]]]:
+    if not asset_ids:
+        return {}
 
-    lcols = get_columns(conn, "trial_asset_links")
-    trial_id_col = pick_column(lcols, ["trial_id"])
-    asset_id_col = pick_column(lcols, ["asset_id"])
-    if not (trial_id_col and asset_id_col):
-        return
+    q = f"""
+    SELECT asset_id, indication, stage, therapeutic_area
+    FROM asset_indications
+    WHERE asset_id IN ({",".join(["?"] * len(asset_ids))})
+    """
+    rows = conn.execute(q, asset_ids).fetchall()
 
-    asset_name_by_id = {a["asset_id"]: a["asset_name"] for a in assets}
-    trial_by_id = {t["trial_id"]: t for t in trials}
+    m: dict[int, list[dict[str, Any]]] = {}
+    for r in rows:
+        m.setdefault(r["asset_id"], []).append(
+            {
+                "indication": r["indication"],
+                "stage": r["stage"],
+                "therapeutic_area": r["therapeutic_area"],
+            }
+        )
+    return m
 
-    rows = conn.execute(f"SELECT {trial_id_col}, {asset_id_col} FROM trial_asset_links").fetchall()
-    for tid, aid in rows:
-        if tid in trial_by_id and aid in asset_name_by_id:
-            trial_by_id[tid]["linked_assets"].append(asset_name_by_id[aid])
 
-    for t in trials:
-        t["linked_assets"] = sorted(set(t.get("linked_assets") or []), key=lambda s: s.lower())
+def fetch_linked_trial_counts(conn: sqlite3.Connection, company_id: str) -> dict[int, int]:
+    q = """
+    SELECT l.asset_id AS asset_id, COUNT(DISTINCT l.trial_id) AS n
+    FROM trial_asset_links l
+    JOIN trials t ON t.id = l.trial_id
+    WHERE t.company_id = ?
+    GROUP BY l.asset_id
+    """
+    rows = conn.execute(q, (company_id,)).fetchall()
+    return {int(r["asset_id"]): int(r["n"]) for r in rows}
 
 
-# ---------- report builders ----------
-
-def build_company_page(
-    company_id: str,
-    company_name: str,
-    assets: List[Dict[str, Any]],
-    changes: List[Dict[str, Any]],
-    trials: List[Dict[str, Any]],
-) -> Dict[str, Any]:
-    # KPIs
-    stages = []
-    assets_by_stage = Counter()
+def pick_top_assets(
+    assets: list[dict[str, Any]],
+    indications_by_asset: dict[int, list[dict[str, Any]]],
+    trial_counts: dict[int, int],
+    limit: int = 25,
+) -> list[dict[str, Any]]:
+    enriched = []
     for a in assets:
-        st = best_stage([i.get("stage") for i in (a.get("indications") or [])])
-        stages.append(st)
-        assets_by_stage[display_stage(st) or "Unspecified"] += 1
+        aid = a["asset_id"]
+        inds = indications_by_asset.get(aid, [])
+        highest = None
+        best_rank = -1
+        for ind in inds:
+            rk = stage_rank(ind.get("stage"))
+            if rk > best_rank:
+                best_rank = rk
+                highest = ind.get("stage")
 
-    trials_by_status = Counter()
-    for t in trials:
-        trials_by_status[(t.get("overall_status") or "Unspecified")] += 1
+        enriched.append(
+            {
+                "asset_id": aid,
+                "asset_name": a["asset_name"],
+                "highest_stage": highest or "Unknown",
+                "linked_trials_count": int(trial_counts.get(aid, 0)),
+                "indications": inds,
+            }
+        )
 
-    # assets with trials
-    assets_with_trials = set()
-    if trials:
-        linked_assets = set()
-        for t in trials:
-            for an in (t.get("linked_assets") or []):
-                linked_assets.add(an.lower())
-        for a in assets:
-            if a["asset_name"].lower() in linked_assets:
-                assets_with_trials.add(a["asset_name"].lower())
-
-    # last change per asset (best effort)
-    last_change_by_asset_id: Dict[Any, Any] = {}
-    for ch in changes:
-        aid = ch.get("asset_id")
-        if aid is None:
-            continue
-        ts = ch.get("created_at")
-        if aid not in last_change_by_asset_id:
-            last_change_by_asset_id[aid] = ts
-
-    # Top assets: highest stage first, then linked trials count, then name
-    trial_count_by_asset_name = Counter()
-    for t in trials:
-        for an in (t.get("linked_assets") or []):
-            trial_count_by_asset_name[an] += 1
-
-    def asset_sort_key(a: Dict[str, Any]) -> Tuple[int, int, str]:
-        st = best_stage([i.get("stage") for i in (a.get("indications") or [])])
-        r = STAGE_RANK.get(normalize_stage(st) or "", 0)
-        tc = trial_count_by_asset_name.get(a["asset_name"], 0)
-        return (r, tc, a["asset_name"].lower())
-
-    top_assets_sorted = sorted(assets, key=asset_sort_key, reverse=True)[:25]
-    top_assets = []
-    for a in top_assets_sorted:
-        inds = a.get("indications") or []
-        st = best_stage([i.get("stage") for i in inds])
-        top_assets.append({
-            "asset_id": a.get("asset_id"),
-            "asset_name": a.get("asset_name"),
-            "highest_stage": display_stage(st) or "Unspecified",
-            "linked_trials_count": int(trial_count_by_asset_name.get(a.get("asset_name"), 0)),
-            "indications": [
-                {
-                    "indication": i.get("indication"),
-                    "stage": i.get("stage"),
-                    "therapeutic_area": i.get("therapeutic_area"),
-                    "as_of_date": i.get("as_of_date"),
-                }
-                for i in inds[:5]
-            ],
-            "last_change_at": last_change_by_asset_id.get(a.get("asset_id")),
-        })
-
-    page = {
-        "generated_at": utc_now_iso(),
-        "company_id": company_id,
-        "company_name": company_name,
-        "kpis": {
-            "assets_total": len(assets),
-            "assets_with_trials": len(assets_with_trials),
-            "trials_total": len(trials),
-            "trials_by_status": dict(trials_by_status),
-            "assets_by_stage": dict(assets_by_stage),
-        },
-        "top_assets": top_assets,
-        "recent_changes": changes[:50],
-        "trials": trials[:200],  # cap
-    }
-    return page
+    enriched.sort(key=lambda x: (stage_rank(x["highest_stage"]), x["linked_trials_count"], x["asset_name"]), reverse=True)
+    return enriched[:limit]
 
 
-def render_company_markdown(page: Dict[str, Any]) -> str:
-    k = page["kpis"]
+def fetch_recent_changes(conn: sqlite3.Connection, company_id: str, limit: int = 200) -> list[dict[str, Any]]:
+    cols = table_columns(conn, "change_events")
+    ts_col = "occurred_at" if "occurred_at" in cols else ("created_at" if "created_at" in cols else None)
+    if not ts_col:
+        ts_col = "occurred_at"
+
+    rows = conn.execute(
+        f"SELECT event_type, {ts_col} AS ts, payload FROM change_events WHERE company_id = ? ORDER BY {ts_col} DESC LIMIT ?",
+        (company_id, limit),
+    ).fetchall()
+
+    out = []
+    for r in rows:
+        out.append(
+            {
+                "event_type": r["event_type"],
+                "created_at": r["ts"],
+                "occurred_at": r["ts"],
+                "payload": json.loads(r["payload"]) if isinstance(r["payload"], str) else r["payload"],
+            }
+        )
+    return out
+
+
+def fetch_trials(conn: sqlite3.Connection, company_id: str, limit: int = 50) -> list[dict[str, Any]]:
+    rows = conn.execute(
+        """
+        SELECT id, nct_id, overall_status, phase, last_update_posted
+        FROM trials
+        WHERE company_id = ?
+        ORDER BY COALESCE(last_update_posted, '') DESC, id DESC
+        LIMIT ?
+        """,
+        (company_id, limit),
+    ).fetchall()
+
+    trial_ids = [int(r["id"]) for r in rows]
+    linked_assets: dict[int, list[str]] = {tid: [] for tid in trial_ids}
+
+    if trial_ids:
+        link_rows = conn.execute(
+            f"""
+            SELECT l.trial_id AS trial_id, a.canonical_name AS asset_name
+            FROM trial_asset_links l
+            JOIN assets a ON a.id = l.asset_id
+            WHERE l.trial_id IN ({",".join(["?"] * len(trial_ids))})
+            """,
+            trial_ids,
+        ).fetchall()
+
+        for lr in link_rows:
+            nm = sanitize_asset_label(lr["asset_name"]) or lr["asset_name"]
+            if is_plausible_asset_label(nm):
+                linked_assets[int(lr["trial_id"])].append(nm)
+
+    out = []
+    for r in rows:
+        out.append(
+            {
+                "nct_id": r["nct_id"],
+                "overall_status": r["overall_status"],
+                "phase": r["phase"],
+                "last_update_posted": r["last_update_posted"],
+                "linked_assets": sorted(set(linked_assets.get(int(r["id"]), []))),
+            }
+        )
+    return out
+
+
+def write_company_md(page: dict[str, Any], outpath: Path) -> None:
     lines = []
     lines.append(f"# {page['company_name']} ({page['company_id']})")
     lines.append("")
     lines.append(f"Generated: `{page['generated_at']}`")
     lines.append("")
-    lines.append("## KPIs")
-    lines.append("")
+    k = page["kpis"]
     lines.append(f"- Assets: **{k['assets_total']}**")
     lines.append(f"- Assets with linked trials: **{k['assets_with_trials']}**")
     lines.append(f"- Trials: **{k['trials_total']}**")
-    lines.append("")
-    lines.append("### Assets by stage")
-    for stage, cnt in sorted(k["assets_by_stage"].items(), key=lambda x: (-x[1], x[0])):
-        lines.append(f"- {stage}: **{cnt}**")
-    lines.append("")
-    lines.append("### Trials by status")
-    for status, cnt in sorted(k["trials_by_status"].items(), key=lambda x: (-x[1], x[0])):
-        lines.append(f"- {status}: **{cnt}**")
     lines.append("")
     lines.append("## Top assets")
     lines.append("")
     lines.append("| Asset | Highest stage | Linked trials | Example indications |")
     lines.append("|---|---:|---:|---|")
-    for a in page["top_assets"][:25]:
-        inds = a.get("indications") or []
-        ind_txt = "; ".join([i.get("indication") or "" for i in inds[:3] if i.get("indication")]) or ""
-        lines.append(f"| {a['asset_name']} | {a['highest_stage']} | {a['linked_trials_count']} | {ind_txt} |")
-    lines.append("")
-    lines.append("## Recent changes")
-    lines.append("")
-    for ch in page.get("recent_changes") or []:
-        ts = ch.get("created_at") or ""
-        et = ch.get("event_type") or ""
-        payload = ch.get("payload")
-        payload_s = json.dumps(payload, ensure_ascii=False) if isinstance(payload, (dict, list)) else (payload or "")
-        if len(payload_s) > 180:
-            payload_s = payload_s[:180] + "…"
-        lines.append(f"- `{ts}` **{et}** — {payload_s}")
-    lines.append("")
-    lines.append("## Trials (latest)")
-    lines.append("")
-    if not page.get("trials"):
-        lines.append("_No trials table found in DB or no trials ingested yet._")
-    else:
-        lines.append("| NCT | Status | Phase | Last update | Linked assets |")
-        lines.append("|---|---|---|---|---|")
-        for t in page["trials"][:50]:
-            nct = t.get("nct_id") or ""
-            st = t.get("overall_status") or ""
-            ph = t.get("phase") or ""
-            lu = t.get("last_update_posted") or ""
-            la = "; ".join(t.get("linked_assets") or [])
-            lines.append(f"| {nct} | {st} | {ph} | {lu} | {la} |")
-    lines.append("")
-    return "\n".join(lines)
+    for a in page["top_assets"]:
+        inds = [i.get("indication") for i in (a.get("indications") or []) if i.get("indication")]
+        uniq = []
+        for x in inds:
+            if x not in uniq:
+                uniq.append(x)
+        example = "; ".join(uniq[:2])
+        lines.append(f"| {a['asset_name']} | {a['highest_stage']} | {a['linked_trials_count']} | {example} |")
+
+    outpath.write_text("\n".join(lines), encoding="utf-8")
 
 
-def write_json(path: Path, obj: Any) -> None:
-    ensure_dir(path.parent)
-    path.write_text(json.dumps(obj, indent=2, ensure_ascii=False), encoding="utf-8")
+def build_company_page(conn: sqlite3.Connection, company_id: str) -> dict[str, Any]:
+    comp = load_company(conn, company_id)
+    assets = fetch_assets(conn, company_id)
+    inds = fetch_indications(conn, [a["asset_id"] for a in assets])
+    trial_counts = fetch_linked_trial_counts(conn, company_id)
 
+    top_assets = pick_top_assets(assets, inds, trial_counts, limit=25)
 
-def write_text(path: Path, text: str) -> None:
-    ensure_dir(path.parent)
-    path.write_text(text, encoding="utf-8")
+    assets_total = len(assets)
+    assets_with_trials = sum(1 for a in assets if trial_counts.get(a["asset_id"], 0) > 0)
+    trials_total = conn.execute("SELECT COUNT(*) AS n FROM trials WHERE company_id = ?", (company_id,)).fetchone()["n"]
+
+    page = {
+        "company_id": comp["company_id"],
+        "company_name": comp["company_name"],
+        "generated_at": now_iso(),
+        "kpis": {
+            "assets_total": int(assets_total),
+            "assets_with_trials": int(assets_with_trials),
+            "trials_total": int(trials_total),
+        },
+        "top_assets": top_assets,
+        "recent_changes": fetch_recent_changes(conn, company_id, limit=200),
+        "trials": fetch_trials(conn, company_id, limit=50),
+    }
+    return page
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description="Generate company intelligence pages (JSON + Markdown) from SQLite DB.")
-    ap.add_argument("--db", default="data/intel.db", help="Path to SQLite DB (default: data/intel.db)")
-    ap.add_argument("--outdir", default="exports/site", help="Output directory (default: exports/site)")
-    ap.add_argument("--companies", nargs="*", default=None, help="Company IDs to export (default: all in DB)")
-    ap.add_argument("--changes-limit", type=int, default=100, help="Recent changes per company (default: 100)")
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--db", default="data/intel.db")
+    ap.add_argument("--outdir", default="exports/site")
+    ap.add_argument("--companies", nargs="*", default=None)
     args = ap.parse_args()
 
-    db_path = Path(args.db)
     outdir = Path(args.outdir)
+    outdir.mkdir(parents=True, exist_ok=True)
 
-    if not db_path.exists():
-        raise SystemExit(f"DB not found: {db_path}")
+    conn = db_connect(args.db)
 
-    conn = sqlite3.connect(str(db_path))
-    companies = fetch_companies(conn)
     if args.companies:
-        wanted = set(args.companies)
-        companies = [c for c in companies if c["company_id"] in wanted]
+        companies = args.companies
+    else:
+        companies = [r["id"] for r in conn.execute("SELECT id FROM companies ORDER BY id").fetchall()]
 
-    index = {
-        "generated_at": utc_now_iso(),
-        "companies": [],
-    }
+    index = {"generated_at": now_iso(), "companies": []}
 
-    for c in companies:
-        cid = c["company_id"]
-        cname = c["company_name"]
+    for cid in companies:
+        page = build_company_page(conn, cid)
+        (outdir / f"{cid}.json").write_text(json.dumps(page, indent=2), encoding="utf-8")
+        write_company_md(page, outdir / f"{cid}.md")
 
-        assets = fetch_assets_with_indications(conn, cid)
-        changes = fetch_recent_changes(conn, cid, limit=args.changes_limit)
-        trials = fetch_trials(conn, cid)
-        attach_trial_asset_links(conn, assets, trials)
+        index["companies"].append(
+            {
+                "company_id": page["company_id"],
+                "company_name": page["company_name"],
+                "assets_total": page["kpis"]["assets_total"],
+                "trials_total": page["kpis"]["trials_total"],
+            }
+        )
 
-        page = build_company_page(cid, cname, assets, changes, trials)
-        md = render_company_markdown(page)
+    (outdir / "index.json").write_text(json.dumps(index, indent=2), encoding="utf-8")
 
-        write_json(outdir / f"{cid}.json", page)
-        write_text(outdir / f"{cid}.md", md)
-
-        index["companies"].append({
-            "company_id": cid,
-            "company_name": cname,
-            "assets_total": page["kpis"]["assets_total"],
-            "trials_total": page["kpis"]["trials_total"],
-            "path_json": f"{cid}.json",
-            "path_md": f"{cid}.md",
-        })
-
-    write_json(outdir / "index.json", index)
-
-    # Simple markdown index for humans
-    md_lines = ["# Company Intelligence Index", "", f"Generated: `{index['generated_at']}`", ""]
+    # basic index.md
+    md = ["# Pharma Intel", "", f"Generated: `{index['generated_at']}`", "", "## Companies", ""]
     for c in index["companies"]:
-        md_lines.append(f"- **{c['company_name']}** (`{c['company_id']}`): "
-                        f"{c['assets_total']} assets, {c['trials_total']} trials — "
-                        f"[md]({c['path_md']}) / [json]({c['path_json']})")
-    write_text(outdir / "index.md", "\n".join(md_lines))
+        md.append(f"- **{c['company_name']}** ({c['company_id']}): {c['assets_total']} assets, {c['trials_total']} trials")
+    (outdir / "index.md").write_text("\n".join(md), encoding="utf-8")
 
     conn.close()
-    print(f"[report] wrote company pages to {outdir.resolve()}")
 
 
 if __name__ == "__main__":
