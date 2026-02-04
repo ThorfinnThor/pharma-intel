@@ -3,15 +3,16 @@ from __future__ import annotations
 import re
 from typing import Optional
 
-
 _WS = re.compile(r"\s+")
 _LEADING_BULLETS = re.compile(r"^[\u2022\-\*\•\·\u00b7]+\s*")
 
-# Keep a conservative whitelist for asset labels (remove ; : | etc.)
+# Conservative whitelist for asset labels
 _ALLOWED = re.compile(r"[^A-Za-z0-9\-\+\./\(\) ]+")
 
+# Match "system)" or "system )" or "SYSTEM )" etc.
+_PREFIX_NOISE = re.compile(r"^\s*(system|platform)\s*\)\s*", re.IGNORECASE)
+
 STOP_ASSET_EXACT = {
-    # common column headers / section labels that leak from PDFs
     "indications",
     "indication",
     "delivery",
@@ -27,14 +28,8 @@ STOP_ASSET_EXACT = {
     "select other areas",
     "pediatrics",
     "colitis",
-    # suffix-only CAR-T fragments seen in J&J PDFs
-    "autoleucel",
 }
 
-# sometimes "Factor XIa" gets clipped into "a c t o r X|a)" -> "actorXIa"
-STOP_ASSET_NOSPACE = {"factorxia", "actorxia"}
-
-# partner/corporate tokens that should NEVER be part of an asset name
 CORP_TOKENS = {
     "plc",
     "biosciences",
@@ -48,6 +43,7 @@ CORP_TOKENS = {
     "ag",
 }
 
+# strings that appear as disclaimers in indications and should be cut off
 IND_CUTOFF_PATTERNS = [
     r"\b(inclusion in|inclusion of)\b",
     r"\bthrough clinical trials\b",
@@ -71,8 +67,13 @@ def _collapse_spaced_letters(s: str) -> str:
 
 
 def _strip_unbalanced_parens(s: str) -> str:
+    # Remove extra closing parens at end
     while s.endswith(")") and s.count("(") < s.count(")"):
         s = s[:-1].rstrip()
+    # Remove extra leading closing parens too: "autoleucel)" / ")Something"
+    while s.startswith(")") and s.count("(") < s.count(")"):
+        s = s[1:].lstrip()
+    # Remove extra opening parens at start
     while s.startswith("(") and s.count("(") > s.count(")"):
         s = s[1:].lstrip()
     return s
@@ -83,17 +84,18 @@ def sanitize_asset_label(raw: str) -> Optional[str]:
         return None
 
     s = str(raw)
-    s = s.replace("\u00a0", " ")
+    s = s.replace("\u00a0", " ")  # nbsp
     s = _LEADING_BULLETS.sub("", s.strip())
     s = _WS.sub(" ", s).strip()
 
-    # remove common prefix noise like "system)"
-    s = re.sub(r"^(system|platform)\)\s*", "", s, flags=re.IGNORECASE)
+    # Remove known prefix noise like "system) "
+    s = _PREFIX_NOISE.sub("", s)
 
-    # remove junk characters
+    # Strip odd characters
     s = _ALLOWED.sub("", s)
     s = _WS.sub(" ", s).strip()
 
+    # Fix OCR spacing and parentheses issues
     s = _collapse_spaced_letters(s)
     s = _strip_unbalanced_parens(s)
 
@@ -111,31 +113,28 @@ def is_plausible_asset_label(label: str) -> bool:
 
     s = label.strip()
     low = s.lower()
-    nospace = low.replace(" ", "")
 
+    # block exact stopwords
     if low in STOP_ASSET_EXACT:
         return False
-    if nospace in STOP_ASSET_NOSPACE:
-        return False
 
-    # reject if it contains corporate/partner tokens (these are not assets)
+    # if it contains partner/corporate tokens, it's almost certainly not an asset label
     if re.search(r"\b(" + "|".join(map(re.escape, CORP_TOKENS)) + r")\b", low):
         return False
 
-    # must contain at least one letter or digit
+    # must contain at least one letter/digit
     if not re.search(r"[A-Za-z0-9]", s):
         return False
 
-    # absurdly long "asset names" are usually partner blocks or PDF footer leakage
+    # absurdly long labels are usually PDF garbage/partner blocks
     if len(s) > 70:
         return False
 
-    # too many words is almost never an asset label (JNJ-#### combos are short)
+    # too many words is rarely an asset label (except JNJ-#### codes)
     words = s.split()
     if len(words) > 6 and "jnj-" not in low:
         return False
 
-    # eliminate obvious placeholders
     if low in {"others", "other", "unknown", "undisclosed"}:
         return False
 
