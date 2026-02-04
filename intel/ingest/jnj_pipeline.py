@@ -23,9 +23,17 @@ from ..sanitize import (
     sanitize_alias,
     sanitize_indication_text,
     is_plausible_asset_label,
+    looks_like_indication_label,
 )
 
-JNICALL_PIPELINE_PAGE = "https://www.investor.jnj.com/pipeline/development-pipeline/default.aspx"
+# Optional (feature-flagged) LLM cleaner for borderline labels
+try:
+    from ..llm_clean import llm_classify_and_canonicalize_asset_label
+except Exception:  # pragma: no cover
+    llm_classify_and_canonicalize_asset_label = None  # type: ignore
+
+
+JNJ_PIPELINE_PAGE = "https://www.investor.jnj.com/pipeline/development-pipeline/default.aspx"
 
 Q4CDN_BASE = "https://s203.q4cdn.com/636242992/files/doc_financials"
 
@@ -206,7 +214,15 @@ def _is_asset_line(line: dict[str, Any], median_size: float) -> bool:
         return False
 
     cleaned = sanitize_asset_label(raw)
-    if not cleaned or not is_plausible_asset_label(cleaned):
+    if not cleaned:
+        return False
+
+    # Hard reject: this is very likely an indication/disease label.
+    if looks_like_indication_label(cleaned):
+        return False
+
+    # Reject non-plausible labels early.
+    if not is_plausible_asset_label(cleaned):
         return False
 
     low = cleaned.lower()
@@ -220,21 +236,26 @@ def _is_asset_line(line: dict[str, Any], median_size: float) -> bool:
     if "jnj-" in low:
         return True
 
-    # typical assets are visually larger in the PDF
-    if line["avg_size"] >= (median_size + 0.8):
+    # We treat font size as a supporting signal, not sufficient on its own.
+    big_font = line["avg_size"] >= (median_size + 0.8)
+
+    # Explicit patterns that strongly indicate assets
+    if re.match(r"^.{2,60}\(.{2,60}\)$", cleaned) and re.search(r"[A-Za-z]", cleaned):
         return True
 
-    # brand (generic)
-    if re.match(r"^.{2,60}\(.{2,60}\)$", cleaned) and re.search(r"[a-z]", cleaned):
-        return True
-
-    # single token (e.g., icotrokinra)
-    if " " not in cleaned and 4 <= len(cleaned) <= 25 and re.search(r"[a-z]", cleaned):
+    # Single-token drug/program name (e.g., icotrokinra, nipocalimab)
+    if " " not in cleaned and 4 <= len(cleaned) <= 28 and re.search(r"[a-z]", cleaned):
         if cleaned.lower() not in {"others", "other", "unknown", "undisclosed"}:
-            return True
+            # allow if it looks like a drug suffix or if it's in a big font
+            if re.search(r"(mab|nib|ciclib|stat|navir|vir)$", cleaned, re.IGNORECASE) or big_font:
+                return True
 
-    # all caps brand
+    # ALL CAPS brand is common
     if cleaned.isupper() and 3 <= len(cleaned) <= 45:
+        return True
+
+    # If it's big font and short, and not disease-like, treat as asset line.
+    if big_font and 1 <= len(cleaned.split()) <= 3 and len(cleaned) <= 40:
         return True
 
     return False
@@ -321,7 +342,7 @@ def ingest_jnj_pipeline(session: Session, company_id: str = "jnj") -> int:
 
     if not pdf_url:
         try:
-            html = get(JNICALL_PIPELINE_PAGE).text
+            html = get(JNJ_PIPELINE_PAGE).text
             pdf_url = _find_pdf_url(html)
             if pdf_url.startswith("/"):
                 pdf_url = "https://www.investor.jnj.com" + pdf_url
@@ -345,15 +366,57 @@ def ingest_jnj_pipeline(session: Session, company_id: str = "jnj") -> int:
     for r in rows:
         by_asset.setdefault(r["asset_label"], []).append(r)
 
+    # Quality gate: warn if many labels look like indications (regression detector)
+    suspicious = [a for a in by_asset.keys() if looks_like_indication_label(a)]
+    if suspicious:
+        frac = len(suspicious) / max(len(by_asset), 1)
+        if frac >= 0.05:
+            logger.warning(
+                "JNJ pipeline parse quality: {} / {} labels look like indications ({}%). Sample: {}",
+                len(suspicious),
+                len(by_asset),
+                int(frac * 100),
+                suspicious[:10],
+            )
+
     for asset_label, recs in by_asset.items():
         cleaned_label = sanitize_asset_label(asset_label)
-        if not cleaned_label or not is_plausible_asset_label(cleaned_label):
+        if not cleaned_label:
+            continue
+
+        # Heuristic rejection for disease-like labels (prevents garbage assets)
+        if looks_like_indication_label(cleaned_label):
+            # Optional: let an LLM rescue borderline cases (feature-flagged)
+            if settings.llm_clean_enabled and llm_classify_and_canonicalize_asset_label is not None:
+                ctx = "\n".join((r.get("indication") or "").strip() for r in recs[:3] if r.get("indication"))
+                llm = llm_classify_and_canonicalize_asset_label(
+                    session,
+                    company_id,
+                    cleaned_label,
+                    context=ctx,
+                    source_url=pdf_url,
+                )
+                if not llm or not llm.get("is_asset"):
+                    continue
+                cleaned_label = llm.get("canonical_name") or cleaned_label
+                llm_aliases = llm.get("aliases") or []
+            else:
+                continue
+        else:
+            llm_aliases = []
+
+        if not is_plausible_asset_label(cleaned_label):
             continue
 
         canonical, aliases = split_asset_aliases(cleaned_label)
         canonical = sanitize_asset_label(canonical) or canonical
         if not is_plausible_asset_label(canonical):
             continue
+
+        # merge in optional LLM aliases (already constrained to label text)
+        for a in llm_aliases:
+            if a and a not in aliases:
+                aliases.append(a)
 
         asset = upsert_asset(session, company_id, canonical)
 
