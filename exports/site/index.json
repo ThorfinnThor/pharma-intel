@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-02-04T20:38:57Z",
+  "generated_at": "2026-02-04T21:41:53Z",
   "companies": [
     {
       "company_id": "jnj",
       "company_name": "Johnson & Johnson",
-      "assets_total": 41,
-      "trials_total": 260
+      "assets_total": 44,
+      "trials_total": 263
     },
     {
       "company_id": "immatics",
