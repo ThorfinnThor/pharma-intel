@@ -28,6 +28,8 @@ jobs:
       PHARMA_INTEL_HTTP_USER_AGENT: "pharma-intel-mvp/0.1 (contact: YOUR_EMAIL_OR_URL)"
       PHARMA_INTEL_CTG_MAX_PAGES_PER_QUERY: "20"
       PHARMA_INTEL_CTG_SLEEP_S: "0.3"
+      PHARMA_INTEL_GEMINI_API_KEY: ${{ secrets.PHARMA_INTEL_GEMINI_API_KEY }}
+      PHARMA_INTEL_LLM_CLEAN_ENABLED: "true"
 
     steps:
       - name: Checkout
