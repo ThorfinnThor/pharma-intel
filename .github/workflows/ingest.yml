@@ -77,7 +77,6 @@ jobs:
           set -euo pipefail
           python -m intel.cleanup --db data/intel.db --companies jnj immatics
 
-
       - name: Generate exports (JSON + CSV)
         shell: bash
         run: |
@@ -89,7 +88,6 @@ jobs:
         run: |
           set -euo pipefail
           python -m intel.report --db data/intel.db --outdir exports/site --companies jnj immatics
-
 
       - name: Upload artifacts (DB + evidence + exports)
         uses: actions/upload-artifact@v4
@@ -114,7 +112,7 @@ jobs:
           mkdir -p "$RUNNER_TEMP/exports"
           cp -r exports/. "$RUNNER_TEMP/exports/"
 
-          # ✅ IMPORTANT: remove any local modifications/untracked files (e.g. __pycache__/*.pyc)
+          # Remove any local modifications/untracked files (e.g. __pycache__/*.pyc)
           # so git can switch branches safely.
           git reset --hard
           git clean -fdx
