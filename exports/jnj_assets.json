@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-02-04T11:27:06Z",
+  "generated_at": "2026-02-04T20:38:57Z",
   "company_id": "jnj",
   "company_name": "Johnson & Johnson",
   "asset_count": 46,
-  "change_count": 1028,
+  "change_count": 1161,
   "assets": [
     {
       "asset_id": 23,
@@ -12,6 +12,12 @@
         "(MajesTEC-4)"
       ],
       "indications": [
+        {
+          "indication": "Acute Myeloid Leukemia (cAMeLot-",
+          "stage": "Registration",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Acute Myeloid Leukemia (cAMeLot-",
           "stage": "Registration",
@@ -80,6 +86,12 @@
           "stage": "Registration",
           "therapeutic_area": "Oncology",
           "as_of_date": null
+        },
+        {
+          "indication": "Multiple Myeloma CD38 exposed",
+          "stage": "Registration",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
         }
       ]
     },
@@ -90,6 +102,12 @@
         "Bleximenib"
       ],
       "indications": [
+        {
+          "indication": "Newly Diagnosed AML, with Venetoclax and",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Newly Diagnosed AML, with Venetoclax and",
           "stage": "Phase 3",
@@ -160,6 +178,12 @@
           "stage": "Phase 1",
           "therapeutic_area": "Neuroscience",
           "as_of_date": null
+        },
+        {
+          "indication": "Pediatric Psychiatric",
+          "stage": "Phase 1",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
         }
       ]
     },
@@ -170,6 +194,12 @@
         "CARVYKTI (Ciltacabtagene"
       ],
       "indications": [
+        {
+          "indication": "Frontline Multiple",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Frontline Multiple",
           "stage": "Phase 1",
@@ -266,6 +296,12 @@
           "stage": "Registration",
           "therapeutic_area": "Neuroscience",
           "as_of_date": null
+        },
+        {
+          "indication": "with Suicidal Ideation",
+          "stage": "Registration",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
         }
       ]
     },
@@ -278,6 +314,12 @@
         "ERLEADA (apalutamide)"
       ],
       "indications": [
+        {
+          "indication": "ASCT Localized Prostate",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "ASCT Localized Prostate",
           "stage": "Phase 3",
@@ -330,6 +372,12 @@
           "stage": "Phase 2",
           "therapeutic_area": "Neuroscience",
           "as_of_date": null
+        },
+        {
+          "indication": "Indications for Major Depressive Disorder",
+          "stage": "Phase 2",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
         }
       ]
     },
@@ -371,6 +419,12 @@
           "stage": "Registration",
           "therapeutic_area": "Neuroscience",
           "as_of_date": null
+        },
+        {
+          "indication": "Demyelinating Polyneuropathy",
+          "stage": "Registration",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
         }
       ]
     },
@@ -383,6 +437,12 @@
         "Hemolytic Anemia (ENERGY)"
       ],
       "indications": [
+        {
+          "indication": "Alloimmune Thrombocytopenia",
+          "stage": "Registration",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
         {
           "indication": "Alloimmune Thrombocytopenia",
           "stage": "Registration",
@@ -483,6 +543,24 @@
           "as_of_date": null
         },
         {
+          "indication": "Non Muscle Invasive",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Non Muscle Invasive",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "High Risk High Risk Non Muscle",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
           "indication": "High Risk High Risk Non Muscle",
           "stage": "Phase 3",
           "therapeutic_area": "Oncology",
@@ -548,6 +626,18 @@
         {
           "indication": "Alzheimer's Disease-Related",
           "stage": "Phase 1",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        },
+        {
+          "indication": "Alzheimer's Disease-Related",
+          "stage": "Phase 1",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        },
+        {
+          "indication": "with Generalized Anxiety",
+          "stage": "Phase 3",
           "therapeutic_area": "Neuroscience",
           "as_of_date": null
         },
@@ -644,6 +734,12 @@
           "stage": "Phase 3",
           "therapeutic_area": "Neuroscience",
           "as_of_date": null
+        },
+        {
+          "indication": "Geographic Atrophy",
+          "stage": "Phase 3",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
         }
       ]
     },
@@ -656,6 +752,12 @@
         "NBTXR3"
       ],
       "indications": [
+        {
+          "indication": "Lung Cancer",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Lung Cancer",
           "stage": "Phase 1",
@@ -724,6 +826,12 @@
           "stage": "Phase 3",
           "therapeutic_area": "Oncology",
           "as_of_date": null
+        },
+        {
+          "indication": "Solid Tumors",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
         }
       ]
     },
@@ -734,6 +842,12 @@
         "JNJ-2761"
       ],
       "indications": [
+        {
+          "indication": "Multiple Myeloma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Multiple Myeloma",
           "stage": "Phase 1",
@@ -802,6 +916,12 @@
           "stage": "Phase 1",
           "therapeutic_area": "Oncology",
           "as_of_date": null
+        },
+        {
+          "indication": "Lung Cancer",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
         }
       ]
     },
@@ -812,6 +932,12 @@
         "JNJ-4681"
       ],
       "indications": [
+        {
+          "indication": "Hematological Malignancies",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Hematological Malignancies",
           "stage": "Phase 3",
@@ -878,6 +1004,18 @@
         {
           "indication": "Psoriatic Arthritis",
           "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Psoriatic Arthritis",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Crohn's Disease",
+          "stage": "Phase 3",
           "therapeutic_area": "Immunology",
           "as_of_date": null
         },
@@ -949,6 +1087,12 @@
           "stage": "Phase 1",
           "therapeutic_area": "Neuroscience",
           "as_of_date": null
+        },
+        {
+          "indication": "Major Depressive",
+          "stage": "Phase 1",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
         }
       ]
     },
@@ -959,6 +1103,12 @@
         "JNJ-5322"
       ],
       "indications": [
+        {
+          "indication": "Multiple Myeloma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Multiple Myeloma",
           "stage": "Phase 1",
@@ -1027,6 +1177,12 @@
           "stage": "Phase 3",
           "therapeutic_area": "Oncology",
           "as_of_date": null
+        },
+        {
+          "indication": "Lung Cancer",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
         }
       ]
     },
@@ -1037,6 +1193,12 @@
         "Leprosy"
       ],
       "indications": [
+        {
+          "indication": "under review by regulatory bodies.",
+          "stage": "Phase 3",
+          "therapeutic_area": null,
+          "as_of_date": null
+        },
         {
           "indication": "under review by regulatory bodies.",
           "stage": "Phase 3",
@@ -1096,6 +1258,12 @@
           "stage": "Phase 2",
           "therapeutic_area": "Oncology",
           "as_of_date": null
+        },
+        {
+          "indication": "intravesical delivery",
+          "stage": "Phase 2",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
         }
       ]
     },
@@ -1134,6 +1302,18 @@
         },
         {
           "indication": "Colorectal Cancer",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Colorectal Cancer",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Frontline Non Small",
           "stage": "Phase 3",
           "therapeutic_area": "Oncology",
           "as_of_date": null
@@ -1235,6 +1415,12 @@
           "stage": "Phase 3",
           "therapeutic_area": "Neuroscience",
           "as_of_date": null
+        },
+        {
+          "indication": "Major Depressive Disorder Pediatrics",
+          "stage": "Phase 3",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
         }
       ]
     },
@@ -1276,6 +1462,12 @@
           "stage": "Phase 1",
           "therapeutic_area": "Immunology",
           "as_of_date": null
+        },
+        {
+          "indication": "Pediatric Juvenile",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
         }
       ]
     },
@@ -1288,6 +1480,18 @@
         "TECVAYLI"
       ],
       "indications": [
+        {
+          "indication": "Relapsed Refractory",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Relapsed Refractory",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Relapsed Refractory",
           "stage": "Phase 3",
@@ -1390,6 +1594,18 @@
           "as_of_date": null
         },
         {
+          "indication": "Multiple Myeloma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Relapsed Refractory",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
           "indication": "Relapsed Refractory",
           "stage": "Phase 1",
           "therapeutic_area": "Oncology",
@@ -1461,6 +1677,18 @@
           "as_of_date": null
         },
         {
+          "indication": "Pediatric Ulcerative",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Ulcerative Colitis",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
           "indication": "Ulcerative Colitis",
           "stage": "Phase 1",
           "therapeutic_area": "Immunology",
@@ -1516,6 +1744,18 @@
         },
         {
           "indication": "Pediatric Juvenile Psoriatic",
+          "stage": "Phase 3",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Pediatric Juvenile Psoriatic",
+          "stage": "Phase 3",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Pediatric Psoriasis",
           "stage": "Phase 3",
           "therapeutic_area": "Immunology",
           "as_of_date": null
@@ -1595,6 +1835,12 @@
           "as_of_date": null
         },
         {
+          "indication": "i o n",
+          "stage": "Phase 2",
+          "therapeutic_area": null,
+          "as_of_date": null
+        },
+        {
           "indication": "i o n through clinical trials as well as those to the best of the Company's knowledge. Johnson",
           "stage": "Phase 2",
           "therapeutic_area": null,
@@ -1650,6 +1896,12 @@
           "stage": "Phase 2",
           "therapeutic_area": "Oncology",
           "as_of_date": null
+        },
+        {
+          "indication": "Myeloma Transplant Eligible vs intravesical delivery Bladder Cancer BCG-naïve",
+          "stage": "Phase 2",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
         }
       ]
     },
@@ -1660,6 +1912,12 @@
         "bleximenib"
       ],
       "indications": [
+        {
+          "indication": "Relapsed Refractory 1)",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Relapsed Refractory 1)",
           "stage": "Phase 3",
@@ -1728,6 +1986,12 @@
           "stage": "Phase 1",
           "therapeutic_area": "Immunology",
           "as_of_date": null
+        },
+        {
+          "indication": "Psoriatic Arthritis",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
         }
       ]
     },
@@ -1763,6 +2027,12 @@
         "intravesical delivery system"
       ],
       "indications": [
+        {
+          "indication": "Invasive Bladder Cancer BCG",
+          "stage": "Registration",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Invasive Bladder Cancer BCG",
           "stage": "Registration",
@@ -1860,6 +2130,18 @@
           "as_of_date": null
         },
         {
+          "indication": "Hemolytic Disease",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Fetal and Neonatal",
+          "stage": "Phase 3",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
           "indication": "Fetal and Neonatal",
           "stage": "Phase 3",
           "therapeutic_area": "Immunology",
@@ -1917,6 +2199,18 @@
           "indication": "Warm Autoimmune",
           "stage": "Phase 3",
           "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Warm Autoimmune",
+          "stage": "Phase 3",
+          "therapeutic_area": "Immunology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Chronic Inflammatory",
+          "stage": "Phase 3",
+          "therapeutic_area": "Neuroscience",
           "as_of_date": null
         },
         {
@@ -1987,6 +2281,12 @@
           "stage": "Phase 1",
           "therapeutic_area": "Oncology",
           "as_of_date": null
+        },
+        {
+          "indication": "Prostate Cancer",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
         }
       ]
     },
@@ -1997,6 +2297,12 @@
         "seltorexant"
       ],
       "indications": [
+        {
+          "indication": "Adjunctive Treatment Insomnia Symptoms",
+          "stage": "Phase 1",
+          "therapeutic_area": "Neuroscience",
+          "as_of_date": null
+        },
         {
           "indication": "Adjunctive Treatment Insomnia Symptoms",
           "stage": "Phase 1",

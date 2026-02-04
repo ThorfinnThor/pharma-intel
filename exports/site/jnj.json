@@ -1,11 +1,11 @@
 {
   "company_id": "jnj",
   "company_name": "Johnson & Johnson",
-  "generated_at": "2026-02-04T11:27:06Z",
+  "generated_at": "2026-02-04T20:38:57Z",
   "kpis": {
     "assets_total": 41,
     "assets_with_trials": 11,
-    "trials_total": 259
+    "trials_total": 260
   },
   "top_assets": [
     {
@@ -37,6 +37,11 @@
       "highest_stage": "Registration",
       "linked_trials_count": 0,
       "indications": [
+        {
+          "indication": "Invasive Bladder Cancer BCG",
+          "stage": "Registration",
+          "therapeutic_area": "Oncology"
+        },
         {
           "indication": "Invasive Bladder Cancer BCG",
           "stage": "Registration",
@@ -94,6 +99,11 @@
           "indication": "Alloimmune Thrombocytopenia",
           "stage": "Registration",
           "therapeutic_area": "Immunology"
+        },
+        {
+          "indication": "Alloimmune Thrombocytopenia",
+          "stage": "Registration",
+          "therapeutic_area": "Immunology"
         }
       ]
     },
@@ -103,6 +113,11 @@
       "highest_stage": "Registration",
       "linked_trials_count": 0,
       "indications": [
+        {
+          "indication": "Demyelinating Polyneuropathy",
+          "stage": "Registration",
+          "therapeutic_area": "Neuroscience"
+        },
         {
           "indication": "Demyelinating Polyneuropathy",
           "stage": "Registration",
@@ -160,6 +175,11 @@
           "indication": "with Suicidal Ideation",
           "stage": "Registration",
           "therapeutic_area": "Neuroscience"
+        },
+        {
+          "indication": "with Suicidal Ideation",
+          "stage": "Registration",
+          "therapeutic_area": "Neuroscience"
         }
       ]
     },
@@ -169,6 +189,11 @@
       "highest_stage": "Registration",
       "linked_trials_count": 0,
       "indications": [
+        {
+          "indication": "Multiple Myeloma CD38 exposed",
+          "stage": "Registration",
+          "therapeutic_area": "Oncology"
+        },
         {
           "indication": "Multiple Myeloma CD38 exposed",
           "stage": "Registration",
@@ -226,6 +251,11 @@
           "indication": "Acute Myeloid Leukemia (cAMeLot-",
           "stage": "Registration",
           "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Acute Myeloid Leukemia (cAMeLot-",
+          "stage": "Registration",
+          "therapeutic_area": "Oncology"
         }
       ]
     },
@@ -235,6 +265,26 @@
       "highest_stage": "Phase 3",
       "linked_trials_count": 23,
       "indications": [
+        {
+          "indication": "Ulcerative Colitis",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology"
+        },
+        {
+          "indication": "Pediatric Ulcerative",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology"
+        },
+        {
+          "indication": "Pediatric Psoriasis",
+          "stage": "Phase 3",
+          "therapeutic_area": "Immunology"
+        },
+        {
+          "indication": "Pediatric Juvenile Psoriatic",
+          "stage": "Phase 3",
+          "therapeutic_area": "Immunology"
+        },
         {
           "indication": "Ulcerative Colitis",
           "stage": "Phase 1",
@@ -392,6 +442,16 @@
           "indication": "Colorectal Cancer",
           "stage": "Phase 3",
           "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Frontline Non Small",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Colorectal Cancer",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology"
         }
       ]
     },
@@ -401,6 +461,11 @@
       "highest_stage": "Phase 3",
       "linked_trials_count": 20,
       "indications": [
+        {
+          "indication": "ASCT Localized Prostate",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology"
+        },
         {
           "indication": "ASCT Localized Prostate",
           "stage": "Phase 3",
@@ -533,6 +598,26 @@
           "indication": "Chronic Inflammatory",
           "stage": "Phase 3",
           "therapeutic_area": "Neuroscience"
+        },
+        {
+          "indication": "Hemolytic Disease",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology"
+        },
+        {
+          "indication": "Warm Autoimmune",
+          "stage": "Phase 3",
+          "therapeutic_area": "Immunology"
+        },
+        {
+          "indication": "Fetal and Neonatal",
+          "stage": "Phase 3",
+          "therapeutic_area": "Immunology"
+        },
+        {
+          "indication": "Chronic Inflammatory",
+          "stage": "Phase 3",
+          "therapeutic_area": "Neuroscience"
         }
       ]
     },
@@ -542,6 +627,11 @@
       "highest_stage": "Phase 3",
       "linked_trials_count": 4,
       "indications": [
+        {
+          "indication": "Relapsed Refractory 1)",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology"
+        },
         {
           "indication": "Relapsed Refractory 1)",
           "stage": "Phase 3",
@@ -599,6 +689,11 @@
           "indication": "Major Depressive Disorder Pediatrics",
           "stage": "Phase 3",
           "therapeutic_area": "Neuroscience"
+        },
+        {
+          "indication": "Major Depressive Disorder Pediatrics",
+          "stage": "Phase 3",
+          "therapeutic_area": "Neuroscience"
         }
       ]
     },
@@ -608,6 +703,16 @@
       "highest_stage": "Phase 3",
       "linked_trials_count": 0,
       "indications": [
+        {
+          "indication": "Relapsed Refractory",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Relapsed Refractory",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology"
+        },
         {
           "indication": "Relapsed Refractory",
           "stage": "Phase 3",
@@ -698,6 +803,11 @@
           "indication": "under review by regulatory bodies.",
           "stage": "Phase 3",
           "therapeutic_area": null
+        },
+        {
+          "indication": "under review by regulatory bodies.",
+          "stage": "Phase 3",
+          "therapeutic_area": null
         }
       ]
     },
@@ -707,6 +817,11 @@
       "highest_stage": "Phase 3",
       "linked_trials_count": 0,
       "indications": [
+        {
+          "indication": "Lung Cancer",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology"
+        },
         {
           "indication": "Lung Cancer",
           "stage": "Phase 3",
@@ -789,6 +904,16 @@
           "indication": "Crohn's Disease",
           "stage": "Phase 3",
           "therapeutic_area": "Immunology"
+        },
+        {
+          "indication": "Psoriatic Arthritis",
+          "stage": "Phase 1",
+          "therapeutic_area": "Immunology"
+        },
+        {
+          "indication": "Crohn's Disease",
+          "stage": "Phase 3",
+          "therapeutic_area": "Immunology"
         }
       ]
     },
@@ -798,6 +923,11 @@
       "highest_stage": "Phase 3",
       "linked_trials_count": 0,
       "indications": [
+        {
+          "indication": "Hematological Malignancies",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology"
+        },
         {
           "indication": "Hematological Malignancies",
           "stage": "Phase 3",
@@ -855,6 +985,11 @@
           "indication": "Solid Tumors",
           "stage": "Phase 3",
           "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Solid Tumors",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology"
         }
       ]
     },
@@ -888,6 +1023,11 @@
           "indication": "Geographic Atrophy",
           "stage": "Phase 3",
           "therapeutic_area": "Neuroscience"
+        },
+        {
+          "indication": "Geographic Atrophy",
+          "stage": "Phase 3",
+          "therapeutic_area": "Neuroscience"
         }
       ]
     },
@@ -897,6 +1037,16 @@
       "highest_stage": "Phase 3",
       "linked_trials_count": 0,
       "indications": [
+        {
+          "indication": "Alzheimer's Disease-Related",
+          "stage": "Phase 1",
+          "therapeutic_area": "Neuroscience"
+        },
+        {
+          "indication": "with Generalized Anxiety",
+          "stage": "Phase 3",
+          "therapeutic_area": "Neuroscience"
+        },
         {
           "indication": "Alzheimer's Disease-Related",
           "stage": "Phase 1",
@@ -1029,6 +1179,21 @@
           "indication": "High Risk High Risk Non Muscle",
           "stage": "Phase 3",
           "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Non Muscle Invasive",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Non Muscle Invasive",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "High Risk High Risk Non Muscle",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology"
         }
       ]
     },
@@ -1038,6 +1203,11 @@
       "highest_stage": "Phase 3",
       "linked_trials_count": 0,
       "indications": [
+        {
+          "indication": "Newly Diagnosed AML, with Venetoclax and",
+          "stage": "Phase 3",
+          "therapeutic_area": "Oncology"
+        },
         {
           "indication": "Newly Diagnosed AML, with Venetoclax and",
           "stage": "Phase 3",
@@ -1095,11 +1265,1223 @@
           "indication": "Myeloma Transplant Eligible vs intravesical delivery Bladder Cancer BCG-na\u00efve",
           "stage": "Phase 2",
           "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Myeloma Transplant Eligible vs intravesical delivery Bladder Cancer BCG-na\u00efve",
+          "stage": "Phase 2",
+          "therapeutic_area": "Oncology"
         }
       ]
     }
   ],
   "recent_changes": [
+    {
+      "event_type": "trials_ingested",
+      "created_at": "2026-02-04 20:38:50.956810",
+      "occurred_at": "2026-02-04 20:38:50.956810",
+      "payload": {
+        "trials_seen": 254,
+        "inserted": 1,
+        "updated": 253,
+        "status_changed": 0,
+        "bad_aliases": 0
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:39.784045",
+      "occurred_at": "2026-02-04 20:38:39.784045",
+      "payload": {
+        "nct_id": "NCT04883619",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:39.770406",
+      "occurred_at": "2026-02-04 20:38:39.770406",
+      "payload": {
+        "nct_id": "NCT06533098",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:39.755272",
+      "occurred_at": "2026-02-04 20:38:39.755272",
+      "payload": {
+        "nct_id": "NCT06449651",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:39.742424",
+      "occurred_at": "2026-02-04 20:38:39.742424",
+      "payload": {
+        "nct_id": "NCT05379634",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:39.728884",
+      "occurred_at": "2026-02-04 20:38:39.728884",
+      "payload": {
+        "nct_id": "NCT05327114",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:38.520178",
+      "occurred_at": "2026-02-04 20:38:38.520178",
+      "payload": {
+        "nct_id": "NCT06878404",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:38.505245",
+      "occurred_at": "2026-02-04 20:38:38.505245",
+      "payload": {
+        "nct_id": "NCT06807424",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.984741",
+      "occurred_at": "2026-02-04 20:38:36.984741",
+      "payload": {
+        "nct_id": "NCT03767075",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.959497",
+      "occurred_at": "2026-02-04 20:38:36.959497",
+      "payload": {
+        "nct_id": "NCT06632236",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.937397",
+      "occurred_at": "2026-02-04 20:38:36.937397",
+      "payload": {
+        "nct_id": "NCT05117931",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.924840",
+      "occurred_at": "2026-02-04 20:38:36.924840",
+      "payload": {
+        "nct_id": "NCT05299125",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.911820",
+      "occurred_at": "2026-02-04 20:38:36.911820",
+      "payload": {
+        "nct_id": "NCT04988295",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.888058",
+      "occurred_at": "2026-02-04 20:38:36.888058",
+      "payload": {
+        "nct_id": "NCT04077463",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.844526",
+      "occurred_at": "2026-02-04 20:38:36.844526",
+      "payload": {
+        "nct_id": "NCT06385080",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.830419",
+      "occurred_at": "2026-02-04 20:38:36.830419",
+      "payload": {
+        "nct_id": "NCT06667076",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.815540",
+      "occurred_at": "2026-02-04 20:38:36.815540",
+      "payload": {
+        "nct_id": "NCT06750094",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.786914",
+      "occurred_at": "2026-02-04 20:38:36.786914",
+      "payload": {
+        "nct_id": "NCT06532032",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.765113",
+      "occurred_at": "2026-02-04 20:38:36.765113",
+      "payload": {
+        "nct_id": "NCT05498428",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.740573",
+      "occurred_at": "2026-02-04 20:38:36.740573",
+      "payload": {
+        "nct_id": "NCT06662786",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.721981",
+      "occurred_at": "2026-02-04 20:38:36.721981",
+      "payload": {
+        "nct_id": "NCT05488314",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.707527",
+      "occurred_at": "2026-02-04 20:38:36.707527",
+      "payload": {
+        "nct_id": "NCT02609776",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.691907",
+      "occurred_at": "2026-02-04 20:38:36.691907",
+      "payload": {
+        "nct_id": "NCT05908734",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.678604",
+      "occurred_at": "2026-02-04 20:38:36.678604",
+      "payload": {
+        "nct_id": "NCT05601973",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.648321",
+      "occurred_at": "2026-02-04 20:38:36.648321",
+      "payload": {
+        "nct_id": "NCT04487080",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.615052",
+      "occurred_at": "2026-02-04 20:38:36.615052",
+      "payload": {
+        "nct_id": "NCT05663866",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:36.158904",
+      "occurred_at": "2026-02-04 20:38:36.158904",
+      "payload": {
+        "nct_id": "NCT06649695",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:32.770934",
+      "occurred_at": "2026-02-04 20:38:32.770934",
+      "payload": {
+        "nct_id": "NCT06852222",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:32.755159",
+      "occurred_at": "2026-02-04 20:38:32.755159",
+      "payload": {
+        "nct_id": "NCT04811560",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:32.740774",
+      "occurred_at": "2026-02-04 20:38:32.740774",
+      "payload": {
+        "nct_id": "NCT05453903",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:32.727415",
+      "occurred_at": "2026-02-04 20:38:32.727415",
+      "payload": {
+        "nct_id": "NCT07295951",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:32.306976",
+      "occurred_at": "2026-02-04 20:38:32.306976",
+      "payload": {
+        "nct_id": "NCT07164443",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:32.283812",
+      "occurred_at": "2026-02-04 20:38:32.283812",
+      "payload": {
+        "nct_id": "NCT07319871",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:32.259516",
+      "occurred_at": "2026-02-04 20:38:32.259516",
+      "payload": {
+        "nct_id": "NCT07225946",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:31.041142",
+      "occurred_at": "2026-02-04 20:38:31.041142",
+      "payload": {
+        "nct_id": "NCT07276399",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:31.017446",
+      "occurred_at": "2026-02-04 20:38:31.017446",
+      "payload": {
+        "nct_id": "NCT07227025",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:31.004020",
+      "occurred_at": "2026-02-04 20:38:31.004020",
+      "payload": {
+        "nct_id": "NCT05379595",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:20.691843",
+      "occurred_at": "2026-02-04 20:38:20.691843",
+      "payload": {
+        "nct_id": "NCT04538664",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-04 20:38:19.567010",
+      "occurred_at": "2026-02-04 20:38:19.567010",
+      "payload": {
+        "nct_id": "NCT04083976",
+        "title": "A Phase 2 Study of Erdafitinib in Subjects With Advanced Solid Tumors and FGFR Gene Alterations"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:13.092742",
+      "occurred_at": "2026-02-04 20:38:13.092742",
+      "payload": {
+        "nct_id": "NCT06505369",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:12.525930",
+      "occurred_at": "2026-02-04 20:38:12.525930",
+      "payload": {
+        "nct_id": "NCT06100237",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:12.482955",
+      "occurred_at": "2026-02-04 20:38:12.482955",
+      "payload": {
+        "nct_id": "NCT06477783",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:12.469687",
+      "occurred_at": "2026-02-04 20:38:12.469687",
+      "payload": {
+        "nct_id": "NCT06353022",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:12.454927",
+      "occurred_at": "2026-02-04 20:38:12.454927",
+      "payload": {
+        "nct_id": "NCT05849610",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:11.903153",
+      "occurred_at": "2026-02-04 20:38:11.903153",
+      "payload": {
+        "nct_id": "NCT05469893",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:11.265845",
+      "occurred_at": "2026-02-04 20:38:11.265845",
+      "payload": {
+        "nct_id": "NCT07107529",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:11.220365",
+      "occurred_at": "2026-02-04 20:38:11.220365",
+      "payload": {
+        "nct_id": "NCT06993675",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:10.686222",
+      "occurred_at": "2026-02-04 20:38:10.686222",
+      "payload": {
+        "nct_id": "NCT05572229",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:10.113383",
+      "occurred_at": "2026-02-04 20:38:10.113383",
+      "payload": {
+        "nct_id": "NCT07110844",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:10.077331",
+      "occurred_at": "2026-02-04 20:38:10.077331",
+      "payload": {
+        "nct_id": "NCT07258511",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:09.463408",
+      "occurred_at": "2026-02-04 20:38:09.463408",
+      "payload": {
+        "nct_id": "NCT05243797",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:09.445342",
+      "occurred_at": "2026-02-04 20:38:09.445342",
+      "payload": {
+        "nct_id": "NCT07030517",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:09.421114",
+      "occurred_at": "2026-02-04 20:38:09.421114",
+      "payload": {
+        "nct_id": "NCT07105059",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:09.384788",
+      "occurred_at": "2026-02-04 20:38:09.384788",
+      "payload": {
+        "nct_id": "NCT04722146",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:09.352925",
+      "occurred_at": "2026-02-04 20:38:09.352925",
+      "payload": {
+        "nct_id": "NCT05083169",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:09.337753",
+      "occurred_at": "2026-02-04 20:38:09.337753",
+      "payload": {
+        "nct_id": "NCT05338775",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:09.325056",
+      "occurred_at": "2026-02-04 20:38:09.325056",
+      "payload": {
+        "nct_id": "NCT06577025",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:08.744511",
+      "occurred_at": "2026-02-04 20:38:08.744511",
+      "payload": {
+        "nct_id": "NCT04586426",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:08.726665",
+      "occurred_at": "2026-02-04 20:38:08.726665",
+      "payload": {
+        "nct_id": "NCT05552222",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:08.700595",
+      "occurred_at": "2026-02-04 20:38:08.700595",
+      "payload": {
+        "nct_id": "NCT06425991",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:08.678288",
+      "occurred_at": "2026-02-04 20:38:08.678288",
+      "payload": {
+        "nct_id": "NCT04696809",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:08.664334",
+      "occurred_at": "2026-02-04 20:38:08.664334",
+      "payload": {
+        "nct_id": "NCT04108195",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:08.640777",
+      "occurred_at": "2026-02-04 20:38:08.640777",
+      "payload": {
+        "nct_id": "NCT05572515",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:08.582788",
+      "occurred_at": "2026-02-04 20:38:08.582788",
+      "payload": {
+        "nct_id": "NCT04557098",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:07.149493",
+      "occurred_at": "2026-02-04 20:38:07.149493",
+      "payload": {
+        "nct_id": "NCT05858632",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:07.137636",
+      "occurred_at": "2026-02-04 20:38:07.137636",
+      "payload": {
+        "nct_id": "NCT04645355",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:07.125182",
+      "occurred_at": "2026-02-04 20:38:07.125182",
+      "payload": {
+        "nct_id": "NCT06563323",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:07.112390",
+      "occurred_at": "2026-02-04 20:38:07.112390",
+      "payload": {
+        "nct_id": "NCT06586281",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:07.100022",
+      "occurred_at": "2026-02-04 20:38:07.100022",
+      "payload": {
+        "nct_id": "NCT05004727",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:07.087066",
+      "occurred_at": "2026-02-04 20:38:07.087066",
+      "payload": {
+        "nct_id": "NCT05669833",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:07.063862",
+      "occurred_at": "2026-02-04 20:38:07.063862",
+      "payload": {
+        "nct_id": "NCT06651489",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:07.041194",
+      "occurred_at": "2026-02-04 20:38:07.041194",
+      "payload": {
+        "nct_id": "NCT04929210",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:07.024201",
+      "occurred_at": "2026-02-04 20:38:07.024201",
+      "payload": {
+        "nct_id": "NCT05049798",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:06.999551",
+      "occurred_at": "2026-02-04 20:38:06.999551",
+      "payload": {
+        "nct_id": "NCT06663332",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:06.985512",
+      "occurred_at": "2026-02-04 20:38:06.985512",
+      "payload": {
+        "nct_id": "NCT05347095",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:06.970371",
+      "occurred_at": "2026-02-04 20:38:06.970371",
+      "payload": {
+        "nct_id": "NCT07141004",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:06.957820",
+      "occurred_at": "2026-02-04 20:38:06.957820",
+      "payload": {
+        "nct_id": "NCT06408935",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:06.935712",
+      "occurred_at": "2026-02-04 20:38:06.935712",
+      "payload": {
+        "nct_id": "NCT03451851",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:06.908581",
+      "occurred_at": "2026-02-04 20:38:06.908581",
+      "payload": {
+        "nct_id": "NCT04882098",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:06.889621",
+      "occurred_at": "2026-02-04 20:38:06.889621",
+      "payload": {
+        "nct_id": "NCT04936308",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:06.414388",
+      "occurred_at": "2026-02-04 20:38:06.414388",
+      "payload": {
+        "nct_id": "NCT04496063",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:06.401153",
+      "occurred_at": "2026-02-04 20:38:06.401153",
+      "payload": {
+        "nct_id": "NCT05387031",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:06.379175",
+      "occurred_at": "2026-02-04 20:38:06.379175",
+      "payload": {
+        "nct_id": "NCT02103361",
+        "linked_assets": 2
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:06.356058",
+      "occurred_at": "2026-02-04 20:38:06.356058",
+      "payload": {
+        "nct_id": "NCT05299931",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:06.342896",
+      "occurred_at": "2026-02-04 20:38:06.342896",
+      "payload": {
+        "nct_id": "NCT03941132",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:06.328785",
+      "occurred_at": "2026-02-04 20:38:06.328785",
+      "payload": {
+        "nct_id": "NCT06807593",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:06.316225",
+      "occurred_at": "2026-02-04 20:38:06.316225",
+      "payload": {
+        "nct_id": "NCT05083182",
+        "linked_assets": 2
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:06.282856",
+      "occurred_at": "2026-02-04 20:38:06.282856",
+      "payload": {
+        "nct_id": "NCT05092269",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:06.249261",
+      "occurred_at": "2026-02-04 20:38:06.249261",
+      "payload": {
+        "nct_id": "NCT04372108",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.756898",
+      "occurred_at": "2026-02-04 20:38:05.756898",
+      "payload": {
+        "nct_id": "NCT03899077",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.743377",
+      "occurred_at": "2026-02-04 20:38:05.743377",
+      "payload": {
+        "nct_id": "NCT03141671",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.707318",
+      "occurred_at": "2026-02-04 20:38:05.707318",
+      "payload": {
+        "nct_id": "NCT03902951",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.690255",
+      "occurred_at": "2026-02-04 20:38:05.690255",
+      "payload": {
+        "nct_id": "NCT03903835",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.674830",
+      "occurred_at": "2026-02-04 20:38:05.674830",
+      "payload": {
+        "nct_id": "NCT02913196",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.650202",
+      "occurred_at": "2026-02-04 20:38:05.650202",
+      "payload": {
+        "nct_id": "NCT06067269",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.634348",
+      "occurred_at": "2026-02-04 20:38:05.634348",
+      "payload": {
+        "nct_id": "NCT04181203",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.610879",
+      "occurred_at": "2026-02-04 20:38:05.610879",
+      "payload": {
+        "nct_id": "NCT06274047",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.595555",
+      "occurred_at": "2026-02-04 20:38:05.595555",
+      "payload": {
+        "nct_id": "NCT05960578",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.574289",
+      "occurred_at": "2026-02-04 20:38:05.574289",
+      "payload": {
+        "nct_id": "NCT07002320",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.560919",
+      "occurred_at": "2026-02-04 20:38:05.560919",
+      "payload": {
+        "nct_id": "NCT04662580",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.545810",
+      "occurred_at": "2026-02-04 20:38:05.545810",
+      "payload": {
+        "nct_id": "NCT05818683",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.531666",
+      "occurred_at": "2026-02-04 20:38:05.531666",
+      "payload": {
+        "nct_id": "NCT03523442",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.517820",
+      "occurred_at": "2026-02-04 20:38:05.517820",
+      "payload": {
+        "nct_id": "NCT05901649",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.503832",
+      "occurred_at": "2026-02-04 20:38:05.503832",
+      "payload": {
+        "nct_id": "NCT04557059",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.487691",
+      "occurred_at": "2026-02-04 20:38:05.487691",
+      "payload": {
+        "nct_id": "NCT05884398",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.471997",
+      "occurred_at": "2026-02-04 20:38:05.471997",
+      "payload": {
+        "nct_id": "NCT03767244",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.454115",
+      "occurred_at": "2026-02-04 20:38:05.454115",
+      "payload": {
+        "nct_id": "NCT04267887",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.438708",
+      "occurred_at": "2026-02-04 20:38:05.438708",
+      "payload": {
+        "nct_id": "NCT04325828",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:05.423787",
+      "occurred_at": "2026-02-04 20:38:05.423787",
+      "payload": {
+        "nct_id": "NCT04108208",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:02.850518",
+      "occurred_at": "2026-02-04 20:38:02.850518",
+      "payload": {
+        "nct_id": "NCT04951622",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:00.795391",
+      "occurred_at": "2026-02-04 20:38:00.795391",
+      "payload": {
+        "nct_id": "NCT05265273",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:38:00.780128",
+      "occurred_at": "2026-02-04 20:38:00.780128",
+      "payload": {
+        "nct_id": "NCT06251076",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:57.469879",
+      "occurred_at": "2026-02-04 20:37:57.469879",
+      "payload": {
+        "nct_id": "NCT07217587",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:56.960719",
+      "occurred_at": "2026-02-04 20:37:56.960719",
+      "payload": {
+        "nct_id": "NCT03218488",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:56.938378",
+      "occurred_at": "2026-02-04 20:37:56.938378",
+      "payload": {
+        "nct_id": "NCT07196748",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:56.921569",
+      "occurred_at": "2026-02-04 20:37:56.921569",
+      "payload": {
+        "nct_id": "NCT05912517",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:56.905893",
+      "occurred_at": "2026-02-04 20:37:56.905893",
+      "payload": {
+        "nct_id": "NCT05242471",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:56.878302",
+      "occurred_at": "2026-02-04 20:37:56.878302",
+      "payload": {
+        "nct_id": "NCT05923073",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:56.818816",
+      "occurred_at": "2026-02-04 20:37:56.818816",
+      "payload": {
+        "nct_id": "NCT05242484",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:56.781636",
+      "occurred_at": "2026-02-04 20:37:56.781636",
+      "payload": {
+        "nct_id": "NCT07196722",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:56.755488",
+      "occurred_at": "2026-02-04 20:37:56.755488",
+      "payload": {
+        "nct_id": "NCT06559306",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:56.738732",
+      "occurred_at": "2026-02-04 20:37:56.738732",
+      "payload": {
+        "nct_id": "NCT07227454",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:56.724645",
+      "occurred_at": "2026-02-04 20:37:56.724645",
+      "payload": {
+        "nct_id": "NCT06741969",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:56.701454",
+      "occurred_at": "2026-02-04 20:37:56.701454",
+      "payload": {
+        "nct_id": "NCT06934226",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:54.873831",
+      "occurred_at": "2026-02-04 20:37:54.873831",
+      "payload": {
+        "nct_id": "NCT04033445",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:54.838624",
+      "occurred_at": "2026-02-04 20:37:54.838624",
+      "payload": {
+        "nct_id": "NCT03466411",
+        "linked_assets": 2
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:43.837645",
+      "occurred_at": "2026-02-04 20:37:43.837645",
+      "payload": {
+        "nct_id": "NCT06285318",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:43.823431",
+      "occurred_at": "2026-02-04 20:37:43.823431",
+      "payload": {
+        "nct_id": "NCT06208150",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 20:37:43.803064",
+      "occurred_at": "2026-02-04 20:37:43.803064",
+      "payload": {
+        "nct_id": "NCT05972135",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "pipeline_ingested",
+      "created_at": "2026-02-04 20:37:40.351260",
+      "occurred_at": "2026-02-04 20:37:40.351260",
+      "payload": {
+        "as_of_date": null,
+        "pdf_url": "https://s203.q4cdn.com/636242992/files/doc_financials/2025/q4/JNJ-Pipeline-4Q25.pdf",
+        "assets_seen": 40
+      }
+    },
+    {
+      "event_type": "asset_indication_removed",
+      "created_at": "2026-02-04 20:37:40.198041",
+      "occurred_at": "2026-02-04 20:37:40.198041",
+      "payload": {
+        "asset": "RYBREVANT",
+        "indication": "Frontline Non Small",
+        "stage": "Phase 3",
+        "therapeutic_area": "Oncology"
+      }
+    },
+    {
+      "event_type": "asset_indication_removed",
+      "created_at": "2026-02-04 20:37:40.195379",
+      "occurred_at": "2026-02-04 20:37:40.195379",
+      "payload": {
+        "asset": "RYBREVANT",
+        "indication": "Colorectal Cancer",
+        "stage": "Phase 3",
+        "therapeutic_area": "Oncology"
+      }
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-04 20:37:40.191511",
+      "occurred_at": "2026-02-04 20:37:40.191511",
+      "payload": {
+        "asset": "RYBREVANT",
+        "indication": "Head and Neck",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
+      }
+    },
     {
       "event_type": "trials_ingested",
       "created_at": "2026-02-04 11:26:59.543268",
@@ -1705,1216 +3087,93 @@
         "nct_id": "NCT06563323",
         "linked_assets": 1
       }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:11.507794",
-      "occurred_at": "2026-02-04 11:26:11.507794",
-      "payload": {
-        "nct_id": "NCT06586281",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:11.496785",
-      "occurred_at": "2026-02-04 11:26:11.496785",
-      "payload": {
-        "nct_id": "NCT05004727",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:11.484330",
-      "occurred_at": "2026-02-04 11:26:11.484330",
-      "payload": {
-        "nct_id": "NCT05669833",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:11.461867",
-      "occurred_at": "2026-02-04 11:26:11.461867",
-      "payload": {
-        "nct_id": "NCT06651489",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:11.450321",
-      "occurred_at": "2026-02-04 11:26:11.450321",
-      "payload": {
-        "nct_id": "NCT04882098",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:11.435074",
-      "occurred_at": "2026-02-04 11:26:11.435074",
-      "payload": {
-        "nct_id": "NCT04936308",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:11.416996",
-      "occurred_at": "2026-02-04 11:26:11.416996",
-      "payload": {
-        "nct_id": "NCT04929210",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:11.401188",
-      "occurred_at": "2026-02-04 11:26:11.401188",
-      "payload": {
-        "nct_id": "NCT06408935",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:11.388247",
-      "occurred_at": "2026-02-04 11:26:11.388247",
-      "payload": {
-        "nct_id": "NCT05049798",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:11.366439",
-      "occurred_at": "2026-02-04 11:26:11.366439",
-      "payload": {
-        "nct_id": "NCT07141004",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:11.355076",
-      "occurred_at": "2026-02-04 11:26:11.355076",
-      "payload": {
-        "nct_id": "NCT05347095",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:11.340983",
-      "occurred_at": "2026-02-04 11:26:11.340983",
-      "payload": {
-        "nct_id": "NCT06663332",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:11.328989",
-      "occurred_at": "2026-02-04 11:26:11.328989",
-      "payload": {
-        "nct_id": "NCT03451851",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:10.649217",
-      "occurred_at": "2026-02-04 11:26:10.649217",
-      "payload": {
-        "nct_id": "NCT04496063",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:10.637029",
-      "occurred_at": "2026-02-04 11:26:10.637029",
-      "payload": {
-        "nct_id": "NCT05387031",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:10.616753",
-      "occurred_at": "2026-02-04 11:26:10.616753",
-      "payload": {
-        "nct_id": "NCT02103361",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:10.603995",
-      "occurred_at": "2026-02-04 11:26:10.603995",
-      "payload": {
-        "nct_id": "NCT05299931",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:10.591487",
-      "occurred_at": "2026-02-04 11:26:10.591487",
-      "payload": {
-        "nct_id": "NCT03941132",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:10.579198",
-      "occurred_at": "2026-02-04 11:26:10.579198",
-      "payload": {
-        "nct_id": "NCT06807593",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:10.567980",
-      "occurred_at": "2026-02-04 11:26:10.567980",
-      "payload": {
-        "nct_id": "NCT05083182",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:10.536509",
-      "occurred_at": "2026-02-04 11:26:10.536509",
-      "payload": {
-        "nct_id": "NCT04372108",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:10.512528",
-      "occurred_at": "2026-02-04 11:26:10.512528",
-      "payload": {
-        "nct_id": "NCT05092269",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.829296",
-      "occurred_at": "2026-02-04 11:26:09.829296",
-      "payload": {
-        "nct_id": "NCT03899077",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.816203",
-      "occurred_at": "2026-02-04 11:26:09.816203",
-      "payload": {
-        "nct_id": "NCT03141671",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.784416",
-      "occurred_at": "2026-02-04 11:26:09.784416",
-      "payload": {
-        "nct_id": "NCT03902951",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.769162",
-      "occurred_at": "2026-02-04 11:26:09.769162",
-      "payload": {
-        "nct_id": "NCT03903835",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.754579",
-      "occurred_at": "2026-02-04 11:26:09.754579",
-      "payload": {
-        "nct_id": "NCT02913196",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.731808",
-      "occurred_at": "2026-02-04 11:26:09.731808",
-      "payload": {
-        "nct_id": "NCT06067269",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.718423",
-      "occurred_at": "2026-02-04 11:26:09.718423",
-      "payload": {
-        "nct_id": "NCT04181203",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.693412",
-      "occurred_at": "2026-02-04 11:26:09.693412",
-      "payload": {
-        "nct_id": "NCT06274047",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.680765",
-      "occurred_at": "2026-02-04 11:26:09.680765",
-      "payload": {
-        "nct_id": "NCT05960578",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.667377",
-      "occurred_at": "2026-02-04 11:26:09.667377",
-      "payload": {
-        "nct_id": "NCT07002320",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.654635",
-      "occurred_at": "2026-02-04 11:26:09.654635",
-      "payload": {
-        "nct_id": "NCT04662580",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.642166",
-      "occurred_at": "2026-02-04 11:26:09.642166",
-      "payload": {
-        "nct_id": "NCT04325828",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.628080",
-      "occurred_at": "2026-02-04 11:26:09.628080",
-      "payload": {
-        "nct_id": "NCT04108208",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.612151",
-      "occurred_at": "2026-02-04 11:26:09.612151",
-      "payload": {
-        "nct_id": "NCT05884398",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.596592",
-      "occurred_at": "2026-02-04 11:26:09.596592",
-      "payload": {
-        "nct_id": "NCT04557059",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.582995",
-      "occurred_at": "2026-02-04 11:26:09.582995",
-      "payload": {
-        "nct_id": "NCT03523442",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.571039",
-      "occurred_at": "2026-02-04 11:26:09.571039",
-      "payload": {
-        "nct_id": "NCT05901649",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.558049",
-      "occurred_at": "2026-02-04 11:26:09.558049",
-      "payload": {
-        "nct_id": "NCT03767244",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.543587",
-      "occurred_at": "2026-02-04 11:26:09.543587",
-      "payload": {
-        "nct_id": "NCT05818683",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:09.529658",
-      "occurred_at": "2026-02-04 11:26:09.529658",
-      "payload": {
-        "nct_id": "NCT04267887",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:05.386403",
-      "occurred_at": "2026-02-04 11:26:05.386403",
-      "payload": {
-        "nct_id": "NCT04951622",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:03.281571",
-      "occurred_at": "2026-02-04 11:26:03.281571",
-      "payload": {
-        "nct_id": "NCT05265273",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:26:03.267688",
-      "occurred_at": "2026-02-04 11:26:03.267688",
-      "payload": {
-        "nct_id": "NCT06251076",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:59.065394",
-      "occurred_at": "2026-02-04 11:25:59.065394",
-      "payload": {
-        "nct_id": "NCT07217587",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:58.379052",
-      "occurred_at": "2026-02-04 11:25:58.379052",
-      "payload": {
-        "nct_id": "NCT07196722",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:58.345593",
-      "occurred_at": "2026-02-04 11:25:58.345593",
-      "payload": {
-        "nct_id": "NCT05923073",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:58.303705",
-      "occurred_at": "2026-02-04 11:25:58.303705",
-      "payload": {
-        "nct_id": "NCT06934226",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:58.290027",
-      "occurred_at": "2026-02-04 11:25:58.290027",
-      "payload": {
-        "nct_id": "NCT07227454",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:58.258847",
-      "occurred_at": "2026-02-04 11:25:58.258847",
-      "payload": {
-        "nct_id": "NCT05242471",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:58.240423",
-      "occurred_at": "2026-02-04 11:25:58.240423",
-      "payload": {
-        "nct_id": "NCT07196748",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:58.215387",
-      "occurred_at": "2026-02-04 11:25:58.215387",
-      "payload": {
-        "nct_id": "NCT06741969",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:58.190534",
-      "occurred_at": "2026-02-04 11:25:58.190534",
-      "payload": {
-        "nct_id": "NCT05242484",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:58.172882",
-      "occurred_at": "2026-02-04 11:25:58.172882",
-      "payload": {
-        "nct_id": "NCT03218488",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:58.150920",
-      "occurred_at": "2026-02-04 11:25:58.150920",
-      "payload": {
-        "nct_id": "NCT05912517",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:58.137668",
-      "occurred_at": "2026-02-04 11:25:58.137668",
-      "payload": {
-        "nct_id": "NCT06559306",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:55.295511",
-      "occurred_at": "2026-02-04 11:25:55.295511",
-      "payload": {
-        "nct_id": "NCT04033445",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:55.261074",
-      "occurred_at": "2026-02-04 11:25:55.261074",
-      "payload": {
-        "nct_id": "NCT03466411",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:42.037608",
-      "occurred_at": "2026-02-04 11:25:42.037608",
-      "payload": {
-        "nct_id": "NCT06208150",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:42.022143",
-      "occurred_at": "2026-02-04 11:25:42.022143",
-      "payload": {
-        "nct_id": "NCT06285318",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:25:42.007181",
-      "occurred_at": "2026-02-04 11:25:42.007181",
-      "payload": {
-        "nct_id": "NCT05972135",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "pipeline_ingested",
-      "created_at": "2026-02-04 11:25:38.524119",
-      "occurred_at": "2026-02-04 11:25:38.524119",
-      "payload": {
-        "as_of_date": null,
-        "pdf_url": "https://s203.q4cdn.com/636242992/files/doc_financials/2025/q4/JNJ-Pipeline-4Q25.pdf",
-        "assets_seen": 40
-      }
-    },
-    {
-      "event_type": "asset_indication_removed",
-      "created_at": "2026-02-04 11:25:38.403500",
-      "occurred_at": "2026-02-04 11:25:38.403500",
-      "payload": {
-        "asset": "RYBREVANT",
-        "indication": "Frontline Non Small",
-        "stage": "Phase 3",
-        "therapeutic_area": "Oncology"
-      }
-    },
-    {
-      "event_type": "asset_indication_removed",
-      "created_at": "2026-02-04 11:25:38.401229",
-      "occurred_at": "2026-02-04 11:25:38.401229",
-      "payload": {
-        "asset": "RYBREVANT",
-        "indication": "Colorectal Cancer",
-        "stage": "Phase 3",
-        "therapeutic_area": "Oncology"
-      }
-    },
-    {
-      "event_type": "asset_indication_added",
-      "created_at": "2026-02-04 11:25:38.397918",
-      "occurred_at": "2026-02-04 11:25:38.397918",
-      "payload": {
-        "asset": "RYBREVANT",
-        "indication": "Head and Neck",
-        "stage": "Phase 1",
-        "therapeutic_area": "Oncology"
-      }
-    },
-    {
-      "event_type": "trials_ingested",
-      "created_at": "2026-02-04 10:56:19.054685",
-      "occurred_at": "2026-02-04 10:56:19.054685",
-      "payload": {
-        "trials_seen": 258,
-        "inserted": 62,
-        "updated": 196,
-        "status_changed": 0,
-        "bad_aliases": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:56:06.740648",
-      "occurred_at": "2026-02-04 10:56:06.740648",
-      "payload": {
-        "nct_id": "NCT04883619",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:56:06.729502",
-      "occurred_at": "2026-02-04 10:56:06.729502",
-      "payload": {
-        "nct_id": "NCT06533098",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:56:06.718057",
-      "occurred_at": "2026-02-04 10:56:06.718057",
-      "payload": {
-        "nct_id": "NCT05379634",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:56:06.694639",
-      "occurred_at": "2026-02-04 10:56:06.694639",
-      "payload": {
-        "nct_id": "NCT05327114",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:56:06.681999",
-      "occurred_at": "2026-02-04 10:56:06.681999",
-      "payload": {
-        "nct_id": "NCT06449651",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:57.381269",
-      "occurred_at": "2026-02-04 10:55:57.381269",
-      "payload": {
-        "nct_id": "NCT06807424",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:57.366483",
-      "occurred_at": "2026-02-04 10:55:57.366483",
-      "payload": {
-        "nct_id": "NCT06878404",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:56.139922",
-      "occurred_at": "2026-02-04 10:55:56.139922",
-      "payload": {
-        "nct_id": "NCT03767075",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:56.116960",
-      "occurred_at": "2026-02-04 10:55:56.116960",
-      "payload": {
-        "nct_id": "NCT06632236",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:56.095258",
-      "occurred_at": "2026-02-04 10:55:56.095258",
-      "payload": {
-        "nct_id": "NCT05117931",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:56.083043",
-      "occurred_at": "2026-02-04 10:55:56.083043",
-      "payload": {
-        "nct_id": "NCT05299125",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:56.070465",
-      "occurred_at": "2026-02-04 10:55:56.070465",
-      "payload": {
-        "nct_id": "NCT04538664",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:56.050185",
-      "occurred_at": "2026-02-04 10:55:56.050185",
-      "payload": {
-        "nct_id": "NCT04988295",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:56.028387",
-      "occurred_at": "2026-02-04 10:55:56.028387",
-      "payload": {
-        "nct_id": "NCT04487080",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:56.002470",
-      "occurred_at": "2026-02-04 10:55:56.002470",
-      "payload": {
-        "nct_id": "NCT05663866",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:55.983392",
-      "occurred_at": "2026-02-04 10:55:55.983392",
-      "payload": {
-        "nct_id": "NCT04077463",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:55.951714",
-      "occurred_at": "2026-02-04 10:55:55.951714",
-      "payload": {
-        "nct_id": "NCT06662786",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:55.935454",
-      "occurred_at": "2026-02-04 10:55:55.935454",
-      "payload": {
-        "nct_id": "NCT05488314",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:55.922805",
-      "occurred_at": "2026-02-04 10:55:55.922805",
-      "payload": {
-        "nct_id": "NCT05498428",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:55.907248",
-      "occurred_at": "2026-02-04 10:55:55.907248",
-      "payload": {
-        "nct_id": "NCT06532032",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:55.894923",
-      "occurred_at": "2026-02-04 10:55:55.894923",
-      "payload": {
-        "nct_id": "NCT05908734",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:55.881943",
-      "occurred_at": "2026-02-04 10:55:55.881943",
-      "payload": {
-        "nct_id": "NCT06667076",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:55.858770",
-      "occurred_at": "2026-02-04 10:55:55.858770",
-      "payload": {
-        "nct_id": "NCT02609776",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:55.845147",
-      "occurred_at": "2026-02-04 10:55:55.845147",
-      "payload": {
-        "nct_id": "NCT06750094",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:55.829525",
-      "occurred_at": "2026-02-04 10:55:55.829525",
-      "payload": {
-        "nct_id": "NCT06385080",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:55.389430",
-      "occurred_at": "2026-02-04 10:55:55.389430",
-      "payload": {
-        "nct_id": "NCT06649695",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:53.064855",
-      "occurred_at": "2026-02-04 10:55:53.064855",
-      "payload": {
-        "nct_id": "NCT06852222",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:53.049450",
-      "occurred_at": "2026-02-04 10:55:53.049450",
-      "payload": {
-        "nct_id": "NCT04811560",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:53.035478",
-      "occurred_at": "2026-02-04 10:55:53.035478",
-      "payload": {
-        "nct_id": "NCT07295951",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:53.023292",
-      "occurred_at": "2026-02-04 10:55:53.023292",
-      "payload": {
-        "nct_id": "NCT05453903",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:52.194427",
-      "occurred_at": "2026-02-04 10:55:52.194427",
-      "payload": {
-        "nct_id": "NCT07164443",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:52.180450",
-      "occurred_at": "2026-02-04 10:55:52.180450",
-      "payload": {
-        "nct_id": "NCT07225946",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:52.159238",
-      "occurred_at": "2026-02-04 10:55:52.159238",
-      "payload": {
-        "nct_id": "NCT07319871",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:51.075020",
-      "occurred_at": "2026-02-04 10:55:51.075020",
-      "payload": {
-        "nct_id": "NCT07276399",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:51.061386",
-      "occurred_at": "2026-02-04 10:55:51.061386",
-      "payload": {
-        "nct_id": "NCT05379595",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:51.047854",
-      "occurred_at": "2026-02-04 10:55:51.047854",
-      "payload": {
-        "nct_id": "NCT07227025",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:50.334857",
-      "occurred_at": "2026-02-04 10:55:50.334857",
-      "payload": {
-        "nct_id": "NCT05601973",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:36.541449",
-      "occurred_at": "2026-02-04 10:55:36.541449",
-      "payload": {
-        "nct_id": "NCT04656951",
-        "title": "Daratumumab for First Line Treatment of Transplant-ineligible Myeloma Patients Followed by Daratumumab Re-treatment at First Relapse"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:36.531231",
-      "occurred_at": "2026-02-04 10:55:36.531231",
-      "payload": {
-        "nct_id": "NCT05527340",
-        "title": "Multicenter, Phase II, National and Open-label Study to Evaluate Iberdomide-dexamethasone Alone or in Combination With Standard MM Treatment Regimens in Transplant Ineligible Newly Diagnosed Patients."
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:36.519741",
-      "occurred_at": "2026-02-04 10:55:36.519741",
-      "payload": {
-        "nct_id": "NCT03289299",
-        "title": "Aggressive Smoldering Curative Approach Evaluating Novel Therapies (ASCENT): A Phase 2 Trial of Induction, Consolidation, and Maintenance in Subjects With High Risk Smoldering Multiple Myeloma (SMM)"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:36.506028",
-      "occurred_at": "2026-02-04 10:55:36.506028",
-      "payload": {
-        "nct_id": "NCT02925234",
-        "title": "A Dutch National Study on Behalf of the CPCT to Facilitate Patient Access to Commercially Available, Targeted Anti-cancer Drugs to Determine the Potential Efficacy in Treatment of Advanced Cancers With a Known Molecular Profile"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:36.090232",
-      "occurred_at": "2026-02-04 10:55:36.090232",
-      "payload": {
-        "nct_id": "NCT05666700",
-        "title": "CAR-T Cell Therapy in RelApsed/Refractory Myeloma With ExtrameduLlary Disease - an in Vivo Imaging and Molecular Monitoring Study"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:36.078881",
-      "occurred_at": "2026-02-04 10:55:36.078881",
-      "payload": {
-        "nct_id": "NCT06189833",
-        "title": "Phase 2 Study Applying Innovative Minimal Residual Disease (MRD) Techniques for Participants With Previously Untreated Multiple Myeloma Treated With D-VRd Prior To and After High-dose Therapy Followed by Autologous Stem Cell Transplantation (ASCT) - TAURUS"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:36.067517",
-      "occurred_at": "2026-02-04 10:55:36.067517",
-      "payload": {
-        "nct_id": "NCT06149910",
-        "title": "Evaluating the Uptake and Utility of Clinical Pathways for Newly Diagnosed Patients With Multiple Myeloma That Aim to Achieve and Maintain Measurable Residual Disease (MRD)-Negativity in Community Oncology Settings"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:36.056196",
-      "occurred_at": "2026-02-04 10:55:36.056196",
-      "payload": {
-        "nct_id": "NCT03188172",
-        "title": "MUK Nine b: OPTIMUM. A Phase II Study Evaluating Optimised Combination of Biological Therapy in Newly Diagnosed High Risk Multiple Myeloma and Plasma Cell Leukaemia."
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:36.044614",
-      "occurred_at": "2026-02-04 10:55:36.044614",
-      "payload": {
-        "nct_id": "NCT03942224",
-        "title": "A Randomized Phase II Study of DaRatumumab, Ixazomib, and Dexamethasone vs Daratumumab, Bortezomib (VElcade) and Dexamethasone Followed by Daratumumab-Ixazomib-Dexamethasone in Newly Diagnosed Multiple Myeloma (DeRIVE Study)"
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:36.037708",
-      "occurred_at": "2026-02-04 10:55:36.037708",
-      "payload": {
-        "nct_id": "NCT06505369",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:36.019300",
-      "occurred_at": "2026-02-04 10:55:36.019300",
-      "payload": {
-        "nct_id": "NCT04140162",
-        "title": "Phase 2 Study With Minimal Residual Disease (MRD) Driven Adaptive Strategy in Treatment for Newly Diagnosed Multiple Myeloma (MM) With Upfront Daratumumab-based Therapy"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:35.566014",
-      "occurred_at": "2026-02-04 10:55:35.566014",
-      "payload": {
-        "nct_id": "NCT03710603",
-        "title": "A Phase 3 Study Comparing Daratumumab, VELCADE (Bortezomib), Lenalidomide, and Dexamethasone (D-VRd) vs VELCADE, Lenalidomide, and Dexamethasone (VRd) in Subjects With Previously Untreated Multiple Myeloma Who Are Eligible for High-dose Therapy"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:35.545424",
-      "occurred_at": "2026-02-04 10:55:35.545424",
-      "payload": {
-        "nct_id": "NCT06107738",
-        "title": "IBEX: Phase 2 Trial of Iberdomide + SQ Daratumumab As Post-Autologous Stem Cell Transplant Maintenance Therapy in Multiple Myeloma"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:35.534747",
-      "occurred_at": "2026-02-04 10:55:35.534747",
-      "payload": {
-        "nct_id": "NCT04667663",
-        "title": "Phase Ib of Cyclophosphamide, Pomalidomide, Dexamethasone and Daratumumab (CPD-DARA) in Patients With Relapsed/Refractory Multiple Myeloma. (The CPD-DARA Study)"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:35.524561",
-      "occurred_at": "2026-02-04 10:55:35.524561",
-      "payload": {
-        "nct_id": "NCT04023747",
-        "title": "Oxford Pre-cancerous Lymphoproliferative Disorders: Analysis and Interception Study"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:35.513988",
-      "occurred_at": "2026-02-04 10:55:35.513988",
-      "payload": {
-        "nct_id": "NCT06549634",
-        "title": "Biomarkers of AKI in Patients With Multiple Myeloma Receiving Daratumumab: A Pilot Study"
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:35.507380",
-      "occurred_at": "2026-02-04 10:55:35.507380",
-      "payload": {
-        "nct_id": "NCT06100237",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:35.491083",
-      "occurred_at": "2026-02-04 10:55:35.491083",
-      "payload": {
-        "nct_id": "NCT06142396",
-        "title": "Pilot Study of Daratumumab in Combination With Bortezomib, Cyclophosphamide, and Dexamethasone (Dara-CyBorD) in Newly Diagnosed Multiple Myeloma Patients With Renal Failure"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:35.480454",
-      "occurred_at": "2026-02-04 10:55:35.480454",
-      "payload": {
-        "nct_id": "NCT05001087",
-        "title": "A \"Physician & Patient-powered\" Cohort Registry"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:35.469308",
-      "occurred_at": "2026-02-04 10:55:35.469308",
-      "payload": {
-        "nct_id": "NCT03236428",
-        "title": "A Phase II Study of the CD38 Antibody Daratumumab in Patients With High-Risk MGUS and Low-Risk Smoldering Multiple Myeloma"
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:35.462453",
-      "occurred_at": "2026-02-04 10:55:35.462453",
-      "payload": {
-        "nct_id": "NCT06477783",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:35.449275",
-      "occurred_at": "2026-02-04 10:55:35.449275",
-      "payload": {
-        "nct_id": "NCT06353022",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:35.436226",
-      "occurred_at": "2026-02-04 10:55:35.436226",
-      "payload": {
-        "nct_id": "NCT05849610",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:35.003470",
-      "occurred_at": "2026-02-04 10:55:35.003470",
-      "payload": {
-        "nct_id": "NCT04166565",
-        "title": "Daratumumab Combined With Bortezomib, Cyclophosphamide and Dexamethasone for the Treatment of Multiple Myeloma Patients Presenting With Extramedullary Disease. The ANTARES Study"
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:55:34.997270",
-      "occurred_at": "2026-02-04 10:55:34.997270",
-      "payload": {
-        "nct_id": "NCT05469893",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:34.980490",
-      "occurred_at": "2026-02-04 10:55:34.980490",
-      "payload": {
-        "nct_id": "NCT03556332",
-        "title": "Phase 2 Trial of Intensive Chemo-immunotherapy With Carfilzomib, Lenalidomide, Dexamethasone and Daratumumab for Relapsed/Refractory Myeloma in the Context of Salvage Autologous Hematopoietic Cell Transplantation"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:34.960673",
-      "occurred_at": "2026-02-04 10:55:34.960673",
-      "payload": {
-        "nct_id": "NCT04268498",
-        "title": "Phase 2, Open-Label Randomized Study of Daratumumab, Carfilzomib, Lenalidomide, and Dexamethasone vs Carfilzomib, Lenalidomide, and Dexamethasone in Patients With Newly Diagnosed Multiple Myeloma"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:34.948421",
-      "occurred_at": "2026-02-04 10:55:34.948421",
-      "payload": {
-        "nct_id": "NCT07032714",
-        "title": "MAGENTA: Phase I Study of Mezigdomide and Talquetamab in Relapsed and Refractory Multiple Myeloma"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-04 10:55:34.937270",
-      "occurred_at": "2026-02-04 10:55:34.937270",
-      "payload": {
-        "nct_id": "NCT04775550",
-        "title": "B- PRISM (Precision Intervention Smoldering Myeloma): A Phase II Trial of Combination of Daratumumab, Bortezomib, Lenalidomide and Dexamethasone in High- Risk Smoldering Multiple Myeloma"
-      }
     }
   ],
   "trials": [
+    {
+      "nct_id": "NCT04083976",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-02-04",
+      "linked_assets": []
+    },
+    {
+      "nct_id": "NCT04119050",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2,PHASE3",
+      "last_update_posted": "2026-02-04",
+      "linked_assets": []
+    },
+    {
+      "nct_id": "NCT04538664",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-02-04",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT05663866",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-02-04",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT04487080",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-02-04",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT04181827",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-02-04",
+      "linked_assets": []
+    },
+    {
+      "nct_id": "NCT04882098",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-02-04",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "nct_id": "NCT04936308",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-02-04",
+      "linked_assets": [
+        "TREMFYA"
+      ]
+    },
+    {
+      "nct_id": "NCT04325828",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-02-04",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
+    {
+      "nct_id": "NCT04108208",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE4",
+      "last_update_posted": "2026-02-04",
+      "linked_assets": [
+        "ERLEADA"
+      ]
+    },
     {
       "nct_id": "NCT04113018",
       "overall_status": "ACTIVE_NOT_RECRUITING",
@@ -3209,84 +3468,6 @@
       "phase": "PHASE2",
       "last_update_posted": "2026-01-16",
       "linked_assets": []
-    },
-    {
-      "nct_id": "NCT07258485",
-      "overall_status": "RECRUITING",
-      "phase": null,
-      "last_update_posted": "2026-01-16",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT06095115",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-01-16",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT07230860",
-      "overall_status": "NOT_YET_RECRUITING",
-      "phase": "PHASE2",
-      "last_update_posted": "2026-01-16",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT06785012",
-      "overall_status": "RECRUITING",
-      "phase": "PHASE2",
-      "last_update_posted": "2026-01-16",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT05841030",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": null,
-      "last_update_posted": "2026-01-16",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT06919965",
-      "overall_status": "RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-01-16",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT06533098",
-      "overall_status": "RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-01-16",
-      "linked_assets": [
-        "nipocalimab"
-      ]
-    },
-    {
-      "nct_id": "NCT05379634",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE2",
-      "last_update_posted": "2026-01-16",
-      "linked_assets": [
-        "nipocalimab"
-      ]
-    },
-    {
-      "nct_id": "NCT06449651",
-      "overall_status": "RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-01-16",
-      "linked_assets": [
-        "nipocalimab"
-      ]
-    },
-    {
-      "nct_id": "NCT06741969",
-      "overall_status": "RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-01-16",
-      "linked_assets": [
-        "nipocalimab"
-      ]
     }
   ]
 }
