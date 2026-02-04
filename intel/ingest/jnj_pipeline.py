@@ -15,22 +15,18 @@ from sqlalchemy.orm import Session
 from ..http import get
 from ..settings import settings
 from ..evidence import store_bytes
-from ..repo import (
-    add_evidence,
-    ensure_company,
-    upsert_asset,
-    ensure_alias,
-    replace_asset_indications,
-    emit_change,
-)
+from ..repo import add_evidence, ensure_company, upsert_asset, ensure_alias, replace_asset_indications, emit_change
 from ..normalize import split_asset_aliases
 from ..diff import latest_indications_before, current_indications_for_evidence, diff_sets
-from ..sanitize import sanitize_asset_label, is_plausible_asset_label, sanitize_indication_text
-
+from ..sanitize import (
+    sanitize_asset_label,
+    sanitize_alias,
+    sanitize_indication_text,
+    is_plausible_asset_label,
+)
 
 JNICALL_PIPELINE_PAGE = "https://www.investor.jnj.com/pipeline/development-pipeline/default.aspx"
 
-# Pipeline PDF on IR CDN (q4cdn) is usually accessible even when the HTML page 403s.
 Q4CDN_BASE = "https://s203.q4cdn.com/636242992/files/doc_financials"
 
 
@@ -39,7 +35,6 @@ def _iter_recent_quarters(n: int = 10) -> list[tuple[int, int]]:
     q = (today.month - 1) // 3 + 1
     y = today.year
 
-    # start from previous quarter
     if q == 1:
         y -= 1
         q = 4
@@ -225,7 +220,7 @@ def _is_asset_line(line: dict[str, Any], median_size: float) -> bool:
     if "jnj-" in low:
         return True
 
-    # visually larger in PDF
+    # typical assets are visually larger in the PDF
     if line["avg_size"] >= (median_size + 0.8):
         return True
 
@@ -233,9 +228,9 @@ def _is_asset_line(line: dict[str, Any], median_size: float) -> bool:
     if re.match(r"^.{2,60}\(.{2,60}\)$", cleaned) and re.search(r"[a-z]", cleaned):
         return True
 
-    # single token (e.g. icotrokinra)
+    # single token (e.g., icotrokinra)
     if " " not in cleaned and 4 <= len(cleaned) <= 25 and re.search(r"[a-z]", cleaned):
-        if low not in {"others", "other", "unknown", "undisclosed"}:
+        if cleaned.lower() not in {"others", "other", "unknown", "undisclosed"}:
             return True
 
     # all caps brand
@@ -278,6 +273,9 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
                     ind = sanitize_indication_text(" ".join(indication_parts).strip())
                     if not ind:
                         return
+                    # drop absurdly long indications (usually PDF footer leakage)
+                    if len(ind) > 220:
+                        return
                     rows.append(
                         {
                             "asset_label": current_asset,
@@ -289,15 +287,12 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
 
                 for ln in lines:
                     if _is_asset_line(ln, median):
-                        # flush previous asset block
                         flush()
-
                         cleaned = sanitize_asset_label(ln["text"])
                         if cleaned and is_plausible_asset_label(cleaned):
                             current_asset = cleaned
                             indication_parts = []
                         else:
-                            # treat as noise line if sanitizer rejects
                             current_asset = None
                             indication_parts = []
                     else:
@@ -313,9 +308,6 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
         if ind_low.startswith("strategic partnerships"):
             continue
         if ind_low.startswith("*this is not"):
-            continue
-        # throw away absurdly long "indications" (usually PDF footer leakage)
-        if len(r["indication"]) > 220:
             continue
         cleaned_rows.append(r)
 
@@ -341,13 +333,7 @@ def ingest_jnj_pipeline(session: Session, company_id: str = "jnj") -> int:
             pdf_url = discover_jnj_pipeline_pdf_url(max_quarters=10)
 
     pdf_bytes = get(pdf_url).content
-    content_hash, path, meta = store_bytes(
-        company_id,
-        "pipeline_pdf",
-        pdf_url,
-        pdf_bytes,
-        meta={"source": "jnj_q4_pipeline"},
-    )
+    content_hash, path, meta = store_bytes(company_id, "pipeline_pdf", pdf_url, pdf_bytes, meta={"source": "jnj_q4_pipeline"})
     evidence = add_evidence(session, company_id, "pipeline_pdf", pdf_url, content_hash, str(path), meta=meta)
 
     parsed = parse_jnj_pipeline_pdf(pdf_bytes)
@@ -359,22 +345,20 @@ def ingest_jnj_pipeline(session: Session, company_id: str = "jnj") -> int:
     for r in rows:
         by_asset.setdefault(r["asset_label"], []).append(r)
 
-    inserted_assets = 0
-
     for asset_label, recs in by_asset.items():
-        cleaned_label = sanitize_asset_label(asset_label) or asset_label
-        if not is_plausible_asset_label(cleaned_label):
+        cleaned_label = sanitize_asset_label(asset_label)
+        if not cleaned_label or not is_plausible_asset_label(cleaned_label):
             continue
 
         canonical, aliases = split_asset_aliases(cleaned_label)
         canonical = sanitize_asset_label(canonical) or canonical
-
         if not is_plausible_asset_label(canonical):
             continue
 
         asset = upsert_asset(session, company_id, canonical)
+
         for a in aliases:
-            aa = sanitize_asset_label(a) or a
+            aa = sanitize_alias(a)
             if aa and is_plausible_asset_label(aa):
                 ensure_alias(session, asset.id, aa)
 
@@ -389,46 +373,14 @@ def ingest_jnj_pipeline(session: Session, company_id: str = "jnj") -> int:
             )
 
         old = latest_indications_before(session, asset.id, evidence.id)
-        replace_asset_indications(
-            session,
-            asset.id,
-            indications,
-            evidence_id=evidence.id,
-            as_of_date=as_of_date,
-            therapeutic_area=None,
-        )
+        replace_asset_indications(session, asset.id, indications, evidence_id=evidence.id, as_of_date=as_of_date, therapeutic_area=None)
         new = current_indications_for_evidence(session, asset.id, evidence.id)
         added, removed = diff_sets(old, new)
 
-        if not old and new:
-            inserted_assets += 1
-            emit_change(session, company_id, "asset_added", {"asset": canonical}, evidence_id=evidence.id, asset_id=asset.id)
-
         for (ind, stage, ta) in added:
-            emit_change(
-                session,
-                company_id,
-                "asset_indication_added",
-                {"asset": canonical, "indication": ind, "stage": stage, "therapeutic_area": ta},
-                evidence_id=evidence.id,
-                asset_id=asset.id,
-            )
-
+            emit_change(session, company_id, "asset_indication_added", {"asset": canonical, "indication": ind, "stage": stage, "therapeutic_area": ta}, evidence_id=evidence.id, asset_id=asset.id)
         for (ind, stage, ta) in removed:
-            emit_change(
-                session,
-                company_id,
-                "asset_indication_removed",
-                {"asset": canonical, "indication": ind, "stage": stage, "therapeutic_area": ta},
-                evidence_id=evidence.id,
-                asset_id=asset.id,
-            )
+            emit_change(session, company_id, "asset_indication_removed", {"asset": canonical, "indication": ind, "stage": stage, "therapeutic_area": ta}, evidence_id=evidence.id, asset_id=asset.id)
 
-    emit_change(
-        session,
-        company_id,
-        "pipeline_ingested",
-        {"as_of_date": as_of_date, "pdf_url": pdf_url, "assets_seen": len(by_asset)},
-        evidence_id=evidence.id,
-    )
+    emit_change(session, company_id, "pipeline_ingested", {"as_of_date": as_of_date, "pdf_url": pdf_url, "assets_seen": len(by_asset)}, evidence_id=evidence.id)
     return len(by_asset)
