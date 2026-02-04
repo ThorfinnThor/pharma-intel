@@ -2,12 +2,10 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import sqlite3
-from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Tuple
+from typing import Any
 
 from intel.sanitize import sanitize_asset_label, is_plausible_asset_label
 
@@ -61,20 +59,21 @@ def fetch_assets(conn: sqlite3.Connection, company_id: str) -> list[dict[str, An
     if disclosed_col:
         sel.append(disclosed_col)
 
-    rows = conn.execute(
-        f"SELECT {', '.join(sel)} FROM assets WHERE company_id = ?",
-        (company_id,),
-    ).fetchall()
+    rows = conn.execute(f"SELECT {', '.join(sel)} FROM assets WHERE company_id = ?", (company_id,)).fetchall()
 
     out = []
     for r in rows:
-        raw = r[name_col]
-        clean = sanitize_asset_label(raw) or raw
-        if not is_plausible_asset_label(clean):
-            continue
         if disclosed_col and int(r[disclosed_col]) == 0:
             continue
-        out.append({"asset_id": r["id"], "asset_name": clean})
+
+        raw = r[name_col]
+        clean = sanitize_asset_label(raw) or raw
+
+        # final gate: only plausible labels survive
+        if not is_plausible_asset_label(clean):
+            continue
+
+        out.append({"asset_id": int(r["id"]), "asset_name": clean})
     return out
 
 
@@ -91,12 +90,8 @@ def fetch_indications(conn: sqlite3.Connection, asset_ids: list[int]) -> dict[in
 
     m: dict[int, list[dict[str, Any]]] = {}
     for r in rows:
-        m.setdefault(r["asset_id"], []).append(
-            {
-                "indication": r["indication"],
-                "stage": r["stage"],
-                "therapeutic_area": r["therapeutic_area"],
-            }
+        m.setdefault(int(r["asset_id"]), []).append(
+            {"indication": r["indication"], "stage": r["stage"], "therapeutic_area": r["therapeutic_area"]}
         )
     return m
 
@@ -123,19 +118,19 @@ def pick_top_assets(
     for a in assets:
         aid = a["asset_id"]
         inds = indications_by_asset.get(aid, [])
-        highest = None
+        highest = "Unknown"
         best_rank = -1
         for ind in inds:
             rk = stage_rank(ind.get("stage"))
             if rk > best_rank:
                 best_rank = rk
-                highest = ind.get("stage")
+                highest = ind.get("stage") or "Unknown"
 
         enriched.append(
             {
                 "asset_id": aid,
                 "asset_name": a["asset_name"],
-                "highest_stage": highest or "Unknown",
+                "highest_stage": highest,
                 "linked_trials_count": int(trial_counts.get(aid, 0)),
                 "indications": inds,
             }
@@ -147,9 +142,7 @@ def pick_top_assets(
 
 def fetch_recent_changes(conn: sqlite3.Connection, company_id: str, limit: int = 200) -> list[dict[str, Any]]:
     cols = table_columns(conn, "change_events")
-    ts_col = "occurred_at" if "occurred_at" in cols else ("created_at" if "created_at" in cols else None)
-    if not ts_col:
-        ts_col = "occurred_at"
+    ts_col = "occurred_at" if "occurred_at" in cols else ("created_at" if "created_at" in cols else "occurred_at")
 
     rows = conn.execute(
         f"SELECT event_type, {ts_col} AS ts, payload FROM change_events WHERE company_id = ? ORDER BY {ts_col} DESC LIMIT ?",
@@ -158,14 +151,14 @@ def fetch_recent_changes(conn: sqlite3.Connection, company_id: str, limit: int =
 
     out = []
     for r in rows:
-        out.append(
-            {
-                "event_type": r["event_type"],
-                "created_at": r["ts"],
-                "occurred_at": r["ts"],
-                "payload": json.loads(r["payload"]) if isinstance(r["payload"], str) else r["payload"],
-            }
-        )
+        payload = r["payload"]
+        if isinstance(payload, str):
+            try:
+                payload = json.loads(payload)
+            except Exception:
+                payload = {"raw": payload}
+
+        out.append({"event_type": r["event_type"], "created_at": r["ts"], "occurred_at": r["ts"], "payload": payload})
     return out
 
 
@@ -244,6 +237,7 @@ def write_company_md(page: dict[str, Any], outpath: Path) -> None:
 def build_company_page(conn: sqlite3.Connection, company_id: str) -> dict[str, Any]:
     comp = load_company(conn, company_id)
     assets = fetch_assets(conn, company_id)
+
     inds = fetch_indications(conn, [a["asset_id"] for a in assets])
     trial_counts = fetch_linked_trial_counts(conn, company_id)
 
@@ -253,7 +247,7 @@ def build_company_page(conn: sqlite3.Connection, company_id: str) -> dict[str, A
     assets_with_trials = sum(1 for a in assets if trial_counts.get(a["asset_id"], 0) > 0)
     trials_total = conn.execute("SELECT COUNT(*) AS n FROM trials WHERE company_id = ?", (company_id,)).fetchone()["n"]
 
-    page = {
+    return {
         "company_id": comp["company_id"],
         "company_name": comp["company_name"],
         "generated_at": now_iso(),
@@ -266,7 +260,6 @@ def build_company_page(conn: sqlite3.Connection, company_id: str) -> dict[str, A
         "recent_changes": fetch_recent_changes(conn, company_id, limit=200),
         "trials": fetch_trials(conn, company_id, limit=50),
     }
-    return page
 
 
 def main() -> None:
@@ -304,7 +297,6 @@ def main() -> None:
 
     (outdir / "index.json").write_text(json.dumps(index, indent=2), encoding="utf-8")
 
-    # basic index.md
     md = ["# Pharma Intel", "", f"Generated: `{index['generated_at']}`", "", "## Companies", ""]
     for c in index["companies"]:
         md.append(f"- **{c['company_name']}** ({c['company_id']}): {c['assets_total']} assets, {c['trials_total']} trials")
