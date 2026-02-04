@@ -1,18 +1,11 @@
 {
-  "generated_at": "2026-02-03T11:03:52Z",
   "company_id": "immatics",
   "company_name": "Immatics",
+  "generated_at": "2026-02-04T10:56:25Z",
   "kpis": {
-    "assets_total": 8,
+    "assets_total": 6,
     "assets_with_trials": 2,
-    "trials_total": 5,
-    "trials_by_status": {
-      "RECRUITING": 5
-    },
-    "assets_by_stage": {
-      "Phase 1": 6,
-      "Preclinical": 2
-    }
+    "trials_total": 5
   },
   "top_assets": [
     {
@@ -24,35 +17,64 @@
         {
           "indication": "2L melanoma",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
         },
         {
-          "indication": "2L melanoma",
+          "indication": "Uveal melanoma",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
-        },
-        {
-          "indication": "2L melanoma",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
         },
         {
           "indication": "Solid cancers (in combination with mRNA-4203)",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "2L melanoma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Uveal melanoma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology"
         },
         {
           "indication": "Solid cancers (in combination with mRNA-4203)",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "2L melanoma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Uveal melanoma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Solid cancers (in combination with mRNA-4203)",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "2L melanoma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Uveal melanoma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Solid cancers (in combination with mRNA-4203)",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology"
         }
-      ],
-      "last_change_at": null
+      ]
     },
     {
       "asset_id": 47,
@@ -63,23 +85,24 @@
         {
           "indication": "Solid cancers (combo with anzu-cel / IMA203)",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
         },
         {
           "indication": "Solid cancers (combo with anzu-cel / IMA203)",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
         },
         {
           "indication": "Solid cancers (combo with anzu-cel / IMA203)",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Solid cancers (combo with anzu-cel / IMA203)",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology"
         }
-      ],
-      "last_change_at": null
+      ]
     },
     {
       "asset_id": 50,
@@ -90,23 +113,24 @@
         {
           "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
         },
         {
           "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
         },
         {
           "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology"
         }
-      ],
-      "last_change_at": null
+      ]
     },
     {
       "asset_id": 49,
@@ -117,23 +141,24 @@
         {
           "indication": "Melanoma, gynecologic cancers, other solid cancers",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
         },
         {
           "indication": "Melanoma, gynecologic cancers, other solid cancers",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
         },
         {
           "indication": "Melanoma, gynecologic cancers, other solid cancers",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Melanoma, gynecologic cancers, other solid cancers",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology"
         }
-      ],
-      "last_change_at": null
+      ]
     },
     {
       "asset_id": 51,
@@ -144,23 +169,24 @@
         {
           "indication": "HNSCC, sqNSCLC, other solid cancers",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
         },
         {
           "indication": "HNSCC, sqNSCLC, other solid cancers",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
         },
         {
           "indication": "HNSCC, sqNSCLC, other solid cancers",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "HNSCC, sqNSCLC, other solid cancers",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology"
         }
-      ],
-      "last_change_at": null
+      ]
     },
     {
       "asset_id": 48,
@@ -171,85 +197,151 @@
         {
           "indication": "Gynecologic cancers; other solid cancers",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
         },
         {
           "indication": "Gynecologic cancers; other solid cancers",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
         },
         {
           "indication": "Gynecologic cancers; other solid cancers",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
+          "therapeutic_area": "Oncology"
+        },
+        {
+          "indication": "Gynecologic cancers; other solid cancers",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology"
         }
-      ],
-      "last_change_at": null
-    },
-    {
-      "asset_id": 53,
-      "asset_name": "Undisclosed cell therapy",
-      "highest_stage": "Preclinical",
-      "linked_trials_count": 0,
-      "indications": [
-        {
-          "indication": "Undisclosed",
-          "stage": "Preclinical",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
-        },
-        {
-          "indication": "Undisclosed",
-          "stage": "Preclinical",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
-        },
-        {
-          "indication": "Undisclosed",
-          "stage": "Preclinical",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
-        }
-      ],
-      "last_change_at": null
-    },
-    {
-      "asset_id": 52,
-      "asset_name": "Undisclosed bispecific",
-      "highest_stage": "Preclinical",
-      "linked_trials_count": 0,
-      "indications": [
-        {
-          "indication": "Undisclosed",
-          "stage": "Preclinical",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
-        },
-        {
-          "indication": "Undisclosed",
-          "stage": "Preclinical",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
-        },
-        {
-          "indication": "Undisclosed",
-          "stage": "Preclinical",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
-        }
-      ],
-      "last_change_at": null
+      ]
     }
   ],
   "recent_changes": [
     {
       "event_type": "trials_ingested",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": null,
+      "created_at": "2026-02-04 10:56:24.702445",
+      "occurred_at": "2026-02-04 10:56:24.702445",
+      "payload": {
+        "trials_seen": 5,
+        "inserted": 0,
+        "updated": 5,
+        "status_changed": 0,
+        "bad_aliases": 0
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 10:56:19.827138",
+      "occurred_at": "2026-02-04 10:56:19.827138",
+      "payload": {
+        "nct_id": "NCT06743126",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-04 10:56:19.799532",
+      "occurred_at": "2026-02-04 10:56:19.799532",
+      "payload": {
+        "nct_id": "NCT06946225",
+        "linked_assets": 2
+      }
+    },
+    {
+      "event_type": "pipeline_ingested",
+      "created_at": "2026-02-04 10:55:07.830582",
+      "occurred_at": "2026-02-04 10:55:07.830582",
+      "payload": {
+        "pipeline_page": "https://immatics.com/our-pipeline/",
+        "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
+        "assets_seen": 8
+      }
+    },
+    {
+      "event_type": "trials_ingested",
+      "created_at": "2026-02-03 11:03:52.634726",
+      "occurred_at": "2026-02-03 11:03:52.634726",
+      "payload": {
+        "trials_seen": 5,
+        "inserted": 0,
+        "updated": 5,
+        "status_changed": 0,
+        "bad_aliases": 0
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-03 11:03:47.599583",
+      "occurred_at": "2026-02-03 11:03:47.599583",
+      "payload": {
+        "nct_id": "NCT06743126",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-03 11:03:47.575518",
+      "occurred_at": "2026-02-03 11:03:47.575518",
+      "payload": {
+        "nct_id": "NCT06946225",
+        "linked_assets": 2
+      }
+    },
+    {
+      "event_type": "pipeline_ingested",
+      "created_at": "2026-02-03 11:02:32.388490",
+      "occurred_at": "2026-02-03 11:02:32.388490",
+      "payload": {
+        "pipeline_page": "https://immatics.com/our-pipeline/",
+        "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
+        "assets_seen": 8
+      }
+    },
+    {
+      "event_type": "trials_ingested",
+      "created_at": "2026-02-03 10:37:09.809609",
+      "occurred_at": "2026-02-03 10:37:09.809609",
+      "payload": {
+        "trials_seen": 5,
+        "inserted": 0,
+        "updated": 5,
+        "status_changed": 0,
+        "bad_aliases": 0
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-03 10:37:05.301316",
+      "occurred_at": "2026-02-03 10:37:05.301316",
+      "payload": {
+        "nct_id": "NCT06743126",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-03 10:37:05.279423",
+      "occurred_at": "2026-02-03 10:37:05.279423",
+      "payload": {
+        "nct_id": "NCT06946225",
+        "linked_assets": 2
+      }
+    },
+    {
+      "event_type": "pipeline_ingested",
+      "created_at": "2026-02-03 10:36:10.585889",
+      "occurred_at": "2026-02-03 10:36:10.585889",
+      "payload": {
+        "pipeline_page": "https://immatics.com/our-pipeline/",
+        "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
+        "assets_seen": 8
+      }
+    },
+    {
+      "event_type": "trials_ingested",
+      "created_at": "2026-02-03 10:02:20.454129",
+      "occurred_at": "2026-02-03 10:02:20.454129",
       "payload": {
         "trials_seen": 5,
         "inserted": 5,
@@ -259,86 +351,27 @@
       }
     },
     {
-      "event_type": "trials_ingested",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": null,
+      "event_type": "trial_added",
+      "created_at": "2026-02-03 10:02:16.646358",
+      "occurred_at": "2026-02-03 10:02:16.646358",
       "payload": {
-        "trials_seen": 5,
-        "inserted": 0,
-        "updated": 5,
-        "status_changed": 0,
-        "bad_aliases": 0
+        "nct_id": "NCT05359445",
+        "title": "A Phase Ia/Ib First-In-Human Clinical Trial to Evaluate the Safety, Tolerability and Initial Anti-Tumor Activity of IMA401, a Bispecific T Cell Engaging Receptor Molecule (TCER\u00ae), as Monotherapy or in Combination With Checkpoint Inhibitor in Patients With Recurrent and/or Refractory Solid Tumors."
       }
     },
     {
-      "event_type": "trials_ingested",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": null,
+      "event_type": "trial_added",
+      "created_at": "2026-02-03 10:02:16.288465",
+      "occurred_at": "2026-02-03 10:02:16.288465",
       "payload": {
-        "trials_seen": 5,
-        "inserted": 0,
-        "updated": 5,
-        "status_changed": 0,
-        "bad_aliases": 0
+        "nct_id": "NCT05958121",
+        "title": "A Phase I/II First-In-Human Clinical Trial to Evaluate the Safety, Tolerability and Anti-Tumor Activity of IMA402, a Bispecific TCER\u00ae Targeting PRAME, in Patients With Recurrent and/or Refractory Solid Tumors"
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": 197,
-      "payload": {
-        "nct_id": "NCT06946225",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": 199,
-      "payload": {
-        "nct_id": "NCT06743126",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": 197,
-      "payload": {
-        "nct_id": "NCT06946225",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": 199,
-      "payload": {
-        "nct_id": "NCT06743126",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": 197,
-      "payload": {
-        "nct_id": "NCT06946225",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": 199,
+      "created_at": "2026-02-03 10:02:15.935765",
+      "occurred_at": "2026-02-03 10:02:15.935765",
       "payload": {
         "nct_id": "NCT06743126",
         "linked_assets": 1
@@ -346,81 +379,44 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": 197,
+      "created_at": "2026-02-03 10:02:15.928132",
+      "occurred_at": "2026-02-03 10:02:15.928132",
       "payload": {
-        "nct_id": "NCT06946225",
-        "title": "A First-in-human, Open-label Trial to Evaluate the Combination of ACTengine® IMA203 With mRNA-4203 in Previously Treated, Unresectable or Metastatic Cutaneous Melanoma or Synovial Sarcoma Patients (ACTengine® IMA203-102)"
+        "nct_id": "NCT06743126",
+        "title": "A Prospective, Multicenter, Open-label, Randomized, Actively Controlled, Parallel-group Phase 3 Clinical Trial to Evaluate Efficacy, Safety, and Tolerability of IMA203 Versus Investigator's Choice of Treatment in Patients With Previously Treated, Unresectable or Metastatic Cutaneous Melanoma (ACTengine\u00ae IMA203-301)"
       }
     },
     {
       "event_type": "trial_added",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": 198,
+      "created_at": "2026-02-03 10:02:15.916857",
+      "occurred_at": "2026-02-03 10:02:15.916857",
       "payload": {
         "nct_id": "NCT03686124",
         "title": "Phase 1/2 Study Evaluating Genetically Modified Autologous T Cells Expressing a TCR Recognizing a Cancer/Germline Antigen as Monotherapy or in Combination With Nivolumab in Patients With Recurrent and/or Refractory Solid Tumors"
       }
     },
     {
-      "event_type": "trial_added",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": 199,
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-03 10:02:15.910391",
+      "occurred_at": "2026-02-03 10:02:15.910391",
       "payload": {
-        "nct_id": "NCT06743126",
-        "title": "A Prospective, Multicenter, Open-label, Randomized, Actively Controlled, Parallel-group Phase 3 Clinical Trial to Evaluate Efficacy, Safety, and Tolerability of IMA203 Versus Investigator's Choice of Treatment in Patients With Previously Treated, Unresectable or Metastatic Cutaneous Melanoma (ACTengine® IMA203-301)"
+        "nct_id": "NCT06946225",
+        "linked_assets": 2
       }
     },
     {
       "event_type": "trial_added",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": 200,
+      "created_at": "2026-02-03 10:02:15.897262",
+      "occurred_at": "2026-02-03 10:02:15.897262",
       "payload": {
-        "nct_id": "NCT05958121",
-        "title": "A Phase I/II First-In-Human Clinical Trial to Evaluate the Safety, Tolerability and Anti-Tumor Activity of IMA402, a Bispecific TCER® Targeting PRAME, in Patients With Recurrent and/or Refractory Solid Tumors"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": 201,
-      "payload": {
-        "nct_id": "NCT05359445",
-        "title": "A Phase Ia/Ib First-In-Human Clinical Trial to Evaluate the Safety, Tolerability and Initial Anti-Tumor Activity of IMA401, a Bispecific T Cell Engaging Receptor Molecule (TCER®), as Monotherapy or in Combination With Checkpoint Inhibitor in Patients With Recurrent and/or Refractory Solid Tumors."
+        "nct_id": "NCT06946225",
+        "title": "A First-in-human, Open-label Trial to Evaluate the Combination of ACTengine\u00ae IMA203 With mRNA-4203 in Previously Treated, Unresectable or Metastatic Cutaneous Melanoma or Synovial Sarcoma Patients (ACTengine\u00ae IMA203-102)"
       }
     },
     {
       "event_type": "pipeline_ingested",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": null,
-      "payload": {
-        "pipeline_page": "https://immatics.com/our-pipeline/",
-        "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
-        "assets_seen": 8
-      }
-    },
-    {
-      "event_type": "pipeline_ingested",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": null,
-      "payload": {
-        "pipeline_page": "https://immatics.com/our-pipeline/",
-        "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
-        "assets_seen": 8
-      }
-    },
-    {
-      "event_type": "pipeline_ingested",
-      "created_at": null,
-      "asset_id": null,
-      "trial_id": null,
+      "created_at": "2026-02-03 10:01:19.013807",
+      "occurred_at": "2026-02-03 10:01:19.013807",
       "payload": {
         "pipeline_page": "https://immatics.com/our-pipeline/",
         "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
@@ -429,117 +425,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": null,
-      "asset_id": 46,
-      "trial_id": null,
-      "payload": {
-        "asset": "anzu-cel",
-        "indication": "Uveal melanoma",
-        "stage": "Phase 1",
-        "therapeutic_area": "Oncology"
-      }
-    },
-    {
-      "event_type": "asset_indication_added",
-      "created_at": null,
-      "asset_id": 46,
-      "trial_id": null,
-      "payload": {
-        "asset": "anzu-cel",
-        "indication": "Solid cancers (in combination with mRNA-4203)",
-        "stage": "Phase 1",
-        "therapeutic_area": "Oncology"
-      }
-    },
-    {
-      "event_type": "asset_indication_added",
-      "created_at": null,
-      "asset_id": 46,
-      "trial_id": null,
-      "payload": {
-        "asset": "anzu-cel",
-        "indication": "2L melanoma",
-        "stage": "Phase 1",
-        "therapeutic_area": "Oncology"
-      }
-    },
-    {
-      "event_type": "asset_indication_added",
-      "created_at": null,
-      "asset_id": 47,
-      "trial_id": null,
-      "payload": {
-        "asset": "mRNA-4203",
-        "indication": "Solid cancers (combo with anzu-cel / IMA203)",
-        "stage": "Phase 1",
-        "therapeutic_area": "Oncology"
-      }
-    },
-    {
-      "event_type": "asset_indication_added",
-      "created_at": null,
-      "asset_id": 48,
-      "trial_id": null,
-      "payload": {
-        "asset": "IMA203CD8",
-        "indication": "Gynecologic cancers; other solid cancers",
-        "stage": "Phase 1",
-        "therapeutic_area": "Oncology"
-      }
-    },
-    {
-      "event_type": "asset_indication_added",
-      "created_at": null,
-      "asset_id": 49,
-      "trial_id": null,
-      "payload": {
-        "asset": "IMA402",
-        "indication": "Melanoma, gynecologic cancers, other solid cancers",
-        "stage": "Phase 1",
-        "therapeutic_area": "Oncology"
-      }
-    },
-    {
-      "event_type": "asset_indication_added",
-      "created_at": null,
-      "asset_id": 50,
-      "trial_id": null,
-      "payload": {
-        "asset": "IMA402 + ICI",
-        "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
-        "stage": "Phase 1",
-        "therapeutic_area": "Oncology"
-      }
-    },
-    {
-      "event_type": "asset_indication_added",
-      "created_at": null,
-      "asset_id": 51,
-      "trial_id": null,
-      "payload": {
-        "asset": "IMA401",
-        "indication": "HNSCC, sqNSCLC, other solid cancers",
-        "stage": "Phase 1",
-        "therapeutic_area": "Oncology"
-      }
-    },
-    {
-      "event_type": "asset_indication_added",
-      "created_at": null,
-      "asset_id": 52,
-      "trial_id": null,
-      "payload": {
-        "asset": "Undisclosed bispecific",
-        "indication": "Undisclosed",
-        "stage": "Preclinical",
-        "therapeutic_area": "Oncology"
-      }
-    },
-    {
-      "event_type": "asset_indication_added",
-      "created_at": null,
-      "asset_id": 53,
-      "trial_id": null,
+      "created_at": "2026-02-03 10:01:19.006063",
+      "occurred_at": "2026-02-03 10:01:19.006063",
       "payload": {
         "asset": "Undisclosed cell therapy",
         "indication": "Undisclosed",
@@ -549,82 +436,171 @@
     },
     {
       "event_type": "asset_added",
-      "created_at": null,
-      "asset_id": 46,
-      "trial_id": null,
+      "created_at": "2026-02-03 10:01:19.004299",
+      "occurred_at": "2026-02-03 10:01:19.004299",
       "payload": {
-        "asset": "anzu-cel"
+        "asset": "Undisclosed cell therapy"
+      }
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-03 10:01:18.996967",
+      "occurred_at": "2026-02-03 10:01:18.996967",
+      "payload": {
+        "asset": "Undisclosed bispecific",
+        "indication": "Undisclosed",
+        "stage": "Preclinical",
+        "therapeutic_area": "Oncology"
       }
     },
     {
       "event_type": "asset_added",
-      "created_at": null,
-      "asset_id": 47,
-      "trial_id": null,
-      "payload": {
-        "asset": "mRNA-4203"
-      }
-    },
-    {
-      "event_type": "asset_added",
-      "created_at": null,
-      "asset_id": 48,
-      "trial_id": null,
-      "payload": {
-        "asset": "IMA203CD8"
-      }
-    },
-    {
-      "event_type": "asset_added",
-      "created_at": null,
-      "asset_id": 49,
-      "trial_id": null,
-      "payload": {
-        "asset": "IMA402"
-      }
-    },
-    {
-      "event_type": "asset_added",
-      "created_at": null,
-      "asset_id": 50,
-      "trial_id": null,
-      "payload": {
-        "asset": "IMA402 + ICI"
-      }
-    },
-    {
-      "event_type": "asset_added",
-      "created_at": null,
-      "asset_id": 51,
-      "trial_id": null,
-      "payload": {
-        "asset": "IMA401"
-      }
-    },
-    {
-      "event_type": "asset_added",
-      "created_at": null,
-      "asset_id": 52,
-      "trial_id": null,
+      "created_at": "2026-02-03 10:01:18.994951",
+      "occurred_at": "2026-02-03 10:01:18.994951",
       "payload": {
         "asset": "Undisclosed bispecific"
       }
     },
     {
-      "event_type": "asset_added",
-      "created_at": null,
-      "asset_id": 53,
-      "trial_id": null,
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-03 10:01:18.987292",
+      "occurred_at": "2026-02-03 10:01:18.987292",
       "payload": {
-        "asset": "Undisclosed cell therapy"
+        "asset": "IMA401",
+        "indication": "HNSCC, sqNSCLC, other solid cancers",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
+      }
+    },
+    {
+      "event_type": "asset_added",
+      "created_at": "2026-02-03 10:01:18.985540",
+      "occurred_at": "2026-02-03 10:01:18.985540",
+      "payload": {
+        "asset": "IMA401"
+      }
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-03 10:01:18.978123",
+      "occurred_at": "2026-02-03 10:01:18.978123",
+      "payload": {
+        "asset": "IMA402 + ICI",
+        "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
+      }
+    },
+    {
+      "event_type": "asset_added",
+      "created_at": "2026-02-03 10:01:18.976254",
+      "occurred_at": "2026-02-03 10:01:18.976254",
+      "payload": {
+        "asset": "IMA402 + ICI"
+      }
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-03 10:01:18.965338",
+      "occurred_at": "2026-02-03 10:01:18.965338",
+      "payload": {
+        "asset": "IMA402",
+        "indication": "Melanoma, gynecologic cancers, other solid cancers",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
+      }
+    },
+    {
+      "event_type": "asset_added",
+      "created_at": "2026-02-03 10:01:18.963538",
+      "occurred_at": "2026-02-03 10:01:18.963538",
+      "payload": {
+        "asset": "IMA402"
+      }
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-03 10:01:18.954899",
+      "occurred_at": "2026-02-03 10:01:18.954899",
+      "payload": {
+        "asset": "IMA203CD8",
+        "indication": "Gynecologic cancers; other solid cancers",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
+      }
+    },
+    {
+      "event_type": "asset_added",
+      "created_at": "2026-02-03 10:01:18.953102",
+      "occurred_at": "2026-02-03 10:01:18.953102",
+      "payload": {
+        "asset": "IMA203CD8"
+      }
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-03 10:01:18.945221",
+      "occurred_at": "2026-02-03 10:01:18.945221",
+      "payload": {
+        "asset": "mRNA-4203",
+        "indication": "Solid cancers (combo with anzu-cel / IMA203)",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
+      }
+    },
+    {
+      "event_type": "asset_added",
+      "created_at": "2026-02-03 10:01:18.943322",
+      "occurred_at": "2026-02-03 10:01:18.943322",
+      "payload": {
+        "asset": "mRNA-4203"
+      }
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-03 10:01:18.934679",
+      "occurred_at": "2026-02-03 10:01:18.934679",
+      "payload": {
+        "asset": "anzu-cel",
+        "indication": "2L melanoma",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
+      }
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-03 10:01:18.932894",
+      "occurred_at": "2026-02-03 10:01:18.932894",
+      "payload": {
+        "asset": "anzu-cel",
+        "indication": "Solid cancers (in combination with mRNA-4203)",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
+      }
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-03 10:01:18.930920",
+      "occurred_at": "2026-02-03 10:01:18.930920",
+      "payload": {
+        "asset": "anzu-cel",
+        "indication": "Uveal melanoma",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
+      }
+    },
+    {
+      "event_type": "asset_added",
+      "created_at": "2026-02-03 10:01:18.928104",
+      "occurred_at": "2026-02-03 10:01:18.928104",
+      "payload": {
+        "asset": "anzu-cel"
       }
     }
   ],
   "trials": [
     {
-      "trial_id": 197,
       "nct_id": "NCT06946225",
-      "title": "A First-in-human, Open-label Trial to Evaluate the Combination of ACTengine® IMA203 With mRNA-4203 in Previously Treated, Unresectable or Metastatic Cutaneous Melanoma or Synovial Sarcoma Patients (ACTengine® IMA203-102)",
       "overall_status": "RECRUITING",
       "phase": "PHASE1",
       "last_update_posted": "2026-01-08",
@@ -634,18 +610,14 @@
       ]
     },
     {
-      "trial_id": 198,
       "nct_id": "NCT03686124",
-      "title": "Phase 1/2 Study Evaluating Genetically Modified Autologous T Cells Expressing a TCR Recognizing a Cancer/Germline Antigen as Monotherapy or in Combination With Nivolumab in Patients With Recurrent and/or Refractory Solid Tumors",
       "overall_status": "RECRUITING",
       "phase": "PHASE1,PHASE2",
       "last_update_posted": "2025-12-11",
       "linked_assets": []
     },
     {
-      "trial_id": 199,
       "nct_id": "NCT06743126",
-      "title": "A Prospective, Multicenter, Open-label, Randomized, Actively Controlled, Parallel-group Phase 3 Clinical Trial to Evaluate Efficacy, Safety, and Tolerability of IMA203 Versus Investigator's Choice of Treatment in Patients With Previously Treated, Unresectable or Metastatic Cutaneous Melanoma (ACTengine® IMA203-301)",
       "overall_status": "RECRUITING",
       "phase": "PHASE3",
       "last_update_posted": "2025-12-04",
@@ -654,18 +626,14 @@
       ]
     },
     {
-      "trial_id": 200,
       "nct_id": "NCT05958121",
-      "title": "A Phase I/II First-In-Human Clinical Trial to Evaluate the Safety, Tolerability and Anti-Tumor Activity of IMA402, a Bispecific TCER® Targeting PRAME, in Patients With Recurrent and/or Refractory Solid Tumors",
       "overall_status": "RECRUITING",
       "phase": "PHASE1,PHASE2",
       "last_update_posted": "2025-11-18",
       "linked_assets": []
     },
     {
-      "trial_id": 201,
       "nct_id": "NCT05359445",
-      "title": "A Phase Ia/Ib First-In-Human Clinical Trial to Evaluate the Safety, Tolerability and Initial Anti-Tumor Activity of IMA401, a Bispecific T Cell Engaging Receptor Molecule (TCER®), as Monotherapy or in Combination With Checkpoint Inhibitor in Patients With Recurrent and/or Refractory Solid Tumors.",
       "overall_status": "RECRUITING",
       "phase": "PHASE1",
       "last_update_posted": "2025-09-09",

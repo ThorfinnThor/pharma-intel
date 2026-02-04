@@ -1,21 +1,17 @@
 {
-  "generated_at": "2026-02-03T11:03:52Z",
+  "generated_at": "2026-02-04T10:56:25Z",
   "companies": [
-    {
-      "company_id": "immatics",
-      "company_name": "Immatics",
-      "assets_total": 8,
-      "trials_total": 5,
-      "path_json": "immatics.json",
-      "path_md": "immatics.md"
-    },
     {
       "company_id": "jnj",
       "company_name": "Johnson & Johnson",
-      "assets_total": 45,
-      "trials_total": 196,
-      "path_json": "jnj.json",
-      "path_md": "jnj.md"
+      "assets_total": 41,
+      "trials_total": 258
+    },
+    {
+      "company_id": "immatics",
+      "company_name": "Immatics",
+      "assets_total": 6,
+      "trials_total": 5
     }
   ]
 }
