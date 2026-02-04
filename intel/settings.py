@@ -26,4 +26,11 @@ class Settings(BaseSettings):
     fuzzy_threshold: int = 92
     min_alias_len_for_trial_search: int = 4
 
+    # optional LLM-assisted cleaning (Gemini)
+    llm_clean_enabled: bool = False
+    gemini_api_key: str | None = None
+    gemini_model: str = "gemini-1.5-flash"
+    gemini_timeout_s: int = 45
+
+
 settings = Settings()
