@@ -25,12 +25,21 @@ def split_asset_aliases(asset_label: str) -> tuple[str, list[str]]:
 
     aliases: list[str] = [label]
 
-    # plus combos
-    if "+" in label:
-        parts = [p.strip() for p in label.split("+") if p.strip()]
-        for p in parts:
-            if p not in aliases:
-                aliases.append(p)
+    # combo separators (+, /, ;)
+    # NOTE: we keep the full label as an alias too; these splits add *additional* terms.
+    combo_parts: list[str] = [label]
+    for sep in ["+", "/", ";"]:
+        if sep in label:
+            next_parts: list[str] = []
+            for part in combo_parts:
+                if sep in part:
+                    next_parts.extend([p.strip() for p in part.split(sep) if p.strip()])
+                else:
+                    next_parts.append(part)
+            combo_parts = next_parts
+    for p in combo_parts:
+        if p and p not in aliases:
+            aliases.append(p)
 
     # parenthetical
     m = re.match(r"^(.*?)\((.*?)\)\s*$", label)
