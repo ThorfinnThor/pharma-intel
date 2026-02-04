@@ -75,13 +75,20 @@ def _extract_trial_core(study: dict[str, Any]) -> dict[str, Any]:
         phase = ",".join(phases)
 
     interventions = intr_mod.get("interventions") or []
-    interventions_out = []
+    interventions_out: list[dict[str, Any]] = []
     for it in interventions:
         if not isinstance(it, dict):
             continue
         name = it.get("name")
-        if name:
-            interventions_out.append({"name": name, "type": it.get("type")})
+        if not name:
+            continue
+
+        other_names = it.get("otherNames")
+        if not isinstance(other_names, list):
+            other_names = []
+        other_names = [x for x in other_names if isinstance(x, str) and x.strip()]
+
+        interventions_out.append({"name": name, "type": it.get("type"), "other_names": other_names})
 
     conditions = cond_mod.get("conditions") or []
 
@@ -179,6 +186,85 @@ def _build_alias_index(session: Session, company_id: str) -> dict[str, int]:
 
 
 # ---------------------------
+# Intervention normalization
+# ---------------------------
+
+_PAREN = re.compile(r"\([^\)]*\)")
+_DOSE_ROUTE = re.compile(
+    r"\b(\d+(?:\.\d+)?\s*(?:mg|mcg|ug|g|kg|iu|units)\b|\d+(?:\.\d+)?\s*mg\/kg\b|\biv\b|\bsc\b|\bim\b|\bpo\b|\boral\b|\bintravenous\b|\bsubcutaneous\b)\b",
+    re.IGNORECASE,
+)
+
+
+def _strip_parentheticals(s: str) -> list[str]:
+    """Return [no-parens-string] plus any extracted parenthetical fragments."""
+    if not s:
+        return []
+    frags = re.findall(r"\(([^\)]{1,80})\)", s)
+    base = _PAREN.sub(" ", s)
+    out = [base]
+    out.extend(frags)
+    return [x.strip() for x in out if isinstance(x, str) and x.strip()]
+
+
+def _split_combo_terms(s: str) -> list[str]:
+    """Split common combo formats into separate candidate terms."""
+    if not s:
+        return []
+    parts = [s]
+    for sep in ["+", "/", ";", ","]:
+        next_parts: list[str] = []
+        for p in parts:
+            if sep in p:
+                next_parts.extend([x.strip() for x in p.split(sep) if x.strip()])
+            else:
+                next_parts.append(p)
+        parts = next_parts
+    # also split on " with " (common in regimens)
+    out: list[str] = []
+    for p in parts:
+        if re.search(r"\bwith\b", p, flags=re.IGNORECASE):
+            out.extend([x.strip() for x in re.split(r"\bwith\b", p, flags=re.IGNORECASE) if x.strip()])
+        else:
+            out.append(p)
+    return out
+
+
+def _strip_dose_route(s: str) -> str:
+    if not s:
+        return s
+    s = _DOSE_ROUTE.sub(" ", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+
+def intervention_candidate_terms(it: dict[str, Any]) -> list[str]:
+    """Generate a small set of candidate matching strings for an intervention."""
+    name = (it.get("name") or "").strip()
+    if not name:
+        return []
+
+    other_names = it.get("other_names") or []
+    if not isinstance(other_names, list):
+        other_names = []
+
+    raw_terms = [name] + [x for x in other_names if isinstance(x, str) and x.strip()]
+
+    candidates: list[str] = []
+    for term in raw_terms:
+        # parenthetical expansion (brand/generic)
+        for frag in _strip_parentheticals(term):
+            # combo expansion
+            for part in _split_combo_terms(frag):
+                cleaned = _strip_dose_route(part)
+                if cleaned and cleaned not in candidates:
+                    candidates.append(cleaned)
+
+    # keep terms bounded
+    return [c for c in candidates if 2 <= len(c) <= 120]
+
+
+# ---------------------------
 # Trial↔asset linking (idempotent)
 # ---------------------------
 
@@ -206,31 +292,44 @@ def _link_assets_for_trial(session: Session, company_id: str, trial: models.Tria
 
     best_for_asset: dict[int, tuple[str, int]] = {}
 
+    alias_items = list(alias_idx.items())  # (alias_norm, asset_id)
+
     for it in interventions:
-        name = (it.get("name") or "").strip()
-        if not name:
-            continue
-        n = norm_text(name)
-
-        # Exact match
-        if n in alias_idx:
-            aid = alias_idx[n]
-            best_for_asset[aid] = _choose_better(best_for_asset.get(aid), ("exact", 100))
-            continue
-
-        # Fuzzy match (bounded)
-        best_aid: int | None = None
-        best_score = 0
-        for alias_norm, aid in alias_idx.items():
-            if abs(len(alias_norm) - len(n)) > 10:
+        for cand in intervention_candidate_terms(it):
+            n = norm_text(cand)
+            if not n:
                 continue
-            sc = fuzz.ratio(n, alias_norm)
-            if sc > best_score:
-                best_score = sc
-                best_aid = aid
 
-        if best_aid is not None and best_score >= settings.fuzzy_threshold:
-            best_for_asset[best_aid] = _choose_better(best_for_asset.get(best_aid), ("fuzzy", int(best_score)))
+            # Exact match
+            if n in alias_idx:
+                aid = alias_idx[n]
+                best_for_asset[aid] = _choose_better(best_for_asset.get(aid), ("exact", 100))
+                continue
+
+            # Fuzzy match
+            # Use token-based scorers to handle "drug (BRAND)" and multi-token permutations.
+            best_aid: int | None = None
+            best_score = 0
+
+            # quick pruning by length window
+            for alias_norm, aid in alias_items:
+                if abs(len(alias_norm) - len(n)) > 25:
+                    continue
+
+                sc1 = fuzz.token_set_ratio(n, alias_norm)
+                if sc1 > best_score:
+                    best_score = sc1
+                    best_aid = aid
+
+                # partial can rescue cases where alias is embedded in a longer name
+                if best_score < 100:
+                    sc2 = fuzz.partial_ratio(n, alias_norm)
+                    if sc2 > best_score:
+                        best_score = sc2
+                        best_aid = aid
+
+            if best_aid is not None and best_score >= settings.fuzzy_threshold:
+                best_for_asset[best_aid] = _choose_better(best_for_asset.get(best_aid), ("fuzzy", int(best_score)))
 
     for aid, (mt, sc) in best_for_asset.items():
         session.add(models.TrialAssetLink(trial_id=trial.id, asset_id=aid, match_type=mt, match_score=sc))
