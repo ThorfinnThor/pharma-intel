@@ -1,10 +1,10 @@
 # Johnson & Johnson (jnj)
 
-Generated: `2026-02-04T10:56:25Z`
+Generated: `2026-02-04T11:27:06Z`
 
 - Assets: **41**
 - Assets with linked trials: **11**
-- Trials: **258**
+- Trials: **259**
 
 ## Top assets
 
