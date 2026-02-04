@@ -39,6 +39,10 @@ function kpiBox(label, value) {
   return div;
 }
 
+function safeText(x) {
+  return (x === null || x === undefined) ? "" : String(x);
+}
+
 function uniq(arr) {
   return [...new Set(arr)];
 }
@@ -48,50 +52,77 @@ function formatIndications(indications) {
   return uniq(names).slice(0, 3).join("; ");
 }
 
-function safeText(x) {
-  return (x === null || x === undefined) ? "" : String(x);
+// extra display safeguard (even if JSON contains system) prefix)
+function displayAssetName(name) {
+  const s = safeText(name).replace(/\u00a0/g, " ").trim();
+  return s.replace(/^\s*(system|platform)\s*\)\s*/i, "").trim();
+}
+
+function trunc(s, n = 140) {
+  s = safeText(s);
+  if (s.length <= n) return s;
+  return s.slice(0, n - 1) + "…";
 }
 
 function formatChange(ch) {
   const et = safeText(ch.event_type);
   const p = ch.payload || {};
+
   if (et === "pipeline_ingested") {
     return `pipeline_ingested — as_of=${p.as_of_date || "?"} assets_seen=${p.assets_seen ?? "?"}`;
+  }
+  if (et === "trials_ingested") {
+    return `trials_ingested — seen=${p.trials_seen ?? "?"} inserted=${p.inserted ?? "?"} updated=${p.updated ?? "?"} status_changed=${p.status_changed ?? "?"} bad_aliases=${p.bad_aliases ?? "?"}`;
+  }
+  if (et === "trial_added") {
+    return `trial_added — ${p.nct_id || ""} ${trunc(p.title || "", 160)}`.trim();
+  }
+  if (et === "trial_updated") {
+    return `trial_updated — ${p.nct_id || ""} ${trunc(p.title || "", 160)}`.trim();
+  }
+  if (et === "trial_status_changed") {
+    return `trial_status_changed — ${p.nct_id || ""} ${p.old_status || "?"} → ${p.new_status || "?"}`.trim();
   }
   if (et === "asset_added") {
     return `asset_added — ${p.asset || ""}`;
   }
   if (et === "asset_indication_added") {
-    return `indication_added — ${p.asset || ""}: ${p.indication || ""} (${p.stage || ""})`;
+    return `indication_added — ${p.asset || ""}: ${trunc(p.indication || "", 140)} (${p.stage || ""})`;
   }
   if (et === "asset_indication_removed") {
-    return `indication_removed — ${p.asset || ""}: ${p.indication || ""} (${p.stage || ""})`;
+    return `indication_removed — ${p.asset || ""}: ${trunc(p.indication || "", 140)} (${p.stage || ""})`;
   }
-  if (et === "trials_ingested") {
-    return `trials_ingested — seen=${p.trials_seen ?? "?"} inserted=${p.inserted ?? "?"} updated=${p.updated ?? "?"} status_changed=${p.status_changed ?? "?"} bad_aliases=${p.bad_aliases ?? "?"}`;
-  }
-  // fallback
-  return `${et} ${ch.payload ? JSON.stringify(ch.payload) : ""}`.trim();
+
+  return `${et} ${ch.payload ? trunc(JSON.stringify(ch.payload), 160) : ""}`.trim();
 }
 
 function compactRecentChanges(changes) {
-  // Hide ultra-noisy types, and dedupe repeated trials_ingested
+  // Hide ultra-noisy event types and dedupe repeated pipeline_ingested / trials_ingested
   const NOISE = new Set(["trial_assets_linked"]);
   let lastTrialsIngested = null;
+  let lastPipelineIngested = null;
 
   const out = [];
   for (const ch of changes || []) {
     if (NOISE.has(ch.event_type)) continue;
+
     if (ch.event_type === "trials_ingested") {
-      lastTrialsIngested = ch; // keep only newest
+      lastTrialsIngested = ch;
+      continue;
+    }
+    if (ch.event_type === "pipeline_ingested") {
+      lastPipelineIngested = ch;
       continue;
     }
     out.push(ch);
-    if (out.length >= 40) break;
+    if (out.length >= 30) break;
   }
 
-  if (lastTrialsIngested) out.unshift(lastTrialsIngested);
-  return out.slice(0, 40);
+  const head = [];
+  if (lastTrialsIngested) head.push(lastTrialsIngested);
+  if (lastPipelineIngested) head.push(lastPipelineIngested);
+
+  return [...head, ...out].slice(0, 35);
 }
 
 async function loadCompany() {
@@ -102,7 +133,6 @@ async function loadCompany() {
   }
 
   setStatus("Loading…");
-
   const page = await fetchJsonWithFallback(`${encodeURIComponent(id)}.json`);
 
   document.getElementById("title").textContent = `${page.company_name} (${page.company_id})`;
@@ -122,7 +152,7 @@ async function loadCompany() {
   for (const a of (page.top_assets || []).slice(0, 25)) {
     const tr = document.createElement("tr");
     tr.innerHTML = `
-      <td>${safeText(a.asset_name)}</td>
+      <td>${displayAssetName(a.asset_name)}</td>
       <td>${safeText(a.highest_stage)}</td>
       <td class="num">${safeText(a.linked_trials_count)}</td>
       <td>${formatIndications(a.indications || [])}</td>
@@ -145,7 +175,7 @@ async function loadCompany() {
   const trialsBody = document.querySelector("#trialsTable tbody");
   trialsBody.innerHTML = "";
   for (const t of (page.trials || []).slice(0, 50)) {
-    const la = (t.linked_assets || []).slice(0, 6).join("; ");
+    const la = (t.linked_assets || []).slice(0, 6).map(displayAssetName).join("; ");
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td>${safeText(t.nct_id)}</td>
