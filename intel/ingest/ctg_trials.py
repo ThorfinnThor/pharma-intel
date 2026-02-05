@@ -110,6 +110,7 @@ def _extract_trial_core(study: dict[str, Any]) -> dict[str, Any]:
 
 _BAD_INTR_CHARS = r"""[\(\)\[\]\{\}"'<>]"""
 
+
 def _sanitize_intr_term(term: str) -> str | None:
     """
     ClinicalTrials.gov v2 rejects certain malformed query.intr strings (e.g. stray ')').
@@ -148,7 +149,6 @@ def _get_asset_alias_terms(session: Session, company_id: str) -> list[str]:
         if not a:
             continue
 
-        # sanitize (fixes autoleucel) -> autoleucel)
         s = _sanitize_intr_term(a)
         if not s:
             continue
@@ -159,6 +159,11 @@ def _get_asset_alias_terms(session: Session, company_id: str) -> list[str]:
         if low in {"other", "others", "unknown"}:
             continue
 
+        # Critical safety: do not query CTG with indication-like or otherwise implausible "asset" terms.
+        # This prevents cascades like query_alias="of the Fetus and Newborn".
+        if looks_like_indication_label(s) or not is_plausible_asset_label(s):
+            continue
+
         k = norm_text(s)
         if k in seen:
             continue
@@ -166,9 +171,52 @@ def _get_asset_alias_terms(session: Session, company_id: str) -> list[str]:
         seen.add(k)
         out.append(s)
 
-    # Prefer shorter terms first (more likely to be accepted and yield results)
     out.sort(key=len)
     return out
+
+
+# ---------------------------
+# Alias bootstrapping safety
+# ---------------------------
+
+_BOOTSTRAP_STOP = {
+    "placebo",
+    "control",
+    "vehicle",
+    "saline",
+    "standard of care",
+    "soc",
+    "best supportive care",
+    "bsc",
+}
+
+_BOOTSTRAP_DRUG_LIKE = re.compile(r"(mab|nib|parib|ciclib|navir|vir|zumab|ximab|tinib|lisib)$", re.IGNORECASE)
+_BOOTSTRAP_PROGRAM_CODE = re.compile(r"^jnj-\d{4,9}$", re.IGNORECASE)
+
+
+def _bootstrap_ok(alias_token: str) -> bool:
+    a = (alias_token or "").strip()
+    if not a:
+        return False
+    low = a.lower()
+    if low in _BOOTSTRAP_STOP:
+        return False
+    if len(a) < settings.min_alias_len_for_trial_search or len(a) > 40:
+        return False
+    if " " in a:
+        return False
+
+    # allow program codes and drug-like generics
+    if _BOOTSTRAP_PROGRAM_CODE.match(a):
+        return True
+    if _BOOTSTRAP_DRUG_LIKE.search(a):
+        return True
+
+    # allow all-caps brand-like tokens (e.g., TREMFYA)
+    if a.isupper() and 4 <= len(a) <= 20:
+        return True
+
+    return False
 
 
 def _asset_ids_for_alias_term(session: Session, company_id: str, alias_term: str) -> list[int]:
@@ -210,14 +258,10 @@ def _clean_intervention_string(s: str) -> str:
     s = (s or "").strip()
     if not s:
         return ""
-    # remove parentheses content (brand/generic notes, trial nicknames)
     s = _PAREN.sub(" ", s)
-    # remove dose + route noise
     s = _DOSE_NOISE.sub(" ", s)
     s = _ROUTE_NOISE.sub(" ", s)
-    # collapse whitespace
     s = re.sub(r"\s+", " ", s).strip()
-    # strip leftover punctuation
     s = s.strip(" -–—:;,.!\t")
     return s
 
@@ -238,10 +282,8 @@ def _intervention_candidate_terms(it: dict[str, Any]) -> list[str]:
         cleaned = _clean_intervention_string(n)
         if not cleaned:
             continue
-        # split combinations/regimens
         parts = [p.strip() for p in _SPLIT.split(cleaned) if p.strip()]
         for p in parts:
-            # avoid very short junk
             if len(p) < settings.min_alias_len_for_trial_search:
                 continue
             k = norm_text(p)
@@ -261,9 +303,8 @@ def _link_assets_for_trial(session: Session, company_id: str, trial: models.Tria
     Build links trial_id -> asset_id.
     We de-duplicate by asset_id before insert (avoids UNIQUE constraint failures).
     """
-    alias_idx = _build_alias_index(session, company_id)  # alias_norm -> asset_id
+    alias_idx = _build_alias_index(session, company_id)
 
-    # delete and rebuild links (single transaction)
     session.query(models.TrialAssetLink).filter(models.TrialAssetLink.trial_id == trial.id).delete()
 
     def _rank(mt: str) -> int:
@@ -280,7 +321,6 @@ def _link_assets_for_trial(session: Session, company_id: str, trial: models.Tria
 
     best_for_asset: dict[int, tuple[str, int]] = {}
 
-    # pre-materialize for speed
     alias_items = list(alias_idx.items())
 
     for it in interventions:
@@ -293,13 +333,11 @@ def _link_assets_for_trial(session: Session, company_id: str, trial: models.Tria
             if not n:
                 continue
 
-            # Exact match
             if n in alias_idx:
                 aid = alias_idx[n]
                 best_for_asset[aid] = _choose_better(best_for_asset.get(aid), ("exact", 100))
                 continue
 
-            # Fuzzy match (bounded): token_set + partial
             best_aid: int | None = None
             best_score = 0
 
@@ -344,7 +382,7 @@ def ingest_trials_for_company(
 
     run = start_run(session, company_id, "trials")
     run_id = int(run.id)
-    session.commit()  # ensure run row exists even if later work rolls back
+    session.commit()
 
     try:
         alias_terms = _get_asset_alias_terms(session, company_id)
@@ -357,10 +395,12 @@ def ingest_trials_for_company(
         bad_aliases = 0
 
         for alias in alias_terms:
-            # Alias bootstrapping: if this query reliably yields a generic name (e.g. brand -> generic)
-            # we add it as an alias for the asset(s) that own this query term.
             bootstrap_asset_ids = _asset_ids_for_alias_term(session, company_id, alias)
-            # norm -> {alias: str, count: int}
+
+            # Only attempt alias bootstrapping when the query alias itself is plausible.
+            do_bootstrap = bool(bootstrap_asset_ids) and (not looks_like_indication_label(alias)) and is_plausible_asset_label(alias)
+
+            # norm -> {alias: str, ncts: set[str]}
             bootstrap_counts: dict[str, dict[str, Any]] = {}
 
             params = {
@@ -379,7 +419,6 @@ def ingest_trials_for_company(
                 if page_token:
                     params["pageToken"] = page_token
 
-                # FIX: if CTG rejects a particular alias with 400, skip it instead of crashing the whole run.
                 try:
                     resp = get(CTG_STUDIES_ENDPOINT, params=params).json()
                 except HTTPError as e:
@@ -465,25 +504,23 @@ def ingest_trials_for_company(
 
                     for it in core.get("interventions") or []:
                         session.add(models.TrialIntervention(trial_id=tr.id, name=it["name"], intervention_type=it.get("type")))
-                        # Accumulate bootstrap candidates (single-token drug-like terms) for this query alias.
-                        if bootstrap_asset_ids:
+
+                        # Accumulate bootstrap candidates for this query alias.
+                        if do_bootstrap:
                             for term in _intervention_candidate_terms(it):
                                 cand = sanitize_alias(term)
                                 if not cand:
                                     continue
-                                if " " in cand:
-                                    continue
-                                if len(cand) > 40:
-                                    continue
-                                if looks_like_indication_label(cand):
-                                    continue
-                                if not is_plausible_asset_label(cand):
+                                if not _bootstrap_ok(cand):
                                     continue
                                 kn = norm_text(cand)
                                 if kn not in bootstrap_counts:
-                                    bootstrap_counts[kn] = {"alias": cand, "count": 1}
+                                    bootstrap_counts[kn] = {"alias": cand, "ncts": {nct}}
                                 else:
-                                    bootstrap_counts[kn]["count"] = int(bootstrap_counts[kn].get("count") or 0) + 1
+                                    ncts = bootstrap_counts[kn].setdefault("ncts", set())
+                                    if isinstance(ncts, set):
+                                        ncts.add(nct)
+
                     for c in core.get("conditions") or []:
                         session.add(models.TrialCondition(trial_id=tr.id, condition=c))
                     session.commit()
@@ -503,18 +540,24 @@ def ingest_trials_for_company(
                     break
 
             # After we've processed all pages for this query alias, add any high-confidence generic aliases.
-            if bootstrap_asset_ids and bootstrap_counts:
-                # Require appearance in at least 2 studies returned for this alias query.
-                winners = [v["alias"] for v in bootstrap_counts.values() if int(v.get("count") or 0) >= 2]
+            if do_bootstrap and bootstrap_counts:
+                winners: list[str] = []
+                for v in bootstrap_counts.values():
+                    ncts = v.get("ncts")
+                    if isinstance(ncts, set) and len(ncts) >= 2:
+                        tok = v.get("alias")
+                        if isinstance(tok, str):
+                            winners.append(tok)
+
                 for alias_token in winners:
-                    # Don't add trivial very-short tokens
                     if len(alias_token) < settings.min_alias_len_for_trial_search:
+                        continue
+                    if norm_text(alias_token) == norm_text(alias):
                         continue
                     for aid in bootstrap_asset_ids:
                         try:
                             ensure_alias(session, aid, alias_token)
                         except Exception:
-                            # ignore per-alias failures
                             continue
                     emit_change(
                         session,
@@ -547,7 +590,6 @@ def ingest_trials_for_company(
         }
 
     except Exception as e:
-        # rollback first, always
         try:
             session.rollback()
         except Exception:
