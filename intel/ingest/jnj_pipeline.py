@@ -28,14 +28,12 @@ from ..sanitize import (
     is_trial_acronym,
 )
 
-# Optional Gemini-based cleaning for borderline labels
 try:
     from ..llm_clean import llm_classify_and_canonicalize_asset_label
 except Exception:  # pragma: no cover
     llm_classify_and_canonicalize_asset_label = None  # type: ignore
 
 JNICALL_PIPELINE_PAGE = "https://www.investor.jnj.com/pipeline/development-pipeline/default.aspx"
-
 Q4CDN_BASE = "https://s203.q4cdn.com/636242992/files/doc_financials"
 
 
@@ -43,13 +41,11 @@ def _iter_recent_quarters(n: int = 10) -> list[tuple[int, int]]:
     today = dt.datetime.utcnow().date()
     q = (today.month - 1) // 3 + 1
     y = today.year
-
     if q == 1:
         y -= 1
         q = 4
     else:
         q -= 1
-
     out: list[tuple[int, int]] = []
     for _ in range(max(1, n)):
         out.append((y, q))
@@ -106,8 +102,7 @@ def _url_looks_like_pdf(url: str) -> bool:
 
 
 def discover_jnj_pipeline_pdf_url(max_quarters: int = 10) -> str:
-    candidates = _candidate_jnj_pdf_urls(max_quarters=max_quarters)
-    for url in candidates:
+    for url in _candidate_jnj_pdf_urls(max_quarters=max_quarters):
         if _url_looks_like_pdf(url):
             logger.info("Discovered J&J pipeline PDF URL via q4cdn: {}", url)
             return url
@@ -218,6 +213,21 @@ def _group_words_to_lines(words: list[dict[str, Any]], y_tol: float = 3.0) -> li
 
 
 _PAREN_ONLY = re.compile(r"^\([^\)\n]{2,40}\)$")
+_PHASE_FRAGMENT = re.compile(r"^\d+\s*-\s*\d+\s*pls?$", re.IGNORECASE)
+_TARGETISH = re.compile(r"\bfactor\b|\bxi\b|\bxia\b|\bxla\b", re.IGNORECASE)
+
+
+def _looks_like_bad_asset_phrase(cleaned: str) -> bool:
+    low = cleaned.lower()
+    if low.startswith("of the ") or low.startswith("in the ") or low.startswith("for the "):
+        return True
+    if _PHASE_FRAGMENT.match(low.replace(" ", "")):
+        return True
+    if any(x in low for x in ("subcutaneous", "intravenous", "induction", "maintenance", "placebo")):
+        return True
+    if _TARGETISH.search(low) and not low.startswith("jnj-"):
+        return True
+    return False
 
 
 def _is_asset_line(line: dict[str, Any], median_size: float, *, col_left: float) -> bool:
@@ -232,31 +242,39 @@ def _is_asset_line(line: dict[str, Any], median_size: float, *, col_left: float)
     if not cleaned:
         return False
 
+    # Hard reject phrase/route/phase fragments before anything else
+    if _looks_like_bad_asset_phrase(cleaned):
+        return False
+
     if looks_like_indication_label(cleaned) or is_trial_acronym(cleaned):
         return False
 
     low = cleaned.lower()
-
     if low in {"pediatrics", "oncology", "immunology", "neuroscience"}:
         return False
     if low.startswith("*this is not") or low.startswith("strategic partnerships"):
         return False
 
-    if "jnj-" in low:
+    # JNJ program codes are valid assets
+    if low.startswith("jnj-"):
         return True
 
+    # must be aligned near column start (prevents grabbing wrapped indication lines)
     aligned = abs(float(line.get("x0_min", col_left)) - col_left) <= 28
 
+    # Prefer larger font as "asset headers"
     if aligned and line["avg_size"] >= (median_size + 0.8) and is_plausible_asset_label(cleaned):
         return True
 
-    if aligned and re.match(r"^.{2,60}\(.{2,60}\)$", cleaned) and re.search(r"[A-Za-z]", cleaned) and is_plausible_asset_label(cleaned):
+    # Brand (generic) style: "RYBREVANT (amivantamab)" can be an asset header
+    if aligned and re.match(r"^.{2,60}\(.{2,60}\)$", cleaned) and is_plausible_asset_label(cleaned):
         return True
 
-    if aligned and " " not in cleaned and 4 <= len(cleaned) <= 25 and re.search(r"[A-Za-z]", cleaned):
-        if cleaned.lower() not in {"others", "other", "unknown", "undisclosed"} and is_plausible_asset_label(cleaned):
-            return True
+    # Single-token label, short
+    if aligned and " " not in cleaned and 4 <= len(cleaned) <= 25 and is_plausible_asset_label(cleaned):
+        return True
 
+    # All-caps brands
     if aligned and cleaned.isupper() and 3 <= len(cleaned) <= 45 and is_plausible_asset_label(cleaned):
         return True
 
@@ -277,6 +295,8 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
 
             cols = _extract_phase_columns(p)
             words = p.extract_words(extra_attrs=["size"])
+
+            # footer exclusion: drop bottom 12% of the page
             bottom_cut = float(p.height) * 0.88
             body_words = [w for w in words if 90 <= w["top"] <= bottom_cut and w["text"].strip()]
 
@@ -288,7 +308,6 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
                 lines = _group_words_to_lines(col_words)
 
                 col_left = float(x0) + 6.0
-
                 current_asset: str | None = None
                 indication_parts: list[str] = []
 
@@ -318,6 +337,17 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
                         raw_label = ln["text"]
                         cleaned = sanitize_asset_label(raw_label)
 
+                        if not cleaned:
+                            current_asset = None
+                            indication_parts = []
+                            continue
+
+                        # extra guard
+                        if _looks_like_bad_asset_phrase(cleaned):
+                            current_asset = None
+                            indication_parts = []
+                            continue
+
                         if cleaned and (looks_like_indication_label(cleaned) or is_trial_acronym(cleaned)):
                             current_asset = None
                             indication_parts = []
@@ -337,6 +367,7 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
 
                 flush()
 
+    # Final pass: drop known disclaimer-like rows
     cleaned_rows = []
     for r in rows:
         ind_low = (r["indication"] or "").lower()
@@ -361,10 +392,7 @@ def ingest_jnj_pipeline(session: Session, company_id: str = "jnj") -> int:
             if pdf_url.startswith("/"):
                 pdf_url = "https://www.investor.jnj.com" + pdf_url
         except Exception as e:
-            logger.warning(
-                "Failed to fetch/parse J&J pipeline HTML ({}). Falling back to q4cdn discovery.",
-                e,
-            )
+            logger.warning("Failed to fetch/parse J&J pipeline HTML ({}). Falling back to q4cdn discovery.", e)
             pdf_url = discover_jnj_pipeline_pdf_url(max_quarters=10)
 
     pdf_bytes = get(pdf_url).content
@@ -451,9 +479,23 @@ def ingest_jnj_pipeline(session: Session, company_id: str = "jnj") -> int:
         added, removed = diff_sets(old, new)
 
         for (ind, stage, ta) in added:
-            emit_change(session, company_id, "asset_indication_added", {"asset": canonical, "indication": ind, "stage": stage, "therapeutic_area": ta}, evidence_id=evidence.id, asset_id=asset.id)
+            emit_change(
+                session,
+                company_id,
+                "asset_indication_added",
+                {"asset": canonical, "indication": ind, "stage": stage, "therapeutic_area": ta},
+                evidence_id=evidence.id,
+                asset_id=asset.id,
+            )
         for (ind, stage, ta) in removed:
-            emit_change(session, company_id, "asset_indication_removed", {"asset": canonical, "indication": ind, "stage": stage, "therapeutic_area": ta}, evidence_id=evidence.id, asset_id=asset.id)
+            emit_change(
+                session,
+                company_id,
+                "asset_indication_removed",
+                {"asset": canonical, "indication": ind, "stage": stage, "therapeutic_area": ta},
+                evidence_id=evidence.id,
+                asset_id=asset.id,
+            )
 
     emit_change(session, company_id, "pipeline_ingested", {"as_of_date": as_of_date, "pdf_url": pdf_url, "assets_seen": len(by_asset)}, evidence_id=evidence.id)
     return len(by_asset)
