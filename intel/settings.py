@@ -27,10 +27,14 @@ class Settings(BaseSettings):
     min_alias_len_for_trial_search: int = 4
 
     # optional LLM-assisted cleaning (Gemini)
+    # Enable with: PHARMA_INTEL_LLM_CLEAN_ENABLED=true
     llm_clean_enabled: bool = False
+    # Provide via env: PHARMA_INTEL_GEMINI_API_KEY
     gemini_api_key: str | None = None
+    # Default to the free/fast model; override with PHARMA_INTEL_GEMINI_MODEL
     gemini_model: str = "gemini-1.5-flash"
     gemini_timeout_s: int = 45
-
+    # Safety valve for free-tier quotas
+    gemini_max_calls_per_run: int = 200
 
 settings = Settings()
