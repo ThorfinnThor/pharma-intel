@@ -109,11 +109,12 @@ DISEASE_KEYWORDS = {
     "lupus",
     "asthma",
     "dermatitis",
+    "hypertension",
+    # common PDF truncation where leading 'h' is dropped
+    "ypertension",
+    # frequent disease fragments in the J&J pipeline PDF
     "pulmonary",
     "arterial",
-    "hypertension",
-    # common truncation seen in PDF extraction (missing leading 'h')
-    "ypertension",
     "diabetes",
     "depression",
     "major depressive",
@@ -128,24 +129,33 @@ _DOSE_OR_DIGIT = re.compile(r"\d|\b(mg|mcg|ug|g|kg|iu|units|mg\/kg)\b", re.IGNOR
 # Examples: ORIGAMI-2, MajesTEC-4, SunRISE-3, ICONIC-CD, ENERGY (often trial name)
 _TRIAL_ACRONYM = re.compile(r"^[A-Za-z][A-Za-z0-9]{2,20}(?:-[A-Za-z0-9]{1,6})+$")
 
-# Common trial/program branding tokens that frequently appear in the pipeline table
-# and should not be treated as assets when extracted as standalone labels.
-_TRIALISH_TOKENS = {
-    "origami",
-    "majeste",
-    "majestic",
-    "sunrise",
-    "iconic",
-    "energy",
-    "papillon",
-    "monumental",
-    "protostar",
-}
-
 _DRUG_SUFFIX = re.compile(
     r"(mab|nib|parib|ciclib|stat|navir|vir|prazole|oxetine|afil|zumab|ximab|tinib|lisib)$",
     re.IGNORECASE,
 )
+
+# Detect camelCase / truncated disease fragments (e.g. "PulmonaryArterialH")
+_CAMEL_CASE = re.compile(r"[a-z][A-Z]")
+_ENDS_WITH_SINGLE_CAP = re.compile(r".*[a-z][A-Z]$")
+
+# Split common glued lowercase words in indications ("Leprosyunderreview...")
+_GLUED_WORDS = [
+    "under",
+    "review",
+    "by",
+    "of",
+    "and",
+    "in",
+    "with",
+    "for",
+    "to",
+    "from",
+    "at",
+    "risk",
+    "non",
+    "muscle",
+    "invasive",
+]
 
 
 def _collapse_spaced_letters(s: str) -> str:
@@ -212,10 +222,6 @@ def is_trial_acronym(label: str) -> bool:
     # allow JNJ-#### codes (assets) even though they match the hyphen pattern
     if s.lower().startswith("jnj-"):
         return False
-
-    # Common standalone trial branding words
-    if s.lower().strip("()[]{} ") in _TRIALISH_TOKENS:
-        return True
     # Typical trial/study tags are short and hyphenated
     if _TRIAL_ACRONYM.match(s) and len(s) <= 22:
         return True
@@ -230,6 +236,12 @@ def looks_like_indication_label(label: str) -> bool:
     s = label.strip()
     low = s.lower()
 
+    # Truncation fragments like "PulmonaryArterialH" should never be assets.
+    if _CAMEL_CASE.search(s) and any(k in low for k in ("pulmonary", "arterial", "hypertension", "ypertension")):
+        return True
+    if _ENDS_WITH_SINGLE_CAP.match(s) and any(k in low for k in ("pulmonary", "arterial", "hypertension", "ypertension")):
+        return True
+
     # program codes survive
     if low.startswith("jnj-"):
         return False
@@ -243,7 +255,7 @@ def looks_like_indication_label(label: str) -> bool:
         return True
 
     # disease keyword hit?
-    # Be robust to common PDF truncations where the first character drops (e.g. "ypertension" instead of "hypertension").
+    # Be robust to a common PDF truncation where the first character is dropped.
     hit = False
     for kw in DISEASE_KEYWORDS:
         if kw in low:
@@ -301,11 +313,11 @@ def is_plausible_asset_label(label: str) -> bool:
     if low in {"others", "other", "unknown", "undisclosed"}:
         return False
 
-    # reject disease-like labels
+    # reject disease-like labels (this is what fixes your screenshots)
     if looks_like_indication_label(s):
         return False
 
-    # reject trial acronyms / trial branding
+    # reject pure trial acronyms
     if is_trial_acronym(s):
         return False
 
@@ -324,15 +336,17 @@ def sanitize_indication_text(raw: str) -> str:
     # Collapse OCR spaced letters (e.g. "L e p r o s y")
     s = _collapse_spaced_letters(s)
 
-    # De-glue common PDF extraction artifacts like "SIRTUROLeprosyunderreview..."
-    # by inserting spaces at camelCase boundaries and acronym→word boundaries.
+    # De-glue camelCase and acronym boundaries (SIRTUROLeprosy...)
     if " " not in s and len(s) >= 25:
-        # fooBar -> foo Bar
         s = re.sub(r"([a-z])([A-Z])", r"\1 \2", s)
-        # ACRONYMWord -> ACRONYM Word
         s = re.sub(r"([A-Z]{2,})([A-Z][a-z])", r"\1 \2", s)
-    s = _WS.sub(" ", s).strip()
 
+    # De-glue common lowercase runs (Leprosyunderreviewby...)
+    if " " not in s and len(s) >= 20:
+        for w in _GLUED_WORDS:
+            s = re.sub(rf"(?i)([a-z])({re.escape(w)})([a-z])", r"\1 \2 \3", s)
+
+    s = _WS.sub(" ", s).strip()
     low = s.lower()
 
     # Drop entire line if it looks like a footer/disclaimer
