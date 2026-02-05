@@ -8,7 +8,7 @@ from sqlalchemy.orm import Session
 
 from . import models
 from .normalize import norm_text
-from .sanitize import sanitize_asset_label, sanitize_alias, is_plausible_asset_label
+from .sanitize import sanitize_asset_label, sanitize_alias, is_plausible_asset_label, looks_like_indication_label, is_trial_acronym
 
 
 # Drop known OCR garbage aliases (prevents junk alias like "actorXla")
@@ -103,7 +103,7 @@ def rebuild_aliases_for_asset(session: Session, asset_id: int) -> None:
         new_alias = sanitize_alias(a.alias)
         if not new_alias:
             continue
-        if not is_plausible_asset_label(new_alias):
+        if not is_plausible_asset_label(new_alias) or looks_like_indication_label(new_alias) or is_trial_acronym(new_alias):
             continue
         new_norm = norm_text(new_alias)
         if new_norm in DROP_ALIAS_NORMS:
