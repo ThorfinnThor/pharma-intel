@@ -225,7 +225,6 @@ def _is_asset_line(line: dict[str, Any], median_size: float, *, col_left: float)
     if not raw:
         return False
 
-    # These are almost always trial names/callouts, not assets: (ORIGAMI-2), (MajesTEC-4), etc.
     if _PAREN_ONLY.match(raw):
         return False
 
@@ -233,7 +232,6 @@ def _is_asset_line(line: dict[str, Any], median_size: float, *, col_left: float)
     if not cleaned:
         return False
 
-    # strong negative signals
     if looks_like_indication_label(cleaned) or is_trial_acronym(cleaned):
         return False
 
@@ -244,28 +242,21 @@ def _is_asset_line(line: dict[str, Any], median_size: float, *, col_left: float)
     if low.startswith("*this is not") or low.startswith("strategic partnerships"):
         return False
 
-    # explicit program codes
     if "jnj-" in low:
         return True
 
-    # Alignment: asset labels usually start near the column left edge.
-    # Many indication lines are indented / wrapped.
     aligned = abs(float(line.get("x0_min", col_left)) - col_left) <= 28
 
-    # typical assets are visually larger in the PDF, but require alignment to avoid false positives
     if aligned and line["avg_size"] >= (median_size + 0.8) and is_plausible_asset_label(cleaned):
         return True
 
-    # brand (generic)
     if aligned and re.match(r"^.{2,60}\(.{2,60}\)$", cleaned) and re.search(r"[A-Za-z]", cleaned) and is_plausible_asset_label(cleaned):
         return True
 
-    # single token (e.g., icotrokinra)
     if aligned and " " not in cleaned and 4 <= len(cleaned) <= 25 and re.search(r"[A-Za-z]", cleaned):
         if cleaned.lower() not in {"others", "other", "unknown", "undisclosed"} and is_plausible_asset_label(cleaned):
             return True
 
-    # all caps brand
     if aligned and cleaned.isupper() and 3 <= len(cleaned) <= 45 and is_plausible_asset_label(cleaned):
         return True
 
@@ -286,7 +277,6 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
 
             cols = _extract_phase_columns(p)
             words = p.extract_words(extra_attrs=["size"])
-            # More aggressive footer exclusion: drop bottom ~12% of the page.
             bottom_cut = float(p.height) * 0.88
             body_words = [w for w in words if 90 <= w["top"] <= bottom_cut and w["text"].strip()]
 
@@ -311,7 +301,6 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
                         return
                     if indication_is_footer_noise(ind):
                         return
-                    # drop absurdly long indications (usually PDF footer leakage)
                     if len(ind) > 220:
                         return
                     rows.append(
@@ -329,7 +318,6 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
                         raw_label = ln["text"]
                         cleaned = sanitize_asset_label(raw_label)
 
-                        # One more safety gate: reject trial acronyms even if they look like labels.
                         if cleaned and (looks_like_indication_label(cleaned) or is_trial_acronym(cleaned)):
                             current_asset = None
                             indication_parts = []
@@ -349,7 +337,6 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
 
                 flush()
 
-    # remove junk rows where indication looks like footer
     cleaned_rows = []
     for r in rows:
         ind_low = (r["indication"] or "").lower()
@@ -399,7 +386,6 @@ def ingest_jnj_pipeline(session: Session, company_id: str = "jnj") -> int:
         raw_label = asset_label
         cleaned_label = sanitize_asset_label(raw_label)
 
-        # Optional LLM rescue for borderline labels (truncation, unbalanced parens)
         llm_result = None
         if (
             (not cleaned_label or not is_plausible_asset_label(cleaned_label))
@@ -407,7 +393,6 @@ def ingest_jnj_pipeline(session: Session, company_id: str = "jnj") -> int:
             and llm_classify_and_canonicalize_asset_label is not None
             and settings.gemini_api_key
         ):
-            # Build a compact context: a few representative indication fragments
             ctx_lines: list[str] = []
             for r in recs[:4]:
                 ind = (r.get("indication") or "").strip()
@@ -438,7 +423,6 @@ def ingest_jnj_pipeline(session: Session, company_id: str = "jnj") -> int:
         if not is_plausible_asset_label(canonical):
             continue
 
-        # Merge in any LLM-proposed aliases (already constrained to RAW_LABEL)
         if llm_result and llm_result.get("is_asset"):
             for a in (llm_result.get("aliases") or []):
                 if isinstance(a, str) and a.strip():
