@@ -9,6 +9,12 @@ on:
         default: "true"
         type: choice
         options: ["true", "false"]
+      use_llm_clean:
+        description: "Enable Gemini LLM clean step (uses PHARMA_INTEL_GEMINI_API_KEY secret)"
+        required: true
+        default: "false"
+        type: choice
+        options: ["false", "true"]
   schedule:
     - cron: "30 4 * * *"  # daily 04:30 UTC
 
@@ -28,8 +34,9 @@ jobs:
       PHARMA_INTEL_HTTP_USER_AGENT: "pharma-intel-mvp/0.1 (contact: YOUR_EMAIL_OR_URL)"
       PHARMA_INTEL_CTG_MAX_PAGES_PER_QUERY: "20"
       PHARMA_INTEL_CTG_SLEEP_S: "0.3"
-      PHARMA_INTEL_GEMINI_API_KEY: ${{ secrets.PHARMA_INTEL_GEMINI_API_KEY }}
-      PHARMA_INTEL_LLM_CLEAN_ENABLED: "true"
+      PHARMA_INTEL_LLM_CLEAN_ENABLED: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.use_llm_clean == 'true' || 'false' }}
+      PHARMA_INTEL_GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      # Optional Gemini cleaning (off by default; enable via workflow input)
 
     steps:
       - name: Checkout
