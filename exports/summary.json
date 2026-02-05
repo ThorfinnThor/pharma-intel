@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-05T22:05:23Z",
+  "generated_at": "2026-02-05T22:12:41Z",
   "db": "data/intel.db",
   "companies": [
     {
@@ -11,8 +11,8 @@
     {
       "company_id": "jnj",
       "company_name": "Johnson & Johnson",
-      "asset_count": 22,
-      "change_count": 159
+      "asset_count": 17,
+      "change_count": 119
     }
   ]
 }

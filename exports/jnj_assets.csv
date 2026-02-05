@@ -1,25 +1,19 @@
 company_id,asset_id,asset_name,aliases,stage,therapeutic_area,as_of_date,indication
-jnj,18,Co-antibody Therapy,Co-antibody Therapy,Phase 2,Immunology,,Arthritis Lupus Erythematosus
-jnj,3,INLEXZO,Cetrelimab; gemcitabine; INLEXZO; INLEXZO (gemcitabine; JNJ-17000139; JNJ-42756493; JNJ-63723283,Phase 3,Oncology,,High Risk High Risk Non Muscle Experienced (SunRISe-5) RYBREVANT (amivantamab) Colorectal Cancer TALVEY + TECVAYLI Relapsed Refractory (MonumenTAL-6) TALVEY (talquetamab) exposed TIE NDMM in combination
-jnj,6,JNJ-1493,JNJ-1493,Phase 1,Oncology,,Hematological
-jnj,22,JNJ-1887 sCD59,JNJ-1887 sCD59,Phase 3,Neuroscience,,Geographic Atrophy SPRAVATO (esketamine) Major Depressive Disorder Pediatrics
-jnj,5,JNJ-1900,JNJ-1900; JNJ-1900 (NBTXR3); JNJ-90301900; NBTXR3,Phase 1,Oncology,,Lung Cancer
-jnj,12,JNJ-2175,JNJ-2175,Phase 3,Oncology,,Solid Tumors
-jnj,7,JNJ-2761,JNJ-2761,Phase 1,Oncology,,Multiple Myeloma
-jnj,13,JNJ-3413,JNJ-3413,Phase 3,Oncology,,Lymphoma
-jnj,8,JNJ-4680,JNJ-4680,Phase 1,Oncology,,Lung Cancer
-jnj,14,JNJ-4681,JNJ-4681,Phase 3,Oncology,,Hematological Malignancies
-jnj,17,JNJ-4804 Co-antibody,JNJ-4804 Co-antibody,Phase 1,Immunology,,Psoriatic Arthritis nipocalimab​ Systemic Lupus
-jnj,17,JNJ-4804 Co-antibody,JNJ-4804 Co-antibody,Phase 3,Immunology,,Crohn's Disease nipocalimab​ Idiopathic Inflammatory
-jnj,19,JNJ-5120,JNJ-5120,Phase 1,Neuroscience,,Major Depressive
-jnj,9,JNJ-5322,JNJ-5322,Phase 1,Oncology,,Multiple Myeloma
-jnj,15,JNJ-7446,JNJ-7446,Phase 3,Oncology,,Lung Cancer
-jnj,10,JNJ-8377,JNJ-8377,Phase 1,Oncology,,Lymphoma
-jnj,16,JNJ-8543,JNJ-8543,Phase 3,Oncology,,Hematological Malignancies
-jnj,11,Malignancies,CNTO1959; Erdafitinib; Guselkumab; JNJ-42756493; JNJ-56021927; Malignancies; Pembrolizumab,Phase 2,Oncology,,Myeloma Myeloma
-jnj,20,Myasthenia Gravis,JNJ-80202135; M281; Myasthenia Gravis; Myasthenia Gravis (Vivacity MG3); Nipocalimab; Vivacity MG3,Phase 2,Neuroscience,,(lumateperone) Psychiatric Indications Treatment for Major Depressive Disorder
-jnj,2,RYBREVANT,amivantamab; Cetuximab; JNJ-61186372; JNJ-73841937; Lazertinib; RYBREVANT; RYBREVANT (amivantamab); YH-25448; YH25448,Phase 3,Oncology,,"Frontline Non Small chemotherapy (PAPILLON) Bleximenib Newly Diagnosed AML, with Venetoclax and ERLEADA (apalutamide) vs ASCT Localized Prostate"
-jnj,21,Symptoms,OARS; Symptoms; Symptoms (OARS),Phase 2,Neuroscience,,Disease-Related Agitation Disorder
-jnj,4,and Azacitidine,and Azacitidine; and Azacitidine (cAMeLot-2); Bleximenib; Cusatuzumab; JNJ-74494550; JNJ-75276617,Registration,Oncology,,Cancer (ATLAS) intravesical delivery system) Muscle Invasive Bladder Cancer BCG (SunRISe-5) (amivantamab) (ORIGAMI-2) Multiple Myeloma CD38 exposed combination with DR (MajesTEC-7)
-jnj,1,gemcitabine intravesical delivery,gemcitabine intravesical delivery,Phase 2,Oncology,,Invasive Bladder Cancer (SunRISe-1) (teclistamab) Myeloma 1-3PLs (MajesTEC-3) (Ciltacabtagene autoleucel) Multiple Myeloma Transplant Eligible vs
-jnj,1,gemcitabine intravesical delivery,gemcitabine intravesical delivery,Phase 2,Oncology,,Invasive Bladder Cancer BCG-naïve Cancer (amivantamab) Neck Cancer (ORIGAMI-5) (talquetamab) Refractory Multiple Myeloma CD38 exposed
+jnj,3,Azacitidine,Azacitidine; Azacitidine (cAMeLot-2); Bleximenib; Cusatuzumab; JNJ-74494550; JNJ-75276617,Registration,Oncology,,Cancer (ATLAS) intravesical delivery system) Invasive Bladder Cancer BCG (ORIGAMI-2) Multiple Myeloma CD38 exposed with DR (MajesTEC-7)
+jnj,2,INLEXZO,Cetrelimab; gemcitabine; INLEXZO; INLEXZO (gemcitabine; JNJ-17000139; JNJ-42756493; JNJ-63723283,Phase 3,Oncology,,High Risk High Risk Non Muscle Experienced (SunRISe-5) RYBREVANT (amivantamab) Colorectal Cancer TALVEY + TECVAYLI Relapsed Refractory (MonumenTAL-6) TALVEY (talquetamab) TIE NDMM in combination
+jnj,5,JNJ-1493,JNJ-1493,Phase 1,Oncology,,Hematological
+jnj,17,JNJ-1887 sCD59,JNJ-1887 sCD59,Phase 3,Neuroscience,,Geographic Atrophy SPRAVATO (esketamine) Major Depressive Disorder Pediatrics
+jnj,4,JNJ-1900,JNJ-1900; JNJ-1900 (NBTXR3); JNJ-90301900; NBTXR3,Phase 1,Oncology,,Lung Cancer
+jnj,10,JNJ-2175,JNJ-2175,Phase 3,Oncology,,Solid Tumors
+jnj,6,JNJ-2761,JNJ-2761,Phase 1,Oncology,,Multiple Myeloma
+jnj,11,JNJ-3413,JNJ-3413,Phase 3,Oncology,,Lymphoma
+jnj,7,JNJ-4680,JNJ-4680,Phase 1,Oncology,,Lung Cancer
+jnj,12,JNJ-4681,JNJ-4681,Phase 3,Oncology,,Hematological Malignancies
+jnj,15,JNJ-4804 Co-antibody,JNJ-4804 Co-antibody,Phase 1,Immunology,,Psoriatic Arthritis nipocalimab​ Systemic Lupus
+jnj,15,JNJ-4804 Co-antibody,JNJ-4804 Co-antibody,Phase 3,Immunology,,Crohn's Disease nipocalimab​ Idiopathic Inflammatory
+jnj,16,JNJ-5120,JNJ-5120,Phase 1,Neuroscience,,Major Depressive
+jnj,8,JNJ-5322,JNJ-5322,Phase 1,Oncology,,Multiple Myeloma
+jnj,13,JNJ-7446,JNJ-7446,Phase 3,Oncology,,Lung Cancer
+jnj,9,JNJ-8377,JNJ-8377,Phase 1,Oncology,,Lymphoma
+jnj,14,JNJ-8543,JNJ-8543,Phase 3,Oncology,,Hematological Malignancies
+jnj,1,RYBREVANT,amivantamab; Cetuximab; JNJ-61186372; JNJ-73841937; Lazertinib; RYBREVANT; RYBREVANT (amivantamab); YH-25448; YH25448,Phase 3,Oncology,,"Frontline Non Small chemotherapy (PAPILLON) Bleximenib Newly Diagnosed AML, with Venetoclax and ERLEADA (apalutamide) ASCT Localized Prostate"

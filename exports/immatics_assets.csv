@@ -1,6 +1,6 @@
 company_id,asset_id,asset_name,aliases,stage,therapeutic_area,as_of_date,indication
-immatics,25,IMA401,IMA401,Phase 1,Oncology,,"HNSCC, sqNSCLC, other solid cancers"
-immatics,23,IMA402,IMA402,Phase 1,Oncology,,"Melanoma, gynecologic cancers, other solid cancers"
-immatics,24,IMA402 + ICI,ICI; IMA402; IMA402 + ICI,Phase 1,Oncology,,"Melanoma, gynecologic cancers, other solid cancers (combo)"
-immatics,26,Undisclosed bispecific,Undisclosed bispecific,Preclinical,Oncology,,Undisclosed
-immatics,27,Undisclosed cell therapy,Undisclosed cell therapy,Preclinical,Oncology,,Undisclosed
+immatics,20,IMA401,IMA401,Phase 1,Oncology,,"HNSCC, sqNSCLC, other solid cancers"
+immatics,18,IMA402,IMA402,Phase 1,Oncology,,"Melanoma, gynecologic cancers, other solid cancers"
+immatics,19,IMA402 + ICI,ICI; IMA402; IMA402 + ICI,Phase 1,Oncology,,"Melanoma, gynecologic cancers, other solid cancers (combo)"
+immatics,21,Undisclosed bispecific,Undisclosed bispecific,Preclinical,Oncology,,Undisclosed
+immatics,22,Undisclosed cell therapy,Undisclosed cell therapy,Preclinical,Oncology,,Undisclosed

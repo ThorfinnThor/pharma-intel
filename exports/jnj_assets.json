@@ -1,27 +1,32 @@
 {
-  "generated_at": "2026-02-05T22:05:23Z",
+  "generated_at": "2026-02-05T22:12:41Z",
   "company_id": "jnj",
   "company_name": "Johnson & Johnson",
-  "asset_count": 22,
-  "change_count": 159,
+  "asset_count": 17,
+  "change_count": 119,
   "assets": [
     {
-      "asset_id": 18,
-      "asset_name": "Co-antibody Therapy",
+      "asset_id": 3,
+      "asset_name": "Azacitidine",
       "aliases": [
-        "Co-antibody Therapy"
+        "Azacitidine",
+        "Azacitidine (cAMeLot-2)",
+        "Bleximenib",
+        "Cusatuzumab",
+        "JNJ-74494550",
+        "JNJ-75276617"
       ],
       "indications": [
         {
-          "indication": "Arthritis Lupus Erythematosus",
-          "stage": "Phase 2",
-          "therapeutic_area": "Immunology",
+          "indication": "Cancer (ATLAS) intravesical delivery system) Invasive Bladder Cancer BCG (ORIGAMI-2) Multiple Myeloma CD38 exposed with DR (MajesTEC-7)",
+          "stage": "Registration",
+          "therapeutic_area": "Oncology",
           "as_of_date": null
         }
       ]
     },
     {
-      "asset_id": 3,
+      "asset_id": 2,
       "asset_name": "INLEXZO",
       "aliases": [
         "Cetrelimab",
@@ -34,7 +39,7 @@
       ],
       "indications": [
         {
-          "indication": "High Risk High Risk Non Muscle Experienced (SunRISe-5) RYBREVANT (amivantamab) Colorectal Cancer TALVEY + TECVAYLI Relapsed Refractory (MonumenTAL-6) TALVEY (talquetamab) exposed TIE NDMM in combination",
+          "indication": "High Risk High Risk Non Muscle Experienced (SunRISe-5) RYBREVANT (amivantamab) Colorectal Cancer TALVEY + TECVAYLI Relapsed Refractory (MonumenTAL-6) TALVEY (talquetamab) TIE NDMM in combination",
           "stage": "Phase 3",
           "therapeutic_area": "Oncology",
           "as_of_date": null
@@ -42,7 +47,7 @@
       ]
     },
     {
-      "asset_id": 6,
+      "asset_id": 5,
       "asset_name": "JNJ-1493",
       "aliases": [
         "JNJ-1493"
@@ -57,7 +62,7 @@
       ]
     },
     {
-      "asset_id": 22,
+      "asset_id": 17,
       "asset_name": "JNJ-1887 sCD59",
       "aliases": [
         "JNJ-1887 sCD59"
@@ -72,7 +77,7 @@
       ]
     },
     {
-      "asset_id": 5,
+      "asset_id": 4,
       "asset_name": "JNJ-1900",
       "aliases": [
         "JNJ-1900",
@@ -90,7 +95,7 @@
       ]
     },
     {
-      "asset_id": 12,
+      "asset_id": 10,
       "asset_name": "JNJ-2175",
       "aliases": [
         "JNJ-2175"
@@ -105,7 +110,7 @@
       ]
     },
     {
-      "asset_id": 7,
+      "asset_id": 6,
       "asset_name": "JNJ-2761",
       "aliases": [
         "JNJ-2761"
@@ -120,7 +125,7 @@
       ]
     },
     {
-      "asset_id": 13,
+      "asset_id": 11,
       "asset_name": "JNJ-3413",
       "aliases": [
         "JNJ-3413"
@@ -135,7 +140,7 @@
       ]
     },
     {
-      "asset_id": 8,
+      "asset_id": 7,
       "asset_name": "JNJ-4680",
       "aliases": [
         "JNJ-4680"
@@ -150,7 +155,7 @@
       ]
     },
     {
-      "asset_id": 14,
+      "asset_id": 12,
       "asset_name": "JNJ-4681",
       "aliases": [
         "JNJ-4681"
@@ -165,7 +170,7 @@
       ]
     },
     {
-      "asset_id": 17,
+      "asset_id": 15,
       "asset_name": "JNJ-4804 Co-antibody",
       "aliases": [
         "JNJ-4804 Co-antibody"
@@ -186,7 +191,7 @@
       ]
     },
     {
-      "asset_id": 19,
+      "asset_id": 16,
       "asset_name": "JNJ-5120",
       "aliases": [
         "JNJ-5120"
@@ -201,7 +206,7 @@
       ]
     },
     {
-      "asset_id": 9,
+      "asset_id": 8,
       "asset_name": "JNJ-5322",
       "aliases": [
         "JNJ-5322"
@@ -216,7 +221,7 @@
       ]
     },
     {
-      "asset_id": 15,
+      "asset_id": 13,
       "asset_name": "JNJ-7446",
       "aliases": [
         "JNJ-7446"
@@ -231,7 +236,7 @@
       ]
     },
     {
-      "asset_id": 10,
+      "asset_id": 9,
       "asset_name": "JNJ-8377",
       "aliases": [
         "JNJ-8377"
@@ -246,7 +251,7 @@
       ]
     },
     {
-      "asset_id": 16,
+      "asset_id": 14,
       "asset_name": "JNJ-8543",
       "aliases": [
         "JNJ-8543"
@@ -261,48 +266,7 @@
       ]
     },
     {
-      "asset_id": 11,
-      "asset_name": "Malignancies",
-      "aliases": [
-        "CNTO1959",
-        "Erdafitinib",
-        "Guselkumab",
-        "JNJ-42756493",
-        "JNJ-56021927",
-        "Malignancies",
-        "Pembrolizumab"
-      ],
-      "indications": [
-        {
-          "indication": "Myeloma Myeloma",
-          "stage": "Phase 2",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
-        }
-      ]
-    },
-    {
-      "asset_id": 20,
-      "asset_name": "Myasthenia Gravis",
-      "aliases": [
-        "JNJ-80202135",
-        "M281",
-        "Myasthenia Gravis",
-        "Myasthenia Gravis (Vivacity MG3)",
-        "Nipocalimab",
-        "Vivacity MG3"
-      ],
-      "indications": [
-        {
-          "indication": "(lumateperone) Psychiatric Indications Treatment for Major Depressive Disorder",
-          "stage": "Phase 2",
-          "therapeutic_area": "Neuroscience",
-          "as_of_date": null
-        }
-      ]
-    },
-    {
-      "asset_id": 2,
+      "asset_id": 1,
       "asset_name": "RYBREVANT",
       "aliases": [
         "amivantamab",
@@ -317,66 +281,8 @@
       ],
       "indications": [
         {
-          "indication": "Frontline Non Small chemotherapy (PAPILLON) Bleximenib Newly Diagnosed AML, with Venetoclax and ERLEADA (apalutamide) vs ASCT Localized Prostate",
+          "indication": "Frontline Non Small chemotherapy (PAPILLON) Bleximenib Newly Diagnosed AML, with Venetoclax and ERLEADA (apalutamide) ASCT Localized Prostate",
           "stage": "Phase 3",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
-        }
-      ]
-    },
-    {
-      "asset_id": 21,
-      "asset_name": "Symptoms",
-      "aliases": [
-        "OARS",
-        "Symptoms",
-        "Symptoms (OARS)"
-      ],
-      "indications": [
-        {
-          "indication": "Disease-Related Agitation Disorder",
-          "stage": "Phase 2",
-          "therapeutic_area": "Neuroscience",
-          "as_of_date": null
-        }
-      ]
-    },
-    {
-      "asset_id": 4,
-      "asset_name": "and Azacitidine",
-      "aliases": [
-        "and Azacitidine",
-        "and Azacitidine (cAMeLot-2)",
-        "Bleximenib",
-        "Cusatuzumab",
-        "JNJ-74494550",
-        "JNJ-75276617"
-      ],
-      "indications": [
-        {
-          "indication": "Cancer (ATLAS) intravesical delivery system) Muscle Invasive Bladder Cancer BCG (SunRISe-5) (amivantamab) (ORIGAMI-2) Multiple Myeloma CD38 exposed combination with DR (MajesTEC-7)",
-          "stage": "Registration",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
-        }
-      ]
-    },
-    {
-      "asset_id": 1,
-      "asset_name": "gemcitabine intravesical delivery",
-      "aliases": [
-        "gemcitabine intravesical delivery"
-      ],
-      "indications": [
-        {
-          "indication": "Invasive Bladder Cancer (SunRISe-1) (teclistamab) Myeloma 1-3PLs (MajesTEC-3) (Ciltacabtagene autoleucel) Multiple Myeloma Transplant Eligible vs",
-          "stage": "Phase 2",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
-        },
-        {
-          "indication": "Invasive Bladder Cancer BCG-naïve Cancer (amivantamab) Neck Cancer (ORIGAMI-5) (talquetamab) Refractory Multiple Myeloma CD38 exposed",
-          "stage": "Phase 2",
           "therapeutic_area": "Oncology",
           "as_of_date": null
         }

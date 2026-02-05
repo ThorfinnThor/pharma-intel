@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-05T22:05:23Z",
+  "generated_at": "2026-02-05T22:12:41Z",
   "company_id": "immatics",
   "company_name": "Immatics",
   "changes": [
@@ -24,9 +24,9 @@
         "nct_id": "NCT05958121",
         "linked_assets": 1
       },
-      "evidence_id": 65,
+      "evidence_id": 45,
       "asset_id": null,
-      "trial_id": 62
+      "trial_id": 42
     },
     {
       "event_type": "trial_assets_linked",
@@ -35,9 +35,9 @@
         "nct_id": "NCT05359445",
         "linked_assets": 1
       },
-      "evidence_id": 66,
+      "evidence_id": 46,
       "asset_id": null,
-      "trial_id": 63
+      "trial_id": 43
     },
     {
       "event_type": "trial_added",
@@ -46,9 +46,9 @@
         "nct_id": "NCT05958121",
         "title": "A Phase I/II First-In-Human Clinical Trial to Evaluate the Safety, Tolerability and Anti-Tumor Activity of IMA402, a Bispecific TCER® Targeting PRAME, in Patients With Recurrent and/or Refractory Solid Tumors"
       },
-      "evidence_id": 65,
+      "evidence_id": 45,
       "asset_id": null,
-      "trial_id": 62
+      "trial_id": 42
     },
     {
       "event_type": "trial_added",
@@ -57,9 +57,9 @@
         "nct_id": "NCT05359445",
         "title": "A Phase Ia/Ib First-In-Human Clinical Trial to Evaluate the Safety, Tolerability and Initial Anti-Tumor Activity of IMA401, a Bispecific T Cell Engaging Receptor Molecule (TCER®), as Monotherapy or in Combination With Checkpoint Inhibitor in Patients With Recurrent and/or Refractory Solid Tumors."
       },
-      "evidence_id": 66,
+      "evidence_id": 46,
       "asset_id": null,
-      "trial_id": 63
+      "trial_id": 43
     },
     {
       "event_type": "pipeline_ingested",
@@ -83,7 +83,7 @@
         "therapeutic_area": "Oncology"
       },
       "evidence_id": 3,
-      "asset_id": 23,
+      "asset_id": 18,
       "trial_id": null
     },
     {
@@ -96,7 +96,7 @@
         "therapeutic_area": "Oncology"
       },
       "evidence_id": 3,
-      "asset_id": 24,
+      "asset_id": 19,
       "trial_id": null
     },
     {
@@ -109,7 +109,7 @@
         "therapeutic_area": "Oncology"
       },
       "evidence_id": 3,
-      "asset_id": 25,
+      "asset_id": 20,
       "trial_id": null
     },
     {
@@ -122,7 +122,7 @@
         "therapeutic_area": "Oncology"
       },
       "evidence_id": 3,
-      "asset_id": 26,
+      "asset_id": 21,
       "trial_id": null
     },
     {
@@ -135,7 +135,7 @@
         "therapeutic_area": "Oncology"
       },
       "evidence_id": 3,
-      "asset_id": 27,
+      "asset_id": 22,
       "trial_id": null
     },
     {
@@ -145,7 +145,7 @@
         "asset": "IMA402"
       },
       "evidence_id": 3,
-      "asset_id": 23,
+      "asset_id": 18,
       "trial_id": null
     },
     {
@@ -155,7 +155,7 @@
         "asset": "IMA402 + ICI"
       },
       "evidence_id": 3,
-      "asset_id": 24,
+      "asset_id": 19,
       "trial_id": null
     },
     {
@@ -165,7 +165,7 @@
         "asset": "IMA401"
       },
       "evidence_id": 3,
-      "asset_id": 25,
+      "asset_id": 20,
       "trial_id": null
     },
     {
@@ -175,7 +175,7 @@
         "asset": "Undisclosed bispecific"
       },
       "evidence_id": 3,
-      "asset_id": 26,
+      "asset_id": 21,
       "trial_id": null
     },
     {
@@ -185,7 +185,7 @@
         "asset": "Undisclosed cell therapy"
       },
       "evidence_id": 3,
-      "asset_id": 27,
+      "asset_id": 22,
       "trial_id": null
     }
   ]
