@@ -3,6 +3,12 @@ name: ingest (jnj + immatics)
 on:
   workflow_dispatch:
     inputs:
+      reuse_db:
+        description: "Reuse previous intel.db from data-snapshots (keeps history, can preserve old junk)"
+        required: true
+        default: "false"
+        type: choice
+        options: ["false", "true"]
       persist_db:
         description: "Persist intel.db + exports/ to data-snapshots branch"
         required: true
@@ -58,6 +64,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Restore previous DB from data-snapshots (if it exists)
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.reuse_db == 'true'
         shell: bash
         run: |
           set -euo pipefail
@@ -68,6 +75,20 @@ jobs:
             git show origin/data-snapshots:data/intel.db > data/intel.db
           else
             echo "No prior DB found (first run)."
+          fi
+
+      - name: Clean workspace (fresh DB + exports)
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf exports || true
+          mkdir -p data
+          # Scheduled runs always start from scratch. Manual runs start from scratch unless reuse_db=true.
+          if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event.inputs.reuse_db || 'false' }}" != "true" ]; then
+            echo "Starting from scratch: removing prior data/intel.db"
+            rm -f data/intel.db || true
+          else
+            echo "Reusing data/intel.db (manual run with reuse_db=true)"
           fi
 
       - name: Run ingestion
