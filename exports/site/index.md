@@ -1,8 +1,8 @@
 # Pharma Intel
 
-Generated: `2026-02-05T05:37:19Z`
+Generated: `2026-02-05T09:49:26Z`
 
 ## Companies
 
-- **Johnson & Johnson** (jnj): 44 assets, 263 trials
-- **Immatics** (immatics): 6 assets, 5 trials
+- **Johnson & Johnson** (jnj): 45 assets, 267 trials
+- **Immatics** (immatics): 4 assets, 5 trials

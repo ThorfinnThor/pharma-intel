@@ -1,17 +1,15 @@
 # Immatics (immatics)
 
-Generated: `2026-02-05T05:37:19Z`
+Generated: `2026-02-05T09:49:26Z`
 
-- Assets: **6**
-- Assets with linked trials: **4**
+- Assets: **4**
+- Assets with linked trials: **2**
 - Trials: **5**
 
 ## Top assets
 
 | Asset | Highest stage | Linked trials | Example indications |
 |---|---:|---:|---|
-| anzu-cel | Phase 1 | 3 | 2L melanoma; Uveal melanoma |
-| mRNA-4203 | Phase 1 | 1 | Solid cancers (combo with anzu-cel / IMA203) |
 | IMA402 + ICI | Phase 1 | 1 | Melanoma, gynecologic cancers, other solid cancers (combo) |
 | IMA401 | Phase 1 | 1 | HNSCC, sqNSCLC, other solid cancers |
 | IMA402 | Phase 1 | 0 | Melanoma, gynecologic cancers, other solid cancers |

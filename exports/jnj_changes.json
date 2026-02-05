@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-05T05:37:19Z",
+  "generated_at": "2026-02-05T09:49:26Z",
   "company_id": "jnj",
   "company_name": "Johnson & Johnson",
   "changes": [
@@ -108,6 +108,20 @@
         "trials_seen": 191,
         "inserted": 0,
         "updated": 191,
+        "status_changed": 0,
+        "bad_aliases": 0
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trials_ingested",
+      "created_at": null,
+      "payload": {
+        "trials_seen": 197,
+        "inserted": 4,
+        "updated": 193,
         "status_changed": 0,
         "bad_aliases": 0
       },
@@ -12106,6 +12120,3595 @@
       "trial_id": 267
     },
     {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05972135",
+        "linked_assets": 2
+      },
+      "evidence_id": 1870,
+      "asset_id": null,
+      "trial_id": 1
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06208150",
+        "linked_assets": 2
+      },
+      "evidence_id": 1871,
+      "asset_id": null,
+      "trial_id": 3
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06285318",
+        "linked_assets": 2
+      },
+      "evidence_id": 1872,
+      "asset_id": null,
+      "trial_id": 2
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07029776",
+        "linked_assets": 2
+      },
+      "evidence_id": 1873,
+      "asset_id": null,
+      "trial_id": 4
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04892173",
+        "linked_assets": 1
+      },
+      "evidence_id": 1874,
+      "asset_id": null,
+      "trial_id": 5
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07219212",
+        "linked_assets": 1
+      },
+      "evidence_id": 1875,
+      "asset_id": null,
+      "trial_id": 6
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03466411",
+        "linked_assets": 2
+      },
+      "evidence_id": 1877,
+      "asset_id": null,
+      "trial_id": 32
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04033445",
+        "linked_assets": 1
+      },
+      "evidence_id": 1878,
+      "asset_id": null,
+      "trial_id": 49
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06260163",
+        "linked_assets": 1
+      },
+      "evidence_id": 1881,
+      "asset_id": null,
+      "trial_id": 62
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06934226",
+        "linked_assets": 1
+      },
+      "evidence_id": 1882,
+      "asset_id": null,
+      "trial_id": 36
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06741969",
+        "linked_assets": 1
+      },
+      "evidence_id": 1883,
+      "asset_id": null,
+      "trial_id": 186
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07227454",
+        "linked_assets": 1
+      },
+      "evidence_id": 1884,
+      "asset_id": null,
+      "trial_id": 86
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06559306",
+        "linked_assets": 1
+      },
+      "evidence_id": 1885,
+      "asset_id": null,
+      "trial_id": 178
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07196722",
+        "linked_assets": 1
+      },
+      "evidence_id": 1887,
+      "asset_id": null,
+      "trial_id": 176
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05242484",
+        "linked_assets": 1
+      },
+      "evidence_id": 1890,
+      "asset_id": null,
+      "trial_id": 61
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05923073",
+        "linked_assets": 1
+      },
+      "evidence_id": 1895,
+      "asset_id": null,
+      "trial_id": 63
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05242471",
+        "linked_assets": 1
+      },
+      "evidence_id": 1897,
+      "asset_id": null,
+      "trial_id": 53
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05912517",
+        "linked_assets": 1
+      },
+      "evidence_id": 1898,
+      "asset_id": null,
+      "trial_id": 183
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07196748",
+        "linked_assets": 1
+      },
+      "evidence_id": 1899,
+      "asset_id": null,
+      "trial_id": 78
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03218488",
+        "linked_assets": 1
+      },
+      "evidence_id": 1900,
+      "asset_id": null,
+      "trial_id": 34
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07217587",
+        "linked_assets": 1
+      },
+      "evidence_id": 1901,
+      "asset_id": null,
+      "trial_id": 190
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05528510",
+        "linked_assets": 1
+      },
+      "evidence_id": 1902,
+      "asset_id": null,
+      "trial_id": 65
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05197049",
+        "linked_assets": 1
+      },
+      "evidence_id": 1905,
+      "asset_id": null,
+      "trial_id": 67
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06251076",
+        "linked_assets": 1
+      },
+      "evidence_id": 1907,
+      "asset_id": null,
+      "trial_id": 83
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05265273",
+        "linked_assets": 1
+      },
+      "evidence_id": 1908,
+      "asset_id": null,
+      "trial_id": 191
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04951622",
+        "linked_assets": 1
+      },
+      "evidence_id": 1909,
+      "asset_id": null,
+      "trial_id": 193
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04108208",
+        "linked_assets": 2
+      },
+      "evidence_id": 1911,
+      "asset_id": null,
+      "trial_id": 14
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04325828",
+        "linked_assets": 1
+      },
+      "evidence_id": 1912,
+      "asset_id": null,
+      "trial_id": 15
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04267887",
+        "linked_assets": 1
+      },
+      "evidence_id": 1913,
+      "asset_id": null,
+      "trial_id": 7
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03767244",
+        "linked_assets": 2
+      },
+      "evidence_id": 1914,
+      "asset_id": null,
+      "trial_id": 13
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05884398",
+        "linked_assets": 1
+      },
+      "evidence_id": 1915,
+      "asset_id": null,
+      "trial_id": 10
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04557059",
+        "linked_assets": 1
+      },
+      "evidence_id": 1916,
+      "asset_id": null,
+      "trial_id": 11
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05901649",
+        "linked_assets": 1
+      },
+      "evidence_id": 1917,
+      "asset_id": null,
+      "trial_id": 9
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03523442",
+        "linked_assets": 1
+      },
+      "evidence_id": 1918,
+      "asset_id": null,
+      "trial_id": 12
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05818683",
+        "linked_assets": 1
+      },
+      "evidence_id": 1919,
+      "asset_id": null,
+      "trial_id": 8
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04662580",
+        "linked_assets": 1
+      },
+      "evidence_id": 1920,
+      "asset_id": null,
+      "trial_id": 16
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07002320",
+        "linked_assets": 1
+      },
+      "evidence_id": 1921,
+      "asset_id": null,
+      "trial_id": 17
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05960578",
+        "linked_assets": 2
+      },
+      "evidence_id": 1922,
+      "asset_id": null,
+      "trial_id": 18
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06274047",
+        "linked_assets": 1
+      },
+      "evidence_id": 1923,
+      "asset_id": null,
+      "trial_id": 19
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04181203",
+        "linked_assets": 1
+      },
+      "evidence_id": 1925,
+      "asset_id": null,
+      "trial_id": 21
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06067269",
+        "linked_assets": 1
+      },
+      "evidence_id": 1926,
+      "asset_id": null,
+      "trial_id": 22
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05191680",
+        "linked_assets": 2
+      },
+      "evidence_id": 1927,
+      "asset_id": null,
+      "trial_id": 23
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT02913196",
+        "linked_assets": 1
+      },
+      "evidence_id": 1928,
+      "asset_id": null,
+      "trial_id": 24
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03903835",
+        "linked_assets": 1
+      },
+      "evidence_id": 1929,
+      "asset_id": null,
+      "trial_id": 25
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03902951",
+        "linked_assets": 1
+      },
+      "evidence_id": 1930,
+      "asset_id": null,
+      "trial_id": 26
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04812366",
+        "linked_assets": 1
+      },
+      "evidence_id": 1931,
+      "asset_id": null,
+      "trial_id": 27
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04295447",
+        "linked_assets": 1
+      },
+      "evidence_id": 1932,
+      "asset_id": null,
+      "trial_id": 28
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03141671",
+        "linked_assets": 1
+      },
+      "evidence_id": 1933,
+      "asset_id": null,
+      "trial_id": 29
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03899077",
+        "linked_assets": 1
+      },
+      "evidence_id": 1934,
+      "asset_id": null,
+      "trial_id": 30
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05778097",
+        "linked_assets": 1
+      },
+      "evidence_id": 1935,
+      "asset_id": null,
+      "trial_id": 31
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07245394",
+        "linked_assets": 1
+      },
+      "evidence_id": 1936,
+      "asset_id": null,
+      "trial_id": 33
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04372108",
+        "linked_assets": 1
+      },
+      "evidence_id": 1937,
+      "asset_id": null,
+      "trial_id": 38
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05092269",
+        "linked_assets": 1
+      },
+      "evidence_id": 1939,
+      "asset_id": null,
+      "trial_id": 37
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07310095",
+        "linked_assets": 1
+      },
+      "evidence_id": 1940,
+      "asset_id": null,
+      "trial_id": 39
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07303686",
+        "linked_assets": 1
+      },
+      "evidence_id": 1941,
+      "asset_id": null,
+      "trial_id": 40
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05083182",
+        "linked_assets": 1
+      },
+      "evidence_id": 1942,
+      "asset_id": null,
+      "trial_id": 41
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06807593",
+        "linked_assets": 1
+      },
+      "evidence_id": 1943,
+      "asset_id": null,
+      "trial_id": 42
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03941132",
+        "linked_assets": 1
+      },
+      "evidence_id": 1944,
+      "asset_id": null,
+      "trial_id": 43
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05299931",
+        "linked_assets": 1
+      },
+      "evidence_id": 1945,
+      "asset_id": null,
+      "trial_id": 44
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT02103361",
+        "linked_assets": 1
+      },
+      "evidence_id": 1946,
+      "asset_id": null,
+      "trial_id": 45
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05387031",
+        "linked_assets": 1
+      },
+      "evidence_id": 1948,
+      "asset_id": null,
+      "trial_id": 47
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04496063",
+        "linked_assets": 1
+      },
+      "evidence_id": 1949,
+      "asset_id": null,
+      "trial_id": 48
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04936308",
+        "linked_assets": 1
+      },
+      "evidence_id": 1950,
+      "asset_id": null,
+      "trial_id": 64
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04882098",
+        "linked_assets": 1
+      },
+      "evidence_id": 1951,
+      "asset_id": null,
+      "trial_id": 68
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03451851",
+        "linked_assets": 1
+      },
+      "evidence_id": 1952,
+      "asset_id": null,
+      "trial_id": 50
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06408935",
+        "linked_assets": 1
+      },
+      "evidence_id": 1953,
+      "asset_id": null,
+      "trial_id": 58
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07141004",
+        "linked_assets": 1
+      },
+      "evidence_id": 1954,
+      "asset_id": null,
+      "trial_id": 55
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05347095",
+        "linked_assets": 1
+      },
+      "evidence_id": 1955,
+      "asset_id": null,
+      "trial_id": 59
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06663332",
+        "linked_assets": 1
+      },
+      "evidence_id": 1956,
+      "asset_id": null,
+      "trial_id": 52
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05049798",
+        "linked_assets": 1
+      },
+      "evidence_id": 1958,
+      "asset_id": null,
+      "trial_id": 54
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04929210",
+        "linked_assets": 1
+      },
+      "evidence_id": 1959,
+      "asset_id": null,
+      "trial_id": 56
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06651489",
+        "linked_assets": 1
+      },
+      "evidence_id": 1960,
+      "asset_id": null,
+      "trial_id": 69
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05669833",
+        "linked_assets": 1
+      },
+      "evidence_id": 1962,
+      "asset_id": null,
+      "trial_id": 71
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05004727",
+        "linked_assets": 1
+      },
+      "evidence_id": 1963,
+      "asset_id": null,
+      "trial_id": 72
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06586281",
+        "linked_assets": 1
+      },
+      "evidence_id": 1964,
+      "asset_id": null,
+      "trial_id": 73
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06563323",
+        "linked_assets": 1
+      },
+      "evidence_id": 1965,
+      "asset_id": null,
+      "trial_id": 74
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04645355",
+        "linked_assets": 1
+      },
+      "evidence_id": 1966,
+      "asset_id": null,
+      "trial_id": 75
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05858632",
+        "linked_assets": 1
+      },
+      "evidence_id": 1967,
+      "asset_id": null,
+      "trial_id": 76
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07110844",
+        "linked_assets": 1
+      },
+      "evidence_id": 1969,
+      "asset_id": null,
+      "trial_id": 84
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06477783",
+        "linked_assets": 1
+      },
+      "evidence_id": 1970,
+      "asset_id": null,
+      "trial_id": 85
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07053345",
+        "linked_assets": 1
+      },
+      "evidence_id": 1971,
+      "asset_id": null,
+      "trial_id": 87
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06103760",
+        "linked_assets": 1
+      },
+      "evidence_id": 1972,
+      "asset_id": null,
+      "trial_id": 88
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05379595",
+        "linked_assets": 2
+      },
+      "evidence_id": 1973,
+      "asset_id": null,
+      "trial_id": 102
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07227025",
+        "linked_assets": 2
+      },
+      "evidence_id": 1974,
+      "asset_id": null,
+      "trial_id": 101
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07276399",
+        "linked_assets": 2
+      },
+      "evidence_id": 1975,
+      "asset_id": null,
+      "trial_id": 103
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07225946",
+        "linked_assets": 2
+      },
+      "evidence_id": 1976,
+      "asset_id": null,
+      "trial_id": 104
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06095089",
+        "linked_assets": 1
+      },
+      "evidence_id": 1977,
+      "asset_id": null,
+      "trial_id": 105
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07319871",
+        "linked_assets": 1
+      },
+      "evidence_id": 1978,
+      "asset_id": null,
+      "trial_id": 106
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07082920",
+        "linked_assets": 1
+      },
+      "evidence_id": 1979,
+      "asset_id": null,
+      "trial_id": 107
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07164443",
+        "linked_assets": 2
+      },
+      "evidence_id": 1980,
+      "asset_id": null,
+      "trial_id": 108
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07295951",
+        "linked_assets": 1
+      },
+      "evidence_id": 1981,
+      "asset_id": null,
+      "trial_id": 119
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05453903",
+        "linked_assets": 2
+      },
+      "evidence_id": 1982,
+      "asset_id": null,
+      "trial_id": 122
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04811560",
+        "linked_assets": 1
+      },
+      "evidence_id": 1983,
+      "asset_id": null,
+      "trial_id": 120
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06852222",
+        "linked_assets": 3
+      },
+      "evidence_id": 1984,
+      "asset_id": null,
+      "trial_id": 121
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05243797",
+        "linked_assets": 1
+      },
+      "evidence_id": 1985,
+      "asset_id": null,
+      "trial_id": 123
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04181827",
+        "linked_assets": 1
+      },
+      "evidence_id": 1986,
+      "asset_id": null,
+      "trial_id": 116
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05421663",
+        "linked_assets": 1
+      },
+      "evidence_id": 1987,
+      "asset_id": null,
+      "trial_id": 109
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04133636",
+        "linked_assets": 1
+      },
+      "evidence_id": 1989,
+      "asset_id": null,
+      "trial_id": 114
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06550895",
+        "linked_assets": 1
+      },
+      "evidence_id": 1991,
+      "asset_id": null,
+      "trial_id": 115
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04923893",
+        "linked_assets": 1
+      },
+      "evidence_id": 1992,
+      "asset_id": null,
+      "trial_id": 113
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06577025",
+        "linked_assets": 1
+      },
+      "evidence_id": 1993,
+      "asset_id": null,
+      "trial_id": 112
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05257083",
+        "linked_assets": 1
+      },
+      "evidence_id": 1994,
+      "asset_id": null,
+      "trial_id": 117
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04557098",
+        "linked_assets": 1
+      },
+      "evidence_id": 1996,
+      "asset_id": null,
+      "trial_id": 124
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05572515",
+        "linked_assets": 2
+      },
+      "evidence_id": 1997,
+      "asset_id": null,
+      "trial_id": 131
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04108195",
+        "linked_assets": 2
+      },
+      "evidence_id": 1998,
+      "asset_id": null,
+      "trial_id": 133
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04696809",
+        "linked_assets": 1
+      },
+      "evidence_id": 1999,
+      "asset_id": null,
+      "trial_id": 134
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06425991",
+        "linked_assets": 1
+      },
+      "evidence_id": 2000,
+      "asset_id": null,
+      "trial_id": 130
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05552222",
+        "linked_assets": 2
+      },
+      "evidence_id": 2001,
+      "asset_id": null,
+      "trial_id": 127
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04586426",
+        "linked_assets": 2
+      },
+      "evidence_id": 2002,
+      "asset_id": null,
+      "trial_id": 129
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05338775",
+        "linked_assets": 2
+      },
+      "evidence_id": 2003,
+      "asset_id": null,
+      "trial_id": 125
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05083169",
+        "linked_assets": 2
+      },
+      "evidence_id": 2004,
+      "asset_id": null,
+      "trial_id": 128
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03145181",
+        "linked_assets": 1
+      },
+      "evidence_id": 2005,
+      "asset_id": null,
+      "trial_id": 126
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04722146",
+        "linked_assets": 2
+      },
+      "evidence_id": 2006,
+      "asset_id": null,
+      "trial_id": 132
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07105059",
+        "linked_assets": 1
+      },
+      "evidence_id": 2007,
+      "asset_id": null,
+      "trial_id": 135
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05231629",
+        "linked_assets": 2
+      },
+      "evidence_id": 2008,
+      "asset_id": null,
+      "trial_id": 137
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07030517",
+        "linked_assets": 1
+      },
+      "evidence_id": 2009,
+      "asset_id": null,
+      "trial_id": 136
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05695508",
+        "linked_assets": 2
+      },
+      "evidence_id": 2010,
+      "asset_id": null,
+      "trial_id": 138
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07258511",
+        "linked_assets": 1
+      },
+      "evidence_id": 2011,
+      "asset_id": null,
+      "trial_id": 139
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06649695",
+        "linked_assets": 1
+      },
+      "evidence_id": 2012,
+      "asset_id": null,
+      "trial_id": 140
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05572229",
+        "linked_assets": 2
+      },
+      "evidence_id": 2013,
+      "asset_id": null,
+      "trial_id": 141
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06993675",
+        "linked_assets": 2
+      },
+      "evidence_id": 2014,
+      "asset_id": null,
+      "trial_id": 142
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07107529",
+        "linked_assets": 2
+      },
+      "evidence_id": 2015,
+      "asset_id": null,
+      "trial_id": 143
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05469893",
+        "linked_assets": 2
+      },
+      "evidence_id": 2017,
+      "asset_id": null,
+      "trial_id": 145
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05849610",
+        "linked_assets": 2
+      },
+      "evidence_id": 2018,
+      "asset_id": null,
+      "trial_id": 146
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06353022",
+        "linked_assets": 2
+      },
+      "evidence_id": 2019,
+      "asset_id": null,
+      "trial_id": 147
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06100237",
+        "linked_assets": 2
+      },
+      "evidence_id": 2020,
+      "asset_id": null,
+      "trial_id": 148
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06505369",
+        "linked_assets": 2
+      },
+      "evidence_id": 2021,
+      "asset_id": null,
+      "trial_id": 149
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05663866",
+        "linked_assets": 3
+      },
+      "evidence_id": 2022,
+      "asset_id": null,
+      "trial_id": 167
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04487080",
+        "linked_assets": 3
+      },
+      "evidence_id": 2023,
+      "asset_id": null,
+      "trial_id": 166
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04538664",
+        "linked_assets": 2
+      },
+      "evidence_id": 2024,
+      "asset_id": null,
+      "trial_id": 168
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05388669",
+        "linked_assets": 2
+      },
+      "evidence_id": 2025,
+      "asset_id": null,
+      "trial_id": 150
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05601973",
+        "linked_assets": 1
+      },
+      "evidence_id": 2026,
+      "asset_id": null,
+      "trial_id": 100
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05908734",
+        "linked_assets": 2
+      },
+      "evidence_id": 2027,
+      "asset_id": null,
+      "trial_id": 152
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT02609776",
+        "linked_assets": 2
+      },
+      "evidence_id": 2028,
+      "asset_id": null,
+      "trial_id": 161
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05488314",
+        "linked_assets": 2
+      },
+      "evidence_id": 2029,
+      "asset_id": null,
+      "trial_id": 160
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06662786",
+        "linked_assets": 2
+      },
+      "evidence_id": 2030,
+      "asset_id": null,
+      "trial_id": 151
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05498428",
+        "linked_assets": 2
+      },
+      "evidence_id": 2031,
+      "asset_id": null,
+      "trial_id": 154
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06532032",
+        "linked_assets": 3
+      },
+      "evidence_id": 2033,
+      "asset_id": null,
+      "trial_id": 153
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06120140",
+        "linked_assets": 2
+      },
+      "evidence_id": 2034,
+      "asset_id": null,
+      "trial_id": 158
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06750094",
+        "linked_assets": 2
+      },
+      "evidence_id": 2035,
+      "asset_id": null,
+      "trial_id": 155
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06667076",
+        "linked_assets": 2
+      },
+      "evidence_id": 2036,
+      "asset_id": null,
+      "trial_id": 156
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06385080",
+        "linked_assets": 2
+      },
+      "evidence_id": 2037,
+      "asset_id": null,
+      "trial_id": 157
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05845671",
+        "linked_assets": 2
+      },
+      "evidence_id": 2038,
+      "asset_id": null,
+      "trial_id": 162
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04077463",
+        "linked_assets": 2
+      },
+      "evidence_id": 2040,
+      "asset_id": null,
+      "trial_id": 164
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04988295",
+        "linked_assets": 2
+      },
+      "evidence_id": 2041,
+      "asset_id": null,
+      "trial_id": 165
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05299125",
+        "linked_assets": 1
+      },
+      "evidence_id": 2042,
+      "asset_id": null,
+      "trial_id": 169
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05117931",
+        "linked_assets": 1
+      },
+      "evidence_id": 2043,
+      "asset_id": null,
+      "trial_id": 170
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07062354",
+        "linked_assets": 1
+      },
+      "evidence_id": 2044,
+      "asset_id": null,
+      "trial_id": 171
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06632236",
+        "linked_assets": 2
+      },
+      "evidence_id": 2045,
+      "asset_id": null,
+      "trial_id": 172
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06816992",
+        "linked_assets": 1
+      },
+      "evidence_id": 2046,
+      "asset_id": null,
+      "trial_id": 173
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03767075",
+        "linked_assets": 1
+      },
+      "evidence_id": 2047,
+      "asset_id": null,
+      "trial_id": 174
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06807424",
+        "linked_assets": 1
+      },
+      "evidence_id": 2048,
+      "asset_id": null,
+      "trial_id": 177
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06878404",
+        "linked_assets": 1
+      },
+      "evidence_id": 2049,
+      "asset_id": null,
+      "trial_id": 175
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04119050",
+        "linked_assets": 1
+      },
+      "evidence_id": 2050,
+      "asset_id": null,
+      "trial_id": 184
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05327114",
+        "linked_assets": 1
+      },
+      "evidence_id": 2051,
+      "asset_id": null,
+      "trial_id": 185
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05379634",
+        "linked_assets": 1
+      },
+      "evidence_id": 2052,
+      "asset_id": null,
+      "trial_id": 188
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06449651",
+        "linked_assets": 1
+      },
+      "evidence_id": 2053,
+      "asset_id": null,
+      "trial_id": 187
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06533098",
+        "linked_assets": 2
+      },
+      "evidence_id": 2054,
+      "asset_id": null,
+      "trial_id": 189
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04883619",
+        "linked_assets": 1
+      },
+      "evidence_id": 2055,
+      "asset_id": null,
+      "trial_id": 192
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04023526",
+        "linked_assets": 2
+      },
+      "evidence_id": 2056,
+      "asset_id": null,
+      "trial_id": 266
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04150887",
+        "linked_assets": 3
+      },
+      "evidence_id": 2057,
+      "asset_id": null,
+      "trial_id": 267
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06319820",
+        "linked_assets": 1
+      },
+      "evidence_id": 2058,
+      "asset_id": null,
+      "trial_id": 194
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06919965",
+        "linked_assets": 1
+      },
+      "evidence_id": 2059,
+      "asset_id": null,
+      "trial_id": 195
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04658862",
+        "linked_assets": 1
+      },
+      "evidence_id": 2061,
+      "asset_id": null,
+      "trial_id": 270
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06211764",
+        "linked_assets": 1
+      },
+      "evidence_id": 2062,
+      "asset_id": null,
+      "trial_id": 271
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT02436707",
+        "linked_assets": 2
+      },
+      "evidence_id": 2063,
+      "asset_id": null,
+      "trial_id": 272
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03004287",
+        "linked_assets": 3
+      },
+      "evidence_id": 2064,
+      "asset_id": null,
+      "trial_id": 236
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06189833",
+        "linked_assets": 2
+      },
+      "evidence_id": 2065,
+      "asset_id": null,
+      "trial_id": 258
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "TALVEY",
+        "added_alias": "Teclistamab",
+        "assets": [
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "TALVEY",
+        "added_alias": "Talquetamab",
+        "assets": [
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "TALVEY",
+        "added_alias": "TALVEY",
+        "assets": [
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "TALVEY",
+        "added_alias": "Dexamethasone",
+        "assets": [
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "TALVEY",
+        "added_alias": "JNJ-64407564",
+        "assets": [
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "TALVEY",
+        "added_alias": "JNJ-64007957",
+        "assets": [
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "TALVEY",
+        "added_alias": "Tecvayli",
+        "assets": [
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "NBTXR3",
+        "added_alias": "JNJ-90301900",
+        "assets": [
+          15
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "NBTXR3",
+        "added_alias": "NBTXR3",
+        "assets": [
+          15
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Gravis",
+        "added_alias": "Golimumab",
+        "assets": [
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Gravis",
+        "added_alias": "Guselkumab",
+        "assets": [
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Gravis",
+        "added_alias": "Ustekinumab",
+        "assets": [
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Gravis",
+        "added_alias": "Placebo",
+        "assets": [
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Gravis",
+        "added_alias": "JNJ-77242113",
+        "assets": [
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Gravis",
+        "added_alias": "Deucravacitinib",
+        "assets": [
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Gravis",
+        "added_alias": "CNTO1959",
+        "assets": [
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Gravis",
+        "added_alias": "TREMFYA",
+        "assets": [
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Gravis",
+        "added_alias": "STELARA",
+        "assets": [
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Gravis",
+        "added_alias": "Nipocalimab",
+        "assets": [
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Gravis",
+        "added_alias": "JNJ-80202135",
+        "assets": [
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Gravis",
+        "added_alias": "JNJ-86507083",
+        "assets": [
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Gravis",
+        "added_alias": "M281",
+        "assets": [
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Gravis",
+        "added_alias": "Icotrokinra",
+        "assets": [
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Gravis",
+        "added_alias": "JNJ-78934804",
+        "assets": [
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "ERLEADA",
+        "added_alias": "Apalutamide",
+        "assets": [
+          10
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "ERLEADA",
+        "added_alias": "JNJ-56021927",
+        "assets": [
+          10
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "ERLEADA",
+        "added_alias": "Placebo",
+        "assets": [
+          10
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "ERLEADA",
+        "added_alias": "CB7630",
+        "assets": [
+          10
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "ERLEADA",
+        "added_alias": "Zytiga",
+        "assets": [
+          10
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "ERLEADA",
+        "added_alias": "ARN509",
+        "assets": [
+          10
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "ERLEADA",
+        "added_alias": "Erleada",
+        "assets": [
+          10
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "ERLEADA",
+        "added_alias": "Prednisone",
+        "assets": [
+          10
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "ERLEADA",
+        "added_alias": "Deltasone",
+        "assets": [
+          10
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "ERLEADA",
+        "added_alias": "LHRHa",
+        "assets": [
+          10
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "ERLEADA",
+        "added_alias": "Enzalutamide",
+        "assets": [
+          10
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "ERLEADA",
+        "added_alias": "XTANDI",
+        "assets": [
+          10
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "ERLEADA",
+        "added_alias": "Docetaxel",
+        "assets": [
+          10
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "ERLEADA",
+        "added_alias": "Darolutamide",
+        "assets": [
+          10
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "ERLEADA",
+        "added_alias": "tomography",
+        "assets": [
+          10
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "STELARA",
+        "added_alias": "Guselkumab",
+        "assets": [
+          24,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "STELARA",
+        "added_alias": "Ustekinumab",
+        "assets": [
+          24,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "STELARA",
+        "added_alias": "STELARA",
+        "assets": [
+          24,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "STELARA",
+        "added_alias": "TREMFYA",
+        "assets": [
+          24,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "STELARA",
+        "added_alias": "Placebo",
+        "assets": [
+          24,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "TREMFYA",
+        "added_alias": "Guselkumab",
+        "assets": [
+          24,
+          25,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "TREMFYA",
+        "added_alias": "Tremfya",
+        "assets": [
+          24,
+          25,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "TREMFYA",
+        "added_alias": "CNTO1959",
+        "assets": [
+          24,
+          25,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "TREMFYA",
+        "added_alias": "Placebo",
+        "assets": [
+          24,
+          25,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "TECVAYLI",
+        "added_alias": "Teclistamab",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "TECVAYLI",
+        "added_alias": "TECVAYLI",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "SPRAVATO",
+        "added_alias": "Esketamine",
+        "assets": [
+          37
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "SPRAVATO",
+        "added_alias": "JNJ-54135419",
+        "assets": [
+          37
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "RYBREVANT",
+        "added_alias": "Amivantamab",
+        "assets": [
+          5
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "RYBREVANT",
+        "added_alias": "RYBREVANT",
+        "assets": [
+          5
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "RYBREVANT",
+        "added_alias": "JNJ-61186372",
+        "assets": [
+          5
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "pasritamig",
+        "added_alias": "Pasritamig",
+        "assets": [
+          4
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "pasritamig",
+        "added_alias": "JNJ-78278343",
+        "assets": [
+          4
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Bleximenib",
+        "added_alias": "JNJ-75276617",
+        "assets": [
+          9,
+          19
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Bleximenib",
+        "added_alias": "bleximenib",
+        "assets": [
+          9,
+          19
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Bleximenib",
+        "added_alias": "Venetoclax",
+        "assets": [
+          9,
+          19
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Bleximenib",
+        "added_alias": "Azacitidine",
+        "assets": [
+          9,
+          19
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "autoleucel",
+        "added_alias": "Bortezomib",
+        "assets": [
+          55
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "autoleucel",
+        "added_alias": "Dexamethasone",
+        "assets": [
+          55
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "autoleucel",
+        "added_alias": "Daratumumab",
+        "assets": [
+          55
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "autoleucel",
+        "added_alias": "JNJ-68284528",
+        "assets": [
+          55
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "autoleucel",
+        "added_alias": "Cyclophosphamide",
+        "assets": [
+          55
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "autoleucel",
+        "added_alias": "Fludarabine",
+        "assets": [
+          55
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "autoleucel",
+        "added_alias": "Lenalidomide",
+        "assets": [
+          55
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "autoleucel",
+        "added_alias": "Talquetamab",
+        "assets": [
+          55
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "autoleucel",
+        "added_alias": "JNJ-64407564",
+        "assets": [
+          55
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "teclistamab",
+        "added_alias": "Teclistamab",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "teclistamab",
+        "added_alias": "JNJ-64007957",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "teclistamab",
+        "added_alias": "Pomalidomide",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "teclistamab",
+        "added_alias": "Bortezomib",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "teclistamab",
+        "added_alias": "Dexamethasone",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "teclistamab",
+        "added_alias": "Daratumumab",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "teclistamab",
+        "added_alias": "JNJ-54767414",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "teclistamab",
+        "added_alias": "Darzalex",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "teclistamab",
+        "added_alias": "Talquetamab",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "teclistamab",
+        "added_alias": "JNJ-64407564",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "teclistamab",
+        "added_alias": "Lenalidomide",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "teclistamab",
+        "added_alias": "velcade",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "teclistamab",
+        "added_alias": "revlimid",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "teclistamab",
+        "added_alias": "melphalan",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "teclistamab",
+        "added_alias": "JNJ-79635322",
+        "assets": [
+          2,
+          12
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "amivantamab",
+        "added_alias": "Amivantamab",
+        "assets": [
+          5,
+          63
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "amivantamab",
+        "added_alias": "JNJ-61186372",
+        "assets": [
+          5,
+          63
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "amivantamab",
+        "added_alias": "Lazertinib",
+        "assets": [
+          5,
+          63
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "amivantamab",
+        "added_alias": "JNJ-73841937",
+        "assets": [
+          5,
+          63
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "amivantamab",
+        "added_alias": "YH-25448",
+        "assets": [
+          5,
+          63
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "amivantamab",
+        "added_alias": "Pemetrexed",
+        "assets": [
+          5,
+          63
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "amivantamab",
+        "added_alias": "Carboplatin",
+        "assets": [
+          5,
+          63
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "amivantamab",
+        "added_alias": "YH25448",
+        "assets": [
+          5,
+          63
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "amivantamab",
+        "added_alias": "Co-Formulated",
+        "assets": [
+          5,
+          63
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "amivantamab",
+        "added_alias": "Cetuximab",
+        "assets": [
+          5,
+          63
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "amivantamab",
+        "added_alias": "Erbitux",
+        "assets": [
+          5,
+          63
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "amivantamab",
+        "added_alias": "5-fluorouracil",
+        "assets": [
+          5,
+          63
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "amivantamab",
+        "added_alias": "Levoleucovorin",
+        "assets": [
+          5,
+          63
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "icotrokinra",
+        "added_alias": "Icotrokinra",
+        "assets": [
+          26,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "icotrokinra",
+        "added_alias": "JNJ-77242113",
+        "assets": [
+          26,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "icotrokinra",
+        "added_alias": "Placebo",
+        "assets": [
+          26,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "nipocalimab",
+        "added_alias": "M281",
+        "assets": [
+          57,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "nipocalimab",
+        "added_alias": "Nipocalimab",
+        "assets": [
+          57,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "nipocalimab",
+        "added_alias": "JNJ-80202135",
+        "assets": [
+          57,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "nipocalimab",
+        "added_alias": "Placebo",
+        "assets": [
+          57,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "nipocalimab",
+        "added_alias": "JNJ-86507083",
+        "assets": [
+          57,
+          59
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Azacitidine",
+        "added_alias": "Azacitidine",
+        "assets": [
+          9,
+          19,
+          64
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Azacitidine",
+        "added_alias": "Cusatuzumab",
+        "assets": [
+          9,
+          19,
+          64
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Azacitidine",
+        "added_alias": "JNJ-74494550",
+        "assets": [
+          9,
+          19,
+          64
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "gemcitabine",
+        "added_alias": "JNJ-42756493",
+        "assets": [
+          72
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "gemcitabine",
+        "added_alias": "Gemcitabine",
+        "assets": [
+          72
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "gemcitabine",
+        "added_alias": "JNJ-17000139",
+        "assets": [
+          72
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "gemcitabine",
+        "added_alias": "Cetrelimab",
+        "assets": [
+          72
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "gemcitabine",
+        "added_alias": "JNJ-63723283",
+        "assets": [
+          72
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "gemcitabine",
+        "added_alias": "Cisplatin",
+        "assets": [
+          72
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Subcutaneous Induction",
+        "added_alias": "Dexamethasone",
+        "assets": [
+          67
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Subcutaneous Induction",
+        "added_alias": "Daratumumab",
+        "assets": [
+          67
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Subcutaneous Induction",
+        "added_alias": "Lenalidomide",
+        "assets": [
+          67
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Subcutaneous Induction",
+        "added_alias": "Bortezomib",
+        "assets": [
+          67
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": null,
+      "payload": {
+        "query_alias": "Subcutaneous Induction",
+        "added_alias": "Velcade",
+        "assets": [
+          67
+        ]
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
       "event_type": "trial_added",
       "created_at": null,
       "payload": {
@@ -14999,6 +18602,50 @@
       "trial_id": 268
     },
     {
+      "event_type": "trial_added",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04640623",
+        "title": "Phase 2b Clinical Study Evaluating Efficacy and Safety of TAR-200 in Combination With Cetrelimab, TAR-200 Alone, or Cetrelimab Alone in Participants With High-Risk Non-Muscle Invasive Bladder Cancer (NMIBC) Unresponsive to Intravesical Bacillus Calmette-Guérin (BCG) Who Are Ineligible for or Elected Not to Undergo Radical Cystectomy"
+      },
+      "evidence_id": 2060,
+      "asset_id": null,
+      "trial_id": 269
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04658862",
+        "title": "A Phase 3, Multi-center, Randomized Study Evaluating Efficacy of TAR-200 in Combination With Cetrelimab Versus Concurrent Chemoradiotherapy in Participants With Muscle-Invasive Urothelial Carcinoma (MIBC) of the Bladder Who Are Not Receiving Radical Cystectomy"
+      },
+      "evidence_id": 2061,
+      "asset_id": null,
+      "trial_id": 270
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06211764",
+        "title": "A Phase 3, Randomized, Open-label, Multi-center Study Evaluating the Efficacy and Safety of TAR-200 Versus Investigator's Choice of Intravesical Chemotherapy in Participants Who Received Bacillus Calmette-Guérin (BCG) and Recurred With High-risk Non-muscle-invasive Bladder Cancer (HR-NMIBC) and Who Are Ineligible for or Elected Not to Undergo Radical Cystectomy"
+      },
+      "evidence_id": 2062,
+      "asset_id": null,
+      "trial_id": 271
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT02436707",
+        "title": "A Multi-Stage Randomized Phase II Study of Novel Combination Therapy in the Treatment of Relapsed and Refractory Aggressive B-Cell Lymphoma"
+      },
+      "evidence_id": 2063,
+      "asset_id": null,
+      "trial_id": 272
+    },
+    {
       "event_type": "pipeline_ingested",
       "created_at": null,
       "payload": {
@@ -15091,6 +18738,18 @@
         "assets_seen": 41
       },
       "evidence_id": 1668,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "pipeline_ingested",
+      "created_at": null,
+      "payload": {
+        "as_of_date": null,
+        "pdf_url": "https://s203.q4cdn.com/636242992/files/doc_financials/2025/q4/JNJ-Pipeline-4Q25.pdf",
+        "assets_seen": 22
+      },
+      "evidence_id": 1867,
       "asset_id": null,
       "trial_id": null
     },
@@ -15261,6 +18920,97 @@
       },
       "evidence_id": 1668,
       "asset_id": 5,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_removed",
+      "created_at": null,
+      "payload": {
+        "asset": "RYBREVANT",
+        "indication": "Colorectal Cancer",
+        "stage": "Phase 3",
+        "therapeutic_area": "Oncology"
+      },
+      "evidence_id": 1867,
+      "asset_id": 5,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_removed",
+      "created_at": null,
+      "payload": {
+        "asset": "RYBREVANT",
+        "indication": "Frontline Non Small",
+        "stage": "Phase 3",
+        "therapeutic_area": "Oncology"
+      },
+      "evidence_id": 1867,
+      "asset_id": 5,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_removed",
+      "created_at": null,
+      "payload": {
+        "asset": "Azacitidine",
+        "indication": "Cancer (ATLAS) intravesical delivery system) Invasive Bladder Cancer BCG",
+        "stage": "Registration",
+        "therapeutic_area": "Oncology"
+      },
+      "evidence_id": 1867,
+      "asset_id": 64,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_removed",
+      "created_at": null,
+      "payload": {
+        "asset": "JNJ-4804 Co-antibody",
+        "indication": "Psoriatic Arthritis",
+        "stage": "Phase 1",
+        "therapeutic_area": "Immunology"
+      },
+      "evidence_id": 1867,
+      "asset_id": 28,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_removed",
+      "created_at": null,
+      "payload": {
+        "asset": "JNJ-4804 Co-antibody",
+        "indication": "Crohn's Disease",
+        "stage": "Phase 3",
+        "therapeutic_area": "Immunology"
+      },
+      "evidence_id": 1867,
+      "asset_id": 28,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_removed",
+      "created_at": null,
+      "payload": {
+        "asset": "of the Fetus and Newborn",
+        "indication": "Colitis (QUASAR JR)",
+        "stage": "Phase 2",
+        "therapeutic_area": "Immunology"
+      },
+      "evidence_id": 1867,
+      "asset_id": 68,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_removed",
+      "created_at": null,
+      "payload": {
+        "asset": "JNJ-1887 sCD59",
+        "indication": "Geographic Atrophy",
+        "stage": "Phase 3",
+        "therapeutic_area": "Neuroscience"
+      },
+      "evidence_id": 1867,
+      "asset_id": 60,
       "trial_id": null
     },
     {
@@ -16418,6 +20168,149 @@
       },
       "evidence_id": 1668,
       "asset_id": 5,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": null,
+      "payload": {
+        "asset": "1-3PLs",
+        "indication": "autoleucel) Myeloma Transplant Eligible vs intravesical delivery Bladder Cancer BCG-naïve (amivantamab) Cancer (ORIGAMI-5) Multiple Myeloma CD38 exposed",
+        "stage": "Phase 2",
+        "therapeutic_area": "Oncology"
+      },
+      "evidence_id": 1867,
+      "asset_id": 71,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": null,
+      "payload": {
+        "asset": "RYBREVANT",
+        "indication": "Frontline Non Small chemotherapy (PAPILLON) Bleximenib Newly Diagnosed AML, with Venetoclax and ERLEADA (apalutamide) ASCT Localized Prostate",
+        "stage": "Phase 3",
+        "therapeutic_area": "Oncology"
+      },
+      "evidence_id": 1867,
+      "asset_id": 5,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": null,
+      "payload": {
+        "asset": "INLEXZO",
+        "indication": "High Risk High Risk Non Muscle Experienced (SunRISe-5) RYBREVANT (amivantamab) Colorectal Cancer TALVEY + TECVAYLI Relapsed Refractory (MonumenTAL-6) TALVEY (talquetamab) TIE NDMM in combination",
+        "stage": "Phase 3",
+        "therapeutic_area": "Oncology"
+      },
+      "evidence_id": 1867,
+      "asset_id": 72,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": null,
+      "payload": {
+        "asset": "Azacitidine",
+        "indication": "Cancer (ATLAS) intravesical delivery system) Invasive Bladder Cancer BCG (ORIGAMI-2) Multiple Myeloma CD38 exposed with DR (MajesTEC-7)",
+        "stage": "Registration",
+        "therapeutic_area": "Oncology"
+      },
+      "evidence_id": 1867,
+      "asset_id": 64,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": null,
+      "payload": {
+        "asset": "JNJ-8377",
+        "indication": "Lymphoma",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
+      },
+      "evidence_id": 1867,
+      "asset_id": 73,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": null,
+      "payload": {
+        "asset": "JNJ-8543",
+        "indication": "Hematological Malignancies",
+        "stage": "Phase 3",
+        "therapeutic_area": "Oncology"
+      },
+      "evidence_id": 1867,
+      "asset_id": 74,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": null,
+      "payload": {
+        "asset": "JNJ-4804 Co-antibody",
+        "indication": "Crohn's Disease nipocalimab​ Idiopathic Inflammatory",
+        "stage": "Phase 3",
+        "therapeutic_area": "Immunology"
+      },
+      "evidence_id": 1867,
+      "asset_id": 28,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": null,
+      "payload": {
+        "asset": "JNJ-4804 Co-antibody",
+        "indication": "Psoriatic Arthritis nipocalimab​ Systemic Lupus",
+        "stage": "Phase 1",
+        "therapeutic_area": "Immunology"
+      },
+      "evidence_id": 1867,
+      "asset_id": 28,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": null,
+      "payload": {
+        "asset": "of the Fetus and Newborn",
+        "indication": "Colitis (QUASAR JR) Therapy",
+        "stage": "Phase 2",
+        "therapeutic_area": "Immunology"
+      },
+      "evidence_id": 1867,
+      "asset_id": 68,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": null,
+      "payload": {
+        "asset": "JNJ-1887 sCD59",
+        "indication": "Geographic Atrophy SPRAVATO (esketamine) Major Depressive Disorder Pediatrics",
+        "stage": "Phase 3",
+        "therapeutic_area": "Neuroscience"
+      },
+      "evidence_id": 1867,
+      "asset_id": 60,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": null,
+      "payload": {
+        "asset": "PulmonaryArterialH",
+        "indication": "SIRTUROLeprosyunderreviewbyregulatorybodies.",
+        "stage": "Phase 3",
+        "therapeutic_area": null
+      },
+      "evidence_id": 1867,
+      "asset_id": 75,
       "trial_id": null
     },
     {

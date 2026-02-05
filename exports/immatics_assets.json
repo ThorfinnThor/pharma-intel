@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-02-05T05:37:19Z",
+  "generated_at": "2026-02-05T09:49:26Z",
   "company_id": "immatics",
   "company_name": "Immatics",
   "asset_count": 8,
-  "change_count": 61,
+  "change_count": 73,
   "assets": [
     {
       "asset_id": 48,
@@ -12,6 +12,12 @@
         "IMA203CD8"
       ],
       "indications": [
+        {
+          "indication": "Gynecologic cancers; other solid cancers",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Gynecologic cancers; other solid cancers",
           "stage": "Phase 1",
@@ -116,6 +122,12 @@
           "stage": "Phase 1",
           "therapeutic_area": "Oncology",
           "as_of_date": null
+        },
+        {
+          "indication": "HNSCC, sqNSCLC, other solid cancers",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
         }
       ]
     },
@@ -126,6 +138,12 @@
         "IMA402"
       ],
       "indications": [
+        {
+          "indication": "Melanoma, gynecologic cancers, other solid cancers",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Melanoma, gynecologic cancers, other solid cancers",
           "stage": "Phase 1",
@@ -232,6 +250,12 @@
           "stage": "Phase 1",
           "therapeutic_area": "Oncology",
           "as_of_date": null
+        },
+        {
+          "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
         }
       ]
     },
@@ -242,6 +266,12 @@
         "Undisclosed bispecific"
       ],
       "indications": [
+        {
+          "indication": "Undisclosed",
+          "stage": "Preclinical",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Undisclosed",
           "stage": "Preclinical",
@@ -346,6 +376,12 @@
           "stage": "Preclinical",
           "therapeutic_area": "Oncology",
           "as_of_date": null
+        },
+        {
+          "indication": "Undisclosed",
+          "stage": "Preclinical",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
         }
       ]
     },
@@ -354,14 +390,16 @@
       "asset_name": "anzu-cel",
       "aliases": [
         "anzu tresgene autoleucel",
-        "anzu-cel",
         "anzu-cel (anzutresgene autoleucel IMA203)",
         "anzu-cel (anzutresgene autoleucel)",
         "anzu-cel (IMA203)",
         "anzu-tresgene autoleucel",
         "anzutresgene autoleucel",
         "IMA203",
-        "IMA203CD8"
+        "IMA203CD8",
+        "nivolumab",
+        "Opdivo",
+        "Taxol"
       ],
       "indications": [
         {
@@ -513,9 +551,7 @@
     {
       "asset_id": 47,
       "asset_name": "mRNA-4203",
-      "aliases": [
-        "mRNA-4203"
-      ],
+      "aliases": [],
       "indications": [
         {
           "indication": "Solid cancers (combo with anzu-cel / IMA203)",
