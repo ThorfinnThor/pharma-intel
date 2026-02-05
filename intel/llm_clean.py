@@ -13,13 +13,13 @@ from sqlalchemy.orm import Session
 from .evidence import store_json
 from .repo import add_evidence
 from .settings import settings
+from .normalize import norm_text
 
 
 _JSON_OBJECT_RE = re.compile(r"\{.*\}", re.DOTALL)
 
 
 def _extract_json_object(text: str) -> Optional[dict[str, Any]]:
-    """Extract the first JSON object found in a model response."""
     if not text:
         return None
     m = _JSON_OBJECT_RE.search(text)
@@ -48,30 +48,24 @@ def _cache_path(prompt_hash: str) -> Path:
 
 
 def _gemini_generate(prompt: str) -> str:
-    """Call Gemini REST API and return the raw text output."""
     if not settings.gemini_api_key:
-        raise RuntimeError("Gemini API key missing; set PHARMA_INTEL_GEMINI_API_KEY")
+        raise RuntimeError("Missing PHARMA_INTEL_GEMINI_API_KEY")
 
     model = settings.gemini_model
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     params = {"key": settings.gemini_api_key}
     payload = {
         "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-        "generationConfig": {
-            "temperature": 0,
-            "maxOutputTokens": 512,
-        },
+        "generationConfig": {"temperature": 0, "maxOutputTokens": 512},
     }
 
     r = requests.post(url, params=params, json=payload, timeout=settings.gemini_timeout_s)
     r.raise_for_status()
     data = r.json()
 
-    # Typical shape: candidates[0].content.parts[0].text
     try:
         return data["candidates"][0]["content"]["parts"][0]["text"]
     except Exception:
-        # Preserve some diagnostics without dumping huge payloads
         return json.dumps(data)[:2000]
 
 
@@ -82,17 +76,15 @@ def llm_classify_and_canonicalize_asset_label(
     *,
     context: str,
     source_url: str,
+    call_counter: list[int],
 ) -> Optional[dict[str, Any]]:
-    """Optionally use Gemini to classify+canonicalize a borderline "asset label".
+    """Constrained Gemini cleaner.
 
-    Returns:
-      - None if LLM cleaning is disabled
-      - A dict:
-          {"is_asset": bool, "canonical_name": str|None, "aliases": list[str], "evidence_id": int|None}
+    - Never invent: only normalize text already present in RAW_LABEL.
+    - If uncertain: returns is_asset=false.
+    - Cached by hash.
 
-    Notes:
-      - Output is cached on disk by a hash of inputs.
-      - The returned decision is stored as evidence for auditability.
+    call_counter is a mutable single-item list used to enforce per-run quota.
     """
     if not settings.llm_clean_enabled:
         return None
@@ -104,25 +96,26 @@ def llm_classify_and_canonicalize_asset_label(
     context = (context or "").strip()
     ph = _prompt_hash(company_id, raw_label, context)
     cache_file = _cache_path(ph)
-
     if cache_file.exists():
         try:
-            cached = json.loads(cache_file.read_text(encoding="utf-8"))
-            return cached
+            return json.loads(cache_file.read_text(encoding="utf-8"))
         except Exception:
-            # ignore bad cache and recompute
             pass
+
+    # enforce free-tier quota safety
+    if call_counter[0] >= settings.gemini_max_calls_per_run:
+        return {"is_asset": False, "canonical_name": None, "aliases": [], "evidence_id": None}
 
     prompt = f"""You are cleaning extracted pharma pipeline labels.
 
 Task:
 - Decide whether RAW_LABEL is a drug/program/intervention name (asset) or an indication/disease/other non-asset.
-- If it is an asset: return a cleaned canonical name and 1-10 aliases that appear directly in the label.
+- If it is an asset: return a cleaned canonical name and 1-10 aliases that appear directly in RAW_LABEL.
 - If it is NOT an asset: return is_asset=false.
 
 Rules:
 - Do NOT invent or guess new drug names.
-- Only normalize/clean/trim strings that appear in the label.
+- Only normalize/clean/trim strings that appear in RAW_LABEL.
 - If uncertain, set is_asset=false.
 - Output MUST be valid JSON and NOTHING ELSE.
 
@@ -139,9 +132,10 @@ CONTEXT (nearby lines from same PDF column):
 """
 
     try:
+        call_counter[0] += 1
         raw_out = _gemini_generate(prompt)
     except Exception as e:
-        logger.warning("Gemini call failed for label='{}' ({})", raw_label, e)
+        logger.warning("Gemini call failed for label='{}': {}", raw_label, e)
         return {"is_asset": False, "canonical_name": None, "aliases": [], "evidence_id": None}
 
     parsed = _extract_json_object(raw_out)
@@ -149,7 +143,6 @@ CONTEXT (nearby lines from same PDF column):
         logger.warning("Gemini returned non-JSON for label='{}': {}", raw_label, raw_out[:200])
         parsed = {"is_asset": False, "canonical_name": None, "aliases": []}
 
-    # normalize fields
     is_asset = bool(parsed.get("is_asset"))
     canonical = parsed.get("canonical_name") if is_asset else None
     aliases = parsed.get("aliases") if is_asset else []
@@ -159,6 +152,14 @@ CONTEXT (nearby lines from same PDF column):
     if not isinstance(aliases, list):
         aliases = []
     aliases = [a.strip() for a in aliases if isinstance(a, str) and a.strip()]
+
+    # hard constraint: canonical (if present) must be derivable from RAW_LABEL text
+    raw_norm = norm_text(raw_label)
+    if canonical and norm_text(canonical) not in raw_norm:
+        # allow the model to unwrap parentheses etc, but still must be substring after normalization
+        canonical = None
+        is_asset = False
+        aliases = []
 
     result: dict[str, Any] = {
         "is_asset": is_asset,
@@ -180,14 +181,12 @@ CONTEXT (nearby lines from same PDF column):
         result["evidence_id"] = int(ev.id)
         session.commit()
     except Exception as e:
-        # Evidence is nice-to-have; do not block pipeline ingestion
-        logger.warning("Failed to persist LLM cleaning evidence ({} )", e)
+        logger.warning("Failed to persist LLM cleaning evidence: {}", e)
         try:
             session.rollback()
         except Exception:
             pass
 
-    # write cache
     try:
         cache_file.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     except Exception:
