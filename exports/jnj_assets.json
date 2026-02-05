@@ -1,28 +1,12 @@
 {
-  "generated_at": "2026-02-05T21:34:50Z",
+  "generated_at": "2026-02-05T21:46:10Z",
   "company_id": "jnj",
   "company_name": "Johnson & Johnson",
-  "asset_count": 21,
-  "change_count": 151,
+  "asset_count": 17,
+  "change_count": 119,
   "assets": [
     {
-      "asset_id": 1,
-      "asset_name": "1-3PLs",
-      "aliases": [
-        "1-3PLs",
-        "1-3PLs (MajesTEC-3)"
-      ],
-      "indications": [
-        {
-          "indication": "autoleucel) Myeloma Transplant Eligible vs intravesical delivery Bladder Cancer BCG-naïve (amivantamab) Cancer (ORIGAMI-5) Multiple Myeloma CD38 exposed",
-          "stage": "Phase 2",
-          "therapeutic_area": "Oncology",
-          "as_of_date": null
-        }
-      ]
-    },
-    {
-      "asset_id": 4,
+      "asset_id": 3,
       "asset_name": "Azacitidine",
       "aliases": [
         "Azacitidine",
@@ -42,7 +26,7 @@
       ]
     },
     {
-      "asset_id": 3,
+      "asset_id": 2,
       "asset_name": "INLEXZO",
       "aliases": [
         "Cetrelimab",
@@ -63,7 +47,7 @@
       ]
     },
     {
-      "asset_id": 6,
+      "asset_id": 5,
       "asset_name": "JNJ-1493",
       "aliases": [
         "JNJ-1493"
@@ -78,7 +62,7 @@
       ]
     },
     {
-      "asset_id": 20,
+      "asset_id": 17,
       "asset_name": "JNJ-1887 sCD59",
       "aliases": [
         "JNJ-1887 sCD59"
@@ -93,7 +77,7 @@
       ]
     },
     {
-      "asset_id": 5,
+      "asset_id": 4,
       "asset_name": "JNJ-1900",
       "aliases": [
         "JNJ-1900",
@@ -111,7 +95,7 @@
       ]
     },
     {
-      "asset_id": 11,
+      "asset_id": 10,
       "asset_name": "JNJ-2175",
       "aliases": [
         "JNJ-2175"
@@ -126,7 +110,7 @@
       ]
     },
     {
-      "asset_id": 7,
+      "asset_id": 6,
       "asset_name": "JNJ-2761",
       "aliases": [
         "JNJ-2761"
@@ -141,7 +125,7 @@
       ]
     },
     {
-      "asset_id": 12,
+      "asset_id": 11,
       "asset_name": "JNJ-3413",
       "aliases": [
         "JNJ-3413"
@@ -156,7 +140,7 @@
       ]
     },
     {
-      "asset_id": 8,
+      "asset_id": 7,
       "asset_name": "JNJ-4680",
       "aliases": [
         "JNJ-4680"
@@ -171,7 +155,7 @@
       ]
     },
     {
-      "asset_id": 13,
+      "asset_id": 12,
       "asset_name": "JNJ-4681",
       "aliases": [
         "JNJ-4681"
@@ -186,7 +170,7 @@
       ]
     },
     {
-      "asset_id": 16,
+      "asset_id": 15,
       "asset_name": "JNJ-4804 Co-antibody",
       "aliases": [
         "JNJ-4804 Co-antibody"
@@ -207,7 +191,7 @@
       ]
     },
     {
-      "asset_id": 19,
+      "asset_id": 16,
       "asset_name": "JNJ-5120",
       "aliases": [
         "JNJ-5120"
@@ -222,7 +206,7 @@
       ]
     },
     {
-      "asset_id": 9,
+      "asset_id": 8,
       "asset_name": "JNJ-5322",
       "aliases": [
         "JNJ-5322"
@@ -237,7 +221,7 @@
       ]
     },
     {
-      "asset_id": 14,
+      "asset_id": 13,
       "asset_name": "JNJ-7446",
       "aliases": [
         "JNJ-7446"
@@ -252,7 +236,7 @@
       ]
     },
     {
-      "asset_id": 10,
+      "asset_id": 9,
       "asset_name": "JNJ-8377",
       "aliases": [
         "JNJ-8377"
@@ -267,7 +251,7 @@
       ]
     },
     {
-      "asset_id": 15,
+      "asset_id": 14,
       "asset_name": "JNJ-8543",
       "aliases": [
         "JNJ-8543"
@@ -282,7 +266,7 @@
       ]
     },
     {
-      "asset_id": 2,
+      "asset_id": 1,
       "asset_name": "RYBREVANT",
       "aliases": [
         "amivantamab",
@@ -300,65 +284,6 @@
           "indication": "Frontline Non Small chemotherapy (PAPILLON) Bleximenib Newly Diagnosed AML, with Venetoclax and ERLEADA (apalutamide) ASCT Localized Prostate",
           "stage": "Phase 3",
           "therapeutic_area": "Oncology",
-          "as_of_date": null
-        }
-      ]
-    },
-    {
-      "asset_id": 17,
-      "asset_name": "Subcutaneous Induction",
-      "aliases": [
-        "ASTRO",
-        "Daratumumab",
-        "Golimumab",
-        "Guselkumab",
-        "JNJ-64007957",
-        "JNJ-78934804",
-        "Subcutaneous Induction",
-        "Subcutaneous Induction (ASTRO)",
-        "Talquetamab",
-        "Teclistamab",
-        "TREMFYA",
-        "Ustekinumab"
-      ],
-      "indications": [
-        {
-          "indication": "(ICONIC-PsA)",
-          "stage": "Phase 2",
-          "therapeutic_area": "Immunology",
-          "as_of_date": null
-        }
-      ]
-    },
-    {
-      "asset_id": 21,
-      "asset_name": "actorXla",
-      "aliases": [],
-      "indications": [
-        {
-          "indication": "i o n",
-          "stage": "Phase 2",
-          "therapeutic_area": null,
-          "as_of_date": null
-        }
-      ]
-    },
-    {
-      "asset_id": 18,
-      "asset_name": "of the Fetus and Newborn",
-      "aliases": [
-        "AZALEA",
-        "JNJ-80202135",
-        "JNJ-86507083",
-        "Nipocalimab",
-        "of the Fetus and Newborn",
-        "of the Fetus and Newborn (AZALEA)"
-      ],
-      "indications": [
-        {
-          "indication": "Colitis (QUASAR JR) Therapy",
-          "stage": "Phase 2",
-          "therapeutic_area": "Immunology",
           "as_of_date": null
         }
       ]

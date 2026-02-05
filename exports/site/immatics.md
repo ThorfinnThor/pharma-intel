@@ -1,10 +1,10 @@
 # Immatics (immatics)
 
-Generated: `2026-02-05T21:34:50Z`
+Generated: `2026-02-05T21:46:10Z`
 
-- Assets: **4**
-- Assets with linked trials: **3**
-- Trials: **3**
+- Assets: **3**
+- Assets with linked trials: **2**
+- Trials: **2**
 
 ## Top assets
 
@@ -12,5 +12,4 @@ Generated: `2026-02-05T21:34:50Z`
 |---|---:|---:|---|
 | IMA402 + ICI | Phase 1 | 1 | Melanoma, gynecologic cancers, other solid cancers (combo) |
 | IMA401 | Phase 1 | 1 | HNSCC, sqNSCLC, other solid cancers |
-| IMA203CD8 | Phase 1 | 1 | Gynecologic cancers; other solid cancers |
 | IMA402 | Phase 1 | 0 | Melanoma, gynecologic cancers, other solid cancers |

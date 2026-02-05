@@ -1,10 +1,10 @@
 # Johnson & Johnson (jnj)
 
-Generated: `2026-02-05T21:34:50Z`
+Generated: `2026-02-05T21:46:10Z`
 
-- Assets: **21**
+- Assets: **17**
 - Assets with linked trials: **5**
-- Trials: **57**
+- Trials: **41**
 
 ## Top assets
 
@@ -20,10 +20,6 @@ Generated: `2026-02-05T21:34:50Z`
 | JNJ-3413 | Phase 3 | 0 | Lymphoma |
 | JNJ-2175 | Phase 3 | 0 | Solid Tumors |
 | JNJ-1887 sCD59 | Phase 3 | 0 | Geographic Atrophy SPRAVATO (esketamine) Major Depressive Disorder Pediatrics |
-| of the Fetus and Newborn | Phase 2 | 0 | Colitis (QUASAR JR) Therapy |
-| actorXla | Phase 2 | 0 | i o n |
-| Subcutaneous Induction | Phase 2 | 0 | (ICONIC-PsA) |
-| 1-3PLs | Phase 2 | 0 | autoleucel) Myeloma Transplant Eligible vs intravesical delivery Bladder Cancer BCG-naïve (amivantamab) Cancer (ORIGAMI-5) Multiple Myeloma CD38 exposed |
 | JNJ-1900 | Phase 1 | 2 | Lung Cancer |
 | JNJ-8377 | Phase 1 | 0 | Lymphoma |
 | JNJ-5322 | Phase 1 | 0 | Multiple Myeloma |
