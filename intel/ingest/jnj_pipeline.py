@@ -216,48 +216,6 @@ _PAREN_ONLY = re.compile(r"^\([^\)\n]{2,40}\)$")
 _PHASE_FRAGMENT = re.compile(r"^\d+\s*-\s*\d+\s*pls?$", re.IGNORECASE)
 _TARGETISH = re.compile(r"\bfactor\b|\bxi\b|\bxia\b|\bxla\b", re.IGNORECASE)
 
-# NEW: recognize partial/split JNJ codes and reassemble into JNJ-########
-_JNJ_CODE_FULL = re.compile(r"\bJNJ-\d{7,10}\b", re.IGNORECASE)
-_JNJ_CODE_PART = re.compile(r"\bJNJ-\d{3,6}\b", re.IGNORECASE)
-_DIGITS_2_6 = re.compile(r"^\d{2,6}$")
-
-
-def _repair_jnj_codes_in_line(line_text: str) -> str:
-    """
-    Repairs common PDF extraction artifact where a JNJ code is split/truncated.
-    Examples:
-      "JNJ-8543" might actually be "JNJ-80948543" if "8094" was clipped or separated.
-    We attempt stitching:
-      - If line contains "JNJ-<3-6 digits>" and ALSO contains a nearby standalone 2-6 digit token,
-        we create a combined candidate "JNJ-<prefix><suffix>" and prefer 7-10 digits.
-    This is conservative: only upgrades if it yields a plausible long code.
-    """
-    if not line_text or _JNJ_CODE_FULL.search(line_text):
-        return line_text
-
-    tokens = line_text.split()
-    # Find a short JNJ token and any standalone numeric tokens
-    for i, tok in enumerate(tokens):
-        m = _JNJ_CODE_PART.match(tok)
-        if not m:
-            continue
-        suffix = tok.split("-", 1)[1]
-        # look left/right for numeric prefix tokens
-        neighbor_idxs = [i - 1, i + 1, i - 2, i + 2]
-        for j in neighbor_idxs:
-            if j < 0 or j >= len(tokens):
-                continue
-            if _DIGITS_2_6.match(tokens[j]):
-                prefix = tokens[j]
-                combined = f"JNJ-{prefix}{suffix}"
-                if re.fullmatch(r"JNJ-\d{7,10}", combined, flags=re.IGNORECASE):
-                    tokens[i] = combined
-                    # drop the prefix token to avoid leaving stray digits
-                    tokens[j] = ""
-                    return " ".join(t for t in tokens if t).strip()
-
-    return line_text
-
 
 def _looks_like_bad_asset_phrase(cleaned: str) -> bool:
     low = cleaned.lower()
@@ -277,9 +235,6 @@ def _is_asset_line(line: dict[str, Any], median_size: float, *, col_left: float)
     if not raw:
         return False
 
-    # NEW: repair JNJ codes before classification
-    raw = _repair_jnj_codes_in_line(raw)
-
     if _PAREN_ONLY.match(raw):
         return False
 
@@ -287,6 +242,7 @@ def _is_asset_line(line: dict[str, Any], median_size: float, *, col_left: float)
     if not cleaned:
         return False
 
+    # Hard reject phrase/route/phase fragments before anything else
     if _looks_like_bad_asset_phrase(cleaned):
         return False
 
@@ -299,20 +255,26 @@ def _is_asset_line(line: dict[str, Any], median_size: float, *, col_left: float)
     if low.startswith("*this is not") or low.startswith("strategic partnerships"):
         return False
 
+    # JNJ program codes are valid assets
     if low.startswith("jnj-"):
         return True
 
+    # must be aligned near column start (prevents grabbing wrapped indication lines)
     aligned = abs(float(line.get("x0_min", col_left)) - col_left) <= 28
 
+    # Prefer larger font as "asset headers"
     if aligned and line["avg_size"] >= (median_size + 0.8) and is_plausible_asset_label(cleaned):
         return True
 
+    # Brand (generic) style: "RYBREVANT (amivantamab)" can be an asset header
     if aligned and re.match(r"^.{2,60}\(.{2,60}\)$", cleaned) and is_plausible_asset_label(cleaned):
         return True
 
+    # Single-token label, short
     if aligned and " " not in cleaned and 4 <= len(cleaned) <= 25 and is_plausible_asset_label(cleaned):
         return True
 
+    # All-caps brands
     if aligned and cleaned.isupper() and 3 <= len(cleaned) <= 45 and is_plausible_asset_label(cleaned):
         return True
 
@@ -334,18 +296,15 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
             cols = _extract_phase_columns(p)
             words = p.extract_words(extra_attrs=["size"])
 
+            # footer exclusion: drop bottom 12% of the page
             bottom_cut = float(p.height) * 0.88
             body_words = [w for w in words if 90 <= w["top"] <= bottom_cut and w["text"].strip()]
 
             sizes = sorted(float(w.get("size") or 0) for w in body_words if w.get("size"))
             median = sizes[len(sizes) // 2] if sizes else 10.0
 
-            # NEW: widen left edge of each phase column capture
-            LEFT_PAD = 28.0
-
             for stage, (x0, x1) in cols.items():
-                # widen capture window slightly to avoid clipping leading digits near boundary
-                col_words = [w for w in body_words if ((x0 - LEFT_PAD) <= w["x0"] < x1)]
+                col_words = [w for w in body_words if (x0 <= w["x0"] < x1)]
                 lines = _group_words_to_lines(col_words)
 
                 col_left = float(x0) + 6.0
@@ -373,10 +332,6 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
                     )
 
                 for ln in lines:
-                    # NEW: repair JNJ codes in the displayed line text too
-                    ln_text = ln.get("text") or ""
-                    ln["text"] = _repair_jnj_codes_in_line(ln_text)
-
                     if _is_asset_line(ln, median, col_left=col_left):
                         flush()
                         raw_label = ln["text"]
@@ -387,6 +342,7 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
                             indication_parts = []
                             continue
 
+                        # extra guard
                         if _looks_like_bad_asset_phrase(cleaned):
                             current_asset = None
                             indication_parts = []
@@ -405,12 +361,13 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
                             indication_parts = []
                     else:
                         if current_asset:
-                            t = (ln.get("text") or "").strip()
+                            t = ln["text"].strip()
                             if t and not indication_is_footer_noise(t):
                                 indication_parts.append(t)
 
                 flush()
 
+    # Final pass: drop known disclaimer-like rows
     cleaned_rows = []
     for r in rows:
         ind_low = (r["indication"] or "").lower()
