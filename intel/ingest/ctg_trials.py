@@ -14,8 +14,9 @@ from .. import models
 from ..evidence import store_json
 from ..http import get, polite_sleep
 from ..normalize import norm_text
-from ..repo import add_evidence, emit_change, finish_run, start_run
+from ..repo import add_evidence, emit_change, finish_run, start_run, ensure_alias
 from ..settings import settings
+from ..sanitize import sanitize_alias, is_plausible_asset_label, looks_like_indication_label
 
 CTG_STUDIES_ENDPOINT = "https://clinicaltrials.gov/api/v2/studies"
 
@@ -75,20 +76,17 @@ def _extract_trial_core(study: dict[str, Any]) -> dict[str, Any]:
         phase = ",".join(phases)
 
     interventions = intr_mod.get("interventions") or []
-    interventions_out: list[dict[str, Any]] = []
+    interventions_out = []
     for it in interventions:
         if not isinstance(it, dict):
             continue
         name = it.get("name")
-        if not name:
-            continue
-
-        other_names = it.get("otherNames")
-        if not isinstance(other_names, list):
-            other_names = []
-        other_names = [x for x in other_names if isinstance(x, str) and x.strip()]
-
-        interventions_out.append({"name": name, "type": it.get("type"), "other_names": other_names})
+        if name:
+            other = it.get("otherNames") or it.get("otherNamesList") or []
+            other_names: list[str] = []
+            if isinstance(other, list):
+                other_names = [x for x in other if isinstance(x, str) and x.strip()]
+            interventions_out.append({"name": name, "type": it.get("type"), "other_names": other_names})
 
     conditions = cond_mod.get("conditions") or []
 
@@ -173,6 +171,16 @@ def _get_asset_alias_terms(session: Session, company_id: str) -> list[str]:
     return out
 
 
+def _asset_ids_for_alias_term(session: Session, company_id: str, alias_term: str) -> list[int]:
+    n = norm_text(alias_term)
+    stmt = (
+        select(models.AssetAlias.asset_id)
+        .join(models.Asset)
+        .where(models.Asset.company_id == company_id, models.AssetAlias.alias_norm == n)
+    )
+    return [int(r[0]) for r in session.execute(stmt).all()]
+
+
 def _build_alias_index(session: Session, company_id: str) -> dict[str, int]:
     stmt = (
         select(models.AssetAlias.alias_norm, models.AssetAlias.asset_id)
@@ -189,79 +197,59 @@ def _build_alias_index(session: Session, company_id: str) -> dict[str, int]:
 # Intervention normalization
 # ---------------------------
 
-_PAREN = re.compile(r"\([^\)]*\)")
-_DOSE_ROUTE = re.compile(
-    r"\b(\d+(?:\.\d+)?\s*(?:mg|mcg|ug|g|kg|iu|units)\b|\d+(?:\.\d+)?\s*mg\/kg\b|\biv\b|\bsc\b|\bim\b|\bpo\b|\boral\b|\bintravenous\b|\bsubcutaneous\b)\b",
+_DOSE_NOISE = re.compile(r"\b\d+(?:\.\d+)?\s*(?:mg|mcg|ug|g|kg|iu|units|mg\/kg|mcg\/kg|ug\/kg)\b", re.IGNORECASE)
+_ROUTE_NOISE = re.compile(
+    r"\b(iv|i\.v\.|intravenous|sc|s\.c\.|subcutaneous|oral|po|p\.o\.|intramuscular|im|i\.m\.|infusion|inhaled|topical)\b",
     re.IGNORECASE,
 )
+_PAREN = re.compile(r"\([^)]*\)")
+_SPLIT = re.compile(r"[+;/,]|\band\b|\bwith\b", re.IGNORECASE)
 
 
-def _strip_parentheticals(s: str) -> list[str]:
-    """Return [no-parens-string] plus any extracted parenthetical fragments."""
+def _clean_intervention_string(s: str) -> str:
+    s = (s or "").strip()
     if not s:
-        return []
-    frags = re.findall(r"\(([^\)]{1,80})\)", s)
-    base = _PAREN.sub(" ", s)
-    out = [base]
-    out.extend(frags)
-    return [x.strip() for x in out if isinstance(x, str) and x.strip()]
-
-
-def _split_combo_terms(s: str) -> list[str]:
-    """Split common combo formats into separate candidate terms."""
-    if not s:
-        return []
-    parts = [s]
-    for sep in ["+", "/", ";", ","]:
-        next_parts: list[str] = []
-        for p in parts:
-            if sep in p:
-                next_parts.extend([x.strip() for x in p.split(sep) if x.strip()])
-            else:
-                next_parts.append(p)
-        parts = next_parts
-    # also split on " with " (common in regimens)
-    out: list[str] = []
-    for p in parts:
-        if re.search(r"\bwith\b", p, flags=re.IGNORECASE):
-            out.extend([x.strip() for x in re.split(r"\bwith\b", p, flags=re.IGNORECASE) if x.strip()])
-        else:
-            out.append(p)
-    return out
-
-
-def _strip_dose_route(s: str) -> str:
-    if not s:
-        return s
-    s = _DOSE_ROUTE.sub(" ", s)
+        return ""
+    # remove parentheses content (brand/generic notes, trial nicknames)
+    s = _PAREN.sub(" ", s)
+    # remove dose + route noise
+    s = _DOSE_NOISE.sub(" ", s)
+    s = _ROUTE_NOISE.sub(" ", s)
+    # collapse whitespace
     s = re.sub(r"\s+", " ", s).strip()
+    # strip leftover punctuation
+    s = s.strip(" -–—:;,.!\t")
     return s
 
 
-def intervention_candidate_terms(it: dict[str, Any]) -> list[str]:
-    """Generate a small set of candidate matching strings for an intervention."""
-    name = (it.get("name") or "").strip()
-    if not name:
-        return []
+def _intervention_candidate_terms(it: dict[str, Any]) -> list[str]:
+    names: list[str] = []
+    primary = (it.get("name") or "").strip()
+    if primary:
+        names.append(primary)
+    for alt in (it.get("other_names") or []):
+        if isinstance(alt, str) and alt.strip():
+            names.append(alt.strip())
 
-    other_names = it.get("other_names") or []
-    if not isinstance(other_names, list):
-        other_names = []
+    out: list[str] = []
+    seen: set[str] = set()
 
-    raw_terms = [name] + [x for x in other_names if isinstance(x, str) and x.strip()]
-
-    candidates: list[str] = []
-    for term in raw_terms:
-        # parenthetical expansion (brand/generic)
-        for frag in _strip_parentheticals(term):
-            # combo expansion
-            for part in _split_combo_terms(frag):
-                cleaned = _strip_dose_route(part)
-                if cleaned and cleaned not in candidates:
-                    candidates.append(cleaned)
-
-    # keep terms bounded
-    return [c for c in candidates if 2 <= len(c) <= 120]
+    for n in names:
+        cleaned = _clean_intervention_string(n)
+        if not cleaned:
+            continue
+        # split combinations/regimens
+        parts = [p.strip() for p in _SPLIT.split(cleaned) if p.strip()]
+        for p in parts:
+            # avoid very short junk
+            if len(p) < settings.min_alias_len_for_trial_search:
+                continue
+            k = norm_text(p)
+            if k in seen:
+                continue
+            seen.add(k)
+            out.append(p)
+    return out
 
 
 # ---------------------------
@@ -292,11 +280,16 @@ def _link_assets_for_trial(session: Session, company_id: str, trial: models.Tria
 
     best_for_asset: dict[int, tuple[str, int]] = {}
 
-    alias_items = list(alias_idx.items())  # (alias_norm, asset_id)
+    # pre-materialize for speed
+    alias_items = list(alias_idx.items())
 
     for it in interventions:
-        for cand in intervention_candidate_terms(it):
-            n = norm_text(cand)
+        terms = _intervention_candidate_terms(it)
+        if not terms:
+            continue
+
+        for term in terms:
+            n = norm_text(term)
             if not n:
                 continue
 
@@ -306,27 +299,20 @@ def _link_assets_for_trial(session: Session, company_id: str, trial: models.Tria
                 best_for_asset[aid] = _choose_better(best_for_asset.get(aid), ("exact", 100))
                 continue
 
-            # Fuzzy match
-            # Use token-based scorers to handle "drug (BRAND)" and multi-token permutations.
+            # Fuzzy match (bounded): token_set + partial
             best_aid: int | None = None
             best_score = 0
 
-            # quick pruning by length window
             for alias_norm, aid in alias_items:
-                if abs(len(alias_norm) - len(n)) > 25:
+                if abs(len(alias_norm) - len(n)) > 14:
                     continue
-
-                sc1 = fuzz.token_set_ratio(n, alias_norm)
-                if sc1 > best_score:
-                    best_score = sc1
+                sc = max(
+                    fuzz.token_set_ratio(n, alias_norm),
+                    fuzz.partial_ratio(n, alias_norm),
+                )
+                if sc > best_score:
+                    best_score = sc
                     best_aid = aid
-
-                # partial can rescue cases where alias is embedded in a longer name
-                if best_score < 100:
-                    sc2 = fuzz.partial_ratio(n, alias_norm)
-                    if sc2 > best_score:
-                        best_score = sc2
-                        best_aid = aid
 
             if best_aid is not None and best_score >= settings.fuzzy_threshold:
                 best_for_asset[best_aid] = _choose_better(best_for_asset.get(best_aid), ("fuzzy", int(best_score)))
@@ -371,6 +357,12 @@ def ingest_trials_for_company(
         bad_aliases = 0
 
         for alias in alias_terms:
+            # Alias bootstrapping: if this query reliably yields a generic name (e.g. brand -> generic)
+            # we add it as an alias for the asset(s) that own this query term.
+            bootstrap_asset_ids = _asset_ids_for_alias_term(session, company_id, alias)
+            # norm -> {alias: str, count: int}
+            bootstrap_counts: dict[str, dict[str, Any]] = {}
+
             params = {
                 "query.intr": alias,
                 "pageSize": settings.ctg_page_size,
@@ -473,6 +465,25 @@ def ingest_trials_for_company(
 
                     for it in core.get("interventions") or []:
                         session.add(models.TrialIntervention(trial_id=tr.id, name=it["name"], intervention_type=it.get("type")))
+                        # Accumulate bootstrap candidates (single-token drug-like terms) for this query alias.
+                        if bootstrap_asset_ids:
+                            for term in _intervention_candidate_terms(it):
+                                cand = sanitize_alias(term)
+                                if not cand:
+                                    continue
+                                if " " in cand:
+                                    continue
+                                if len(cand) > 40:
+                                    continue
+                                if looks_like_indication_label(cand):
+                                    continue
+                                if not is_plausible_asset_label(cand):
+                                    continue
+                                kn = norm_text(cand)
+                                if kn not in bootstrap_counts:
+                                    bootstrap_counts[kn] = {"alias": cand, "count": 1}
+                                else:
+                                    bootstrap_counts[kn]["count"] = int(bootstrap_counts[kn].get("count") or 0) + 1
                     for c in core.get("conditions") or []:
                         session.add(models.TrialCondition(trial_id=tr.id, condition=c))
                     session.commit()
@@ -490,6 +501,27 @@ def ingest_trials_for_company(
                 if page >= settings.ctg_max_pages_per_query:
                     logger.warning("CTG: hit max pages cap for alias '{}' ({} pages)", alias, page)
                     break
+
+            # After we've processed all pages for this query alias, add any high-confidence generic aliases.
+            if bootstrap_asset_ids and bootstrap_counts:
+                # Require appearance in at least 2 studies returned for this alias query.
+                winners = [v["alias"] for v in bootstrap_counts.values() if int(v.get("count") or 0) >= 2]
+                for alias_token in winners:
+                    # Don't add trivial very-short tokens
+                    if len(alias_token) < settings.min_alias_len_for_trial_search:
+                        continue
+                    for aid in bootstrap_asset_ids:
+                        try:
+                            ensure_alias(session, aid, alias_token)
+                        except Exception:
+                            # ignore per-alias failures
+                            continue
+                    emit_change(
+                        session,
+                        company_id,
+                        "trial_alias_bootstrapped",
+                        {"query_alias": alias, "added_alias": alias_token, "assets": bootstrap_asset_ids},
+                    )
 
         emit_change(
             session,
