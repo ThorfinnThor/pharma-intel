@@ -9,7 +9,6 @@ _LEADING_BULLETS = re.compile(r"^[\u2022\-\*\•\·\u00b7]+\s*")
 # Conservative whitelist for asset labels
 _ALLOWED = re.compile(r"[^A-Za-z0-9\-\+\./\(\) ]+")
 
-# Match "system)" or "system )" or "SYSTEM )" etc.
 _PREFIX_NOISE = re.compile(r"^\s*(system|platform)\s*\)\s*", re.IGNORECASE)
 
 STOP_ASSET_EXACT = {
@@ -28,8 +27,30 @@ STOP_ASSET_EXACT = {
     "immunology",
     "neuroscience",
     "select other areas",
+    "select other",
+    "other areas",
     "pediatrics",
-    "colitis",
+    "pediatric",
+}
+
+# New: route/procedure fragments that should never be assets
+STOP_ASSET_CONTAINS = {
+    "subcutaneous",
+    "intravenous",
+    "intramuscular",
+    "oral",
+    "injection",
+    "infusion",
+    "induction",
+    "maintenance",
+    "loading dose",
+    "placebo",
+    "double-blind",
+    "randomized",
+    "multicenter",
+    "multicentre",
+    "placebo-controlled",
+    "controlled study",
 }
 
 CORP_TOKENS = {
@@ -45,7 +66,6 @@ CORP_TOKENS = {
     "ag",
 }
 
-# strings that appear as disclaimers in indications and should be cut off
 IND_CUTOFF_PATTERNS = [
     r"\b(pipeline is based on|pipeline reflects|pipeline reflects the current)\b",
     r"\b(inclusion in|inclusion of)\b",
@@ -58,7 +78,6 @@ IND_CUTOFF_PATTERNS = [
     r"\bstrategic partnerships\b",
 ]
 
-# If an indication contains these phrases, it's almost certainly a footer/disclaimer
 IND_DROP_IF_CONTAINS = [
     "pipeline is based",
     "the company assumes no obligation",
@@ -67,8 +86,7 @@ IND_DROP_IF_CONTAINS = [
     "strategic partnerships",
 ]
 
-
-# Common disease/indication terms that frequently get mis-extracted as "assets" from PDFs.
+# Disease/indication terms that commonly leak into the asset column
 DISEASE_KEYWORDS = {
     "disease",
     "disorder",
@@ -77,7 +95,9 @@ DISEASE_KEYWORDS = {
     "pediatric",
     "pediatrics",
     "neonatal",
+    "newborn",
     "fetal",
+    "fetus",
     "pregnancy",
     "hemolytic",
     "anemia",
@@ -110,9 +130,8 @@ DISEASE_KEYWORDS = {
     "asthma",
     "dermatitis",
     "hypertension",
-    # common PDF truncation where leading 'h' is dropped
+    # pipeline truncation (leading 'h' dropped)
     "ypertension",
-    # frequent disease fragments in the J&J pipeline PDF
     "pulmonary",
     "arterial",
     "diabetes",
@@ -123,22 +142,39 @@ DISEASE_KEYWORDS = {
     "leprosy",
 }
 
-_DOSE_OR_DIGIT = re.compile(r"\d|\b(mg|mcg|ug|g|kg|iu|units|mg\/kg)\b", re.IGNORECASE)
+# New: target/mechanism keywords that must not become assets
+TARGET_KEYWORDS = {
+    "factor",
+    "xi",
+    "xia",
+    "xla",
+    "cd",
+    "il-",
+    "jak",
+    "tnf",
+    "tgf",
+    "vegf",
+    "pd-1",
+    "pd-l1",
+    "ctla-4",
+}
 
-# Trial/Study acronym pattern that should *not* be treated as an asset in the pipeline PDF.
-# Examples: ORIGAMI-2, MajesTEC-4, SunRISE-3, ICONIC-CD, ENERGY (often trial name)
+_DOSE_OR_DIGIT = re.compile(r"\d|\b(mg|mcg|ug|g|kg|iu|units|mg\/kg|mcg\/kg|ug\/kg)\b", re.IGNORECASE)
+
+# Trial acronym pattern like ORIGAMI-2 / MajesTEC-4 / SunRISE-3 / ICONIC-CD
 _TRIAL_ACRONYM = re.compile(r"^[A-Za-z][A-Za-z0-9]{2,20}(?:-[A-Za-z0-9]{1,6})+$")
+
+# Program / phase fragment like "1-3PLs"
+_PHASE_FRAGMENT = re.compile(r"^\d+\s*-\s*\d+\s*pls?$", re.IGNORECASE)
 
 _DRUG_SUFFIX = re.compile(
     r"(mab|nib|parib|ciclib|stat|navir|vir|prazole|oxetine|afil|zumab|ximab|tinib|lisib)$",
     re.IGNORECASE,
 )
 
-# Detect camelCase / truncated disease fragments (e.g. "PulmonaryArterialH")
 _CAMEL_CASE = re.compile(r"[a-z][A-Z]")
 _ENDS_WITH_SINGLE_CAP = re.compile(r".*[a-z][A-Z]$")
 
-# Split common glued lowercase words in indications ("Leprosyunderreview...")
 _GLUED_WORDS = [
     "under",
     "review",
@@ -159,10 +195,21 @@ _GLUED_WORDS = [
 
 
 def _collapse_spaced_letters(s: str) -> str:
-    """Fix OCR-like patterns: 'L e p r o s y' -> 'Leprosy'."""
+    """
+    Fix OCR-like patterns: 'L e p r o s y' -> 'Leprosy'.
+    Also kill very short spaced-letter junk like 'i o n' (returning 'ion' is worse than dropping later).
+    """
     tokens = s.split()
+    if not tokens:
+        return s
+
+    # If it's just 2-4 single letters ("i o n"), collapse; later sanitize_indication_text can drop if too short.
+    if 2 <= len(tokens) <= 4 and all(len(t) == 1 and re.match(r"[A-Za-z]", t) for t in tokens):
+        return "".join(tokens)
+
     if len(tokens) < 6:
         return s
+
     singles = sum(1 for t in tokens if len(t) == 1 and re.match(r"[A-Za-z0-9]", t))
     if singles >= 5 and singles / max(len(tokens), 1) >= 0.6:
         return "".join(tokens)
@@ -170,13 +217,10 @@ def _collapse_spaced_letters(s: str) -> str:
 
 
 def _strip_unbalanced_parens(s: str) -> str:
-    # Remove extra closing parens at end
     while s.endswith(")") and s.count("(") < s.count(")"):
         s = s[:-1].rstrip()
-    # Remove extra leading closing parens too: "autoleucel)" / ")Something"
     while s.startswith(")") and s.count("(") < s.count(")"):
         s = s[1:].lstrip()
-    # Remove extra opening parens at start
     while s.startswith("(") and s.count("(") > s.count(")"):
         s = s[1:].lstrip()
     return s
@@ -187,23 +231,19 @@ def sanitize_asset_label(raw: str) -> Optional[str]:
         return None
 
     s = str(raw)
-    s = s.replace("\u00a0", " ")  # nbsp
+    s = s.replace("\u00a0", " ")
     s = _LEADING_BULLETS.sub("", s.strip())
     s = _WS.sub(" ", s).strip()
 
-    # unwrap pure parenthetical labels: "(PROTOSAR)" -> "PROTOSAR"
+    # unwrap "(PROTOSAR)" -> "PROTOSAR"
     m = re.match(r"^\(([^\)]+)\)\s*$", s)
     if m:
         s = m.group(1).strip()
 
-    # Remove known prefix noise like "system) "
     s = _PREFIX_NOISE.sub("", s)
-
-    # Strip odd characters
     s = _ALLOWED.sub("", s)
     s = _WS.sub(" ", s).strip()
 
-    # Fix OCR spacing and parentheses issues
     s = _collapse_spaced_letters(s)
     s = _strip_unbalanced_parens(s)
 
@@ -219,43 +259,48 @@ def is_trial_acronym(label: str) -> bool:
     if not label:
         return False
     s = label.strip()
-    # allow JNJ-#### codes (assets) even though they match the hyphen pattern
     if s.lower().startswith("jnj-"):
         return False
-    # Typical trial/study tags are short and hyphenated
     if _TRIAL_ACRONYM.match(s) and len(s) <= 22:
         return True
     return False
 
 
 def looks_like_indication_label(label: str) -> bool:
-    """Heuristic: does a label look like a disease/indication rather than an asset?"""
     if not label:
         return False
 
     s = label.strip()
     low = s.lower()
 
-    # Truncation fragments like "PulmonaryArterialH" should never be assets.
+    # Truncation fragments like "PulmonaryArterialH"
     if _CAMEL_CASE.search(s) and any(k in low for k in ("pulmonary", "arterial", "hypertension", "ypertension")):
         return True
     if _ENDS_WITH_SINGLE_CAP.match(s) and any(k in low for k in ("pulmonary", "arterial", "hypertension", "ypertension")):
         return True
 
-    # program codes survive
     if low.startswith("jnj-"):
         return False
 
-    # Single-token drug-like names survive
+    # route/procedure fragments
+    if any(tok in low for tok in STOP_ASSET_CONTAINS):
+        return True
+
+    # very common phrase fragments
+    if low.startswith("of the ") or low.startswith("in the ") or low.startswith("for the "):
+        return True
+
     if " " not in s and _DRUG_SUFFIX.search(s):
         return False
 
-    # If it looks like a trial acronym, treat as non-asset (pipeline uses these as callouts)
     if is_trial_acronym(s):
         return True
 
-    # disease keyword hit?
-    # Be robust to a common PDF truncation where the first character is dropped.
+    # "1-3PLs" kind of fragments
+    if _PHASE_FRAGMENT.match(low.replace(" ", "")):
+        return True
+
+    # disease keyword hit (robust to leading char drop)
     hit = False
     for kw in DISEASE_KEYWORDS:
         if kw in low:
@@ -264,18 +309,21 @@ def looks_like_indication_label(label: str) -> bool:
         if len(kw) >= 7 and kw[1:] in low:
             hit = True
             break
+
+    if not hit:
+        # also catch obvious fetus/newborn phrase without exact keyword match
+        if "fetus" in low or "newborn" in low:
+            hit = True
+
     if not hit:
         return False
 
-    # disease keyword + any digit/dose token is almost certainly an indication fragment
     if _DOSE_OR_DIGIT.search(low):
         return True
 
-    # Multi-word Title Case diseases (e.g. "Hemolytic Anemia")
     if len(s.split()) >= 2:
         return True
 
-    # Single keyword like "Leprosy" / "Cancer" etc.
     if len(s) <= 16:
         return True
 
@@ -289,23 +337,29 @@ def is_plausible_asset_label(label: str) -> bool:
     s = label.strip()
     low = s.lower()
 
-    # block exact stopwords
     if low in STOP_ASSET_EXACT:
         return False
 
-    # if it contains partner/corporate tokens, it's almost certainly not an asset label
+    if any(tok in low for tok in STOP_ASSET_CONTAINS):
+        return False
+
+    # reject fragments like "of the Fetus and Newborn"
+    if low.startswith("of the ") or low.startswith("in the ") or low.startswith("for the "):
+        return False
+
+    # reject factor/target-like strings ("factor XIa" corrupted to "actorXla")
+    if any(k in low for k in TARGET_KEYWORDS) and not low.startswith("jnj-") and not _DRUG_SUFFIX.search(s):
+        return False
+
     if re.search(r"\b(" + "|".join(map(re.escape, CORP_TOKENS)) + r")\b", low):
         return False
 
-    # must contain at least one letter/digit
     if not re.search(r"[A-Za-z0-9]", s):
         return False
 
-    # absurdly long labels are usually PDF garbage/partner blocks
     if len(s) > 70:
         return False
 
-    # too many words is rarely an asset label (except JNJ-#### codes)
     words = s.split()
     if len(words) > 6 and "jnj-" not in low:
         return False
@@ -313,12 +367,13 @@ def is_plausible_asset_label(label: str) -> bool:
     if low in {"others", "other", "unknown", "undisclosed"}:
         return False
 
-    # reject disease-like labels (this is what fixes your screenshots)
     if looks_like_indication_label(s):
         return False
 
-    # reject pure trial acronyms
     if is_trial_acronym(s):
+        return False
+
+    if _PHASE_FRAGMENT.match(low.replace(" ", "")):
         return False
 
     return True
@@ -333,15 +388,18 @@ def sanitize_indication_text(raw: str) -> str:
     s = (raw or "").replace("\u00a0", " ")
     s = _WS.sub(" ", s).strip()
 
-    # Collapse OCR spaced letters (e.g. "L e p r o s y")
     s = _collapse_spaced_letters(s)
 
-    # De-glue camelCase and acronym boundaries (SIRTUROLeprosy...)
+    # If it becomes extremely short nonsense (e.g. "ion" from "i o n"), drop it.
+    if len(s) <= 3 and s.isalpha():
+        return ""
+
+    # De-glue camelCase and acronym boundaries
     if " " not in s and len(s) >= 25:
         s = re.sub(r"([a-z])([A-Z])", r"\1 \2", s)
         s = re.sub(r"([A-Z]{2,})([A-Z][a-z])", r"\1 \2", s)
 
-    # De-glue common lowercase runs (Leprosyunderreviewby...)
+    # De-glue common lowercase runs
     if " " not in s and len(s) >= 20:
         for w in _GLUED_WORDS:
             s = re.sub(rf"(?i)([a-z])({re.escape(w)})([a-z])", r"\1 \2 \3", s)
@@ -349,11 +407,9 @@ def sanitize_indication_text(raw: str) -> str:
     s = _WS.sub(" ", s).strip()
     low = s.lower()
 
-    # Drop entire line if it looks like a footer/disclaimer
     if indication_is_footer_noise(s):
         return ""
 
-    # Cut off at first disclaimer phrase
     for pat in IND_CUTOFF_PATTERNS:
         m = re.search(pat, low)
         if m:
