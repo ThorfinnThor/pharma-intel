@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-02-05T21:46:10Z",
+  "generated_at": "2026-02-05T22:05:23Z",
   "company_id": "immatics",
   "company_name": "Immatics",
   "asset_count": 5,
   "change_count": 16,
   "assets": [
     {
-      "asset_id": 20,
+      "asset_id": 25,
       "asset_name": "IMA401",
       "aliases": [
         "IMA401"
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "asset_id": 18,
+      "asset_id": 23,
       "asset_name": "IMA402",
       "aliases": [
         "IMA402"
@@ -36,7 +36,7 @@
       ]
     },
     {
-      "asset_id": 19,
+      "asset_id": 24,
       "asset_name": "IMA402 + ICI",
       "aliases": [
         "ICI",
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "asset_id": 21,
+      "asset_id": 26,
       "asset_name": "Undisclosed bispecific",
       "aliases": [
         "Undisclosed bispecific"
@@ -68,7 +68,7 @@
       ]
     },
     {
-      "asset_id": 22,
+      "asset_id": 27,
       "asset_name": "Undisclosed cell therapy",
       "aliases": [
         "Undisclosed cell therapy"
