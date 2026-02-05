@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-02-04T21:41:52Z",
+  "generated_at": "2026-02-05T05:37:19Z",
   "company_id": "immatics",
   "company_name": "Immatics",
   "asset_count": 8,
-  "change_count": 54,
+  "change_count": 61,
   "assets": [
     {
       "asset_id": 48,
@@ -12,6 +12,12 @@
         "IMA203CD8"
       ],
       "indications": [
+        {
+          "indication": "Gynecologic cancers; other solid cancers",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Gynecologic cancers; other solid cancers",
           "stage": "Phase 1",
@@ -104,6 +110,12 @@
           "stage": "Phase 1",
           "therapeutic_area": "Oncology",
           "as_of_date": null
+        },
+        {
+          "indication": "HNSCC, sqNSCLC, other solid cancers",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
         }
       ]
     },
@@ -114,6 +126,12 @@
         "IMA402"
       ],
       "indications": [
+        {
+          "indication": "Melanoma, gynecologic cancers, other solid cancers",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Melanoma, gynecologic cancers, other solid cancers",
           "stage": "Phase 1",
@@ -208,6 +226,12 @@
           "stage": "Phase 1",
           "therapeutic_area": "Oncology",
           "as_of_date": null
+        },
+        {
+          "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
         }
       ]
     },
@@ -259,6 +283,12 @@
           "stage": "Preclinical",
           "therapeutic_area": "Oncology",
           "as_of_date": null
+        },
+        {
+          "indication": "Undisclosed",
+          "stage": "Preclinical",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
         }
       ]
     },
@@ -269,6 +299,12 @@
         "Undisclosed cell therapy"
       ],
       "indications": [
+        {
+          "indication": "Undisclosed",
+          "stage": "Preclinical",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Undisclosed",
           "stage": "Preclinical",
@@ -371,7 +407,7 @@
           "as_of_date": null
         },
         {
-          "indication": "Solid cancers (in combination with mRNA-4203)",
+          "indication": "2L melanoma",
           "stage": "Phase 1",
           "therapeutic_area": "Oncology",
           "as_of_date": null
@@ -408,6 +444,24 @@
         },
         {
           "indication": "Solid cancers (in combination with mRNA-4203)",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Solid cancers (in combination with mRNA-4203)",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Solid cancers (in combination with mRNA-4203)",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
+        {
+          "indication": "Uveal melanoma",
           "stage": "Phase 1",
           "therapeutic_area": "Oncology",
           "as_of_date": null
@@ -463,6 +517,12 @@
         "mRNA-4203"
       ],
       "indications": [
+        {
+          "indication": "Solid cancers (combo with anzu-cel / IMA203)",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology",
+          "as_of_date": null
+        },
         {
           "indication": "Solid cancers (combo with anzu-cel / IMA203)",
           "stage": "Phase 1",

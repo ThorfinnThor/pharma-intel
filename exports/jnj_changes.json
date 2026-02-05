@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-04T21:41:52Z",
+  "generated_at": "2026-02-05T05:37:19Z",
   "company_id": "jnj",
   "company_name": "Johnson & Johnson",
   "changes": [
@@ -94,6 +94,20 @@
         "trials_seen": 257,
         "inserted": 3,
         "updated": 254,
+        "status_changed": 0,
+        "bad_aliases": 0
+      },
+      "evidence_id": null,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
+      "event_type": "trials_ingested",
+      "created_at": null,
+      "payload": {
+        "trials_seen": 191,
+        "inserted": 0,
+        "updated": 191,
         "status_changed": 0,
         "bad_aliases": 0
       },
@@ -10321,6 +10335,1777 @@
       "trial_id": 196
     },
     {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05972135",
+        "linked_assets": 2
+      },
+      "evidence_id": 1671,
+      "asset_id": null,
+      "trial_id": 1
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06208150",
+        "linked_assets": 2
+      },
+      "evidence_id": 1672,
+      "asset_id": null,
+      "trial_id": 3
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06285318",
+        "linked_assets": 2
+      },
+      "evidence_id": 1673,
+      "asset_id": null,
+      "trial_id": 2
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07029776",
+        "linked_assets": 3
+      },
+      "evidence_id": 1674,
+      "asset_id": null,
+      "trial_id": 4
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04892173",
+        "linked_assets": 1
+      },
+      "evidence_id": 1675,
+      "asset_id": null,
+      "trial_id": 5
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07219212",
+        "linked_assets": 1
+      },
+      "evidence_id": 1676,
+      "asset_id": null,
+      "trial_id": 6
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03466411",
+        "linked_assets": 2
+      },
+      "evidence_id": 1678,
+      "asset_id": null,
+      "trial_id": 32
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04033445",
+        "linked_assets": 1
+      },
+      "evidence_id": 1679,
+      "asset_id": null,
+      "trial_id": 49
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06260163",
+        "linked_assets": 1
+      },
+      "evidence_id": 1682,
+      "asset_id": null,
+      "trial_id": 62
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06934226",
+        "linked_assets": 1
+      },
+      "evidence_id": 1683,
+      "asset_id": null,
+      "trial_id": 36
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06741969",
+        "linked_assets": 1
+      },
+      "evidence_id": 1684,
+      "asset_id": null,
+      "trial_id": 186
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07227454",
+        "linked_assets": 1
+      },
+      "evidence_id": 1685,
+      "asset_id": null,
+      "trial_id": 86
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06559306",
+        "linked_assets": 1
+      },
+      "evidence_id": 1686,
+      "asset_id": null,
+      "trial_id": 178
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07196722",
+        "linked_assets": 1
+      },
+      "evidence_id": 1688,
+      "asset_id": null,
+      "trial_id": 176
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05242484",
+        "linked_assets": 1
+      },
+      "evidence_id": 1691,
+      "asset_id": null,
+      "trial_id": 61
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05923073",
+        "linked_assets": 1
+      },
+      "evidence_id": 1696,
+      "asset_id": null,
+      "trial_id": 63
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05242471",
+        "linked_assets": 1
+      },
+      "evidence_id": 1698,
+      "asset_id": null,
+      "trial_id": 53
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05912517",
+        "linked_assets": 1
+      },
+      "evidence_id": 1699,
+      "asset_id": null,
+      "trial_id": 183
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07196748",
+        "linked_assets": 1
+      },
+      "evidence_id": 1700,
+      "asset_id": null,
+      "trial_id": 78
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03218488",
+        "linked_assets": 1
+      },
+      "evidence_id": 1701,
+      "asset_id": null,
+      "trial_id": 34
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07217587",
+        "linked_assets": 1
+      },
+      "evidence_id": 1702,
+      "asset_id": null,
+      "trial_id": 190
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05528510",
+        "linked_assets": 1
+      },
+      "evidence_id": 1703,
+      "asset_id": null,
+      "trial_id": 65
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05197049",
+        "linked_assets": 1
+      },
+      "evidence_id": 1706,
+      "asset_id": null,
+      "trial_id": 67
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06251076",
+        "linked_assets": 2
+      },
+      "evidence_id": 1708,
+      "asset_id": null,
+      "trial_id": 83
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05265273",
+        "linked_assets": 1
+      },
+      "evidence_id": 1709,
+      "asset_id": null,
+      "trial_id": 191
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04951622",
+        "linked_assets": 1
+      },
+      "evidence_id": 1710,
+      "asset_id": null,
+      "trial_id": 193
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04108208",
+        "linked_assets": 1
+      },
+      "evidence_id": 1712,
+      "asset_id": null,
+      "trial_id": 14
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04325828",
+        "linked_assets": 1
+      },
+      "evidence_id": 1713,
+      "asset_id": null,
+      "trial_id": 15
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04267887",
+        "linked_assets": 2
+      },
+      "evidence_id": 1714,
+      "asset_id": null,
+      "trial_id": 7
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03767244",
+        "linked_assets": 1
+      },
+      "evidence_id": 1715,
+      "asset_id": null,
+      "trial_id": 13
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05884398",
+        "linked_assets": 1
+      },
+      "evidence_id": 1716,
+      "asset_id": null,
+      "trial_id": 10
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04557059",
+        "linked_assets": 1
+      },
+      "evidence_id": 1717,
+      "asset_id": null,
+      "trial_id": 11
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05901649",
+        "linked_assets": 1
+      },
+      "evidence_id": 1718,
+      "asset_id": null,
+      "trial_id": 9
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03523442",
+        "linked_assets": 1
+      },
+      "evidence_id": 1719,
+      "asset_id": null,
+      "trial_id": 12
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05818683",
+        "linked_assets": 1
+      },
+      "evidence_id": 1720,
+      "asset_id": null,
+      "trial_id": 8
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04662580",
+        "linked_assets": 1
+      },
+      "evidence_id": 1721,
+      "asset_id": null,
+      "trial_id": 16
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07002320",
+        "linked_assets": 1
+      },
+      "evidence_id": 1722,
+      "asset_id": null,
+      "trial_id": 17
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05960578",
+        "linked_assets": 2
+      },
+      "evidence_id": 1723,
+      "asset_id": null,
+      "trial_id": 18
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06274047",
+        "linked_assets": 1
+      },
+      "evidence_id": 1724,
+      "asset_id": null,
+      "trial_id": 19
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04181203",
+        "linked_assets": 1
+      },
+      "evidence_id": 1726,
+      "asset_id": null,
+      "trial_id": 21
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06067269",
+        "linked_assets": 3
+      },
+      "evidence_id": 1727,
+      "asset_id": null,
+      "trial_id": 22
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05191680",
+        "linked_assets": 1
+      },
+      "evidence_id": 1728,
+      "asset_id": null,
+      "trial_id": 23
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT02913196",
+        "linked_assets": 1
+      },
+      "evidence_id": 1729,
+      "asset_id": null,
+      "trial_id": 24
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03903835",
+        "linked_assets": 1
+      },
+      "evidence_id": 1730,
+      "asset_id": null,
+      "trial_id": 25
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03902951",
+        "linked_assets": 1
+      },
+      "evidence_id": 1731,
+      "asset_id": null,
+      "trial_id": 26
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04812366",
+        "linked_assets": 1
+      },
+      "evidence_id": 1732,
+      "asset_id": null,
+      "trial_id": 27
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04295447",
+        "linked_assets": 1
+      },
+      "evidence_id": 1733,
+      "asset_id": null,
+      "trial_id": 28
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03141671",
+        "linked_assets": 1
+      },
+      "evidence_id": 1734,
+      "asset_id": null,
+      "trial_id": 29
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03899077",
+        "linked_assets": 1
+      },
+      "evidence_id": 1735,
+      "asset_id": null,
+      "trial_id": 30
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05778097",
+        "linked_assets": 1
+      },
+      "evidence_id": 1736,
+      "asset_id": null,
+      "trial_id": 31
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07245394",
+        "linked_assets": 1
+      },
+      "evidence_id": 1737,
+      "asset_id": null,
+      "trial_id": 33
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04372108",
+        "linked_assets": 1
+      },
+      "evidence_id": 1738,
+      "asset_id": null,
+      "trial_id": 38
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05092269",
+        "linked_assets": 1
+      },
+      "evidence_id": 1740,
+      "asset_id": null,
+      "trial_id": 37
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07310095",
+        "linked_assets": 1
+      },
+      "evidence_id": 1741,
+      "asset_id": null,
+      "trial_id": 39
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07303686",
+        "linked_assets": 1
+      },
+      "evidence_id": 1742,
+      "asset_id": null,
+      "trial_id": 40
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05083182",
+        "linked_assets": 2
+      },
+      "evidence_id": 1743,
+      "asset_id": null,
+      "trial_id": 41
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06807593",
+        "linked_assets": 1
+      },
+      "evidence_id": 1744,
+      "asset_id": null,
+      "trial_id": 42
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03941132",
+        "linked_assets": 1
+      },
+      "evidence_id": 1745,
+      "asset_id": null,
+      "trial_id": 43
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05299931",
+        "linked_assets": 1
+      },
+      "evidence_id": 1746,
+      "asset_id": null,
+      "trial_id": 44
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT02103361",
+        "linked_assets": 2
+      },
+      "evidence_id": 1747,
+      "asset_id": null,
+      "trial_id": 45
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05387031",
+        "linked_assets": 1
+      },
+      "evidence_id": 1749,
+      "asset_id": null,
+      "trial_id": 47
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04496063",
+        "linked_assets": 1
+      },
+      "evidence_id": 1750,
+      "asset_id": null,
+      "trial_id": 48
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04936308",
+        "linked_assets": 1
+      },
+      "evidence_id": 1751,
+      "asset_id": null,
+      "trial_id": 64
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04882098",
+        "linked_assets": 1
+      },
+      "evidence_id": 1752,
+      "asset_id": null,
+      "trial_id": 68
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03451851",
+        "linked_assets": 1
+      },
+      "evidence_id": 1753,
+      "asset_id": null,
+      "trial_id": 50
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06408935",
+        "linked_assets": 1
+      },
+      "evidence_id": 1754,
+      "asset_id": null,
+      "trial_id": 58
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07141004",
+        "linked_assets": 1
+      },
+      "evidence_id": 1755,
+      "asset_id": null,
+      "trial_id": 55
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05347095",
+        "linked_assets": 1
+      },
+      "evidence_id": 1756,
+      "asset_id": null,
+      "trial_id": 59
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06663332",
+        "linked_assets": 1
+      },
+      "evidence_id": 1757,
+      "asset_id": null,
+      "trial_id": 52
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05049798",
+        "linked_assets": 1
+      },
+      "evidence_id": 1759,
+      "asset_id": null,
+      "trial_id": 54
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04929210",
+        "linked_assets": 1
+      },
+      "evidence_id": 1760,
+      "asset_id": null,
+      "trial_id": 56
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06651489",
+        "linked_assets": 1
+      },
+      "evidence_id": 1761,
+      "asset_id": null,
+      "trial_id": 69
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07255781",
+        "linked_assets": 1
+      },
+      "evidence_id": 1762,
+      "asset_id": null,
+      "trial_id": 70
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05669833",
+        "linked_assets": 1
+      },
+      "evidence_id": 1763,
+      "asset_id": null,
+      "trial_id": 71
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05004727",
+        "linked_assets": 1
+      },
+      "evidence_id": 1764,
+      "asset_id": null,
+      "trial_id": 72
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06586281",
+        "linked_assets": 1
+      },
+      "evidence_id": 1765,
+      "asset_id": null,
+      "trial_id": 73
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06563323",
+        "linked_assets": 1
+      },
+      "evidence_id": 1766,
+      "asset_id": null,
+      "trial_id": 74
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04645355",
+        "linked_assets": 1
+      },
+      "evidence_id": 1767,
+      "asset_id": null,
+      "trial_id": 75
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05858632",
+        "linked_assets": 1
+      },
+      "evidence_id": 1768,
+      "asset_id": null,
+      "trial_id": 76
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT02354014",
+        "linked_assets": 1
+      },
+      "evidence_id": 1769,
+      "asset_id": null,
+      "trial_id": 264
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07110844",
+        "linked_assets": 2
+      },
+      "evidence_id": 1770,
+      "asset_id": null,
+      "trial_id": 84
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06477783",
+        "linked_assets": 2
+      },
+      "evidence_id": 1771,
+      "asset_id": null,
+      "trial_id": 85
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07053345",
+        "linked_assets": 1
+      },
+      "evidence_id": 1772,
+      "asset_id": null,
+      "trial_id": 87
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06103760",
+        "linked_assets": 1
+      },
+      "evidence_id": 1773,
+      "asset_id": null,
+      "trial_id": 88
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05379595",
+        "linked_assets": 2
+      },
+      "evidence_id": 1774,
+      "asset_id": null,
+      "trial_id": 102
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07227025",
+        "linked_assets": 2
+      },
+      "evidence_id": 1775,
+      "asset_id": null,
+      "trial_id": 101
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07276399",
+        "linked_assets": 2
+      },
+      "evidence_id": 1776,
+      "asset_id": null,
+      "trial_id": 103
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07225946",
+        "linked_assets": 1
+      },
+      "evidence_id": 1777,
+      "asset_id": null,
+      "trial_id": 104
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06095089",
+        "linked_assets": 1
+      },
+      "evidence_id": 1778,
+      "asset_id": null,
+      "trial_id": 105
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07319871",
+        "linked_assets": 1
+      },
+      "evidence_id": 1779,
+      "asset_id": null,
+      "trial_id": 106
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07082920",
+        "linked_assets": 1
+      },
+      "evidence_id": 1780,
+      "asset_id": null,
+      "trial_id": 107
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07164443",
+        "linked_assets": 1
+      },
+      "evidence_id": 1781,
+      "asset_id": null,
+      "trial_id": 108
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07295951",
+        "linked_assets": 1
+      },
+      "evidence_id": 1782,
+      "asset_id": null,
+      "trial_id": 119
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05453903",
+        "linked_assets": 2
+      },
+      "evidence_id": 1783,
+      "asset_id": null,
+      "trial_id": 122
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04811560",
+        "linked_assets": 1
+      },
+      "evidence_id": 1784,
+      "asset_id": null,
+      "trial_id": 120
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06852222",
+        "linked_assets": 2
+      },
+      "evidence_id": 1785,
+      "asset_id": null,
+      "trial_id": 121
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05243797",
+        "linked_assets": 1
+      },
+      "evidence_id": 1786,
+      "asset_id": null,
+      "trial_id": 123
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05421663",
+        "linked_assets": 2
+      },
+      "evidence_id": 1788,
+      "asset_id": null,
+      "trial_id": 109
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04133636",
+        "linked_assets": 1
+      },
+      "evidence_id": 1790,
+      "asset_id": null,
+      "trial_id": 114
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06550895",
+        "linked_assets": 1
+      },
+      "evidence_id": 1792,
+      "asset_id": null,
+      "trial_id": 115
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06577025",
+        "linked_assets": 2
+      },
+      "evidence_id": 1794,
+      "asset_id": null,
+      "trial_id": 112
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05767359",
+        "linked_assets": 1
+      },
+      "evidence_id": 1796,
+      "asset_id": null,
+      "trial_id": 118
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04557098",
+        "linked_assets": 1
+      },
+      "evidence_id": 1797,
+      "asset_id": null,
+      "trial_id": 124
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05572515",
+        "linked_assets": 1
+      },
+      "evidence_id": 1798,
+      "asset_id": null,
+      "trial_id": 131
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04108195",
+        "linked_assets": 1
+      },
+      "evidence_id": 1799,
+      "asset_id": null,
+      "trial_id": 133
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04696809",
+        "linked_assets": 1
+      },
+      "evidence_id": 1800,
+      "asset_id": null,
+      "trial_id": 134
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06425991",
+        "linked_assets": 1
+      },
+      "evidence_id": 1801,
+      "asset_id": null,
+      "trial_id": 130
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05552222",
+        "linked_assets": 1
+      },
+      "evidence_id": 1802,
+      "asset_id": null,
+      "trial_id": 127
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04586426",
+        "linked_assets": 1
+      },
+      "evidence_id": 1803,
+      "asset_id": null,
+      "trial_id": 129
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05338775",
+        "linked_assets": 1
+      },
+      "evidence_id": 1804,
+      "asset_id": null,
+      "trial_id": 125
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05083169",
+        "linked_assets": 1
+      },
+      "evidence_id": 1805,
+      "asset_id": null,
+      "trial_id": 128
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03145181",
+        "linked_assets": 1
+      },
+      "evidence_id": 1806,
+      "asset_id": null,
+      "trial_id": 126
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04722146",
+        "linked_assets": 1
+      },
+      "evidence_id": 1807,
+      "asset_id": null,
+      "trial_id": 132
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07105059",
+        "linked_assets": 1
+      },
+      "evidence_id": 1808,
+      "asset_id": null,
+      "trial_id": 135
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05231629",
+        "linked_assets": 1
+      },
+      "evidence_id": 1809,
+      "asset_id": null,
+      "trial_id": 137
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07030517",
+        "linked_assets": 1
+      },
+      "evidence_id": 1810,
+      "asset_id": null,
+      "trial_id": 136
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05695508",
+        "linked_assets": 1
+      },
+      "evidence_id": 1811,
+      "asset_id": null,
+      "trial_id": 138
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07258511",
+        "linked_assets": 1
+      },
+      "evidence_id": 1812,
+      "asset_id": null,
+      "trial_id": 139
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06649695",
+        "linked_assets": 1
+      },
+      "evidence_id": 1813,
+      "asset_id": null,
+      "trial_id": 140
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05572229",
+        "linked_assets": 1
+      },
+      "evidence_id": 1814,
+      "asset_id": null,
+      "trial_id": 141
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06993675",
+        "linked_assets": 1
+      },
+      "evidence_id": 1815,
+      "asset_id": null,
+      "trial_id": 142
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07107529",
+        "linked_assets": 1
+      },
+      "evidence_id": 1816,
+      "asset_id": null,
+      "trial_id": 143
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05469893",
+        "linked_assets": 1
+      },
+      "evidence_id": 1818,
+      "asset_id": null,
+      "trial_id": 145
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05849610",
+        "linked_assets": 1
+      },
+      "evidence_id": 1819,
+      "asset_id": null,
+      "trial_id": 146
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06353022",
+        "linked_assets": 1
+      },
+      "evidence_id": 1820,
+      "asset_id": null,
+      "trial_id": 147
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06100237",
+        "linked_assets": 1
+      },
+      "evidence_id": 1821,
+      "asset_id": null,
+      "trial_id": 148
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06505369",
+        "linked_assets": 1
+      },
+      "evidence_id": 1822,
+      "asset_id": null,
+      "trial_id": 149
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05663866",
+        "linked_assets": 1
+      },
+      "evidence_id": 1823,
+      "asset_id": null,
+      "trial_id": 167
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04487080",
+        "linked_assets": 1
+      },
+      "evidence_id": 1824,
+      "asset_id": null,
+      "trial_id": 166
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04538664",
+        "linked_assets": 1
+      },
+      "evidence_id": 1825,
+      "asset_id": null,
+      "trial_id": 168
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05388669",
+        "linked_assets": 1
+      },
+      "evidence_id": 1826,
+      "asset_id": null,
+      "trial_id": 150
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05601973",
+        "linked_assets": 1
+      },
+      "evidence_id": 1827,
+      "asset_id": null,
+      "trial_id": 100
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05908734",
+        "linked_assets": 1
+      },
+      "evidence_id": 1828,
+      "asset_id": null,
+      "trial_id": 152
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT02609776",
+        "linked_assets": 1
+      },
+      "evidence_id": 1829,
+      "asset_id": null,
+      "trial_id": 161
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05488314",
+        "linked_assets": 1
+      },
+      "evidence_id": 1830,
+      "asset_id": null,
+      "trial_id": 160
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06662786",
+        "linked_assets": 1
+      },
+      "evidence_id": 1831,
+      "asset_id": null,
+      "trial_id": 151
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05498428",
+        "linked_assets": 1
+      },
+      "evidence_id": 1832,
+      "asset_id": null,
+      "trial_id": 154
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06532032",
+        "linked_assets": 1
+      },
+      "evidence_id": 1834,
+      "asset_id": null,
+      "trial_id": 153
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06120140",
+        "linked_assets": 1
+      },
+      "evidence_id": 1835,
+      "asset_id": null,
+      "trial_id": 158
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06750094",
+        "linked_assets": 1
+      },
+      "evidence_id": 1836,
+      "asset_id": null,
+      "trial_id": 155
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06667076",
+        "linked_assets": 1
+      },
+      "evidence_id": 1837,
+      "asset_id": null,
+      "trial_id": 156
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06385080",
+        "linked_assets": 1
+      },
+      "evidence_id": 1838,
+      "asset_id": null,
+      "trial_id": 157
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05845671",
+        "linked_assets": 1
+      },
+      "evidence_id": 1839,
+      "asset_id": null,
+      "trial_id": 162
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04077463",
+        "linked_assets": 1
+      },
+      "evidence_id": 1841,
+      "asset_id": null,
+      "trial_id": 164
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04988295",
+        "linked_assets": 1
+      },
+      "evidence_id": 1842,
+      "asset_id": null,
+      "trial_id": 165
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05299125",
+        "linked_assets": 1
+      },
+      "evidence_id": 1843,
+      "asset_id": null,
+      "trial_id": 169
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05117931",
+        "linked_assets": 1
+      },
+      "evidence_id": 1844,
+      "asset_id": null,
+      "trial_id": 170
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT07062354",
+        "linked_assets": 1
+      },
+      "evidence_id": 1845,
+      "asset_id": null,
+      "trial_id": 171
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06632236",
+        "linked_assets": 1
+      },
+      "evidence_id": 1846,
+      "asset_id": null,
+      "trial_id": 172
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06816992",
+        "linked_assets": 1
+      },
+      "evidence_id": 1847,
+      "asset_id": null,
+      "trial_id": 173
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT03767075",
+        "linked_assets": 1
+      },
+      "evidence_id": 1848,
+      "asset_id": null,
+      "trial_id": 174
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06807424",
+        "linked_assets": 1
+      },
+      "evidence_id": 1849,
+      "asset_id": null,
+      "trial_id": 177
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06878404",
+        "linked_assets": 1
+      },
+      "evidence_id": 1850,
+      "asset_id": null,
+      "trial_id": 175
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04119050",
+        "linked_assets": 1
+      },
+      "evidence_id": 1851,
+      "asset_id": null,
+      "trial_id": 184
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05327114",
+        "linked_assets": 1
+      },
+      "evidence_id": 1852,
+      "asset_id": null,
+      "trial_id": 185
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT05379634",
+        "linked_assets": 1
+      },
+      "evidence_id": 1853,
+      "asset_id": null,
+      "trial_id": 188
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06449651",
+        "linked_assets": 1
+      },
+      "evidence_id": 1854,
+      "asset_id": null,
+      "trial_id": 187
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT06533098",
+        "linked_assets": 1
+      },
+      "evidence_id": 1855,
+      "asset_id": null,
+      "trial_id": 189
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04883619",
+        "linked_assets": 1
+      },
+      "evidence_id": 1856,
+      "asset_id": null,
+      "trial_id": 192
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04023526",
+        "linked_assets": 2
+      },
+      "evidence_id": 1857,
+      "asset_id": null,
+      "trial_id": 266
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": null,
+      "payload": {
+        "nct_id": "NCT04150887",
+        "linked_assets": 2
+      },
+      "evidence_id": 1858,
+      "asset_id": null,
+      "trial_id": 267
+    },
+    {
       "event_type": "trial_added",
       "created_at": null,
       "payload": {
@@ -13298,6 +15083,18 @@
       "trial_id": null
     },
     {
+      "event_type": "pipeline_ingested",
+      "created_at": null,
+      "payload": {
+        "as_of_date": null,
+        "pdf_url": "https://s203.q4cdn.com/636242992/files/doc_financials/2025/q4/JNJ-Pipeline-4Q25.pdf",
+        "assets_seen": 41
+      },
+      "evidence_id": 1668,
+      "asset_id": null,
+      "trial_id": null
+    },
+    {
       "event_type": "asset_indication_removed",
       "created_at": null,
       "payload": {
@@ -13438,6 +15235,32 @@
       },
       "evidence_id": 1403,
       "asset_id": 43,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_removed",
+      "created_at": null,
+      "payload": {
+        "asset": "RYBREVANT",
+        "indication": "Colorectal Cancer",
+        "stage": "Phase 3",
+        "therapeutic_area": "Oncology"
+      },
+      "evidence_id": 1668,
+      "asset_id": 5,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_removed",
+      "created_at": null,
+      "payload": {
+        "asset": "RYBREVANT",
+        "indication": "Frontline Non Small",
+        "stage": "Phase 3",
+        "therapeutic_area": "Oncology"
+      },
+      "evidence_id": 1668,
+      "asset_id": 5,
       "trial_id": null
     },
     {
@@ -14582,6 +16405,19 @@
       },
       "evidence_id": 1403,
       "asset_id": 43,
+      "trial_id": null
+    },
+    {
+      "event_type": "asset_indication_added",
+      "created_at": null,
+      "payload": {
+        "asset": "RYBREVANT",
+        "indication": "Head and Neck",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
+      },
+      "evidence_id": 1668,
+      "asset_id": 5,
       "trial_id": null
     },
     {

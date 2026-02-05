@@ -6,6 +6,8 @@ immatics,48,IMA203CD8,IMA203CD8,Phase 1,Oncology,,Gynecologic cancers; other sol
 immatics,48,IMA203CD8,IMA203CD8,Phase 1,Oncology,,Gynecologic cancers; other solid cancers
 immatics,48,IMA203CD8,IMA203CD8,Phase 1,Oncology,,Gynecologic cancers; other solid cancers
 immatics,48,IMA203CD8,IMA203CD8,Phase 1,Oncology,,Gynecologic cancers; other solid cancers
+immatics,48,IMA203CD8,IMA203CD8,Phase 1,Oncology,,Gynecologic cancers; other solid cancers
+immatics,51,IMA401,IMA401,Phase 1,Oncology,,"HNSCC, sqNSCLC, other solid cancers"
 immatics,51,IMA401,IMA401,Phase 1,Oncology,,"HNSCC, sqNSCLC, other solid cancers"
 immatics,51,IMA401,IMA401,Phase 1,Oncology,,"HNSCC, sqNSCLC, other solid cancers"
 immatics,51,IMA401,IMA401,Phase 1,Oncology,,"HNSCC, sqNSCLC, other solid cancers"
@@ -20,6 +22,8 @@ immatics,49,IMA402,IMA402,Phase 1,Oncology,,"Melanoma, gynecologic cancers, othe
 immatics,49,IMA402,IMA402,Phase 1,Oncology,,"Melanoma, gynecologic cancers, other solid cancers"
 immatics,49,IMA402,IMA402,Phase 1,Oncology,,"Melanoma, gynecologic cancers, other solid cancers"
 immatics,49,IMA402,IMA402,Phase 1,Oncology,,"Melanoma, gynecologic cancers, other solid cancers"
+immatics,49,IMA402,IMA402,Phase 1,Oncology,,"Melanoma, gynecologic cancers, other solid cancers"
+immatics,50,IMA402 + ICI,ICI; IMA402; IMA402 + ICI,Phase 1,Oncology,,"Melanoma, gynecologic cancers, other solid cancers (combo)"
 immatics,50,IMA402 + ICI,ICI; IMA402; IMA402 + ICI,Phase 1,Oncology,,"Melanoma, gynecologic cancers, other solid cancers (combo)"
 immatics,50,IMA402 + ICI,ICI; IMA402; IMA402 + ICI,Phase 1,Oncology,,"Melanoma, gynecologic cancers, other solid cancers (combo)"
 immatics,50,IMA402 + ICI,ICI; IMA402; IMA402 + ICI,Phase 1,Oncology,,"Melanoma, gynecologic cancers, other solid cancers (combo)"
@@ -34,6 +38,8 @@ immatics,52,Undisclosed bispecific,Undisclosed bispecific,Preclinical,Oncology,,
 immatics,52,Undisclosed bispecific,Undisclosed bispecific,Preclinical,Oncology,,Undisclosed
 immatics,52,Undisclosed bispecific,Undisclosed bispecific,Preclinical,Oncology,,Undisclosed
 immatics,52,Undisclosed bispecific,Undisclosed bispecific,Preclinical,Oncology,,Undisclosed
+immatics,52,Undisclosed bispecific,Undisclosed bispecific,Preclinical,Oncology,,Undisclosed
+immatics,53,Undisclosed cell therapy,Undisclosed cell therapy,Preclinical,Oncology,,Undisclosed
 immatics,53,Undisclosed cell therapy,Undisclosed cell therapy,Preclinical,Oncology,,Undisclosed
 immatics,53,Undisclosed cell therapy,Undisclosed cell therapy,Preclinical,Oncology,,Undisclosed
 immatics,53,Undisclosed cell therapy,Undisclosed cell therapy,Preclinical,Oncology,,Undisclosed
@@ -48,6 +54,8 @@ immatics,46,anzu-cel,anzu tresgene autoleucel; anzu-cel; anzu-cel (anzutresgene 
 immatics,46,anzu-cel,anzu tresgene autoleucel; anzu-cel; anzu-cel (anzutresgene autoleucel IMA203); anzu-cel (anzutresgene autoleucel); anzu-cel (IMA203); anzu-tresgene autoleucel; anzutresgene autoleucel; IMA203; IMA203CD8,Phase 1,Oncology,,2L melanoma
 immatics,46,anzu-cel,anzu tresgene autoleucel; anzu-cel; anzu-cel (anzutresgene autoleucel IMA203); anzu-cel (anzutresgene autoleucel); anzu-cel (IMA203); anzu-tresgene autoleucel; anzutresgene autoleucel; IMA203; IMA203CD8,Phase 1,Oncology,,2L melanoma
 immatics,46,anzu-cel,anzu tresgene autoleucel; anzu-cel; anzu-cel (anzutresgene autoleucel IMA203); anzu-cel (anzutresgene autoleucel); anzu-cel (IMA203); anzu-tresgene autoleucel; anzutresgene autoleucel; IMA203; IMA203CD8,Phase 1,Oncology,,2L melanoma
+immatics,46,anzu-cel,anzu tresgene autoleucel; anzu-cel; anzu-cel (anzutresgene autoleucel IMA203); anzu-cel (anzutresgene autoleucel); anzu-cel (IMA203); anzu-tresgene autoleucel; anzutresgene autoleucel; IMA203; IMA203CD8,Phase 1,Oncology,,2L melanoma
+immatics,46,anzu-cel,anzu tresgene autoleucel; anzu-cel; anzu-cel (anzutresgene autoleucel IMA203); anzu-cel (anzutresgene autoleucel); anzu-cel (IMA203); anzu-tresgene autoleucel; anzutresgene autoleucel; IMA203; IMA203CD8,Phase 1,Oncology,,Solid cancers (in combination with mRNA-4203)
 immatics,46,anzu-cel,anzu tresgene autoleucel; anzu-cel; anzu-cel (anzutresgene autoleucel IMA203); anzu-cel (anzutresgene autoleucel); anzu-cel (IMA203); anzu-tresgene autoleucel; anzutresgene autoleucel; IMA203; IMA203CD8,Phase 1,Oncology,,Solid cancers (in combination with mRNA-4203)
 immatics,46,anzu-cel,anzu tresgene autoleucel; anzu-cel; anzu-cel (anzutresgene autoleucel IMA203); anzu-cel (anzutresgene autoleucel); anzu-cel (IMA203); anzu-tresgene autoleucel; anzutresgene autoleucel; IMA203; IMA203CD8,Phase 1,Oncology,,Solid cancers (in combination with mRNA-4203)
 immatics,46,anzu-cel,anzu tresgene autoleucel; anzu-cel; anzu-cel (anzutresgene autoleucel IMA203); anzu-cel (anzutresgene autoleucel); anzu-cel (IMA203); anzu-tresgene autoleucel; anzutresgene autoleucel; IMA203; IMA203CD8,Phase 1,Oncology,,Solid cancers (in combination with mRNA-4203)
@@ -62,6 +70,8 @@ immatics,46,anzu-cel,anzu tresgene autoleucel; anzu-cel; anzu-cel (anzutresgene 
 immatics,46,anzu-cel,anzu tresgene autoleucel; anzu-cel; anzu-cel (anzutresgene autoleucel IMA203); anzu-cel (anzutresgene autoleucel); anzu-cel (IMA203); anzu-tresgene autoleucel; anzutresgene autoleucel; IMA203; IMA203CD8,Phase 1,Oncology,,Uveal melanoma
 immatics,46,anzu-cel,anzu tresgene autoleucel; anzu-cel; anzu-cel (anzutresgene autoleucel IMA203); anzu-cel (anzutresgene autoleucel); anzu-cel (IMA203); anzu-tresgene autoleucel; anzutresgene autoleucel; IMA203; IMA203CD8,Phase 1,Oncology,,Uveal melanoma
 immatics,46,anzu-cel,anzu tresgene autoleucel; anzu-cel; anzu-cel (anzutresgene autoleucel IMA203); anzu-cel (anzutresgene autoleucel); anzu-cel (IMA203); anzu-tresgene autoleucel; anzutresgene autoleucel; IMA203; IMA203CD8,Phase 1,Oncology,,Uveal melanoma
+immatics,46,anzu-cel,anzu tresgene autoleucel; anzu-cel; anzu-cel (anzutresgene autoleucel IMA203); anzu-cel (anzutresgene autoleucel); anzu-cel (IMA203); anzu-tresgene autoleucel; anzutresgene autoleucel; IMA203; IMA203CD8,Phase 1,Oncology,,Uveal melanoma
+immatics,47,mRNA-4203,mRNA-4203,Phase 1,Oncology,,Solid cancers (combo with anzu-cel / IMA203)
 immatics,47,mRNA-4203,mRNA-4203,Phase 1,Oncology,,Solid cancers (combo with anzu-cel / IMA203)
 immatics,47,mRNA-4203,mRNA-4203,Phase 1,Oncology,,Solid cancers (combo with anzu-cel / IMA203)
 immatics,47,mRNA-4203,mRNA-4203,Phase 1,Oncology,,Solid cancers (combo with anzu-cel / IMA203)
