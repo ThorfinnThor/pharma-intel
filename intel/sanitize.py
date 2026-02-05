@@ -109,7 +109,11 @@ DISEASE_KEYWORDS = {
     "lupus",
     "asthma",
     "dermatitis",
+    "pulmonary",
+    "arterial",
     "hypertension",
+    # common truncation seen in PDF extraction (missing leading 'h')
+    "ypertension",
     "diabetes",
     "depression",
     "major depressive",
@@ -123,6 +127,20 @@ _DOSE_OR_DIGIT = re.compile(r"\d|\b(mg|mcg|ug|g|kg|iu|units|mg\/kg)\b", re.IGNOR
 # Trial/Study acronym pattern that should *not* be treated as an asset in the pipeline PDF.
 # Examples: ORIGAMI-2, MajesTEC-4, SunRISE-3, ICONIC-CD, ENERGY (often trial name)
 _TRIAL_ACRONYM = re.compile(r"^[A-Za-z][A-Za-z0-9]{2,20}(?:-[A-Za-z0-9]{1,6})+$")
+
+# Common trial/program branding tokens that frequently appear in the pipeline table
+# and should not be treated as assets when extracted as standalone labels.
+_TRIALISH_TOKENS = {
+    "origami",
+    "majeste",
+    "majestic",
+    "sunrise",
+    "iconic",
+    "energy",
+    "papillon",
+    "monumental",
+    "protostar",
+}
 
 _DRUG_SUFFIX = re.compile(
     r"(mab|nib|parib|ciclib|stat|navir|vir|prazole|oxetine|afil|zumab|ximab|tinib|lisib)$",
@@ -194,6 +212,10 @@ def is_trial_acronym(label: str) -> bool:
     # allow JNJ-#### codes (assets) even though they match the hyphen pattern
     if s.lower().startswith("jnj-"):
         return False
+
+    # Common standalone trial branding words
+    if s.lower().strip("()[]{} ") in _TRIALISH_TOKENS:
+        return True
     # Typical trial/study tags are short and hyphenated
     if _TRIAL_ACRONYM.match(s) and len(s) <= 22:
         return True
@@ -221,7 +243,15 @@ def looks_like_indication_label(label: str) -> bool:
         return True
 
     # disease keyword hit?
-    hit = any(kw in low for kw in DISEASE_KEYWORDS)
+    # Be robust to common PDF truncations where the first character drops (e.g. "ypertension" instead of "hypertension").
+    hit = False
+    for kw in DISEASE_KEYWORDS:
+        if kw in low:
+            hit = True
+            break
+        if len(kw) >= 7 and kw[1:] in low:
+            hit = True
+            break
     if not hit:
         return False
 
@@ -271,11 +301,11 @@ def is_plausible_asset_label(label: str) -> bool:
     if low in {"others", "other", "unknown", "undisclosed"}:
         return False
 
-    # reject disease-like labels (this is what fixes your screenshots)
+    # reject disease-like labels
     if looks_like_indication_label(s):
         return False
 
-    # reject pure trial acronyms
+    # reject trial acronyms / trial branding
     if is_trial_acronym(s):
         return False
 
@@ -293,6 +323,14 @@ def sanitize_indication_text(raw: str) -> str:
 
     # Collapse OCR spaced letters (e.g. "L e p r o s y")
     s = _collapse_spaced_letters(s)
+
+    # De-glue common PDF extraction artifacts like "SIRTUROLeprosyunderreview..."
+    # by inserting spaces at camelCase boundaries and acronym→word boundaries.
+    if " " not in s and len(s) >= 25:
+        # fooBar -> foo Bar
+        s = re.sub(r"([a-z])([A-Z])", r"\1 \2", s)
+        # ACRONYMWord -> ACRONYM Word
+        s = re.sub(r"([A-Z]{2,})([A-Z][a-z])", r"\1 \2", s)
     s = _WS.sub(" ", s).strip()
 
     low = s.lower()
