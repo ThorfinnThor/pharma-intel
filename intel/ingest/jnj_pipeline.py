@@ -24,16 +24,17 @@ from ..sanitize import (
     sanitize_indication_text,
     is_plausible_asset_label,
     looks_like_indication_label,
+    indication_is_footer_noise,
+    is_trial_acronym,
 )
 
-# Optional (feature-flagged) LLM cleaner for borderline labels
+# Optional Gemini-based cleaning for borderline labels
 try:
     from ..llm_clean import llm_classify_and_canonicalize_asset_label
 except Exception:  # pragma: no cover
     llm_classify_and_canonicalize_asset_label = None  # type: ignore
 
-
-JNJ_PIPELINE_PAGE = "https://www.investor.jnj.com/pipeline/development-pipeline/default.aspx"
+JNICALL_PIPELINE_PAGE = "https://www.investor.jnj.com/pipeline/development-pipeline/default.aspx"
 
 Q4CDN_BASE = "https://s203.q4cdn.com/636242992/files/doc_financials"
 
@@ -204,25 +205,36 @@ def _group_words_to_lines(words: list[dict[str, Any]], y_tol: float = 3.0) -> li
         if not text:
             continue
         avg_size = sum(float(w.get("size") or 0) for w in ws) / max(len(ws), 1)
-        out.append({"text": text, "top": ws[0]["top"], "avg_size": avg_size})
+        out.append(
+            {
+                "text": text,
+                "top": ws[0]["top"],
+                "avg_size": avg_size,
+                "x0_min": min(w["x0"] for w in ws),
+                "x1_max": max(w.get("x1") or (w["x0"] + 1) for w in ws),
+            }
+        )
     return out
 
 
-def _is_asset_line(line: dict[str, Any], median_size: float) -> bool:
+_PAREN_ONLY = re.compile(r"^\([^\)\n]{2,40}\)$")
+
+
+def _is_asset_line(line: dict[str, Any], median_size: float, *, col_left: float) -> bool:
     raw = (line.get("text") or "").strip()
     if not raw:
+        return False
+
+    # These are almost always trial names/callouts, not assets: (ORIGAMI-2), (MajesTEC-4), etc.
+    if _PAREN_ONLY.match(raw):
         return False
 
     cleaned = sanitize_asset_label(raw)
     if not cleaned:
         return False
 
-    # Hard reject: this is very likely an indication/disease label.
-    if looks_like_indication_label(cleaned):
-        return False
-
-    # Reject non-plausible labels early.
-    if not is_plausible_asset_label(cleaned):
+    # strong negative signals
+    if looks_like_indication_label(cleaned) or is_trial_acronym(cleaned):
         return False
 
     low = cleaned.lower()
@@ -236,26 +248,25 @@ def _is_asset_line(line: dict[str, Any], median_size: float) -> bool:
     if "jnj-" in low:
         return True
 
-    # We treat font size as a supporting signal, not sufficient on its own.
-    big_font = line["avg_size"] >= (median_size + 0.8)
+    # Alignment: asset labels usually start near the column left edge.
+    # Many indication lines are indented / wrapped.
+    aligned = abs(float(line.get("x0_min", col_left)) - col_left) <= 28
 
-    # Explicit patterns that strongly indicate assets
-    if re.match(r"^.{2,60}\(.{2,60}\)$", cleaned) and re.search(r"[A-Za-z]", cleaned):
+    # typical assets are visually larger in the PDF, but require alignment to avoid false positives
+    if aligned and line["avg_size"] >= (median_size + 0.8) and is_plausible_asset_label(cleaned):
         return True
 
-    # Single-token drug/program name (e.g., icotrokinra, nipocalimab)
-    if " " not in cleaned and 4 <= len(cleaned) <= 28 and re.search(r"[a-z]", cleaned):
-        if cleaned.lower() not in {"others", "other", "unknown", "undisclosed"}:
-            # allow if it looks like a drug suffix or if it's in a big font
-            if re.search(r"(mab|nib|ciclib|stat|navir|vir)$", cleaned, re.IGNORECASE) or big_font:
-                return True
-
-    # ALL CAPS brand is common
-    if cleaned.isupper() and 3 <= len(cleaned) <= 45:
+    # brand (generic)
+    if aligned and re.match(r"^.{2,60}\(.{2,60}\)$", cleaned) and re.search(r"[A-Za-z]", cleaned) and is_plausible_asset_label(cleaned):
         return True
 
-    # If it's big font and short, and not disease-like, treat as asset line.
-    if big_font and 1 <= len(cleaned.split()) <= 3 and len(cleaned) <= 40:
+    # single token (e.g., icotrokinra)
+    if aligned and " " not in cleaned and 4 <= len(cleaned) <= 25 and re.search(r"[A-Za-z]", cleaned):
+        if cleaned.lower() not in {"others", "other", "unknown", "undisclosed"} and is_plausible_asset_label(cleaned):
+            return True
+
+    # all caps brand
+    if aligned and cleaned.isupper() and 3 <= len(cleaned) <= 45 and is_plausible_asset_label(cleaned):
         return True
 
     return False
@@ -275,7 +286,9 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
 
             cols = _extract_phase_columns(p)
             words = p.extract_words(extra_attrs=["size"])
-            body_words = [w for w in words if 90 <= w["top"] <= (p.height - 80) and w["text"].strip()]
+            # More aggressive footer exclusion: drop bottom ~12% of the page.
+            bottom_cut = float(p.height) * 0.88
+            body_words = [w for w in words if 90 <= w["top"] <= bottom_cut and w["text"].strip()]
 
             sizes = sorted(float(w.get("size") or 0) for w in body_words if w.get("size"))
             median = sizes[len(sizes) // 2] if sizes else 10.0
@@ -283,6 +296,8 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
             for stage, (x0, x1) in cols.items():
                 col_words = [w for w in body_words if (x0 <= w["x0"] < x1)]
                 lines = _group_words_to_lines(col_words)
+
+                col_left = float(x0) + 6.0
 
                 current_asset: str | None = None
                 indication_parts: list[str] = []
@@ -293,6 +308,8 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
                         return
                     ind = sanitize_indication_text(" ".join(indication_parts).strip())
                     if not ind:
+                        return
+                    if indication_is_footer_noise(ind):
                         return
                     # drop absurdly long indications (usually PDF footer leakage)
                     if len(ind) > 220:
@@ -307,9 +324,17 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
                     )
 
                 for ln in lines:
-                    if _is_asset_line(ln, median):
+                    if _is_asset_line(ln, median, col_left=col_left):
                         flush()
-                        cleaned = sanitize_asset_label(ln["text"])
+                        raw_label = ln["text"]
+                        cleaned = sanitize_asset_label(raw_label)
+
+                        # One more safety gate: reject trial acronyms even if they look like labels.
+                        if cleaned and (looks_like_indication_label(cleaned) or is_trial_acronym(cleaned)):
+                            current_asset = None
+                            indication_parts = []
+                            continue
+
                         if cleaned and is_plausible_asset_label(cleaned):
                             current_asset = cleaned
                             indication_parts = []
@@ -318,7 +343,9 @@ def parse_jnj_pipeline_pdf(pdf_bytes: bytes) -> dict[str, Any]:
                             indication_parts = []
                     else:
                         if current_asset:
-                            indication_parts.append(ln["text"].strip())
+                            t = ln["text"].strip()
+                            if t and not indication_is_footer_noise(t):
+                                indication_parts.append(t)
 
                 flush()
 
@@ -342,7 +369,7 @@ def ingest_jnj_pipeline(session: Session, company_id: str = "jnj") -> int:
 
     if not pdf_url:
         try:
-            html = get(JNJ_PIPELINE_PAGE).text
+            html = get(JNICALL_PIPELINE_PAGE).text
             pdf_url = _find_pdf_url(html)
             if pdf_url.startswith("/"):
                 pdf_url = "https://www.investor.jnj.com" + pdf_url
@@ -366,46 +393,44 @@ def ingest_jnj_pipeline(session: Session, company_id: str = "jnj") -> int:
     for r in rows:
         by_asset.setdefault(r["asset_label"], []).append(r)
 
-    # Quality gate: warn if many labels look like indications (regression detector)
-    suspicious = [a for a in by_asset.keys() if looks_like_indication_label(a)]
-    if suspicious:
-        frac = len(suspicious) / max(len(by_asset), 1)
-        if frac >= 0.05:
-            logger.warning(
-                "JNJ pipeline parse quality: {} / {} labels look like indications ({}%). Sample: {}",
-                len(suspicious),
-                len(by_asset),
-                int(frac * 100),
-                suspicious[:10],
-            )
+    llm_calls = [0]
 
     for asset_label, recs in by_asset.items():
-        cleaned_label = sanitize_asset_label(asset_label)
-        if not cleaned_label:
-            continue
+        raw_label = asset_label
+        cleaned_label = sanitize_asset_label(raw_label)
 
-        # Heuristic rejection for disease-like labels (prevents garbage assets)
-        if looks_like_indication_label(cleaned_label):
-            # Optional: let an LLM rescue borderline cases (feature-flagged)
-            if settings.llm_clean_enabled and llm_classify_and_canonicalize_asset_label is not None:
-                ctx = "\n".join((r.get("indication") or "").strip() for r in recs[:3] if r.get("indication"))
-                llm = llm_classify_and_canonicalize_asset_label(
-                    session,
-                    company_id,
-                    cleaned_label,
-                    context=ctx,
-                    source_url=pdf_url,
-                )
-                if not llm or not llm.get("is_asset"):
-                    continue
-                cleaned_label = llm.get("canonical_name") or cleaned_label
-                llm_aliases = llm.get("aliases") or []
-            else:
-                continue
-        else:
-            llm_aliases = []
+        # Optional LLM rescue for borderline labels (truncation, unbalanced parens)
+        llm_result = None
+        if (
+            (not cleaned_label or not is_plausible_asset_label(cleaned_label))
+            and settings.llm_clean_enabled
+            and llm_classify_and_canonicalize_asset_label is not None
+            and settings.gemini_api_key
+        ):
+            # Build a compact context: a few representative indication fragments
+            ctx_lines: list[str] = []
+            for r in recs[:4]:
+                ind = (r.get("indication") or "").strip()
+                if ind:
+                    ctx_lines.append(ind)
+            ctx = "\n".join(ctx_lines[:4])
 
-        if not is_plausible_asset_label(cleaned_label):
+            llm_result = llm_classify_and_canonicalize_asset_label(
+                session=session,
+                company_id=company_id,
+                raw_label=raw_label,
+                context=ctx,
+                source_url=pdf_url,
+                call_counter=llm_calls,
+            )
+
+            if llm_result and llm_result.get("is_asset"):
+                cand = llm_result.get("canonical_name") or ""
+                cand = sanitize_asset_label(cand) or cand
+                if cand and is_plausible_asset_label(cand):
+                    cleaned_label = cand
+
+        if not cleaned_label or not is_plausible_asset_label(cleaned_label):
             continue
 
         canonical, aliases = split_asset_aliases(cleaned_label)
@@ -413,10 +438,11 @@ def ingest_jnj_pipeline(session: Session, company_id: str = "jnj") -> int:
         if not is_plausible_asset_label(canonical):
             continue
 
-        # merge in optional LLM aliases (already constrained to label text)
-        for a in llm_aliases:
-            if a and a not in aliases:
-                aliases.append(a)
+        # Merge in any LLM-proposed aliases (already constrained to RAW_LABEL)
+        if llm_result and llm_result.get("is_asset"):
+            for a in (llm_result.get("aliases") or []):
+                if isinstance(a, str) and a.strip():
+                    aliases.append(a.strip())
 
         asset = upsert_asset(session, company_id, canonical)
 
