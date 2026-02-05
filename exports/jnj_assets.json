@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-02-05T21:07:06Z",
+  "generated_at": "2026-02-05T21:34:50Z",
   "company_id": "jnj",
   "company_name": "Johnson & Johnson",
-  "asset_count": 22,
-  "change_count": 173,
+  "asset_count": 21,
+  "change_count": 151,
   "assets": [
     {
       "asset_id": 1,
@@ -30,8 +30,7 @@
         "Bleximenib",
         "Cusatuzumab",
         "JNJ-74494550",
-        "JNJ-75276617",
-        "Venetoclax"
+        "JNJ-75276617"
       ],
       "indications": [
         {
@@ -47,7 +46,6 @@
       "asset_name": "INLEXZO",
       "aliases": [
         "Cetrelimab",
-        "Cisplatin",
         "gemcitabine",
         "INLEXZO",
         "INLEXZO (gemcitabine",
@@ -284,35 +282,14 @@
       ]
     },
     {
-      "asset_id": 22,
-      "asset_name": "PulmonaryArterialH",
-      "aliases": [
-        "PulmonaryArterialH"
-      ],
-      "indications": [
-        {
-          "indication": "SIRTURO Leprosyunderreviewbyregulatorybodies.",
-          "stage": "Phase 3",
-          "therapeutic_area": null,
-          "as_of_date": null
-        }
-      ]
-    },
-    {
       "asset_id": 2,
       "asset_name": "RYBREVANT",
       "aliases": [
-        "5-fluorouracil",
         "amivantamab",
-        "Carboplatin",
         "Cetuximab",
-        "Co-Formulated",
-        "Erbitux",
         "JNJ-61186372",
         "JNJ-73841937",
         "Lazertinib",
-        "Levoleucovorin",
-        "Pemetrexed",
         "RYBREVANT",
         "RYBREVANT (amivantamab)",
         "YH-25448",
@@ -332,24 +309,17 @@
       "asset_name": "Subcutaneous Induction",
       "aliases": [
         "ASTRO",
-        "Bortezomib",
-        "CNTO1959",
         "Daratumumab",
-        "Dexamethasone",
         "Golimumab",
         "Guselkumab",
         "JNJ-64007957",
         "JNJ-78934804",
-        "Lenalidomide",
-        "Placebo",
-        "Stelara",
         "Subcutaneous Induction",
         "Subcutaneous Induction (ASTRO)",
         "Talquetamab",
         "Teclistamab",
         "TREMFYA",
-        "Ustekinumab",
-        "Velcade"
+        "Ustekinumab"
       ],
       "indications": [
         {
@@ -382,8 +352,7 @@
         "JNJ-86507083",
         "Nipocalimab",
         "of the Fetus and Newborn",
-        "of the Fetus and Newborn (AZALEA)",
-        "Placebo"
+        "of the Fetus and Newborn (AZALEA)"
       ],
       "indications": [
         {

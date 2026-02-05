@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-02-05T21:07:06Z",
+  "generated_at": "2026-02-05T21:34:50Z",
   "db": "data/intel.db",
   "companies": [
     {
       "company_id": "immatics",
       "company_name": "Immatics",
       "asset_count": 6,
-      "change_count": 21
+      "change_count": 20
     },
     {
       "company_id": "jnj",
       "company_name": "Johnson & Johnson",
-      "asset_count": 22,
-      "change_count": 173
+      "asset_count": 21,
+      "change_count": 151
     }
   ]
 }

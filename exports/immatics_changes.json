@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-05T21:07:06Z",
+  "generated_at": "2026-02-05T21:34:50Z",
   "company_id": "immatics",
   "company_name": "Immatics",
   "changes": [
@@ -49,21 +49,6 @@
       "evidence_id": 63,
       "asset_id": null,
       "trial_id": 60
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "IMA402",
-        "added_alias": "IMA402",
-        "assets": [
-          24,
-          25
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
     },
     {
       "event_type": "trial_added",
@@ -120,7 +105,7 @@
         "therapeutic_area": "Oncology"
       },
       "evidence_id": 3,
-      "asset_id": 23,
+      "asset_id": 22,
       "trial_id": null
     },
     {
@@ -133,7 +118,7 @@
         "therapeutic_area": "Oncology"
       },
       "evidence_id": 3,
-      "asset_id": 24,
+      "asset_id": 23,
       "trial_id": null
     },
     {
@@ -146,7 +131,7 @@
         "therapeutic_area": "Oncology"
       },
       "evidence_id": 3,
-      "asset_id": 25,
+      "asset_id": 24,
       "trial_id": null
     },
     {
@@ -159,7 +144,7 @@
         "therapeutic_area": "Oncology"
       },
       "evidence_id": 3,
-      "asset_id": 26,
+      "asset_id": 25,
       "trial_id": null
     },
     {
@@ -172,7 +157,7 @@
         "therapeutic_area": "Oncology"
       },
       "evidence_id": 3,
-      "asset_id": 27,
+      "asset_id": 26,
       "trial_id": null
     },
     {
@@ -185,7 +170,7 @@
         "therapeutic_area": "Oncology"
       },
       "evidence_id": 3,
-      "asset_id": 28,
+      "asset_id": 27,
       "trial_id": null
     },
     {
@@ -195,7 +180,7 @@
         "asset": "IMA203CD8"
       },
       "evidence_id": 3,
-      "asset_id": 23,
+      "asset_id": 22,
       "trial_id": null
     },
     {
@@ -205,7 +190,7 @@
         "asset": "IMA402"
       },
       "evidence_id": 3,
-      "asset_id": 24,
+      "asset_id": 23,
       "trial_id": null
     },
     {
@@ -215,7 +200,7 @@
         "asset": "IMA402 + ICI"
       },
       "evidence_id": 3,
-      "asset_id": 25,
+      "asset_id": 24,
       "trial_id": null
     },
     {
@@ -225,7 +210,7 @@
         "asset": "IMA401"
       },
       "evidence_id": 3,
-      "asset_id": 26,
+      "asset_id": 25,
       "trial_id": null
     },
     {
@@ -235,7 +220,7 @@
         "asset": "Undisclosed bispecific"
       },
       "evidence_id": 3,
-      "asset_id": 27,
+      "asset_id": 26,
       "trial_id": null
     },
     {
@@ -245,7 +230,7 @@
         "asset": "Undisclosed cell therapy"
       },
       "evidence_id": 3,
-      "asset_id": 28,
+      "asset_id": 27,
       "trial_id": null
     }
   ]

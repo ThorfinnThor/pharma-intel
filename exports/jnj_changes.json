@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-05T21:07:06Z",
+  "generated_at": "2026-02-05T21:34:50Z",
   "company_id": "jnj",
   "company_name": "Johnson & Johnson",
   "changes": [
@@ -436,39 +436,6 @@
       "trial_id": 41
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": null,
-      "payload": {
-        "nct_id": "NCT03004287",
-        "linked_assets": 1
-      },
-      "evidence_id": 53,
-      "asset_id": null,
-      "trial_id": 50
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": null,
-      "payload": {
-        "nct_id": "NCT05912517",
-        "linked_assets": 1
-      },
-      "evidence_id": 59,
-      "asset_id": null,
-      "trial_id": 56
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": null,
-      "payload": {
-        "nct_id": "NCT06449651",
-        "linked_assets": 1
-      },
-      "evidence_id": 60,
-      "asset_id": null,
-      "trial_id": 57
-    },
-    {
       "event_type": "trial_alias_bootstrapped",
       "created_at": null,
       "payload": {
@@ -486,36 +453,8 @@
       "event_type": "trial_alias_bootstrapped",
       "created_at": null,
       "payload": {
-        "query_alias": "NBTXR3",
-        "added_alias": "NBTXR3",
-        "assets": [
-          5
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
         "query_alias": "RYBREVANT",
         "added_alias": "Amivantamab",
-        "assets": [
-          2
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "RYBREVANT",
-        "added_alias": "RYBREVANT",
         "assets": [
           2
         ]
@@ -585,49 +524,7 @@
       "created_at": null,
       "payload": {
         "query_alias": "amivantamab",
-        "added_alias": "Amivantamab",
-        "assets": [
-          2
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "amivantamab",
         "added_alias": "JNJ-61186372",
-        "assets": [
-          2
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "amivantamab",
-        "added_alias": "Pemetrexed",
-        "assets": [
-          2
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "amivantamab",
-        "added_alias": "Carboplatin",
         "assets": [
           2
         ]
@@ -655,20 +552,6 @@
       "created_at": null,
       "payload": {
         "query_alias": "amivantamab",
-        "added_alias": "Co-Formulated",
-        "assets": [
-          2
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "amivantamab",
         "added_alias": "Cetuximab",
         "assets": [
           2
@@ -682,38 +565,10 @@
       "event_type": "trial_alias_bootstrapped",
       "created_at": null,
       "payload": {
-        "query_alias": "amivantamab",
-        "added_alias": "Erbitux",
+        "query_alias": "gemcitabine",
+        "added_alias": "TAR-210",
         "assets": [
-          2
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "amivantamab",
-        "added_alias": "5-fluorouracil",
-        "assets": [
-          2
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "amivantamab",
-        "added_alias": "Levoleucovorin",
-        "assets": [
-          2
+          3
         ]
       },
       "evidence_id": null,
@@ -739,7 +594,7 @@
       "created_at": null,
       "payload": {
         "query_alias": "gemcitabine",
-        "added_alias": "Gemcitabine",
+        "added_alias": "TAR-200",
         "assets": [
           3
         ]
@@ -794,20 +649,6 @@
       "event_type": "trial_alias_bootstrapped",
       "created_at": null,
       "payload": {
-        "query_alias": "gemcitabine",
-        "added_alias": "Cisplatin",
-        "assets": [
-          3
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
         "query_alias": "Azacitidine",
         "added_alias": "Bleximenib",
         "assets": [
@@ -824,34 +665,6 @@
       "payload": {
         "query_alias": "Azacitidine",
         "added_alias": "JNJ-75276617",
-        "assets": [
-          4
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "Azacitidine",
-        "added_alias": "Venetoclax",
-        "assets": [
-          4
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "Azacitidine",
-        "added_alias": "Azacitidine",
         "assets": [
           4
         ]
@@ -892,10 +705,10 @@
       "event_type": "trial_alias_bootstrapped",
       "created_at": null,
       "payload": {
-        "query_alias": "Subcutaneous Induction",
-        "added_alias": "Placebo",
+        "query_alias": "Azacitidine",
+        "added_alias": "ARGX-110",
         "assets": [
-          17
+          4
         ]
       },
       "evidence_id": null,
@@ -908,20 +721,6 @@
       "payload": {
         "query_alias": "Subcutaneous Induction",
         "added_alias": "Guselkumab",
-        "assets": [
-          17
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "Subcutaneous Induction",
-        "added_alias": "CNTO1959",
         "assets": [
           17
         ]
@@ -949,49 +748,7 @@
       "created_at": null,
       "payload": {
         "query_alias": "Subcutaneous Induction",
-        "added_alias": "Lenalidomide",
-        "assets": [
-          17
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "Subcutaneous Induction",
         "added_alias": "Daratumumab",
-        "assets": [
-          17
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "Subcutaneous Induction",
-        "added_alias": "Bortezomib",
-        "assets": [
-          17
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "Subcutaneous Induction",
-        "added_alias": "Dexamethasone",
         "assets": [
           17
         ]
@@ -1075,35 +832,7 @@
       "created_at": null,
       "payload": {
         "query_alias": "Subcutaneous Induction",
-        "added_alias": "Velcade",
-        "assets": [
-          17
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "Subcutaneous Induction",
         "added_alias": "Ustekinumab",
-        "assets": [
-          17
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "Subcutaneous Induction",
-        "added_alias": "Stelara",
         "assets": [
           17
         ]
@@ -1146,20 +875,6 @@
       "payload": {
         "query_alias": "of the Fetus and Newborn",
         "added_alias": "JNJ-86507083",
-        "assets": [
-          18
-        ]
-      },
-      "evidence_id": null,
-      "asset_id": null,
-      "trial_id": null
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": null,
-      "payload": {
-        "query_alias": "of the Fetus and Newborn",
-        "added_alias": "Placebo",
         "assets": [
           18
         ]
@@ -1801,7 +1516,7 @@
       "payload": {
         "as_of_date": null,
         "pdf_url": "https://s203.q4cdn.com/636242992/files/doc_financials/2025/q4/JNJ-Pipeline-4Q25.pdf",
-        "assets_seen": 22
+        "assets_seen": 21
       },
       "evidence_id": 1,
       "asset_id": null,
@@ -2091,19 +1806,6 @@
       },
       "evidence_id": 1,
       "asset_id": 21,
-      "trial_id": null
-    },
-    {
-      "event_type": "asset_indication_added",
-      "created_at": null,
-      "payload": {
-        "asset": "PulmonaryArterialH",
-        "indication": "SIRTURO Leprosyunderreviewbyregulatorybodies.",
-        "stage": "Phase 3",
-        "therapeutic_area": null
-      },
-      "evidence_id": 1,
-      "asset_id": 22,
       "trial_id": null
     }
   ]

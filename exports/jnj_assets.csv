@@ -1,7 +1,7 @@
 company_id,asset_id,asset_name,aliases,stage,therapeutic_area,as_of_date,indication
 jnj,1,1-3PLs,1-3PLs; 1-3PLs (MajesTEC-3),Phase 2,Oncology,,autoleucel) Myeloma Transplant Eligible vs intravesical delivery Bladder Cancer BCG-naïve (amivantamab) Cancer (ORIGAMI-5) Multiple Myeloma CD38 exposed
-jnj,4,Azacitidine,Azacitidine; Azacitidine (cAMeLot-2); Bleximenib; Cusatuzumab; JNJ-74494550; JNJ-75276617; Venetoclax,Registration,Oncology,,Cancer (ATLAS) intravesical delivery system) Invasive Bladder Cancer BCG (ORIGAMI-2) Multiple Myeloma CD38 exposed with DR (MajesTEC-7)
-jnj,3,INLEXZO,Cetrelimab; Cisplatin; gemcitabine; INLEXZO; INLEXZO (gemcitabine; JNJ-17000139; JNJ-42756493; JNJ-63723283,Phase 3,Oncology,,High Risk High Risk Non Muscle Experienced (SunRISe-5) RYBREVANT (amivantamab) Colorectal Cancer TALVEY + TECVAYLI Relapsed Refractory (MonumenTAL-6) TALVEY (talquetamab) TIE NDMM in combination
+jnj,4,Azacitidine,Azacitidine; Azacitidine (cAMeLot-2); Bleximenib; Cusatuzumab; JNJ-74494550; JNJ-75276617,Registration,Oncology,,Cancer (ATLAS) intravesical delivery system) Invasive Bladder Cancer BCG (ORIGAMI-2) Multiple Myeloma CD38 exposed with DR (MajesTEC-7)
+jnj,3,INLEXZO,Cetrelimab; gemcitabine; INLEXZO; INLEXZO (gemcitabine; JNJ-17000139; JNJ-42756493; JNJ-63723283,Phase 3,Oncology,,High Risk High Risk Non Muscle Experienced (SunRISe-5) RYBREVANT (amivantamab) Colorectal Cancer TALVEY + TECVAYLI Relapsed Refractory (MonumenTAL-6) TALVEY (talquetamab) TIE NDMM in combination
 jnj,6,JNJ-1493,JNJ-1493,Phase 1,Oncology,,Hematological
 jnj,20,JNJ-1887 sCD59,JNJ-1887 sCD59,Phase 3,Neuroscience,,Geographic Atrophy SPRAVATO (esketamine) Major Depressive Disorder Pediatrics
 jnj,5,JNJ-1900,JNJ-1900; JNJ-1900 (NBTXR3); JNJ-90301900; NBTXR3,Phase 1,Oncology,,Lung Cancer
@@ -17,8 +17,7 @@ jnj,9,JNJ-5322,JNJ-5322,Phase 1,Oncology,,Multiple Myeloma
 jnj,14,JNJ-7446,JNJ-7446,Phase 3,Oncology,,Lung Cancer
 jnj,10,JNJ-8377,JNJ-8377,Phase 1,Oncology,,Lymphoma
 jnj,15,JNJ-8543,JNJ-8543,Phase 3,Oncology,,Hematological Malignancies
-jnj,22,PulmonaryArterialH,PulmonaryArterialH,Phase 3,,,SIRTURO Leprosyunderreviewbyregulatorybodies.
-jnj,2,RYBREVANT,5-fluorouracil; amivantamab; Carboplatin; Cetuximab; Co-Formulated; Erbitux; JNJ-61186372; JNJ-73841937; Lazertinib; Levoleucovorin; Pemetrexed; RYBREVANT; RYBREVANT (amivantamab); YH-25448; YH25448,Phase 3,Oncology,,"Frontline Non Small chemotherapy (PAPILLON) Bleximenib Newly Diagnosed AML, with Venetoclax and ERLEADA (apalutamide) ASCT Localized Prostate"
-jnj,17,Subcutaneous Induction,ASTRO; Bortezomib; CNTO1959; Daratumumab; Dexamethasone; Golimumab; Guselkumab; JNJ-64007957; JNJ-78934804; Lenalidomide; Placebo; Stelara; Subcutaneous Induction; Subcutaneous Induction (ASTRO); Talquetamab; Teclistamab; TREMFYA; Ustekinumab; Velcade,Phase 2,Immunology,,(ICONIC-PsA)
+jnj,2,RYBREVANT,amivantamab; Cetuximab; JNJ-61186372; JNJ-73841937; Lazertinib; RYBREVANT; RYBREVANT (amivantamab); YH-25448; YH25448,Phase 3,Oncology,,"Frontline Non Small chemotherapy (PAPILLON) Bleximenib Newly Diagnosed AML, with Venetoclax and ERLEADA (apalutamide) ASCT Localized Prostate"
+jnj,17,Subcutaneous Induction,ASTRO; Daratumumab; Golimumab; Guselkumab; JNJ-64007957; JNJ-78934804; Subcutaneous Induction; Subcutaneous Induction (ASTRO); Talquetamab; Teclistamab; TREMFYA; Ustekinumab,Phase 2,Immunology,,(ICONIC-PsA)
 jnj,21,actorXla,,Phase 2,,,i o n
-jnj,18,of the Fetus and Newborn,AZALEA; JNJ-80202135; JNJ-86507083; Nipocalimab; of the Fetus and Newborn; of the Fetus and Newborn (AZALEA); Placebo,Phase 2,Immunology,,Colitis (QUASAR JR) Therapy
+jnj,18,of the Fetus and Newborn,AZALEA; JNJ-80202135; JNJ-86507083; Nipocalimab; of the Fetus and Newborn; of the Fetus and Newborn (AZALEA),Phase 2,Immunology,,Colitis (QUASAR JR) Therapy
