@@ -1,15 +1,15 @@
 {
   "company_id": "immatics",
   "company_name": "Immatics",
-  "generated_at": "2026-02-05T09:49:26Z",
+  "generated_at": "2026-02-05T21:07:07Z",
   "kpis": {
     "assets_total": 4,
-    "assets_with_trials": 2,
-    "trials_total": 5
+    "assets_with_trials": 3,
+    "trials_total": 3
   },
   "top_assets": [
     {
-      "asset_id": 50,
+      "asset_id": 25,
       "asset_name": "IMA402 + ICI",
       "highest_stage": "Phase 1",
       "linked_trials_count": 1,
@@ -18,51 +18,11 @@
           "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
           "stage": "Phase 1",
           "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
         }
       ]
     },
     {
-      "asset_id": 51,
+      "asset_id": 26,
       "asset_name": "IMA401",
       "highest_stage": "Phase 1",
       "linked_trials_count": 1,
@@ -71,150 +31,30 @@
           "indication": "HNSCC, sqNSCLC, other solid cancers",
           "stage": "Phase 1",
           "therapeutic_area": "Oncology"
-        },
+        }
+      ]
+    },
+    {
+      "asset_id": 23,
+      "asset_name": "IMA203CD8",
+      "highest_stage": "Phase 1",
+      "linked_trials_count": 1,
+      "indications": [
         {
-          "indication": "HNSCC, sqNSCLC, other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "HNSCC, sqNSCLC, other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "HNSCC, sqNSCLC, other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "HNSCC, sqNSCLC, other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "HNSCC, sqNSCLC, other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "HNSCC, sqNSCLC, other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "HNSCC, sqNSCLC, other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "HNSCC, sqNSCLC, other solid cancers",
+          "indication": "Gynecologic cancers; other solid cancers",
           "stage": "Phase 1",
           "therapeutic_area": "Oncology"
         }
       ]
     },
     {
-      "asset_id": 49,
+      "asset_id": 24,
       "asset_name": "IMA402",
       "highest_stage": "Phase 1",
       "linked_trials_count": 0,
       "indications": [
         {
           "indication": "Melanoma, gynecologic cancers, other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Melanoma, gynecologic cancers, other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Melanoma, gynecologic cancers, other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Melanoma, gynecologic cancers, other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Melanoma, gynecologic cancers, other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Melanoma, gynecologic cancers, other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Melanoma, gynecologic cancers, other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Melanoma, gynecologic cancers, other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Melanoma, gynecologic cancers, other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        }
-      ]
-    },
-    {
-      "asset_id": 48,
-      "asset_name": "IMA203CD8",
-      "highest_stage": "Phase 1",
-      "linked_trials_count": 0,
-      "indications": [
-        {
-          "indication": "Gynecologic cancers; other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Gynecologic cancers; other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Gynecologic cancers; other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Gynecologic cancers; other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Gynecologic cancers; other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Gynecologic cancers; other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Gynecologic cancers; other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Gynecologic cancers; other solid cancers",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Gynecologic cancers; other solid cancers",
           "stage": "Phase 1",
           "therapeutic_area": "Oncology"
         }
@@ -224,518 +64,29 @@
   "recent_changes": [
     {
       "event_type": "trials_ingested",
-      "created_at": "2026-02-05 09:49:26.048817",
-      "occurred_at": "2026-02-05 09:49:26.048817",
+      "created_at": "2026-02-05 21:07:06.338228",
+      "occurred_at": "2026-02-05 21:07:06.338228",
       "payload": {
-        "trials_seen": 5,
-        "inserted": 0,
-        "updated": 5,
-        "status_changed": 0,
-        "bad_aliases": 0
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:22.255342",
-      "occurred_at": "2026-02-05 09:49:22.255342",
-      "payload": {
-        "nct_id": "NCT05359445",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:22.192926",
-      "occurred_at": "2026-02-05 09:49:22.192926",
-      "payload": {
-        "query_alias": "IMA402",
-        "added_alias": "IMA402",
-        "assets": [
-          49,
-          50
-        ]
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:21.890342",
-      "occurred_at": "2026-02-05 09:49:21.890342",
-      "payload": {
-        "nct_id": "NCT05958121",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:21.828754",
-      "occurred_at": "2026-02-05 09:49:21.828754",
-      "payload": {
-        "query_alias": "IMA203",
-        "added_alias": "Taxol",
-        "assets": [
-          46
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:21.825892",
-      "occurred_at": "2026-02-05 09:49:21.825892",
-      "payload": {
-        "query_alias": "IMA203",
-        "added_alias": "Opdivo",
-        "assets": [
-          46
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:21.823072",
-      "occurred_at": "2026-02-05 09:49:21.823072",
-      "payload": {
-        "query_alias": "IMA203",
-        "added_alias": "nivolumab",
-        "assets": [
-          46
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:21.818484",
-      "occurred_at": "2026-02-05 09:49:21.818484",
-      "payload": {
-        "query_alias": "IMA203",
-        "added_alias": "IMA203",
-        "assets": [
-          46
-        ]
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:21.515552",
-      "occurred_at": "2026-02-05 09:49:21.515552",
-      "payload": {
-        "nct_id": "NCT03686124",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:21.502632",
-      "occurred_at": "2026-02-05 09:49:21.502632",
-      "payload": {
-        "nct_id": "NCT06946225",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:21.488743",
-      "occurred_at": "2026-02-05 09:49:21.488743",
-      "payload": {
-        "nct_id": "NCT06743126",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "pipeline_ingested",
-      "created_at": "2026-02-05 09:48:24.665324",
-      "occurred_at": "2026-02-05 09:48:24.665324",
-      "payload": {
-        "pipeline_page": "https://immatics.com/our-pipeline/",
-        "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
-        "assets_seen": 6
-      }
-    },
-    {
-      "event_type": "trials_ingested",
-      "created_at": "2026-02-05 05:37:18.618799",
-      "occurred_at": "2026-02-05 05:37:18.618799",
-      "payload": {
-        "trials_seen": 5,
-        "inserted": 0,
-        "updated": 5,
-        "status_changed": 0,
-        "bad_aliases": 0
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 05:37:14.828796",
-      "occurred_at": "2026-02-05 05:37:14.828796",
-      "payload": {
-        "nct_id": "NCT05359445",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 05:37:14.462456",
-      "occurred_at": "2026-02-05 05:37:14.462456",
-      "payload": {
-        "nct_id": "NCT05958121",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 05:37:14.101750",
-      "occurred_at": "2026-02-05 05:37:14.101750",
-      "payload": {
-        "nct_id": "NCT03686124",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 05:37:14.088004",
-      "occurred_at": "2026-02-05 05:37:14.088004",
-      "payload": {
-        "nct_id": "NCT06946225",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 05:37:14.072864",
-      "occurred_at": "2026-02-05 05:37:14.072864",
-      "payload": {
-        "nct_id": "NCT06743126",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "pipeline_ingested",
-      "created_at": "2026-02-05 05:36:23.000174",
-      "occurred_at": "2026-02-05 05:36:23.000174",
-      "payload": {
-        "pipeline_page": "https://immatics.com/our-pipeline/",
-        "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
-        "assets_seen": 8
-      }
-    },
-    {
-      "event_type": "trials_ingested",
-      "created_at": "2026-02-04 21:41:52.278232",
-      "occurred_at": "2026-02-04 21:41:52.278232",
-      "payload": {
-        "trials_seen": 5,
-        "inserted": 0,
-        "updated": 5,
-        "status_changed": 0,
-        "bad_aliases": 0
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 21:41:48.487529",
-      "occurred_at": "2026-02-04 21:41:48.487529",
-      "payload": {
-        "nct_id": "NCT05359445",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 21:41:48.128728",
-      "occurred_at": "2026-02-04 21:41:48.128728",
-      "payload": {
-        "nct_id": "NCT05958121",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 21:41:47.771485",
-      "occurred_at": "2026-02-04 21:41:47.771485",
-      "payload": {
-        "nct_id": "NCT03686124",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 21:41:47.757278",
-      "occurred_at": "2026-02-04 21:41:47.757278",
-      "payload": {
-        "nct_id": "NCT06946225",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 21:41:47.742812",
-      "occurred_at": "2026-02-04 21:41:47.742812",
-      "payload": {
-        "nct_id": "NCT06743126",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "pipeline_ingested",
-      "created_at": "2026-02-04 21:40:39.511448",
-      "occurred_at": "2026-02-04 21:40:39.511448",
-      "payload": {
-        "pipeline_page": "https://immatics.com/our-pipeline/",
-        "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
-        "assets_seen": 8
-      }
-    },
-    {
-      "event_type": "trials_ingested",
-      "created_at": "2026-02-04 20:38:56.847371",
-      "occurred_at": "2026-02-04 20:38:56.847371",
-      "payload": {
-        "trials_seen": 5,
-        "inserted": 0,
-        "updated": 5,
-        "status_changed": 0,
-        "bad_aliases": 0
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 20:38:51.784938",
-      "occurred_at": "2026-02-04 20:38:51.784938",
-      "payload": {
-        "nct_id": "NCT06946225",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 20:38:51.770463",
-      "occurred_at": "2026-02-04 20:38:51.770463",
-      "payload": {
-        "nct_id": "NCT06743126",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "pipeline_ingested",
-      "created_at": "2026-02-04 20:37:42.924805",
-      "occurred_at": "2026-02-04 20:37:42.924805",
-      "payload": {
-        "pipeline_page": "https://immatics.com/our-pipeline/",
-        "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
-        "assets_seen": 8
-      }
-    },
-    {
-      "event_type": "trials_ingested",
-      "created_at": "2026-02-04 11:27:05.584877",
-      "occurred_at": "2026-02-04 11:27:05.584877",
-      "payload": {
-        "trials_seen": 5,
-        "inserted": 0,
-        "updated": 5,
-        "status_changed": 0,
-        "bad_aliases": 0
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:27:00.374285",
-      "occurred_at": "2026-02-04 11:27:00.374285",
-      "payload": {
-        "nct_id": "NCT06743126",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 11:27:00.350033",
-      "occurred_at": "2026-02-04 11:27:00.350033",
-      "payload": {
-        "nct_id": "NCT06946225",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "pipeline_ingested",
-      "created_at": "2026-02-04 11:25:41.072827",
-      "occurred_at": "2026-02-04 11:25:41.072827",
-      "payload": {
-        "pipeline_page": "https://immatics.com/our-pipeline/",
-        "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
-        "assets_seen": 8
-      }
-    },
-    {
-      "event_type": "trials_ingested",
-      "created_at": "2026-02-04 10:56:24.702445",
-      "occurred_at": "2026-02-04 10:56:24.702445",
-      "payload": {
-        "trials_seen": 5,
-        "inserted": 0,
-        "updated": 5,
-        "status_changed": 0,
-        "bad_aliases": 0
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:56:19.827138",
-      "occurred_at": "2026-02-04 10:56:19.827138",
-      "payload": {
-        "nct_id": "NCT06743126",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-04 10:56:19.799532",
-      "occurred_at": "2026-02-04 10:56:19.799532",
-      "payload": {
-        "nct_id": "NCT06946225",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "pipeline_ingested",
-      "created_at": "2026-02-04 10:55:07.830582",
-      "occurred_at": "2026-02-04 10:55:07.830582",
-      "payload": {
-        "pipeline_page": "https://immatics.com/our-pipeline/",
-        "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
-        "assets_seen": 8
-      }
-    },
-    {
-      "event_type": "trials_ingested",
-      "created_at": "2026-02-03 11:03:52.634726",
-      "occurred_at": "2026-02-03 11:03:52.634726",
-      "payload": {
-        "trials_seen": 5,
-        "inserted": 0,
-        "updated": 5,
-        "status_changed": 0,
-        "bad_aliases": 0
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-03 11:03:47.599583",
-      "occurred_at": "2026-02-03 11:03:47.599583",
-      "payload": {
-        "nct_id": "NCT06743126",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-03 11:03:47.575518",
-      "occurred_at": "2026-02-03 11:03:47.575518",
-      "payload": {
-        "nct_id": "NCT06946225",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "pipeline_ingested",
-      "created_at": "2026-02-03 11:02:32.388490",
-      "occurred_at": "2026-02-03 11:02:32.388490",
-      "payload": {
-        "pipeline_page": "https://immatics.com/our-pipeline/",
-        "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
-        "assets_seen": 8
-      }
-    },
-    {
-      "event_type": "trials_ingested",
-      "created_at": "2026-02-03 10:37:09.809609",
-      "occurred_at": "2026-02-03 10:37:09.809609",
-      "payload": {
-        "trials_seen": 5,
-        "inserted": 0,
-        "updated": 5,
-        "status_changed": 0,
-        "bad_aliases": 0
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-03 10:37:05.301316",
-      "occurred_at": "2026-02-03 10:37:05.301316",
-      "payload": {
-        "nct_id": "NCT06743126",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-03 10:37:05.279423",
-      "occurred_at": "2026-02-03 10:37:05.279423",
-      "payload": {
-        "nct_id": "NCT06946225",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "pipeline_ingested",
-      "created_at": "2026-02-03 10:36:10.585889",
-      "occurred_at": "2026-02-03 10:36:10.585889",
-      "payload": {
-        "pipeline_page": "https://immatics.com/our-pipeline/",
-        "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
-        "assets_seen": 8
-      }
-    },
-    {
-      "event_type": "trials_ingested",
-      "created_at": "2026-02-03 10:02:20.454129",
-      "occurred_at": "2026-02-03 10:02:20.454129",
-      "payload": {
-        "trials_seen": 5,
-        "inserted": 5,
+        "trials_seen": 3,
+        "inserted": 3,
         "updated": 0,
         "status_changed": 0,
         "bad_aliases": 0
       }
     },
     {
-      "event_type": "trial_added",
-      "created_at": "2026-02-03 10:02:16.646358",
-      "occurred_at": "2026-02-03 10:02:16.646358",
-      "payload": {
-        "nct_id": "NCT05359445",
-        "title": "A Phase Ia/Ib First-In-Human Clinical Trial to Evaluate the Safety, Tolerability and Initial Anti-Tumor Activity of IMA401, a Bispecific T Cell Engaging Receptor Molecule (TCER\u00ae), as Monotherapy or in Combination With Checkpoint Inhibitor in Patients With Recurrent and/or Refractory Solid Tumors."
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-03 10:02:16.288465",
-      "occurred_at": "2026-02-03 10:02:16.288465",
-      "payload": {
-        "nct_id": "NCT05958121",
-        "title": "A Phase I/II First-In-Human Clinical Trial to Evaluate the Safety, Tolerability and Anti-Tumor Activity of IMA402, a Bispecific TCER\u00ae Targeting PRAME, in Patients With Recurrent and/or Refractory Solid Tumors"
-      }
-    },
-    {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-03 10:02:15.935765",
-      "occurred_at": "2026-02-03 10:02:15.935765",
+      "created_at": "2026-02-05 21:07:05.689415",
+      "occurred_at": "2026-02-05 21:07:05.689415",
       "payload": {
-        "nct_id": "NCT06743126",
+        "nct_id": "NCT03686124",
         "linked_assets": 1
       }
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-03 10:02:15.928132",
-      "occurred_at": "2026-02-03 10:02:15.928132",
-      "payload": {
-        "nct_id": "NCT06743126",
-        "title": "A Prospective, Multicenter, Open-label, Randomized, Actively Controlled, Parallel-group Phase 3 Clinical Trial to Evaluate Efficacy, Safety, and Tolerability of IMA203 Versus Investigator's Choice of Treatment in Patients With Previously Treated, Unresectable or Metastatic Cutaneous Melanoma (ACTengine\u00ae IMA203-301)"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-03 10:02:15.916857",
-      "occurred_at": "2026-02-03 10:02:15.916857",
+      "created_at": "2026-02-05 21:07:05.680994",
+      "occurred_at": "2026-02-05 21:07:05.680994",
       "payload": {
         "nct_id": "NCT03686124",
         "title": "Phase 1/2 Study Evaluating Genetically Modified Autologous T Cells Expressing a TCR Recognizing a Cancer/Germline Antigen as Monotherapy or in Combination With Nivolumab in Patients With Recurrent and/or Refractory Solid Tumors"
@@ -743,36 +94,67 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-03 10:02:15.910391",
-      "occurred_at": "2026-02-03 10:02:15.910391",
+      "created_at": "2026-02-05 21:07:05.323309",
+      "occurred_at": "2026-02-05 21:07:05.323309",
       "payload": {
-        "nct_id": "NCT06946225",
-        "linked_assets": 2
+        "nct_id": "NCT05359445",
+        "linked_assets": 1
       }
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-03 10:02:15.897262",
-      "occurred_at": "2026-02-03 10:02:15.897262",
+      "created_at": "2026-02-05 21:07:05.315350",
+      "occurred_at": "2026-02-05 21:07:05.315350",
       "payload": {
-        "nct_id": "NCT06946225",
-        "title": "A First-in-human, Open-label Trial to Evaluate the Combination of ACTengine\u00ae IMA203 With mRNA-4203 in Previously Treated, Unresectable or Metastatic Cutaneous Melanoma or Synovial Sarcoma Patients (ACTengine\u00ae IMA203-102)"
+        "nct_id": "NCT05359445",
+        "title": "A Phase Ia/Ib First-In-Human Clinical Trial to Evaluate the Safety, Tolerability and Initial Anti-Tumor Activity of IMA401, a Bispecific T Cell Engaging Receptor Molecule (TCER\u00ae), as Monotherapy or in Combination With Checkpoint Inhibitor in Patients With Recurrent and/or Refractory Solid Tumors."
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:07:05.259603",
+      "occurred_at": "2026-02-05 21:07:05.259603",
+      "payload": {
+        "query_alias": "IMA402",
+        "added_alias": "IMA402",
+        "assets": [
+          24,
+          25
+        ]
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:07:04.956214",
+      "occurred_at": "2026-02-05 21:07:04.956214",
+      "payload": {
+        "nct_id": "NCT05958121",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:04.942558",
+      "occurred_at": "2026-02-05 21:07:04.942558",
+      "payload": {
+        "nct_id": "NCT05958121",
+        "title": "A Phase I/II First-In-Human Clinical Trial to Evaluate the Safety, Tolerability and Anti-Tumor Activity of IMA402, a Bispecific TCER\u00ae Targeting PRAME, in Patients With Recurrent and/or Refractory Solid Tumors"
       }
     },
     {
       "event_type": "pipeline_ingested",
-      "created_at": "2026-02-03 10:01:19.013807",
-      "occurred_at": "2026-02-03 10:01:19.013807",
+      "created_at": "2026-02-05 21:06:43.894475",
+      "occurred_at": "2026-02-05 21:06:43.894475",
       "payload": {
         "pipeline_page": "https://immatics.com/our-pipeline/",
         "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
-        "assets_seen": 8
+        "assets_seen": 6
       }
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-03 10:01:19.006063",
-      "occurred_at": "2026-02-03 10:01:19.006063",
+      "created_at": "2026-02-05 21:06:43.891218",
+      "occurred_at": "2026-02-05 21:06:43.891218",
       "payload": {
         "asset": "Undisclosed cell therapy",
         "indication": "Undisclosed",
@@ -782,16 +164,16 @@
     },
     {
       "event_type": "asset_added",
-      "created_at": "2026-02-03 10:01:19.004299",
-      "occurred_at": "2026-02-03 10:01:19.004299",
+      "created_at": "2026-02-05 21:06:43.888986",
+      "occurred_at": "2026-02-05 21:06:43.888986",
       "payload": {
         "asset": "Undisclosed cell therapy"
       }
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-03 10:01:18.996967",
-      "occurred_at": "2026-02-03 10:01:18.996967",
+      "created_at": "2026-02-05 21:06:43.880766",
+      "occurred_at": "2026-02-05 21:06:43.880766",
       "payload": {
         "asset": "Undisclosed bispecific",
         "indication": "Undisclosed",
@@ -801,16 +183,16 @@
     },
     {
       "event_type": "asset_added",
-      "created_at": "2026-02-03 10:01:18.994951",
-      "occurred_at": "2026-02-03 10:01:18.994951",
+      "created_at": "2026-02-05 21:06:43.878919",
+      "occurred_at": "2026-02-05 21:06:43.878919",
       "payload": {
         "asset": "Undisclosed bispecific"
       }
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-03 10:01:18.987292",
-      "occurred_at": "2026-02-03 10:01:18.987292",
+      "created_at": "2026-02-05 21:06:43.870210",
+      "occurred_at": "2026-02-05 21:06:43.870210",
       "payload": {
         "asset": "IMA401",
         "indication": "HNSCC, sqNSCLC, other solid cancers",
@@ -820,16 +202,16 @@
     },
     {
       "event_type": "asset_added",
-      "created_at": "2026-02-03 10:01:18.985540",
-      "occurred_at": "2026-02-03 10:01:18.985540",
+      "created_at": "2026-02-05 21:06:43.868252",
+      "occurred_at": "2026-02-05 21:06:43.868252",
       "payload": {
         "asset": "IMA401"
       }
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-03 10:01:18.978123",
-      "occurred_at": "2026-02-03 10:01:18.978123",
+      "created_at": "2026-02-05 21:06:43.860061",
+      "occurred_at": "2026-02-05 21:06:43.860061",
       "payload": {
         "asset": "IMA402 + ICI",
         "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
@@ -839,16 +221,16 @@
     },
     {
       "event_type": "asset_added",
-      "created_at": "2026-02-03 10:01:18.976254",
-      "occurred_at": "2026-02-03 10:01:18.976254",
+      "created_at": "2026-02-05 21:06:43.857735",
+      "occurred_at": "2026-02-05 21:06:43.857735",
       "payload": {
         "asset": "IMA402 + ICI"
       }
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-03 10:01:18.965338",
-      "occurred_at": "2026-02-03 10:01:18.965338",
+      "created_at": "2026-02-05 21:06:43.845749",
+      "occurred_at": "2026-02-05 21:06:43.845749",
       "payload": {
         "asset": "IMA402",
         "indication": "Melanoma, gynecologic cancers, other solid cancers",
@@ -858,16 +240,16 @@
     },
     {
       "event_type": "asset_added",
-      "created_at": "2026-02-03 10:01:18.963538",
-      "occurred_at": "2026-02-03 10:01:18.963538",
+      "created_at": "2026-02-05 21:06:43.843827",
+      "occurred_at": "2026-02-05 21:06:43.843827",
       "payload": {
         "asset": "IMA402"
       }
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-03 10:01:18.954899",
-      "occurred_at": "2026-02-03 10:01:18.954899",
+      "created_at": "2026-02-05 21:06:43.835066",
+      "occurred_at": "2026-02-05 21:06:43.835066",
       "payload": {
         "asset": "IMA203CD8",
         "indication": "Gynecologic cancers; other solid cancers",
@@ -877,94 +259,22 @@
     },
     {
       "event_type": "asset_added",
-      "created_at": "2026-02-03 10:01:18.953102",
-      "occurred_at": "2026-02-03 10:01:18.953102",
+      "created_at": "2026-02-05 21:06:43.832169",
+      "occurred_at": "2026-02-05 21:06:43.832169",
       "payload": {
         "asset": "IMA203CD8"
-      }
-    },
-    {
-      "event_type": "asset_indication_added",
-      "created_at": "2026-02-03 10:01:18.945221",
-      "occurred_at": "2026-02-03 10:01:18.945221",
-      "payload": {
-        "asset": "mRNA-4203",
-        "indication": "Solid cancers (combo with anzu-cel / IMA203)",
-        "stage": "Phase 1",
-        "therapeutic_area": "Oncology"
-      }
-    },
-    {
-      "event_type": "asset_added",
-      "created_at": "2026-02-03 10:01:18.943322",
-      "occurred_at": "2026-02-03 10:01:18.943322",
-      "payload": {
-        "asset": "mRNA-4203"
-      }
-    },
-    {
-      "event_type": "asset_indication_added",
-      "created_at": "2026-02-03 10:01:18.934679",
-      "occurred_at": "2026-02-03 10:01:18.934679",
-      "payload": {
-        "asset": "anzu-cel",
-        "indication": "2L melanoma",
-        "stage": "Phase 1",
-        "therapeutic_area": "Oncology"
-      }
-    },
-    {
-      "event_type": "asset_indication_added",
-      "created_at": "2026-02-03 10:01:18.932894",
-      "occurred_at": "2026-02-03 10:01:18.932894",
-      "payload": {
-        "asset": "anzu-cel",
-        "indication": "Solid cancers (in combination with mRNA-4203)",
-        "stage": "Phase 1",
-        "therapeutic_area": "Oncology"
-      }
-    },
-    {
-      "event_type": "asset_indication_added",
-      "created_at": "2026-02-03 10:01:18.930920",
-      "occurred_at": "2026-02-03 10:01:18.930920",
-      "payload": {
-        "asset": "anzu-cel",
-        "indication": "Uveal melanoma",
-        "stage": "Phase 1",
-        "therapeutic_area": "Oncology"
-      }
-    },
-    {
-      "event_type": "asset_added",
-      "created_at": "2026-02-03 10:01:18.928104",
-      "occurred_at": "2026-02-03 10:01:18.928104",
-      "payload": {
-        "asset": "anzu-cel"
       }
     }
   ],
   "trials": [
     {
-      "nct_id": "NCT06743126",
-      "overall_status": "RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-02-04",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT06946225",
-      "overall_status": "RECRUITING",
-      "phase": "PHASE1",
-      "last_update_posted": "2026-01-08",
-      "linked_assets": []
-    },
-    {
       "nct_id": "NCT03686124",
       "overall_status": "RECRUITING",
       "phase": "PHASE1,PHASE2",
       "last_update_posted": "2025-12-11",
-      "linked_assets": []
+      "linked_assets": [
+        "IMA203CD8"
+      ]
     },
     {
       "nct_id": "NCT05958121",

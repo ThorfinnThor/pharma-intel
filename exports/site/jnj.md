@@ -1,37 +1,34 @@
 # Johnson & Johnson (jnj)
 
-Generated: `2026-02-05T09:49:26Z`
+Generated: `2026-02-05T21:07:07Z`
 
-- Assets: **45**
-- Assets with linked trials: **19**
-- Trials: **267**
+- Assets: **22**
+- Assets with linked trials: **6**
+- Trials: **57**
 
 ## Top assets
 
 | Asset | Highest stage | Linked trials | Example indications |
 |---|---:|---:|---|
-| Azacitidine | Registration | 4 | Cancer (ATLAS) intravesical delivery system) Invasive Bladder Cancer BCG; Cancer (ATLAS) intravesical delivery system) Invasive Bladder Cancer BCG (ORIGAMI-2) Multiple Myeloma CD38 exposed with DR (MajesTEC-7) |
-| ypertension75mg | Registration | 0 | pipeline is based on the current status of these this information. *AC Immune ACI-35.030. of rilpivirine and cabotegravir: ViiV Healthcare; Tau Immunotherapy: AC Immune SA; Biotech; AKEEGA: TESARO, an oncology- iPSC-derived chimeric antigen receptor |
-| PROTOSTAR | Registration | 0 | Arthritis Hemolytic Anemia (ENERGY) Alloimmune Thrombocytopenia |
-| TALVEY + TECVAYLI | Phase 3 | 41 | Relapsed Refractory; Relapsed Refractory (MonumenTAL-6) |
-| ERLEADA | Phase 3 | 27 | ASCT Localized Prostate |
-| RYBREVANT | Phase 3 | 21 | Frontline Non Small; Colorectal Cancer |
-| TREMFYA | Phase 3 | 8 | Ulcerative Colitis; Pediatric Ulcerative |
+| Azacitidine | Registration | 4 | Cancer (ATLAS) intravesical delivery system) Invasive Bladder Cancer BCG (ORIGAMI-2) Multiple Myeloma CD38 exposed with DR (MajesTEC-7) |
+| RYBREVANT | Phase 3 | 27 | Frontline Non Small chemotherapy (PAPILLON) Bleximenib Newly Diagnosed AML, with Venetoclax and ERLEADA (apalutamide) ASCT Localized Prostate |
 | INLEXZO | Phase 3 | 6 | High Risk High Risk Non Muscle Experienced (SunRISe-5) RYBREVANT (amivantamab) Colorectal Cancer TALVEY + TECVAYLI Relapsed Refractory (MonumenTAL-6) TALVEY (talquetamab) TIE NDMM in combination |
-| nipocalimab | Phase 3 | 5 | Hemolytic Disease; Warm Autoimmune |
-| bleximenib | Phase 3 | 5 | Relapsed Refractory 1) |
-| SPRAVATO | Phase 3 | 3 | Major Depressive Disorder Pediatrics |
-| icotrokinra | Phase 3 | 2 | Psoriatic Arthritis; Crohn's Disease (ICONIC-CD) |
 | JNJ-7446 | Phase 3 | 2 | Lung Cancer |
-| SIRTURO | Phase 3 | 0 | L e p r o s y under review by regulatory bodies. Inclusion in the & Johnson assumes no obligation to update Long acting HIV injectible treatment regimen; L e p r o s y under review by regulatory bodies. |
-| PulmonaryArterialH | Phase 3 | 0 | SIRTUROLeprosyunderreviewbyregulatorybodies. |
+| PulmonaryArterialH | Phase 3 | 0 | SIRTURO Leprosyunderreviewbyregulatorybodies. |
 | JNJ-8543 | Phase 3 | 0 | Hematological Malignancies |
-| JNJ-4804 Co-antibody | Phase 3 | 0 | Psoriatic Arthritis; Crohn's Disease |
+| JNJ-4804 Co-antibody | Phase 3 | 0 | Psoriatic Arthritis nipocalimab​ Systemic Lupus; Crohn's Disease nipocalimab​ Idiopathic Inflammatory |
 | JNJ-4681 | Phase 3 | 0 | Hematological Malignancies |
 | JNJ-3413 | Phase 3 | 0 | Lymphoma |
 | JNJ-2175 | Phase 3 | 0 | Solid Tumors |
-| JNJ-1887 sCD59 | Phase 3 | 0 | Geographic Atrophy; Geographic Atrophy SPRAVATO (esketamine) Major Depressive Disorder Pediatrics |
-| INLEXZO (gemcitabine | Phase 3 | 0 | Non Muscle Invasive; High Risk High Risk Non Muscle |
-| Bleximenib | Phase 3 | 0 | Newly Diagnosed AML, with Venetoclax and |
-| Gravis | Phase 2 | 43 | Indications for Major Depressive Disorder |
-| amivantamab | Phase 2 | 27 | Cancer (ORIGAMI-5) |
+| JNJ-1887 sCD59 | Phase 3 | 0 | Geographic Atrophy SPRAVATO (esketamine) Major Depressive Disorder Pediatrics |
+| Subcutaneous Induction | Phase 2 | 2 | (ICONIC-PsA) |
+| of the Fetus and Newborn | Phase 2 | 0 | Colitis (QUASAR JR) Therapy |
+| actorXla | Phase 2 | 0 | i o n |
+| 1-3PLs | Phase 2 | 0 | autoleucel) Myeloma Transplant Eligible vs intravesical delivery Bladder Cancer BCG-naïve (amivantamab) Cancer (ORIGAMI-5) Multiple Myeloma CD38 exposed |
+| JNJ-1900 | Phase 1 | 2 | Lung Cancer |
+| JNJ-8377 | Phase 1 | 0 | Lymphoma |
+| JNJ-5322 | Phase 1 | 0 | Multiple Myeloma |
+| JNJ-5120 | Phase 1 | 0 | Major Depressive |
+| JNJ-4680 | Phase 1 | 0 | Lung Cancer |
+| JNJ-2761 | Phase 1 | 0 | Multiple Myeloma |
+| JNJ-1493 | Phase 1 | 0 | Hematological |

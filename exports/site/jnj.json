@@ -1,29 +1,19 @@
 {
   "company_id": "jnj",
   "company_name": "Johnson & Johnson",
-  "generated_at": "2026-02-05T09:49:26Z",
+  "generated_at": "2026-02-05T21:07:07Z",
   "kpis": {
-    "assets_total": 45,
-    "assets_with_trials": 19,
-    "trials_total": 267
+    "assets_total": 22,
+    "assets_with_trials": 6,
+    "trials_total": 57
   },
   "top_assets": [
     {
-      "asset_id": 64,
+      "asset_id": 4,
       "asset_name": "Azacitidine",
       "highest_stage": "Registration",
       "linked_trials_count": 4,
       "indications": [
-        {
-          "indication": "Cancer (ATLAS) intravesical delivery system) Invasive Bladder Cancer BCG",
-          "stage": "Registration",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Cancer (ATLAS) intravesical delivery system) Invasive Bladder Cancer BCG",
-          "stage": "Registration",
-          "therapeutic_area": "Oncology"
-        },
         {
           "indication": "Cancer (ATLAS) intravesical delivery system) Invasive Bladder Cancer BCG (ORIGAMI-2) Multiple Myeloma CD38 exposed with DR (MajesTEC-7)",
           "stage": "Registration",
@@ -32,268 +22,11 @@
       ]
     },
     {
-      "asset_id": 45,
-      "asset_name": "ypertension75mg",
-      "highest_stage": "Registration",
-      "linked_trials_count": 0,
-      "indications": [
-        {
-          "indication": "pipeline is based on the current status of these this information. *AC Immune ACI-35.030. of rilpivirine and cabotegravir: ViiV Healthcare; Tau Immunotherapy: AC Immune SA; Biotech; AKEEGA: TESARO, an oncology- iPSC-derived chimeric antigen receptor",
-          "stage": "Registration",
-          "therapeutic_area": null
-        },
-        {
-          "indication": "pipeline is based on the current status of these this information. *AC Immune ACI-35.030. of rilpivirine and cabotegravir: ViiV Healthcare; Tau Immunotherapy: AC Immune SA; Biotech; AKEEGA: TESARO, an oncology- iPSC-derived chimeric antigen receptor",
-          "stage": "Registration",
-          "therapeutic_area": null
-        },
-        {
-          "indication": "pipeline is based on the current status of these this information. *AC Immune ACI-35.030. of rilpivirine and cabotegravir: ViiV Healthcare; Tau Immunotherapy: AC Immune SA; Biotech; AKEEGA: TESARO, an oncology- iPSC-derived chimeric antigen receptor",
-          "stage": "Registration",
-          "therapeutic_area": null
-        }
-      ]
-    },
-    {
-      "asset_id": 69,
-      "asset_name": "PROTOSTAR",
-      "highest_stage": "Registration",
-      "linked_trials_count": 0,
-      "indications": [
-        {
-          "indication": "Arthritis Hemolytic Anemia (ENERGY) Alloimmune Thrombocytopenia",
-          "stage": "Registration",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Arthritis Hemolytic Anemia (ENERGY) Alloimmune Thrombocytopenia",
-          "stage": "Registration",
-          "therapeutic_area": "Immunology"
-        }
-      ]
-    },
-    {
-      "asset_id": 12,
-      "asset_name": "TALVEY + TECVAYLI",
-      "highest_stage": "Phase 3",
-      "linked_trials_count": 41,
-      "indications": [
-        {
-          "indication": "Relapsed Refractory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory (MonumenTAL-6)",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory (MonumenTAL-6)",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        }
-      ]
-    },
-    {
-      "asset_id": 10,
-      "asset_name": "ERLEADA",
+      "asset_id": 2,
+      "asset_name": "RYBREVANT",
       "highest_stage": "Phase 3",
       "linked_trials_count": 27,
       "indications": [
-        {
-          "indication": "ASCT Localized Prostate",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "ASCT Localized Prostate",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "ASCT Localized Prostate",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "ASCT Localized Prostate",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "ASCT Localized Prostate",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "ASCT Localized Prostate",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "ASCT Localized Prostate",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "ASCT Localized Prostate",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        }
-      ]
-    },
-    {
-      "asset_id": 5,
-      "asset_name": "RYBREVANT",
-      "highest_stage": "Phase 3",
-      "linked_trials_count": 21,
-      "indications": [
-        {
-          "indication": "Frontline Non Small",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Colorectal Cancer",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Frontline Non Small",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Colorectal Cancer",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Frontline Non Small",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Colorectal Cancer",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Frontline Non Small",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Colorectal Cancer",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Frontline Non Small",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Colorectal Cancer",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Frontline Non Small",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Colorectal Cancer",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Frontline Non Small",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Colorectal Cancer",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Frontline Non Small",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Colorectal Cancer",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
         {
           "indication": "Frontline Non Small chemotherapy (PAPILLON) Bleximenib Newly Diagnosed AML, with Venetoclax and ERLEADA (apalutamide) ASCT Localized Prostate",
           "stage": "Phase 3",
@@ -302,175 +35,7 @@
       ]
     },
     {
-      "asset_id": 25,
-      "asset_name": "TREMFYA",
-      "highest_stage": "Phase 3",
-      "linked_trials_count": 8,
-      "indications": [
-        {
-          "indication": "Ulcerative Colitis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Ulcerative",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Psoriasis",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Juvenile Psoriatic",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Ulcerative Colitis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Ulcerative",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Psoriasis",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Juvenile Psoriatic",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Ulcerative Colitis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Ulcerative",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Psoriasis",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Juvenile Psoriatic",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Ulcerative Colitis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Ulcerative",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Psoriasis",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Juvenile Psoriatic",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Ulcerative Colitis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Ulcerative",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Psoriasis",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Juvenile Psoriatic",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Ulcerative Colitis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Ulcerative",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Psoriasis",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Juvenile Psoriatic",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Ulcerative Colitis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Ulcerative",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Psoriasis",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Juvenile Psoriatic",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Ulcerative Colitis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Ulcerative",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Psoriasis",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Pediatric Juvenile Psoriatic",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        }
-      ]
-    },
-    {
-      "asset_id": 72,
+      "asset_id": 3,
       "asset_name": "INLEXZO",
       "highest_stage": "Phase 3",
       "linked_trials_count": 6,
@@ -483,329 +48,7 @@
       ]
     },
     {
-      "asset_id": 57,
-      "asset_name": "nipocalimab",
-      "highest_stage": "Phase 3",
-      "linked_trials_count": 5,
-      "indications": [
-        {
-          "indication": "Hemolytic Disease",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Warm Autoimmune",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Fetal and Neonatal",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Chronic Inflammatory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Hemolytic Disease",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Warm Autoimmune",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Fetal and Neonatal",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Chronic Inflammatory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Hemolytic Disease",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Warm Autoimmune",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Fetal and Neonatal",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Chronic Inflammatory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Hemolytic Disease",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Warm Autoimmune",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Fetal and Neonatal",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Chronic Inflammatory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Hemolytic Disease",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Warm Autoimmune",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Fetal and Neonatal",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Chronic Inflammatory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Hemolytic Disease",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Warm Autoimmune",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Fetal and Neonatal",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Chronic Inflammatory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Hemolytic Disease",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Warm Autoimmune",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Fetal and Neonatal",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Chronic Inflammatory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Hemolytic Disease",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Warm Autoimmune",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Fetal and Neonatal",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Chronic Inflammatory",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        }
-      ]
-    },
-    {
-      "asset_id": 19,
-      "asset_name": "bleximenib",
-      "highest_stage": "Phase 3",
-      "linked_trials_count": 5,
-      "indications": [
-        {
-          "indication": "Relapsed Refractory 1)",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory 1)",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory 1)",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory 1)",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory 1)",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory 1)",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory 1)",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Relapsed Refractory 1)",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        }
-      ]
-    },
-    {
-      "asset_id": 37,
-      "asset_name": "SPRAVATO",
-      "highest_stage": "Phase 3",
-      "linked_trials_count": 3,
-      "indications": [
-        {
-          "indication": "Major Depressive Disorder Pediatrics",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Major Depressive Disorder Pediatrics",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Major Depressive Disorder Pediatrics",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Major Depressive Disorder Pediatrics",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Major Depressive Disorder Pediatrics",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Major Depressive Disorder Pediatrics",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Major Depressive Disorder Pediatrics",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Major Depressive Disorder Pediatrics",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        }
-      ]
-    },
-    {
-      "asset_id": 26,
-      "asset_name": "icotrokinra",
-      "highest_stage": "Phase 3",
-      "linked_trials_count": 2,
-      "indications": [
-        {
-          "indication": "Psoriatic Arthritis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Psoriatic Arthritis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Psoriatic Arthritis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Psoriatic Arthritis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Psoriatic Arthritis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Psoriatic Arthritis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Psoriatic Arthritis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Crohn's Disease (ICONIC-CD)",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Psoriatic Arthritis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Crohn's Disease (ICONIC-CD)",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        }
-      ]
-    },
-    {
-      "asset_id": 22,
+      "asset_id": 14,
       "asset_name": "JNJ-7446",
       "highest_stage": "Phase 3",
       "linked_trials_count": 2,
@@ -814,97 +57,24 @@
           "indication": "Lung Cancer",
           "stage": "Phase 3",
           "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Lung Cancer",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Lung Cancer",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Lung Cancer",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Lung Cancer",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Lung Cancer",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Lung Cancer",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Lung Cancer",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Lung Cancer",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
         }
       ]
     },
     {
-      "asset_id": 43,
-      "asset_name": "SIRTURO",
-      "highest_stage": "Phase 3",
-      "linked_trials_count": 0,
-      "indications": [
-        {
-          "indication": "L e p r o s y under review by regulatory bodies. Inclusion in the & Johnson assumes no obligation to update Long acting HIV injectible treatment regimen",
-          "stage": "Phase 3",
-          "therapeutic_area": null
-        },
-        {
-          "indication": "L e p r o s y under review by regulatory bodies. Inclusion in the & Johnson assumes no obligation to update Long acting HIV injectible treatment regimen",
-          "stage": "Phase 3",
-          "therapeutic_area": null
-        },
-        {
-          "indication": "L e p r o s y under review by regulatory bodies. Inclusion in the & Johnson assumes no obligation to update Long acting HIV injectible treatment regimen",
-          "stage": "Phase 3",
-          "therapeutic_area": null
-        },
-        {
-          "indication": "L e p r o s y under review by regulatory bodies.",
-          "stage": "Phase 3",
-          "therapeutic_area": null
-        },
-        {
-          "indication": "L e p r o s y under review by regulatory bodies.",
-          "stage": "Phase 3",
-          "therapeutic_area": null
-        }
-      ]
-    },
-    {
-      "asset_id": 75,
+      "asset_id": 22,
       "asset_name": "PulmonaryArterialH",
       "highest_stage": "Phase 3",
       "linked_trials_count": 0,
       "indications": [
         {
-          "indication": "SIRTUROLeprosyunderreviewbyregulatorybodies.",
+          "indication": "SIRTURO Leprosyunderreviewbyregulatorybodies.",
           "stage": "Phase 3",
           "therapeutic_area": null
         }
       ]
     },
     {
-      "asset_id": 74,
+      "asset_id": 15,
       "asset_name": "JNJ-8543",
       "highest_stage": "Phase 3",
       "linked_trials_count": 0,
@@ -917,91 +87,11 @@
       ]
     },
     {
-      "asset_id": 28,
+      "asset_id": 16,
       "asset_name": "JNJ-4804 Co-antibody",
       "highest_stage": "Phase 3",
       "linked_trials_count": 0,
       "indications": [
-        {
-          "indication": "Psoriatic Arthritis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Crohn's Disease",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Psoriatic Arthritis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Crohn's Disease",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Psoriatic Arthritis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Crohn's Disease",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Psoriatic Arthritis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Crohn's Disease",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Psoriatic Arthritis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Crohn's Disease",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Psoriatic Arthritis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Crohn's Disease",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Psoriatic Arthritis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Crohn's Disease",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Psoriatic Arthritis",
-          "stage": "Phase 1",
-          "therapeutic_area": "Immunology"
-        },
-        {
-          "indication": "Crohn's Disease",
-          "stage": "Phase 3",
-          "therapeutic_area": "Immunology"
-        },
         {
           "indication": "Psoriatic Arthritis nipocalimab\u200b Systemic Lupus",
           "stage": "Phase 1",
@@ -1015,7 +105,7 @@
       ]
     },
     {
-      "asset_id": 21,
+      "asset_id": 13,
       "asset_name": "JNJ-4681",
       "highest_stage": "Phase 3",
       "linked_trials_count": 0,
@@ -1024,51 +114,11 @@
           "indication": "Hematological Malignancies",
           "stage": "Phase 3",
           "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Hematological Malignancies",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Hematological Malignancies",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Hematological Malignancies",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Hematological Malignancies",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Hematological Malignancies",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Hematological Malignancies",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Hematological Malignancies",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Hematological Malignancies",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
         }
       ]
     },
     {
-      "asset_id": 66,
+      "asset_id": 12,
       "asset_name": "JNJ-3413",
       "highest_stage": "Phase 3",
       "linked_trials_count": 0,
@@ -1077,21 +127,11 @@
           "indication": "Lymphoma",
           "stage": "Phase 3",
           "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Lymphoma",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Lymphoma",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
         }
       ]
     },
     {
-      "asset_id": 20,
+      "asset_id": 11,
       "asset_name": "JNJ-2175",
       "highest_stage": "Phase 3",
       "linked_trials_count": 0,
@@ -1100,95 +140,15 @@
           "indication": "Solid Tumors",
           "stage": "Phase 3",
           "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Solid Tumors",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Solid Tumors",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Solid Tumors",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Solid Tumors",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Solid Tumors",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Solid Tumors",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Solid Tumors",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Solid Tumors",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
         }
       ]
     },
     {
-      "asset_id": 60,
+      "asset_id": 20,
       "asset_name": "JNJ-1887 sCD59",
       "highest_stage": "Phase 3",
       "linked_trials_count": 0,
       "indications": [
-        {
-          "indication": "Geographic Atrophy",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Geographic Atrophy",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Geographic Atrophy",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Geographic Atrophy",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Geographic Atrophy",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Geographic Atrophy",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Geographic Atrophy",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Geographic Atrophy",
-          "stage": "Phase 3",
-          "therapeutic_area": "Neuroscience"
-        },
         {
           "indication": "Geographic Atrophy SPRAVATO (esketamine) Major Depressive Disorder Pediatrics",
           "stage": "Phase 3",
@@ -1197,228 +157,144 @@
       ]
     },
     {
-      "asset_id": 1,
-      "asset_name": "INLEXZO (gemcitabine",
-      "highest_stage": "Phase 3",
+      "asset_id": 17,
+      "asset_name": "Subcutaneous Induction",
+      "highest_stage": "Phase 2",
+      "linked_trials_count": 2,
+      "indications": [
+        {
+          "indication": "(ICONIC-PsA)",
+          "stage": "Phase 2",
+          "therapeutic_area": "Immunology"
+        }
+      ]
+    },
+    {
+      "asset_id": 18,
+      "asset_name": "of the Fetus and Newborn",
+      "highest_stage": "Phase 2",
       "linked_trials_count": 0,
       "indications": [
         {
-          "indication": "Non Muscle Invasive",
+          "indication": "Colitis (QUASAR JR) Therapy",
+          "stage": "Phase 2",
+          "therapeutic_area": "Immunology"
+        }
+      ]
+    },
+    {
+      "asset_id": 21,
+      "asset_name": "actorXla",
+      "highest_stage": "Phase 2",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "i o n",
+          "stage": "Phase 2",
+          "therapeutic_area": null
+        }
+      ]
+    },
+    {
+      "asset_id": 1,
+      "asset_name": "1-3PLs",
+      "highest_stage": "Phase 2",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "autoleucel) Myeloma Transplant Eligible vs intravesical delivery Bladder Cancer BCG-na\u00efve (amivantamab) Cancer (ORIGAMI-5) Multiple Myeloma CD38 exposed",
+          "stage": "Phase 2",
+          "therapeutic_area": "Oncology"
+        }
+      ]
+    },
+    {
+      "asset_id": 5,
+      "asset_name": "JNJ-1900",
+      "highest_stage": "Phase 1",
+      "linked_trials_count": 2,
+      "indications": [
+        {
+          "indication": "Lung Cancer",
           "stage": "Phase 1",
           "therapeutic_area": "Oncology"
-        },
+        }
+      ]
+    },
+    {
+      "asset_id": 10,
+      "asset_name": "JNJ-8377",
+      "highest_stage": "Phase 1",
+      "linked_trials_count": 0,
+      "indications": [
         {
-          "indication": "Non Muscle Invasive",
+          "indication": "Lymphoma",
           "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "High Risk High Risk Non Muscle",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Non Muscle Invasive",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Non Muscle Invasive",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "High Risk High Risk Non Muscle",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Non Muscle Invasive",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Non Muscle Invasive",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "High Risk High Risk Non Muscle",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Non Muscle Invasive",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Non Muscle Invasive",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "High Risk High Risk Non Muscle",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Non Muscle Invasive",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Non Muscle Invasive",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "High Risk High Risk Non Muscle",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Non Muscle Invasive",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Non Muscle Invasive",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "High Risk High Risk Non Muscle",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Non Muscle Invasive",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Non Muscle Invasive (SunRISe-3)",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "High Risk High Risk Non Muscle",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Non Muscle Invasive",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Non Muscle Invasive (SunRISe-3)",
-          "stage": "Phase 1",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "High Risk High Risk Non Muscle",
-          "stage": "Phase 3",
           "therapeutic_area": "Oncology"
         }
       ]
     },
     {
       "asset_id": 9,
-      "asset_name": "Bleximenib",
-      "highest_stage": "Phase 3",
+      "asset_name": "JNJ-5322",
+      "highest_stage": "Phase 1",
       "linked_trials_count": 0,
       "indications": [
         {
-          "indication": "Newly Diagnosed AML, with Venetoclax and",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Newly Diagnosed AML, with Venetoclax and",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Newly Diagnosed AML, with Venetoclax and",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Newly Diagnosed AML, with Venetoclax and",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Newly Diagnosed AML, with Venetoclax and",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Newly Diagnosed AML, with Venetoclax and",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Newly Diagnosed AML, with Venetoclax and",
-          "stage": "Phase 3",
-          "therapeutic_area": "Oncology"
-        },
-        {
-          "indication": "Newly Diagnosed AML, with Venetoclax and",
-          "stage": "Phase 3",
+          "indication": "Multiple Myeloma",
+          "stage": "Phase 1",
           "therapeutic_area": "Oncology"
         }
       ]
     },
     {
-      "asset_id": 59,
-      "asset_name": "Gravis",
-      "highest_stage": "Phase 2",
-      "linked_trials_count": 43,
+      "asset_id": 19,
+      "asset_name": "JNJ-5120",
+      "highest_stage": "Phase 1",
+      "linked_trials_count": 0,
       "indications": [
         {
-          "indication": "Indications for Major Depressive Disorder",
-          "stage": "Phase 2",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Indications for Major Depressive Disorder",
-          "stage": "Phase 2",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Indications for Major Depressive Disorder",
-          "stage": "Phase 2",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Indications for Major Depressive Disorder",
-          "stage": "Phase 2",
-          "therapeutic_area": "Neuroscience"
-        },
-        {
-          "indication": "Indications for Major Depressive Disorder",
-          "stage": "Phase 2",
+          "indication": "Major Depressive",
+          "stage": "Phase 1",
           "therapeutic_area": "Neuroscience"
         }
       ]
     },
     {
-      "asset_id": 63,
-      "asset_name": "amivantamab",
-      "highest_stage": "Phase 2",
-      "linked_trials_count": 27,
+      "asset_id": 8,
+      "asset_name": "JNJ-4680",
+      "highest_stage": "Phase 1",
+      "linked_trials_count": 0,
       "indications": [
         {
-          "indication": "Cancer (ORIGAMI-5)",
-          "stage": "Phase 2",
+          "indication": "Lung Cancer",
+          "stage": "Phase 1",
           "therapeutic_area": "Oncology"
-        },
+        }
+      ]
+    },
+    {
+      "asset_id": 7,
+      "asset_name": "JNJ-2761",
+      "highest_stage": "Phase 1",
+      "linked_trials_count": 0,
+      "indications": [
         {
-          "indication": "Cancer (ORIGAMI-5)",
-          "stage": "Phase 2",
+          "indication": "Multiple Myeloma",
+          "stage": "Phase 1",
+          "therapeutic_area": "Oncology"
+        }
+      ]
+    },
+    {
+      "asset_id": 6,
+      "asset_name": "JNJ-1493",
+      "highest_stage": "Phase 1",
+      "linked_trials_count": 0,
+      "indications": [
+        {
+          "indication": "Hematological",
+          "stage": "Phase 1",
           "therapeutic_area": "Oncology"
         }
       ]
@@ -1427,179 +303,656 @@
   "recent_changes": [
     {
       "event_type": "trials_ingested",
-      "created_at": "2026-02-05 09:49:20.674730",
-      "occurred_at": "2026-02-05 09:49:20.674730",
+      "created_at": "2026-02-05 21:07:04.188535",
+      "occurred_at": "2026-02-05 21:07:04.188535",
       "payload": {
-        "trials_seen": 197,
-        "inserted": 4,
-        "updated": 193,
+        "trials_seen": 57,
+        "inserted": 57,
+        "updated": 0,
         "status_changed": 0,
         "bad_aliases": 0
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:19.235419",
-      "occurred_at": "2026-02-05 09:49:19.235419",
+      "created_at": "2026-02-05 21:07:03.485146",
+      "occurred_at": "2026-02-05 21:07:03.485146",
+      "payload": {
+        "query_alias": "of the Fetus and Newborn",
+        "added_alias": "Placebo",
+        "assets": [
+          18
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:07:03.482089",
+      "occurred_at": "2026-02-05 21:07:03.482089",
+      "payload": {
+        "query_alias": "of the Fetus and Newborn",
+        "added_alias": "JNJ-86507083",
+        "assets": [
+          18
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:07:03.478645",
+      "occurred_at": "2026-02-05 21:07:03.478645",
+      "payload": {
+        "query_alias": "of the Fetus and Newborn",
+        "added_alias": "JNJ-80202135",
+        "assets": [
+          18
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:07:03.475208",
+      "occurred_at": "2026-02-05 21:07:03.475208",
+      "payload": {
+        "query_alias": "of the Fetus and Newborn",
+        "added_alias": "Nipocalimab",
+        "assets": [
+          18
+        ]
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:07:03.169485",
+      "occurred_at": "2026-02-05 21:07:03.169485",
+      "payload": {
+        "nct_id": "NCT06449651",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:03.161745",
+      "occurred_at": "2026-02-05 21:07:03.161745",
+      "payload": {
+        "nct_id": "NCT06449651",
+        "title": "Double-blind, Randomized, Placebo-controlled Study Evaluating the Safety and Efficacy of Nipocalimab in Reducing the Risk of Fetal and Neonatal Alloimmune Thrombocytopenia (FNAIT) in At-risk Pregnancies"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:07:03.155214",
+      "occurred_at": "2026-02-05 21:07:03.155214",
+      "payload": {
+        "nct_id": "NCT05912517",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:03.147080",
+      "occurred_at": "2026-02-05 21:07:03.147080",
+      "payload": {
+        "nct_id": "NCT05912517",
+        "title": "A Phase 3 Randomized, Placebo-Controlled, Double-Blind, Multicenter Study to Evaluate the Efficacy and Safety of Nipocalimab in Pregnancies at Risk for Severe Hemolytic Disease of the Fetus and Newborn (HDFN)"
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:03.136011",
+      "occurred_at": "2026-02-05 21:07:03.136011",
+      "payload": {
+        "nct_id": "NCT07194070",
+        "title": "Global Prospective Hemolytic Disease of the Fetus and Newborn Registry"
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:07:03.038858",
+      "occurred_at": "2026-02-05 21:07:03.038858",
+      "payload": {
+        "query_alias": "Subcutaneous Induction",
+        "added_alias": "Stelara",
+        "assets": [
+          17
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:07:03.035874",
+      "occurred_at": "2026-02-05 21:07:03.035874",
+      "payload": {
+        "query_alias": "Subcutaneous Induction",
+        "added_alias": "Ustekinumab",
+        "assets": [
+          17
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:07:03.032725",
+      "occurred_at": "2026-02-05 21:07:03.032725",
       "payload": {
         "query_alias": "Subcutaneous Induction",
         "added_alias": "Velcade",
         "assets": [
-          67
+          17
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:19.232342",
-      "occurred_at": "2026-02-05 09:49:19.232342",
+      "created_at": "2026-02-05 21:07:03.029723",
+      "occurred_at": "2026-02-05 21:07:03.029723",
       "payload": {
         "query_alias": "Subcutaneous Induction",
-        "added_alias": "Bortezomib",
+        "added_alias": "Talquetamab",
         "assets": [
-          67
+          17
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:19.229300",
-      "occurred_at": "2026-02-05 09:49:19.229300",
+      "created_at": "2026-02-05 21:07:03.026823",
+      "occurred_at": "2026-02-05 21:07:03.026823",
       "payload": {
         "query_alias": "Subcutaneous Induction",
-        "added_alias": "Lenalidomide",
+        "added_alias": "JNJ-64007957",
         "assets": [
-          67
+          17
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:19.226223",
-      "occurred_at": "2026-02-05 09:49:19.226223",
+      "created_at": "2026-02-05 21:07:03.023592",
+      "occurred_at": "2026-02-05 21:07:03.023592",
       "payload": {
         "query_alias": "Subcutaneous Induction",
-        "added_alias": "Daratumumab",
+        "added_alias": "Teclistamab",
         "assets": [
-          67
+          17
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:19.223199",
-      "occurred_at": "2026-02-05 09:49:19.223199",
+      "created_at": "2026-02-05 21:07:03.020555",
+      "occurred_at": "2026-02-05 21:07:03.020555",
+      "payload": {
+        "query_alias": "Subcutaneous Induction",
+        "added_alias": "JNJ-78934804",
+        "assets": [
+          17
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:07:03.017470",
+      "occurred_at": "2026-02-05 21:07:03.017470",
+      "payload": {
+        "query_alias": "Subcutaneous Induction",
+        "added_alias": "Golimumab",
+        "assets": [
+          17
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:07:03.014516",
+      "occurred_at": "2026-02-05 21:07:03.014516",
       "payload": {
         "query_alias": "Subcutaneous Induction",
         "added_alias": "Dexamethasone",
         "assets": [
-          67
+          17
         ]
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:18.918582",
-      "occurred_at": "2026-02-05 09:49:18.918582",
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:07:03.011466",
+      "occurred_at": "2026-02-05 21:07:03.011466",
+      "payload": {
+        "query_alias": "Subcutaneous Induction",
+        "added_alias": "Bortezomib",
+        "assets": [
+          17
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:07:03.008633",
+      "occurred_at": "2026-02-05 21:07:03.008633",
+      "payload": {
+        "query_alias": "Subcutaneous Induction",
+        "added_alias": "Daratumumab",
+        "assets": [
+          17
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:07:03.005602",
+      "occurred_at": "2026-02-05 21:07:03.005602",
+      "payload": {
+        "query_alias": "Subcutaneous Induction",
+        "added_alias": "Lenalidomide",
+        "assets": [
+          17
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:07:03.001530",
+      "occurred_at": "2026-02-05 21:07:03.001530",
+      "payload": {
+        "query_alias": "Subcutaneous Induction",
+        "added_alias": "TREMFYA",
+        "assets": [
+          17
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:07:02.998668",
+      "occurred_at": "2026-02-05 21:07:02.998668",
+      "payload": {
+        "query_alias": "Subcutaneous Induction",
+        "added_alias": "CNTO1959",
+        "assets": [
+          17
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:07:02.995819",
+      "occurred_at": "2026-02-05 21:07:02.995819",
+      "payload": {
+        "query_alias": "Subcutaneous Induction",
+        "added_alias": "Guselkumab",
+        "assets": [
+          17
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:07:02.992623",
+      "occurred_at": "2026-02-05 21:07:02.992623",
+      "payload": {
+        "query_alias": "Subcutaneous Induction",
+        "added_alias": "Placebo",
+        "assets": [
+          17
+        ]
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:02.682141",
+      "occurred_at": "2026-02-05 21:07:02.682141",
       "payload": {
         "nct_id": "NCT06189833",
-        "linked_assets": 2
+        "title": "Phase 2 Study Applying Innovative Minimal Residual Disease (MRD) Techniques for Participants With Previously Untreated Multiple Myeloma Treated With D-VRd Prior To and After High-dose Therapy Followed by Autologous Stem Cell Transplantation (ASCT) - TAURUS"
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:02.671014",
+      "occurred_at": "2026-02-05 21:07:02.671014",
+      "payload": {
+        "nct_id": "NCT04496063",
+        "title": "USTekinumab in Fistulising Perianal Crohn's Disease (CD): The USTAP CD Study"
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:02.660620",
+      "occurred_at": "2026-02-05 21:07:02.660620",
+      "payload": {
+        "nct_id": "NCT05387031",
+        "title": "Efficacy of Ustekinumab-based Integrated Medicine Therapy in Patients With Symptomatic Stricturing Crohn's Disease: a Multicenter, Prospective, Observational Cohort Study"
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:02.647915",
+      "occurred_at": "2026-02-05 21:07:02.647915",
+      "payload": {
+        "nct_id": "NCT05849610",
+        "title": "An Open Label, Multicenter, Phase 2, Pilot Study, Evaluating Early Treatment With Bispecific T-cell Redirectors (Teclistamab and Talquetamab) in the Frontline Therapy of Newly Diagnosed High-risk Multiple Myeloma"
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:18.495759",
-      "occurred_at": "2026-02-05 09:49:18.495759",
+      "created_at": "2026-02-05 21:07:02.214740",
+      "occurred_at": "2026-02-05 21:07:02.214740",
       "payload": {
         "nct_id": "NCT03004287",
-        "linked_assets": 3
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:02.203041",
+      "occurred_at": "2026-02-05 21:07:02.203041",
+      "payload": {
+        "nct_id": "NCT03004287",
+        "title": "2015-12: A Phase II Study Exploring the Use of Early and Late Consolidation/Maintenance With Anti-CD38 (Protein) Monoclonal Antibody to Improve Progression Free Survival in Patients With Newly Diagnosed Multiple Myeloma"
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:02.189693",
+      "occurred_at": "2026-02-05 21:07:02.189693",
+      "payload": {
+        "nct_id": "NCT05695508",
+        "title": "A Phase 2 Study to Evaluate Safety and Efficacy of Teclistamab-, Talquetamab-, and JNJ-79635322-based Combination Regimens in Participants With Newly Diagnosed Transplant Eligible Multiple Myeloma"
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:02.179010",
+      "occurred_at": "2026-02-05 21:07:02.179010",
+      "payload": {
+        "nct_id": "NCT07310095",
+        "title": "Efficacy of Guselkumab in Chinese Participants With Crohn's Disease Following Loss of Response to Ustekinumab"
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:02.167867",
+      "occurred_at": "2026-02-05 21:07:02.167867",
+      "payload": {
+        "nct_id": "NCT05242484",
+        "title": "A Phase 2b Randomized, Double-blind, Active-and Placebo-controlled, Parallel-group, Multicenter Study to Evaluate the Efficacy and Safety of Induction and Maintenance Combination Therapy With Guselkumab and Golimumab in Participants With Moderately to Severely Active Ulcerative Colitis"
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:02.153001",
+      "occurred_at": "2026-02-05 21:07:02.153001",
+      "payload": {
+        "nct_id": "NCT05242471",
+        "title": "A Phase 2b Randomized, Double-blind, Active-and Placebo-controlled, Parallel-group, Multicenter Study to Evaluate the Efficacy and Safety of Induction and Maintenance Combination Therapy With Guselkumab and Golimumab in Participants With Moderately to Severely Active Crohn's Disease"
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:02.136613",
+      "occurred_at": "2026-02-05 21:07:02.136613",
+      "payload": {
+        "nct_id": "NCT04133636",
+        "title": "A Phase 2, Multicohort Open-Label Study of JNJ-68284528, a Chimeric Antigen Receptor T Cell (CAR-T) Therapy Directed Against BCMA in Subjects With Multiple Myeloma"
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:02.125065",
+      "occurred_at": "2026-02-05 21:07:02.125065",
+      "payload": {
+        "nct_id": "NCT06260163",
+        "title": "A Phase 3 Randomized, Open-label Induction, Double-blind Maintenance, Parallel-group, Multicenter Protocol to Evaluate the Efficacy, Safety, and Pharmacokinetics of Guselkumab in Pediatric Participants With Moderately to Severely Active Ulcerative Colitis"
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:02.112723",
+      "occurred_at": "2026-02-05 21:07:02.112723",
+      "payload": {
+        "nct_id": "NCT05528510",
+        "title": "A Phase 3, Randomized, Double-blind, Placebo-controlled, Parallel-group, Multicenter Study to Evaluate the Efficacy and Safety of Guselkumab Subcutaneous Induction Therapy in Participants With Moderately to Severely Active Ulcerative Colitis"
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:07:02.095213",
+      "occurred_at": "2026-02-05 21:07:02.095213",
+      "payload": {
+        "nct_id": "NCT05197049",
+        "title": "A Randomized, Double-blind, Placebo-controlled, Parallel-group, Multicenter Study to Evaluate the Efficacy and Safety of Guselkumab Subcutaneous Induction Therapy in Participants With Moderately to Severely Active Crohn's Disease"
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:10.686240",
-      "occurred_at": "2026-02-05 09:49:10.686240",
+      "created_at": "2026-02-05 21:06:59.012863",
+      "occurred_at": "2026-02-05 21:06:59.012863",
       "payload": {
-        "query_alias": "gemcitabine",
-        "added_alias": "Cisplatin",
+        "query_alias": "Azacitidine",
+        "added_alias": "JNJ-74494550",
         "assets": [
-          72
+          4
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:10.683545",
-      "occurred_at": "2026-02-05 09:49:10.683545",
+      "created_at": "2026-02-05 21:06:59.009968",
+      "occurred_at": "2026-02-05 21:06:59.009968",
       "payload": {
-        "query_alias": "gemcitabine",
-        "added_alias": "JNJ-63723283",
+        "query_alias": "Azacitidine",
+        "added_alias": "Cusatuzumab",
         "assets": [
-          72
+          4
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:10.680975",
-      "occurred_at": "2026-02-05 09:49:10.680975",
+      "created_at": "2026-02-05 21:06:59.007063",
+      "occurred_at": "2026-02-05 21:06:59.007063",
       "payload": {
-        "query_alias": "gemcitabine",
-        "added_alias": "Cetrelimab",
+        "query_alias": "Azacitidine",
+        "added_alias": "Azacitidine",
         "assets": [
-          72
+          4
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:10.678353",
-      "occurred_at": "2026-02-05 09:49:10.678353",
+      "created_at": "2026-02-05 21:06:59.005322",
+      "occurred_at": "2026-02-05 21:06:59.005322",
       "payload": {
-        "query_alias": "gemcitabine",
-        "added_alias": "JNJ-17000139",
+        "query_alias": "Azacitidine",
+        "added_alias": "Venetoclax",
         "assets": [
-          72
+          4
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:10.675433",
-      "occurred_at": "2026-02-05 09:49:10.675433",
+      "created_at": "2026-02-05 21:06:59.002317",
+      "occurred_at": "2026-02-05 21:06:59.002317",
       "payload": {
-        "query_alias": "gemcitabine",
-        "added_alias": "Gemcitabine",
+        "query_alias": "Azacitidine",
+        "added_alias": "JNJ-75276617",
         "assets": [
-          72
+          4
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:10.673428",
-      "occurred_at": "2026-02-05 09:49:10.673428",
+      "created_at": "2026-02-05 21:06:58.998996",
+      "occurred_at": "2026-02-05 21:06:58.998996",
       "payload": {
-        "query_alias": "gemcitabine",
-        "added_alias": "JNJ-42756493",
+        "query_alias": "Azacitidine",
+        "added_alias": "Bleximenib",
         "assets": [
-          72
+          4
         ]
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:06.908569",
-      "occurred_at": "2026-02-05 09:49:06.908569",
+      "created_at": "2026-02-05 21:06:57.924083",
+      "occurred_at": "2026-02-05 21:06:57.924083",
       "payload": {
-        "nct_id": "NCT02436707",
+        "nct_id": "NCT04150887",
         "linked_assets": 2
       }
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-05 09:49:06.897443",
-      "occurred_at": "2026-02-05 09:49:06.897443",
+      "created_at": "2026-02-05 21:06:57.915558",
+      "occurred_at": "2026-02-05 21:06:57.915558",
+      "payload": {
+        "nct_id": "NCT04150887",
+        "title": "An Open-label, Multicenter, Phase 1b Study of OV-1001 (Cusatuzumab; Anti-CD70 Monoclonal Antibody) in Combination With Background Therapy for the Treatment of Subjects With Acute Myeloid Leukemia"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:06:57.482789",
+      "occurred_at": "2026-02-05 21:06:57.482789",
+      "payload": {
+        "nct_id": "NCT04023526",
+        "linked_assets": 2
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:57.474218",
+      "occurred_at": "2026-02-05 21:06:57.474218",
+      "payload": {
+        "nct_id": "NCT04023526",
+        "title": "A Phase 2 Study of Cusatuzumab Plus Azacitidine in Patients With Newly Diagnosed Acute Myeloid Leukemia Who Are Not Candidates for Intensive Chemotherapy"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:06:57.001114",
+      "occurred_at": "2026-02-05 21:06:57.001114",
+      "payload": {
+        "nct_id": "NCT06852222",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:56.993043",
+      "occurred_at": "2026-02-05 21:06:56.993043",
+      "payload": {
+        "nct_id": "NCT06852222",
+        "title": "A Phase 3 Randomized, Double-Blind, Placebo-Controlled, Study of Bleximenib, Venetoclax and Azacitidine for the Treatment of Participants With Newly Diagnosed Acute Myeloid Leukemia Harboring KMT2A Rearrangements or NPM1 Mutations Who Are Ineligible for Intensive Chemotherapy"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:06:56.983299",
+      "occurred_at": "2026-02-05 21:06:56.983299",
+      "payload": {
+        "nct_id": "NCT05453903",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:56.974428",
+      "occurred_at": "2026-02-05 21:06:56.974428",
+      "payload": {
+        "nct_id": "NCT05453903",
+        "title": "A Phase 1b Study of Bleximenib in Combination With AML-Directed Therapies for Participants With Acute Myeloid Leukemia Harboring KMT2A or NPM1 Alterations"
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:06:56.836934",
+      "occurred_at": "2026-02-05 21:06:56.836934",
+      "payload": {
+        "query_alias": "gemcitabine",
+        "added_alias": "Cisplatin",
+        "assets": [
+          3
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:06:56.833839",
+      "occurred_at": "2026-02-05 21:06:56.833839",
+      "payload": {
+        "query_alias": "gemcitabine",
+        "added_alias": "JNJ-63723283",
+        "assets": [
+          3
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:06:56.830602",
+      "occurred_at": "2026-02-05 21:06:56.830602",
+      "payload": {
+        "query_alias": "gemcitabine",
+        "added_alias": "Cetrelimab",
+        "assets": [
+          3
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:06:56.827458",
+      "occurred_at": "2026-02-05 21:06:56.827458",
+      "payload": {
+        "query_alias": "gemcitabine",
+        "added_alias": "JNJ-17000139",
+        "assets": [
+          3
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:06:56.824333",
+      "occurred_at": "2026-02-05 21:06:56.824333",
+      "payload": {
+        "query_alias": "gemcitabine",
+        "added_alias": "Gemcitabine",
+        "assets": [
+          3
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:06:56.822235",
+      "occurred_at": "2026-02-05 21:06:56.822235",
+      "payload": {
+        "query_alias": "gemcitabine",
+        "added_alias": "JNJ-42756493",
+        "assets": [
+          3
+        ]
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:06:53.079839",
+      "occurred_at": "2026-02-05 21:06:53.079839",
+      "payload": {
+        "nct_id": "NCT02436707",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:53.067876",
+      "occurred_at": "2026-02-05 21:06:53.067876",
       "payload": {
         "nct_id": "NCT02436707",
         "title": "A Multi-Stage Randomized Phase II Study of Novel Combination Therapy in the Treatment of Relapsed and Refractory Aggressive B-Cell Lymphoma"
@@ -1607,26 +960,26 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:06.890749",
-      "occurred_at": "2026-02-05 09:49:06.890749",
+      "created_at": "2026-02-05 21:06:53.061083",
+      "occurred_at": "2026-02-05 21:06:53.061083",
       "payload": {
-        "nct_id": "NCT06211764",
+        "nct_id": "NCT06919965",
         "linked_assets": 1
       }
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-05 09:49:06.881628",
-      "occurred_at": "2026-02-05 09:49:06.881628",
+      "created_at": "2026-02-05 21:06:53.051774",
+      "occurred_at": "2026-02-05 21:06:53.051774",
       "payload": {
-        "nct_id": "NCT06211764",
-        "title": "A Phase 3, Randomized, Open-label, Multi-center Study Evaluating the Efficacy and Safety of TAR-200 Versus Investigator's Choice of Intravesical Chemotherapy in Participants Who Received Bacillus Calmette-Gu\u00e9rin (BCG) and Recurred With High-risk Non-muscle-invasive Bladder Cancer (HR-NMIBC) and Who Are Ineligible for or Elected Not to Undergo Radical Cystectomy"
+        "nct_id": "NCT06919965",
+        "title": "A Phase 3, Randomized, Open-label, Multicenter Study Evaluating the Efficacy and Safety of TAR-210 Erdafitinib Intravesical Delivery System Versus Investigator's Choice of Intravesical Chemotherapy in Participants With High-risk Non-muscle-invasive Bladder Cancer With Susceptible FGFR Alterations Who Had Received Intravesical Bacillus Calmette-Gu\u00e9rin (BCG)"
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:06.873779",
-      "occurred_at": "2026-02-05 09:49:06.873779",
+      "created_at": "2026-02-05 21:06:53.044610",
+      "occurred_at": "2026-02-05 21:06:53.044610",
       "payload": {
         "nct_id": "NCT04658862",
         "linked_assets": 1
@@ -1634,8 +987,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-05 09:49:06.863929",
-      "occurred_at": "2026-02-05 09:49:06.863929",
+      "created_at": "2026-02-05 21:06:53.036049",
+      "occurred_at": "2026-02-05 21:06:53.036049",
       "payload": {
         "nct_id": "NCT04658862",
         "title": "A Phase 3, Multi-center, Randomized Study Evaluating Efficacy of TAR-200 in Combination With Cetrelimab Versus Concurrent Chemoradiotherapy in Participants With Muscle-Invasive Urothelial Carcinoma (MIBC) of the Bladder Who Are Not Receiving Radical Cystectomy"
@@ -1643,8 +996,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-05 09:49:06.848361",
-      "occurred_at": "2026-02-05 09:49:06.848361",
+      "created_at": "2026-02-05 21:06:53.020411",
+      "occurred_at": "2026-02-05 21:06:53.020411",
       "payload": {
         "nct_id": "NCT04640623",
         "title": "Phase 2b Clinical Study Evaluating Efficacy and Safety of TAR-200 in Combination With Cetrelimab, TAR-200 Alone, or Cetrelimab Alone in Participants With High-Risk Non-Muscle Invasive Bladder Cancer (NMIBC) Unresponsive to Intravesical Bacillus Calmette-Gu\u00e9rin (BCG) Who Are Ineligible for or Elected Not to Undergo Radical Cystectomy"
@@ -1652,1923 +1005,1082 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:06.838949",
-      "occurred_at": "2026-02-05 09:49:06.838949",
+      "created_at": "2026-02-05 21:06:53.012669",
+      "occurred_at": "2026-02-05 21:06:53.012669",
       "payload": {
-        "nct_id": "NCT06919965",
+        "nct_id": "NCT06211764",
         "linked_assets": 1
       }
     },
     {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:53.004511",
+      "occurred_at": "2026-02-05 21:06:53.004511",
+      "payload": {
+        "nct_id": "NCT06211764",
+        "title": "A Phase 3, Randomized, Open-label, Multi-center Study Evaluating the Efficacy and Safety of TAR-200 Versus Investigator's Choice of Intravesical Chemotherapy in Participants Who Received Bacillus Calmette-Gu\u00e9rin (BCG) and Recurred With High-risk Non-muscle-invasive Bladder Cancer (HR-NMIBC) and Who Are Ineligible for or Elected Not to Undergo Radical Cystectomy"
+      }
+    },
+    {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:06.354164",
-      "occurred_at": "2026-02-05 09:49:06.354164",
+      "created_at": "2026-02-05 21:06:52.504512",
+      "occurred_at": "2026-02-05 21:06:52.504512",
       "payload": {
         "nct_id": "NCT06319820",
         "linked_assets": 1
       }
     },
     {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:06.134791",
-      "occurred_at": "2026-02-05 09:49:06.134791",
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:52.496575",
+      "occurred_at": "2026-02-05 21:06:52.496575",
       "payload": {
-        "query_alias": "Azacitidine",
-        "added_alias": "JNJ-74494550",
-        "assets": [
-          9,
-          19,
-          64
-        ]
+        "nct_id": "NCT06319820",
+        "title": "A Phase 3, Randomized Study Evaluating the Efficacy and Safety of TAR-210 Erdafitinib Intravesical Delivery System Versus Single Agent Intravesical Chemotherapy in Participants With Intermediate-risk Non-muscle Invasive Bladder Cancer (IR-NMIBC) and Susceptible FGFR Alterations"
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:06.129781",
-      "occurred_at": "2026-02-05 09:49:06.129781",
-      "payload": {
-        "query_alias": "Azacitidine",
-        "added_alias": "Cusatuzumab",
-        "assets": [
-          9,
-          19,
-          64
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:06.123773",
-      "occurred_at": "2026-02-05 09:49:06.123773",
-      "payload": {
-        "query_alias": "Azacitidine",
-        "added_alias": "Azacitidine",
-        "assets": [
-          9,
-          19,
-          64
-        ]
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:05.016359",
-      "occurred_at": "2026-02-05 09:49:05.016359",
-      "payload": {
-        "nct_id": "NCT04150887",
-        "linked_assets": 3
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:04.579816",
-      "occurred_at": "2026-02-05 09:49:04.579816",
-      "payload": {
-        "nct_id": "NCT04023526",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:03.961407",
-      "occurred_at": "2026-02-05 09:49:03.961407",
-      "payload": {
-        "query_alias": "nipocalimab",
-        "added_alias": "JNJ-86507083",
-        "assets": [
-          57,
-          59
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:03.958357",
-      "occurred_at": "2026-02-05 09:49:03.958357",
-      "payload": {
-        "query_alias": "nipocalimab",
-        "added_alias": "Placebo",
-        "assets": [
-          57,
-          59
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:03.955420",
-      "occurred_at": "2026-02-05 09:49:03.955420",
-      "payload": {
-        "query_alias": "nipocalimab",
-        "added_alias": "JNJ-80202135",
-        "assets": [
-          57,
-          59
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:03.952262",
-      "occurred_at": "2026-02-05 09:49:03.952262",
-      "payload": {
-        "query_alias": "nipocalimab",
-        "added_alias": "Nipocalimab",
-        "assets": [
-          57,
-          59
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:03.950129",
-      "occurred_at": "2026-02-05 09:49:03.950129",
-      "payload": {
-        "query_alias": "nipocalimab",
-        "added_alias": "M281",
-        "assets": [
-          57,
-          59
-        ]
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:03.646078",
-      "occurred_at": "2026-02-05 09:49:03.646078",
-      "payload": {
-        "nct_id": "NCT04883619",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:03.634152",
-      "occurred_at": "2026-02-05 09:49:03.634152",
-      "payload": {
-        "nct_id": "NCT06533098",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:03.622424",
-      "occurred_at": "2026-02-05 09:49:03.622424",
-      "payload": {
-        "nct_id": "NCT06449651",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:03.611107",
-      "occurred_at": "2026-02-05 09:49:03.611107",
-      "payload": {
-        "nct_id": "NCT05379634",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:03.598847",
-      "occurred_at": "2026-02-05 09:49:03.598847",
-      "payload": {
-        "nct_id": "NCT05327114",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:03.586625",
-      "occurred_at": "2026-02-05 09:49:03.586625",
-      "payload": {
-        "nct_id": "NCT04119050",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:02.810296",
-      "occurred_at": "2026-02-05 09:49:02.810296",
-      "payload": {
-        "query_alias": "icotrokinra",
-        "added_alias": "Placebo",
-        "assets": [
-          26,
-          59
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:02.807202",
-      "occurred_at": "2026-02-05 09:49:02.807202",
-      "payload": {
-        "query_alias": "icotrokinra",
-        "added_alias": "JNJ-77242113",
-        "assets": [
-          26,
-          59
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:02.803553",
-      "occurred_at": "2026-02-05 09:49:02.803553",
-      "payload": {
-        "query_alias": "icotrokinra",
-        "added_alias": "Icotrokinra",
-        "assets": [
-          26,
-          59
-        ]
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:02.500949",
-      "occurred_at": "2026-02-05 09:49:02.500949",
-      "payload": {
-        "nct_id": "NCT06878404",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:02.487329",
-      "occurred_at": "2026-02-05 09:49:02.487329",
-      "payload": {
-        "nct_id": "NCT06807424",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:01.567906",
-      "occurred_at": "2026-02-05 09:49:01.567906",
+      "created_at": "2026-02-05 21:06:52.293291",
+      "occurred_at": "2026-02-05 21:06:52.293291",
       "payload": {
         "query_alias": "amivantamab",
         "added_alias": "Levoleucovorin",
         "assets": [
-          5,
-          63
+          2
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:01.563892",
-      "occurred_at": "2026-02-05 09:49:01.563892",
+      "created_at": "2026-02-05 21:06:52.289605",
+      "occurred_at": "2026-02-05 21:06:52.289605",
       "payload": {
         "query_alias": "amivantamab",
         "added_alias": "5-fluorouracil",
         "assets": [
-          5,
-          63
+          2
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:01.560031",
-      "occurred_at": "2026-02-05 09:49:01.560031",
+      "created_at": "2026-02-05 21:06:52.286678",
+      "occurred_at": "2026-02-05 21:06:52.286678",
       "payload": {
         "query_alias": "amivantamab",
         "added_alias": "Erbitux",
         "assets": [
-          5,
-          63
+          2
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:01.556310",
-      "occurred_at": "2026-02-05 09:49:01.556310",
+      "created_at": "2026-02-05 21:06:52.283656",
+      "occurred_at": "2026-02-05 21:06:52.283656",
       "payload": {
         "query_alias": "amivantamab",
         "added_alias": "Cetuximab",
         "assets": [
-          5,
-          63
+          2
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:01.552380",
-      "occurred_at": "2026-02-05 09:49:01.552380",
+      "created_at": "2026-02-05 21:06:52.280509",
+      "occurred_at": "2026-02-05 21:06:52.280509",
       "payload": {
         "query_alias": "amivantamab",
         "added_alias": "Co-Formulated",
         "assets": [
-          5,
-          63
+          2
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:01.548549",
-      "occurred_at": "2026-02-05 09:49:01.548549",
+      "created_at": "2026-02-05 21:06:52.277524",
+      "occurred_at": "2026-02-05 21:06:52.277524",
       "payload": {
         "query_alias": "amivantamab",
         "added_alias": "YH25448",
         "assets": [
-          5,
-          63
+          2
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:01.544686",
-      "occurred_at": "2026-02-05 09:49:01.544686",
+      "created_at": "2026-02-05 21:06:52.273552",
+      "occurred_at": "2026-02-05 21:06:52.273552",
       "payload": {
         "query_alias": "amivantamab",
         "added_alias": "Carboplatin",
         "assets": [
-          5,
-          63
+          2
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:01.540707",
-      "occurred_at": "2026-02-05 09:49:01.540707",
+      "created_at": "2026-02-05 21:06:52.270531",
+      "occurred_at": "2026-02-05 21:06:52.270531",
       "payload": {
         "query_alias": "amivantamab",
         "added_alias": "Pemetrexed",
         "assets": [
-          5,
-          63
+          2
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:01.536197",
-      "occurred_at": "2026-02-05 09:49:01.536197",
-      "payload": {
-        "query_alias": "amivantamab",
-        "added_alias": "YH-25448",
-        "assets": [
-          5,
-          63
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:01.531051",
-      "occurred_at": "2026-02-05 09:49:01.531051",
-      "payload": {
-        "query_alias": "amivantamab",
-        "added_alias": "JNJ-73841937",
-        "assets": [
-          5,
-          63
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:01.526978",
-      "occurred_at": "2026-02-05 09:49:01.526978",
-      "payload": {
-        "query_alias": "amivantamab",
-        "added_alias": "Lazertinib",
-        "assets": [
-          5,
-          63
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:01.521882",
-      "occurred_at": "2026-02-05 09:49:01.521882",
+      "created_at": "2026-02-05 21:06:52.267545",
+      "occurred_at": "2026-02-05 21:06:52.267545",
       "payload": {
         "query_alias": "amivantamab",
         "added_alias": "JNJ-61186372",
         "assets": [
-          5,
-          63
+          2
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:01.517995",
-      "occurred_at": "2026-02-05 09:49:01.517995",
+      "created_at": "2026-02-05 21:06:52.265680",
+      "occurred_at": "2026-02-05 21:06:52.265680",
       "payload": {
         "query_alias": "amivantamab",
         "added_alias": "Amivantamab",
         "assets": [
-          5,
-          63
+          2
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:06:52.263231",
+      "occurred_at": "2026-02-05 21:06:52.263231",
+      "payload": {
+        "query_alias": "amivantamab",
+        "added_alias": "YH-25448",
+        "assets": [
+          2
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:06:52.259906",
+      "occurred_at": "2026-02-05 21:06:52.259906",
+      "payload": {
+        "query_alias": "amivantamab",
+        "added_alias": "JNJ-73841937",
+        "assets": [
+          2
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:06:52.255795",
+      "occurred_at": "2026-02-05 21:06:52.255795",
+      "payload": {
+        "query_alias": "amivantamab",
+        "added_alias": "Lazertinib",
+        "assets": [
+          2
         ]
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:01.215376",
-      "occurred_at": "2026-02-05 09:49:01.215376",
+      "created_at": "2026-02-05 21:06:51.951436",
+      "occurred_at": "2026-02-05 21:06:51.951436",
       "payload": {
         "nct_id": "NCT03767075",
         "linked_assets": 1
       }
     },
     {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.943662",
+      "occurred_at": "2026-02-05 21:06:51.943662",
+      "payload": {
+        "nct_id": "NCT03767075",
+        "title": "Basket of Baskets: A Modular, Open-label, Phase II, Multicentre Study To Evaluate Targeted Agents in Molecularly Selected Populations With Advanced Solid Tumours"
+      }
+    },
+    {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:01.202517",
-      "occurred_at": "2026-02-05 09:49:01.202517",
+      "created_at": "2026-02-05 21:06:51.936316",
+      "occurred_at": "2026-02-05 21:06:51.936316",
       "payload": {
         "nct_id": "NCT06816992",
         "linked_assets": 1
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:01.190023",
-      "occurred_at": "2026-02-05 09:49:01.190023",
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.928217",
+      "occurred_at": "2026-02-05 21:06:51.928217",
       "payload": {
-        "nct_id": "NCT06632236",
-        "linked_assets": 2
+        "nct_id": "NCT06816992",
+        "title": "Phase 1b Study of ORIC-114 in Combination with Amivantamab in Patients with EGFR Exon20 Insertion Mutant NSCLC"
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:01.179171",
-      "occurred_at": "2026-02-05 09:49:01.179171",
+      "created_at": "2026-02-05 21:06:51.921588",
+      "occurred_at": "2026-02-05 21:06:51.921588",
+      "payload": {
+        "nct_id": "NCT06632236",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.914260",
+      "occurred_at": "2026-02-05 21:06:51.914260",
+      "payload": {
+        "nct_id": "NCT06632236",
+        "title": "5G-EMERALD: A Phase 1 Trial of Amivantamab in High Grade Malignant Brain Tumours Within the 5G Platform"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:06:51.907907",
+      "occurred_at": "2026-02-05 21:06:51.907907",
       "payload": {
         "nct_id": "NCT07062354",
         "linked_assets": 1
       }
     },
     {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.900462",
+      "occurred_at": "2026-02-05 21:06:51.900462",
+      "payload": {
+        "nct_id": "NCT07062354",
+        "title": "A Phase II Study of Combined Amivantamab, Carboplatin and Paclitaxel in Unresectable Locally Recurrent or Metastatic Head and Neck Cancer"
+      }
+    },
+    {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:01.167343",
-      "occurred_at": "2026-02-05 09:49:01.167343",
+      "created_at": "2026-02-05 21:06:51.894296",
+      "occurred_at": "2026-02-05 21:06:51.894296",
       "payload": {
         "nct_id": "NCT05117931",
         "linked_assets": 1
       }
     },
     {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.886839",
+      "occurred_at": "2026-02-05 21:06:51.886839",
+      "payload": {
+        "nct_id": "NCT05117931",
+        "title": "Phase II Study of Amivantamab in EGFR or MET- Amplified Esophagogastric Cancer"
+      }
+    },
+    {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:01.155786",
-      "occurred_at": "2026-02-05 09:49:01.155786",
+      "created_at": "2026-02-05 21:06:51.880646",
+      "occurred_at": "2026-02-05 21:06:51.880646",
       "payload": {
         "nct_id": "NCT05299125",
         "linked_assets": 1
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:01.142642",
-      "occurred_at": "2026-02-05 09:49:01.142642",
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.873056",
+      "occurred_at": "2026-02-05 21:06:51.873056",
       "payload": {
-        "nct_id": "NCT04988295",
-        "linked_assets": 2
+        "nct_id": "NCT05299125",
+        "title": "A Single Arm, Phase 2 Study of Amivantamab, Lazertinib and Pemetrexed for First-line Treatment of Recurrent/Metastatic Non-small Cell Lung Cancers (NSCLCs) With EGFR Mutations"
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:01.117588",
-      "occurred_at": "2026-02-05 09:49:01.117588",
+      "created_at": "2026-02-05 21:06:51.866623",
+      "occurred_at": "2026-02-05 21:06:51.866623",
       "payload": {
         "nct_id": "NCT04077463",
-        "linked_assets": 2
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.858718",
+      "occurred_at": "2026-02-05 21:06:51.858718",
+      "payload": {
+        "nct_id": "NCT04077463",
+        "title": "An Open-label Phase 1/1b Study to Evaluate the Safety and Pharmacokinetics of JNJ-73841937 (Lazertinib), a Third Generation EGFR-TKI, as Monotherapy or in Combinations With JNJ-61186372, a Human Bispecific EGFR and cMet Antibody in Participants With Advanced Non-Small Cell Lung Cancer"
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.846315",
+      "occurred_at": "2026-02-05 21:06:51.846315",
+      "payload": {
+        "nct_id": "NCT04606381",
+        "title": "An Open-label, Multicenter, Dose Escalation Phase 1b Study to Assess the Safety and Pharmacokinetics of Subcutaneous Delivery of Amivantamab, a Human Bispecific EGFR and cMet Antibody for the Treatment of Advanced Solid Malignancies"
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:01.093590",
-      "occurred_at": "2026-02-05 09:49:01.093590",
+      "created_at": "2026-02-05 21:06:51.840138",
+      "occurred_at": "2026-02-05 21:06:51.840138",
       "payload": {
         "nct_id": "NCT05845671",
-        "linked_assets": 2
+        "linked_assets": 1
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:01.081804",
-      "occurred_at": "2026-02-05 09:49:01.081804",
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.832455",
+      "occurred_at": "2026-02-05 21:06:51.832455",
       "payload": {
-        "nct_id": "NCT06385080",
-        "linked_assets": 2
+        "nct_id": "NCT05845671",
+        "title": "A Phase 1 / 2, Open Label, Study of Amivantamab (JNJ-61186372) Among Participants With Advanced NSCLC Harboring ALK, ROS1, and RET Gene Fusions in Combination With Tyrosine Kinase Inhibitors"
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:01.067443",
-      "occurred_at": "2026-02-05 09:49:01.067443",
-      "payload": {
-        "nct_id": "NCT06667076",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:01.051843",
-      "occurred_at": "2026-02-05 09:49:01.051843",
-      "payload": {
-        "nct_id": "NCT06750094",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:01.033727",
-      "occurred_at": "2026-02-05 09:49:01.033727",
-      "payload": {
-        "nct_id": "NCT06120140",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:01.015557",
-      "occurred_at": "2026-02-05 09:49:01.015557",
-      "payload": {
-        "nct_id": "NCT06532032",
-        "linked_assets": 3
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.995479",
-      "occurred_at": "2026-02-05 09:49:00.995479",
-      "payload": {
-        "nct_id": "NCT05498428",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.979688",
-      "occurred_at": "2026-02-05 09:49:00.979688",
+      "created_at": "2026-02-05 21:06:51.826186",
+      "occurred_at": "2026-02-05 21:06:51.826186",
       "payload": {
         "nct_id": "NCT06662786",
-        "linked_assets": 2
+        "linked_assets": 1
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.962124",
-      "occurred_at": "2026-02-05 09:49:00.962124",
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.817508",
+      "occurred_at": "2026-02-05 21:06:51.817508",
       "payload": {
-        "nct_id": "NCT05488314",
-        "linked_assets": 2
+        "nct_id": "NCT06662786",
+        "title": "A Randomized, Open-label Phase 3 Study of Amivantamab and mFOLFOX6 or FOLFIRI Versus Cetuximab and mFOLFOX6 or FOLFIRI as First-line Treatment in Participants With KRAS/NRAS and BRAF Wild-type Unresectable or Metastatic Left-sided Colorectal Cancer"
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.949130",
-      "occurred_at": "2026-02-05 09:49:00.949130",
+      "created_at": "2026-02-05 21:06:51.807857",
+      "occurred_at": "2026-02-05 21:06:51.807857",
       "payload": {
         "nct_id": "NCT02609776",
-        "linked_assets": 2
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.798774",
+      "occurred_at": "2026-02-05 21:06:51.798774",
+      "payload": {
+        "nct_id": "NCT02609776",
+        "title": "A Phase 1, First-in-Human, Open-Label, Dose Escalation Study of JNJ-61186372, a Human Bispecific EGFR and cMet Antibody, in Subjects With Advanced Non-Small Cell Lung Cancer"
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.934438",
-      "occurred_at": "2026-02-05 09:49:00.934438",
+      "created_at": "2026-02-05 21:06:51.791177",
+      "occurred_at": "2026-02-05 21:06:51.791177",
+      "payload": {
+        "nct_id": "NCT06532032",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.782993",
+      "occurred_at": "2026-02-05 21:06:51.782993",
+      "payload": {
+        "nct_id": "NCT06532032",
+        "title": "A Phase 1/2 Study Evaluating the Safety and Efficacy of Amivantamab and Docetaxel Combination Therapy in Metastatic Non-small Cell Lung Cancer"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:06:51.776624",
+      "occurred_at": "2026-02-05 21:06:51.776624",
       "payload": {
         "nct_id": "NCT05908734",
-        "linked_assets": 2
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.768890",
+      "occurred_at": "2026-02-05 21:06:51.768890",
+      "payload": {
+        "nct_id": "NCT05908734",
+        "title": "A Phase 1/2 Study Evaluating the Safety and Efficacy of Amivantamab and Cetrelimab Combination Therapy in Metastatic Non-small Cell Lung Cancer"
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.921878",
-      "occurred_at": "2026-02-05 09:49:00.921878",
+      "created_at": "2026-02-05 21:06:51.761855",
+      "occurred_at": "2026-02-05 21:06:51.761855",
+      "payload": {
+        "nct_id": "NCT06750094",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.752712",
+      "occurred_at": "2026-02-05 21:06:51.752712",
+      "payload": {
+        "nct_id": "NCT06750094",
+        "title": "A Randomized, Open-label Phase 3 Study of Amivantamab + FOLFIRI Versus Cetuximab/Bevacizumab + FOLFIRI in Participants With KRAS/NRAS and BRAF Wild-type Recurrent, Unresectable or Metastatic Colorectal Cancer Who Have Received Prior Chemotherapy"
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.740268",
+      "occurred_at": "2026-02-05 21:06:51.740268",
+      "payload": {
+        "nct_id": "NCT07230691",
+        "title": "Prospective, Multi Country, Observational Study of Clinical Outcomes in EGFR-mutated, Advanced Non-Small Cell Lung Cancer (NSCLC) Patients Treated With Approved Amivantamab-containing Regimens Under Standard Clinical Practice"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:06:51.733025",
+      "occurred_at": "2026-02-05 21:06:51.733025",
+      "payload": {
+        "nct_id": "NCT05498428",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.724430",
+      "occurred_at": "2026-02-05 21:06:51.724430",
+      "payload": {
+        "nct_id": "NCT05498428",
+        "title": "A Phase 2, Open-Label, Parallel Cohort Study of Subcutaneous Amivantamab in Multiple Regimens in Patients With Advanced or Metastatic Solid Tumors Including EGFR-mutated Non-Small Cell Lung Cancer"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:06:51.716333",
+      "occurred_at": "2026-02-05 21:06:51.716333",
+      "payload": {
+        "nct_id": "NCT06667076",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.708544",
+      "occurred_at": "2026-02-05 21:06:51.708544",
+      "payload": {
+        "nct_id": "NCT06667076",
+        "title": "A Phase 2b, Open-Label, Two-cohort Study of Subcutaneous Amivantamab in Combination With Lazertinib as First-Line Treatment, or Subcutaneous Amivantamab in Combination With Platinum-Based Chemotherapy as Second-line Treatment, for Common EGFR-Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:06:51.700378",
+      "occurred_at": "2026-02-05 21:06:51.700378",
+      "payload": {
+        "nct_id": "NCT06120140",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.690437",
+      "occurred_at": "2026-02-05 21:06:51.690437",
+      "payload": {
+        "nct_id": "NCT06120140",
+        "title": "A Phase 2, Open-Label, Randomized Trial Evaluating the Impact of Enhanced Versus Standard Dermatologic Management on Selected Dermatologic Adverse Events Among Patients With Locally Advanced or Metastatic EGFR-Mutated NSCLC Treated First-Line With Amivantamab + Lazertinib"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:06:51.682481",
+      "occurred_at": "2026-02-05 21:06:51.682481",
+      "payload": {
+        "nct_id": "NCT06385080",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.673905",
+      "occurred_at": "2026-02-05 21:06:51.673905",
+      "payload": {
+        "nct_id": "NCT06385080",
+        "title": "A Phase 1b/2, Open-label Study of Amivantamab Monotherapy and Amivantamab in Addition to Other Therapeutic Agents in Participants With Head and Neck Squamous Cell Carcinoma"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:06:51.666374",
+      "occurred_at": "2026-02-05 21:06:51.666374",
+      "payload": {
+        "nct_id": "NCT05488314",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.658883",
+      "occurred_at": "2026-02-05 21:06:51.658883",
+      "payload": {
+        "nct_id": "NCT05488314",
+        "title": "A Phase 1/2 Study Evaluating the Safety and Efficacy of Amivantamab and Capmatinib Combination Therapy in Unresectable Metastatic Non-small Cell Lung Cancer"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:06:51.651779",
+      "occurred_at": "2026-02-05 21:06:51.651779",
       "payload": {
         "nct_id": "NCT05601973",
         "linked_assets": 1
       }
     },
     {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.643911",
+      "occurred_at": "2026-02-05 21:06:51.643911",
+      "payload": {
+        "nct_id": "NCT05601973",
+        "title": "A Multicentre Single-arm Phase II Trial of Amivantamab, Lazertinib Plus Bevacizumab in Patients With EGFR-mutant Advanced NSCLC With Progression on Previous Third-generation EGFR-TKI"
+      }
+    },
+    {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.909085",
-      "occurred_at": "2026-02-05 09:49:00.909085",
+      "created_at": "2026-02-05 21:06:51.637056",
+      "occurred_at": "2026-02-05 21:06:51.637056",
       "payload": {
         "nct_id": "NCT05388669",
-        "linked_assets": 2
+        "linked_assets": 1
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.888017",
-      "occurred_at": "2026-02-05 09:49:00.888017",
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.629132",
+      "occurred_at": "2026-02-05 21:06:51.629132",
       "payload": {
-        "nct_id": "NCT04538664",
-        "linked_assets": 2
+        "nct_id": "NCT05388669",
+        "title": "A Phase 3, Open-label, Randomized Study of Lazertinib With Subcutaneous Amivantamab Compared With Intravenous Amivantamab in Patients With EGFR-mutated Advanced or Metastatic Non-small Cell Lung Cancer After Progression on Osimertinib and Chemotherapy"
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.867494",
-      "occurred_at": "2026-02-05 09:49:00.867494",
+      "created_at": "2026-02-05 21:06:51.616916",
+      "occurred_at": "2026-02-05 21:06:51.616916",
       "payload": {
         "nct_id": "NCT04487080",
-        "linked_assets": 3
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.608494",
+      "occurred_at": "2026-02-05 21:06:51.608494",
+      "payload": {
+        "nct_id": "NCT04487080",
+        "title": "A Phase 3, Randomized Study of Amivantamab and Lazertinib Combination Therapy Versus Osimertinib Versus Lazertinib as First-Line Treatment in Patients With EGFR-Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer."
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.839807",
-      "occurred_at": "2026-02-05 09:49:00.839807",
+      "created_at": "2026-02-05 21:06:51.590131",
+      "occurred_at": "2026-02-05 21:06:51.590131",
       "payload": {
         "nct_id": "NCT05663866",
-        "linked_assets": 3
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:00.681421",
-      "occurred_at": "2026-02-05 09:49:00.681421",
-      "payload": {
-        "query_alias": "teclistamab",
-        "added_alias": "JNJ-79635322",
-        "assets": [
-          2,
-          12
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:00.677432",
-      "occurred_at": "2026-02-05 09:49:00.677432",
-      "payload": {
-        "query_alias": "teclistamab",
-        "added_alias": "melphalan",
-        "assets": [
-          2,
-          12
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:00.673595",
-      "occurred_at": "2026-02-05 09:49:00.673595",
-      "payload": {
-        "query_alias": "teclistamab",
-        "added_alias": "revlimid",
-        "assets": [
-          2,
-          12
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:00.669558",
-      "occurred_at": "2026-02-05 09:49:00.669558",
-      "payload": {
-        "query_alias": "teclistamab",
-        "added_alias": "velcade",
-        "assets": [
-          2,
-          12
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:00.665525",
-      "occurred_at": "2026-02-05 09:49:00.665525",
-      "payload": {
-        "query_alias": "teclistamab",
-        "added_alias": "Lenalidomide",
-        "assets": [
-          2,
-          12
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:00.661314",
-      "occurred_at": "2026-02-05 09:49:00.661314",
-      "payload": {
-        "query_alias": "teclistamab",
-        "added_alias": "JNJ-64407564",
-        "assets": [
-          2,
-          12
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:00.658440",
-      "occurred_at": "2026-02-05 09:49:00.658440",
-      "payload": {
-        "query_alias": "teclistamab",
-        "added_alias": "Talquetamab",
-        "assets": [
-          2,
-          12
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:00.655539",
-      "occurred_at": "2026-02-05 09:49:00.655539",
-      "payload": {
-        "query_alias": "teclistamab",
-        "added_alias": "Darzalex",
-        "assets": [
-          2,
-          12
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:00.651639",
-      "occurred_at": "2026-02-05 09:49:00.651639",
-      "payload": {
-        "query_alias": "teclistamab",
-        "added_alias": "JNJ-54767414",
-        "assets": [
-          2,
-          12
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:00.647567",
-      "occurred_at": "2026-02-05 09:49:00.647567",
-      "payload": {
-        "query_alias": "teclistamab",
-        "added_alias": "Daratumumab",
-        "assets": [
-          2,
-          12
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:00.643433",
-      "occurred_at": "2026-02-05 09:49:00.643433",
-      "payload": {
-        "query_alias": "teclistamab",
-        "added_alias": "Dexamethasone",
-        "assets": [
-          2,
-          12
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:00.640345",
-      "occurred_at": "2026-02-05 09:49:00.640345",
-      "payload": {
-        "query_alias": "teclistamab",
-        "added_alias": "Bortezomib",
-        "assets": [
-          2,
-          12
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:00.634587",
-      "occurred_at": "2026-02-05 09:49:00.634587",
-      "payload": {
-        "query_alias": "teclistamab",
-        "added_alias": "Pomalidomide",
-        "assets": [
-          2,
-          12
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:00.630130",
-      "occurred_at": "2026-02-05 09:49:00.630130",
-      "payload": {
-        "query_alias": "teclistamab",
-        "added_alias": "JNJ-64007957",
-        "assets": [
-          2,
-          12
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:49:00.626084",
-      "occurred_at": "2026-02-05 09:49:00.626084",
-      "payload": {
-        "query_alias": "teclistamab",
-        "added_alias": "Teclistamab",
-        "assets": [
-          2,
-          12
-        ]
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.323458",
-      "occurred_at": "2026-02-05 09:49:00.323458",
-      "payload": {
-        "nct_id": "NCT06505369",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.310142",
-      "occurred_at": "2026-02-05 09:49:00.310142",
-      "payload": {
-        "nct_id": "NCT06100237",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.297481",
-      "occurred_at": "2026-02-05 09:49:00.297481",
-      "payload": {
-        "nct_id": "NCT06353022",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.282586",
-      "occurred_at": "2026-02-05 09:49:00.282586",
-      "payload": {
-        "nct_id": "NCT05849610",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.269622",
-      "occurred_at": "2026-02-05 09:49:00.269622",
-      "payload": {
-        "nct_id": "NCT05469893",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.248814",
-      "occurred_at": "2026-02-05 09:49:00.248814",
-      "payload": {
-        "nct_id": "NCT07107529",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.237520",
-      "occurred_at": "2026-02-05 09:49:00.237520",
-      "payload": {
-        "nct_id": "NCT06993675",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.226349",
-      "occurred_at": "2026-02-05 09:49:00.226349",
-      "payload": {
-        "nct_id": "NCT05572229",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.214437",
-      "occurred_at": "2026-02-05 09:49:00.214437",
-      "payload": {
-        "nct_id": "NCT06649695",
         "linked_assets": 1
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.203255",
-      "occurred_at": "2026-02-05 09:49:00.203255",
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.582007",
+      "occurred_at": "2026-02-05 21:06:51.582007",
       "payload": {
-        "nct_id": "NCT07258511",
+        "nct_id": "NCT05663866",
+        "title": "Subcutaneous Methotrexate, Oral Dexamethasone or Oral Montelukast for the Prevention of Infusion Related Reaction Associated With Amivantamab, an EGFR-MET Bispecific Antibody, Among Post-osimertinib Treated EGFRm NSCLC; SKIPPirr, a Phase 2 Study"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:06:51.570090",
+      "occurred_at": "2026-02-05 21:06:51.570090",
+      "payload": {
+        "nct_id": "NCT04538664",
         "linked_assets": 1
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.191662",
-      "occurred_at": "2026-02-05 09:49:00.191662",
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.561815",
+      "occurred_at": "2026-02-05 21:06:51.561815",
       "payload": {
-        "nct_id": "NCT05695508",
-        "linked_assets": 2
+        "nct_id": "NCT04538664",
+        "title": "A Randomized, Open-label Phase 3 Study of Combination Amivantamab and Carboplatin-Pemetrexed Therapy, Compared With Carboplatin-Pemetrexed, in Patients With EGFR Exon 20ins Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer"
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.178633",
-      "occurred_at": "2026-02-05 09:49:00.178633",
+      "created_at": "2026-02-05 21:06:51.549113",
+      "occurred_at": "2026-02-05 21:06:51.549113",
       "payload": {
-        "nct_id": "NCT07030517",
+        "nct_id": "NCT04988295",
         "linked_assets": 1
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.167383",
-      "occurred_at": "2026-02-05 09:49:00.167383",
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.540542",
+      "occurred_at": "2026-02-05 21:06:51.540542",
       "payload": {
-        "nct_id": "NCT05231629",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.145986",
-      "occurred_at": "2026-02-05 09:49:00.145986",
-      "payload": {
-        "nct_id": "NCT07105059",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.133954",
-      "occurred_at": "2026-02-05 09:49:00.133954",
-      "payload": {
-        "nct_id": "NCT04722146",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.120750",
-      "occurred_at": "2026-02-05 09:49:00.120750",
-      "payload": {
-        "nct_id": "NCT03145181",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.108981",
-      "occurred_at": "2026-02-05 09:49:00.108981",
-      "payload": {
-        "nct_id": "NCT05083169",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.095117",
-      "occurred_at": "2026-02-05 09:49:00.095117",
-      "payload": {
-        "nct_id": "NCT05338775",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.083367",
-      "occurred_at": "2026-02-05 09:49:00.083367",
-      "payload": {
-        "nct_id": "NCT04586426",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.071682",
-      "occurred_at": "2026-02-05 09:49:00.071682",
-      "payload": {
-        "nct_id": "NCT05552222",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.056717",
-      "occurred_at": "2026-02-05 09:49:00.056717",
-      "payload": {
-        "nct_id": "NCT06425991",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.045004",
-      "occurred_at": "2026-02-05 09:49:00.045004",
-      "payload": {
-        "nct_id": "NCT04696809",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.033987",
-      "occurred_at": "2026-02-05 09:49:00.033987",
-      "payload": {
-        "nct_id": "NCT04108195",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.020703",
-      "occurred_at": "2026-02-05 09:49:00.020703",
-      "payload": {
-        "nct_id": "NCT05572515",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:49:00.005599",
-      "occurred_at": "2026-02-05 09:49:00.005599",
-      "payload": {
-        "nct_id": "NCT04557098",
-        "linked_assets": 1
+        "nct_id": "NCT04988295",
+        "title": "A Phase 3, Open-Label, Randomized Study of Amivantamab and Lazertinib in Combination With Platinum-Based Chemotherapy Compared With Platinum-Based Chemotherapy in Patients With EGFR-Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer After Osimertinib Failure"
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:59.909718",
-      "occurred_at": "2026-02-05 09:48:59.909718",
-      "payload": {
-        "query_alias": "autoleucel",
-        "added_alias": "JNJ-64407564",
-        "assets": [
-          55
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:59.907024",
-      "occurred_at": "2026-02-05 09:48:59.907024",
-      "payload": {
-        "query_alias": "autoleucel",
-        "added_alias": "Talquetamab",
-        "assets": [
-          55
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:59.904435",
-      "occurred_at": "2026-02-05 09:48:59.904435",
-      "payload": {
-        "query_alias": "autoleucel",
-        "added_alias": "Lenalidomide",
-        "assets": [
-          55
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:59.901815",
-      "occurred_at": "2026-02-05 09:48:59.901815",
-      "payload": {
-        "query_alias": "autoleucel",
-        "added_alias": "Fludarabine",
-        "assets": [
-          55
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:59.899146",
-      "occurred_at": "2026-02-05 09:48:59.899146",
-      "payload": {
-        "query_alias": "autoleucel",
-        "added_alias": "Cyclophosphamide",
-        "assets": [
-          55
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:59.896627",
-      "occurred_at": "2026-02-05 09:48:59.896627",
-      "payload": {
-        "query_alias": "autoleucel",
-        "added_alias": "JNJ-68284528",
-        "assets": [
-          55
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:59.894027",
-      "occurred_at": "2026-02-05 09:48:59.894027",
-      "payload": {
-        "query_alias": "autoleucel",
-        "added_alias": "Daratumumab",
-        "assets": [
-          55
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:59.891293",
-      "occurred_at": "2026-02-05 09:48:59.891293",
-      "payload": {
-        "query_alias": "autoleucel",
-        "added_alias": "Dexamethasone",
-        "assets": [
-          55
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:59.888275",
-      "occurred_at": "2026-02-05 09:48:59.888275",
-      "payload": {
-        "query_alias": "autoleucel",
-        "added_alias": "Bortezomib",
-        "assets": [
-          55
-        ]
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:59.570240",
-      "occurred_at": "2026-02-05 09:48:59.570240",
-      "payload": {
-        "nct_id": "NCT05257083",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:59.553089",
-      "occurred_at": "2026-02-05 09:48:59.553089",
-      "payload": {
-        "nct_id": "NCT06577025",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:59.537195",
-      "occurred_at": "2026-02-05 09:48:59.537195",
-      "payload": {
-        "nct_id": "NCT04923893",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:59.521272",
-      "occurred_at": "2026-02-05 09:48:59.521272",
-      "payload": {
-        "nct_id": "NCT06550895",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:59.499205",
-      "occurred_at": "2026-02-05 09:48:59.499205",
-      "payload": {
-        "nct_id": "NCT04133636",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:59.475096",
-      "occurred_at": "2026-02-05 09:48:59.475096",
-      "payload": {
-        "nct_id": "NCT05421663",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:59.463201",
-      "occurred_at": "2026-02-05 09:48:59.463201",
-      "payload": {
-        "nct_id": "NCT04181827",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:57.494953",
-      "occurred_at": "2026-02-05 09:48:57.494953",
-      "payload": {
-        "nct_id": "NCT05243797",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:57.412827",
-      "occurred_at": "2026-02-05 09:48:57.412827",
-      "payload": {
-        "query_alias": "Bleximenib",
-        "added_alias": "Azacitidine",
-        "assets": [
-          9,
-          19
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:57.407635",
-      "occurred_at": "2026-02-05 09:48:57.407635",
-      "payload": {
-        "query_alias": "Bleximenib",
-        "added_alias": "Venetoclax",
-        "assets": [
-          9,
-          19
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:57.403170",
-      "occurred_at": "2026-02-05 09:48:57.403170",
-      "payload": {
-        "query_alias": "Bleximenib",
-        "added_alias": "bleximenib",
-        "assets": [
-          9,
-          19
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:57.400784",
-      "occurred_at": "2026-02-05 09:48:57.400784",
-      "payload": {
-        "query_alias": "Bleximenib",
-        "added_alias": "JNJ-75276617",
-        "assets": [
-          9,
-          19
-        ]
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:57.095155",
-      "occurred_at": "2026-02-05 09:48:57.095155",
-      "payload": {
-        "nct_id": "NCT06852222",
-        "linked_assets": 3
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:57.079459",
-      "occurred_at": "2026-02-05 09:48:57.079459",
-      "payload": {
-        "nct_id": "NCT04811560",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:57.066446",
-      "occurred_at": "2026-02-05 09:48:57.066446",
-      "payload": {
-        "nct_id": "NCT05453903",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:57.051477",
-      "occurred_at": "2026-02-05 09:48:57.051477",
-      "payload": {
-        "nct_id": "NCT07295951",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:56.986179",
-      "occurred_at": "2026-02-05 09:48:56.986179",
-      "payload": {
-        "query_alias": "pasritamig",
-        "added_alias": "JNJ-78278343",
-        "assets": [
-          4
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:56.982766",
-      "occurred_at": "2026-02-05 09:48:56.982766",
-      "payload": {
-        "query_alias": "pasritamig",
-        "added_alias": "Pasritamig",
-        "assets": [
-          4
-        ]
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:56.680417",
-      "occurred_at": "2026-02-05 09:48:56.680417",
-      "payload": {
-        "nct_id": "NCT07164443",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:56.666426",
-      "occurred_at": "2026-02-05 09:48:56.666426",
-      "payload": {
-        "nct_id": "NCT07082920",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:56.653849",
-      "occurred_at": "2026-02-05 09:48:56.653849",
-      "payload": {
-        "nct_id": "NCT07319871",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:56.641783",
-      "occurred_at": "2026-02-05 09:48:56.641783",
-      "payload": {
-        "nct_id": "NCT06095089",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:56.629423",
-      "occurred_at": "2026-02-05 09:48:56.629423",
-      "payload": {
-        "nct_id": "NCT07225946",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:55.163957",
-      "occurred_at": "2026-02-05 09:48:55.163957",
+      "created_at": "2026-02-05 21:06:51.357731",
+      "occurred_at": "2026-02-05 21:06:51.357731",
       "payload": {
         "query_alias": "RYBREVANT",
         "added_alias": "JNJ-61186372",
         "assets": [
-          5
+          2
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:55.160867",
-      "occurred_at": "2026-02-05 09:48:55.160867",
+      "created_at": "2026-02-05 21:06:51.354088",
+      "occurred_at": "2026-02-05 21:06:51.354088",
       "payload": {
         "query_alias": "RYBREVANT",
         "added_alias": "RYBREVANT",
         "assets": [
-          5
+          2
         ]
       }
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:55.158302",
-      "occurred_at": "2026-02-05 09:48:55.158302",
+      "created_at": "2026-02-05 21:06:51.351737",
+      "occurred_at": "2026-02-05 21:06:51.351737",
       "payload": {
         "query_alias": "RYBREVANT",
         "added_alias": "Amivantamab",
         "assets": [
+          2
+        ]
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:06:51.049230",
+      "occurred_at": "2026-02-05 21:06:51.049230",
+      "payload": {
+        "nct_id": "NCT07276399",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.041013",
+      "occurred_at": "2026-02-05 21:06:51.041013",
+      "payload": {
+        "nct_id": "NCT07276399",
+        "title": "A Phase 3, Randomized, Open-Label, Multicenter Study of Amivantamab in Addition to Carboplatin and Pembrolizumab, Compared to Standard of Care Platinum and Pembrolizumab and 5-FU, in Participants With Treatment-Na\u00efve Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:06:51.034850",
+      "occurred_at": "2026-02-05 21:06:51.034850",
+      "payload": {
+        "nct_id": "NCT07227025",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.027205",
+      "occurred_at": "2026-02-05 21:06:51.027205",
+      "payload": {
+        "nct_id": "NCT07227025",
+        "title": "A Phase 1/2 Study Evaluating the Safety and Efficacy of Amivantamab and Olomorasib Combination Therapy in Metastatic Non-small Cell Lung Cancer"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-05 21:06:51.021271",
+      "occurred_at": "2026-02-05 21:06:51.021271",
+      "payload": {
+        "nct_id": "NCT05379595",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:51.011990",
+      "occurred_at": "2026-02-05 21:06:51.011990",
+      "payload": {
+        "nct_id": "NCT05379595",
+        "title": "A Phase 1b/2, Open-Label Study of Amivantamab Monotherapy and in Addition to Standard-of-Care Chemotherapy in Participants With Advanced or Metastatic Colorectal Cancer"
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:06:45.746440",
+      "occurred_at": "2026-02-05 21:06:45.746440",
+      "payload": {
+        "query_alias": "NBTXR3",
+        "added_alias": "NBTXR3",
+        "assets": [
+          5
+        ]
+      }
+    },
+    {
+      "event_type": "trial_alias_bootstrapped",
+      "created_at": "2026-02-05 21:06:45.744278",
+      "occurred_at": "2026-02-05 21:06:45.744278",
+      "payload": {
+        "query_alias": "NBTXR3",
+        "added_alias": "JNJ-90301900",
+        "assets": [
           5
         ]
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:54.855861",
-      "occurred_at": "2026-02-05 09:48:54.855861",
+      "created_at": "2026-02-05 21:06:45.438426",
+      "occurred_at": "2026-02-05 21:06:45.438426",
       "payload": {
-        "nct_id": "NCT07276399",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:54.842026",
-      "occurred_at": "2026-02-05 09:48:54.842026",
-      "payload": {
-        "nct_id": "NCT07227025",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:54.828509",
-      "occurred_at": "2026-02-05 09:48:54.828509",
-      "payload": {
-        "nct_id": "NCT05379595",
-        "linked_assets": 2
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:52.690720",
-      "occurred_at": "2026-02-05 09:48:52.690720",
-      "payload": {
-        "query_alias": "SPRAVATO",
-        "added_alias": "JNJ-54135419",
-        "assets": [
-          37
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:52.687109",
-      "occurred_at": "2026-02-05 09:48:52.687109",
-      "payload": {
-        "query_alias": "SPRAVATO",
-        "added_alias": "Esketamine",
-        "assets": [
-          37
-        ]
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:52.384568",
-      "occurred_at": "2026-02-05 09:48:52.384568",
-      "payload": {
-        "nct_id": "NCT06103760",
+        "nct_id": "NCT04892173",
         "linked_assets": 1
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:52.013294",
-      "occurred_at": "2026-02-05 09:48:52.013294",
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:45.429834",
+      "occurred_at": "2026-02-05 21:06:45.429834",
       "payload": {
-        "nct_id": "NCT07053345",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:49.105552",
-      "occurred_at": "2026-02-05 09:48:49.105552",
-      "payload": {
-        "query_alias": "TECVAYLI",
-        "added_alias": "TECVAYLI",
-        "assets": [
-          2,
-          12
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:49.102722",
-      "occurred_at": "2026-02-05 09:48:49.102722",
-      "payload": {
-        "query_alias": "TECVAYLI",
-        "added_alias": "Teclistamab",
-        "assets": [
-          2,
-          12
-        ]
+        "nct_id": "NCT04892173",
+        "title": "A Phase 3 Study of NBTXR3 Activated by Investigator's Choice of Radiotherapy Alone or Radiotherapy in Combination With Cetuximab for Platinum-based Chemotherapy-Ineligible Elderly Patients With LA-HNSCC"
       }
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:48.800080",
-      "occurred_at": "2026-02-05 09:48:48.800080",
+      "created_at": "2026-02-05 21:06:45.420486",
+      "occurred_at": "2026-02-05 21:06:45.420486",
       "payload": {
-        "nct_id": "NCT06477783",
+        "nct_id": "NCT07219212",
         "linked_assets": 1
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:48.788013",
-      "occurred_at": "2026-02-05 09:48:48.788013",
+      "event_type": "trial_added",
+      "created_at": "2026-02-05 21:06:45.406205",
+      "occurred_at": "2026-02-05 21:06:45.406205",
       "payload": {
-        "nct_id": "NCT07110844",
-        "linked_assets": 1
+        "nct_id": "NCT07219212",
+        "title": "A Study of JNJ-90301900 in Combination With Concurrent Chemoradiation Therapy in Participants With Locally Advanced Head and Neck Squamous Cell Carcinoma"
       }
     },
     {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:47.313735",
-      "occurred_at": "2026-02-05 09:48:47.313735",
+      "event_type": "pipeline_ingested",
+      "created_at": "2026-02-05 21:06:41.665460",
+      "occurred_at": "2026-02-05 21:06:41.665460",
       "payload": {
-        "query_alias": "TREMFYA",
-        "added_alias": "Placebo",
-        "assets": [
-          24,
-          25,
-          59
-        ]
+        "as_of_date": null,
+        "pdf_url": "https://s203.q4cdn.com/636242992/files/doc_financials/2025/q4/JNJ-Pipeline-4Q25.pdf",
+        "assets_seen": 22
       }
     },
     {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:47.310703",
-      "occurred_at": "2026-02-05 09:48:47.310703",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.663669",
+      "occurred_at": "2026-02-05 21:06:41.663669",
       "payload": {
-        "query_alias": "TREMFYA",
-        "added_alias": "CNTO1959",
-        "assets": [
-          24,
-          25,
-          59
-        ]
+        "asset": "PulmonaryArterialH",
+        "indication": "SIRTURO Leprosyunderreviewbyregulatorybodies.",
+        "stage": "Phase 3",
+        "therapeutic_area": null
       }
     },
     {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:47.306528",
-      "occurred_at": "2026-02-05 09:48:47.306528",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.653824",
+      "occurred_at": "2026-02-05 21:06:41.653824",
       "payload": {
-        "query_alias": "TREMFYA",
-        "added_alias": "Tremfya",
-        "assets": [
-          24,
-          25,
-          59
-        ]
+        "asset": "actorXla",
+        "indication": "i o n",
+        "stage": "Phase 2",
+        "therapeutic_area": null
       }
     },
     {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:47.303642",
-      "occurred_at": "2026-02-05 09:48:47.303642",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.645362",
+      "occurred_at": "2026-02-05 21:06:41.645362",
       "payload": {
-        "query_alias": "TREMFYA",
-        "added_alias": "Guselkumab",
-        "assets": [
-          24,
-          25,
-          59
-        ]
+        "asset": "JNJ-1887 sCD59",
+        "indication": "Geographic Atrophy SPRAVATO (esketamine) Major Depressive Disorder Pediatrics",
+        "stage": "Phase 3",
+        "therapeutic_area": "Neuroscience"
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:47.000804",
-      "occurred_at": "2026-02-05 09:48:47.000804",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.636288",
+      "occurred_at": "2026-02-05 21:06:41.636288",
       "payload": {
-        "nct_id": "NCT05858632",
-        "linked_assets": 1
+        "asset": "JNJ-5120",
+        "indication": "Major Depressive",
+        "stage": "Phase 1",
+        "therapeutic_area": "Neuroscience"
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.990304",
-      "occurred_at": "2026-02-05 09:48:46.990304",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.627176",
+      "occurred_at": "2026-02-05 21:06:41.627176",
       "payload": {
-        "nct_id": "NCT04645355",
-        "linked_assets": 1
+        "asset": "of the Fetus and Newborn",
+        "indication": "Colitis (QUASAR JR) Therapy",
+        "stage": "Phase 2",
+        "therapeutic_area": "Immunology"
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.979800",
-      "occurred_at": "2026-02-05 09:48:46.979800",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.615318",
+      "occurred_at": "2026-02-05 21:06:41.615318",
       "payload": {
-        "nct_id": "NCT06563323",
-        "linked_assets": 1
+        "asset": "Subcutaneous Induction",
+        "indication": "(ICONIC-PsA)",
+        "stage": "Phase 2",
+        "therapeutic_area": "Immunology"
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.968893",
-      "occurred_at": "2026-02-05 09:48:46.968893",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.603021",
+      "occurred_at": "2026-02-05 21:06:41.603021",
       "payload": {
-        "nct_id": "NCT06586281",
-        "linked_assets": 1
+        "asset": "JNJ-4804 Co-antibody",
+        "indication": "Crohn's Disease nipocalimab\u200b Idiopathic Inflammatory",
+        "stage": "Phase 3",
+        "therapeutic_area": "Immunology"
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.958389",
-      "occurred_at": "2026-02-05 09:48:46.958389",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.600974",
+      "occurred_at": "2026-02-05 21:06:41.600974",
       "payload": {
-        "nct_id": "NCT05004727",
-        "linked_assets": 1
+        "asset": "JNJ-4804 Co-antibody",
+        "indication": "Psoriatic Arthritis nipocalimab\u200b Systemic Lupus",
+        "stage": "Phase 1",
+        "therapeutic_area": "Immunology"
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.946407",
-      "occurred_at": "2026-02-05 09:48:46.946407",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.590959",
+      "occurred_at": "2026-02-05 21:06:41.590959",
       "payload": {
-        "nct_id": "NCT05669833",
-        "linked_assets": 1
+        "asset": "JNJ-8543",
+        "indication": "Hematological Malignancies",
+        "stage": "Phase 3",
+        "therapeutic_area": "Oncology"
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.925759",
-      "occurred_at": "2026-02-05 09:48:46.925759",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.582631",
+      "occurred_at": "2026-02-05 21:06:41.582631",
       "payload": {
-        "nct_id": "NCT06651489",
-        "linked_assets": 1
+        "asset": "JNJ-7446",
+        "indication": "Lung Cancer",
+        "stage": "Phase 3",
+        "therapeutic_area": "Oncology"
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.915364",
-      "occurred_at": "2026-02-05 09:48:46.915364",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.574464",
+      "occurred_at": "2026-02-05 21:06:41.574464",
       "payload": {
-        "nct_id": "NCT04929210",
-        "linked_assets": 1
+        "asset": "JNJ-4681",
+        "indication": "Hematological Malignancies",
+        "stage": "Phase 3",
+        "therapeutic_area": "Oncology"
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.901047",
-      "occurred_at": "2026-02-05 09:48:46.901047",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.566041",
+      "occurred_at": "2026-02-05 21:06:41.566041",
       "payload": {
-        "nct_id": "NCT05049798",
-        "linked_assets": 1
+        "asset": "JNJ-3413",
+        "indication": "Lymphoma",
+        "stage": "Phase 3",
+        "therapeutic_area": "Oncology"
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.879688",
-      "occurred_at": "2026-02-05 09:48:46.879688",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.557457",
+      "occurred_at": "2026-02-05 21:06:41.557457",
       "payload": {
-        "nct_id": "NCT06663332",
-        "linked_assets": 1
+        "asset": "JNJ-2175",
+        "indication": "Solid Tumors",
+        "stage": "Phase 3",
+        "therapeutic_area": "Oncology"
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.868224",
-      "occurred_at": "2026-02-05 09:48:46.868224",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.545965",
+      "occurred_at": "2026-02-05 21:06:41.545965",
       "payload": {
-        "nct_id": "NCT05347095",
-        "linked_assets": 1
+        "asset": "JNJ-8377",
+        "indication": "Lymphoma",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.855399",
-      "occurred_at": "2026-02-05 09:48:46.855399",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.537689",
+      "occurred_at": "2026-02-05 21:06:41.537689",
       "payload": {
-        "nct_id": "NCT07141004",
-        "linked_assets": 1
+        "asset": "JNJ-5322",
+        "indication": "Multiple Myeloma",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.844633",
-      "occurred_at": "2026-02-05 09:48:46.844633",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.529305",
+      "occurred_at": "2026-02-05 21:06:41.529305",
       "payload": {
-        "nct_id": "NCT06408935",
-        "linked_assets": 1
+        "asset": "JNJ-4680",
+        "indication": "Lung Cancer",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.831883",
-      "occurred_at": "2026-02-05 09:48:46.831883",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.520683",
+      "occurred_at": "2026-02-05 21:06:41.520683",
       "payload": {
-        "nct_id": "NCT03451851",
-        "linked_assets": 1
+        "asset": "JNJ-2761",
+        "indication": "Multiple Myeloma",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.805094",
-      "occurred_at": "2026-02-05 09:48:46.805094",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.512075",
+      "occurred_at": "2026-02-05 21:06:41.512075",
       "payload": {
-        "nct_id": "NCT04882098",
-        "linked_assets": 1
+        "asset": "JNJ-1493",
+        "indication": "Hematological",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
       }
     },
     {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.786367",
-      "occurred_at": "2026-02-05 09:48:46.786367",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.503682",
+      "occurred_at": "2026-02-05 21:06:41.503682",
       "payload": {
-        "nct_id": "NCT04936308",
-        "linked_assets": 1
+        "asset": "JNJ-1900",
+        "indication": "Lung Cancer",
+        "stage": "Phase 1",
+        "therapeutic_area": "Oncology"
       }
     },
     {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:46.628908",
-      "occurred_at": "2026-02-05 09:48:46.628908",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.491705",
+      "occurred_at": "2026-02-05 21:06:41.491705",
       "payload": {
-        "query_alias": "STELARA",
-        "added_alias": "Placebo",
-        "assets": [
-          24,
-          59
-        ]
+        "asset": "Azacitidine",
+        "indication": "Cancer (ATLAS) intravesical delivery system) Invasive Bladder Cancer BCG (ORIGAMI-2) Multiple Myeloma CD38 exposed with DR (MajesTEC-7)",
+        "stage": "Registration",
+        "therapeutic_area": "Oncology"
       }
     },
     {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:46.626054",
-      "occurred_at": "2026-02-05 09:48:46.626054",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.481412",
+      "occurred_at": "2026-02-05 21:06:41.481412",
       "payload": {
-        "query_alias": "STELARA",
-        "added_alias": "TREMFYA",
-        "assets": [
-          24,
-          59
-        ]
+        "asset": "INLEXZO",
+        "indication": "High Risk High Risk Non Muscle Experienced (SunRISe-5) RYBREVANT (amivantamab) Colorectal Cancer TALVEY + TECVAYLI Relapsed Refractory (MonumenTAL-6) TALVEY (talquetamab) TIE NDMM in combination",
+        "stage": "Phase 3",
+        "therapeutic_area": "Oncology"
       }
     },
     {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:46.622918",
-      "occurred_at": "2026-02-05 09:48:46.622918",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.468581",
+      "occurred_at": "2026-02-05 21:06:41.468581",
       "payload": {
-        "query_alias": "STELARA",
-        "added_alias": "STELARA",
-        "assets": [
-          24,
-          59
-        ]
+        "asset": "RYBREVANT",
+        "indication": "Frontline Non Small chemotherapy (PAPILLON) Bleximenib Newly Diagnosed AML, with Venetoclax and ERLEADA (apalutamide) ASCT Localized Prostate",
+        "stage": "Phase 3",
+        "therapeutic_area": "Oncology"
       }
     },
     {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:46.620949",
-      "occurred_at": "2026-02-05 09:48:46.620949",
+      "event_type": "asset_indication_added",
+      "created_at": "2026-02-05 21:06:41.454856",
+      "occurred_at": "2026-02-05 21:06:41.454856",
       "payload": {
-        "query_alias": "STELARA",
-        "added_alias": "Ustekinumab",
-        "assets": [
-          24,
-          59
-        ]
-      }
-    },
-    {
-      "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-05 09:48:46.618688",
-      "occurred_at": "2026-02-05 09:48:46.618688",
-      "payload": {
-        "query_alias": "STELARA",
-        "added_alias": "Guselkumab",
-        "assets": [
-          24,
-          59
-        ]
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.314271",
-      "occurred_at": "2026-02-05 09:48:46.314271",
-      "payload": {
-        "nct_id": "NCT04496063",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.303219",
-      "occurred_at": "2026-02-05 09:48:46.303219",
-      "payload": {
-        "nct_id": "NCT05387031",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.283115",
-      "occurred_at": "2026-02-05 09:48:46.283115",
-      "payload": {
-        "nct_id": "NCT02103361",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.271451",
-      "occurred_at": "2026-02-05 09:48:46.271451",
-      "payload": {
-        "nct_id": "NCT05299931",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.260243",
-      "occurred_at": "2026-02-05 09:48:46.260243",
-      "payload": {
-        "nct_id": "NCT03941132",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.248152",
-      "occurred_at": "2026-02-05 09:48:46.248152",
-      "payload": {
-        "nct_id": "NCT06807593",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.237216",
-      "occurred_at": "2026-02-05 09:48:46.237216",
-      "payload": {
-        "nct_id": "NCT05083182",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-05 09:48:46.225042",
-      "occurred_at": "2026-02-05 09:48:46.225042",
-      "payload": {
-        "nct_id": "NCT07303686",
-        "linked_assets": 1
+        "asset": "1-3PLs",
+        "indication": "autoleucel) Myeloma Transplant Eligible vs intravesical delivery Bladder Cancer BCG-na\u00efve (amivantamab) Cancer (ORIGAMI-5) Multiple Myeloma CD38 exposed",
+        "stage": "Phase 2",
+        "therapeutic_area": "Oncology"
       }
     }
   ],
   "trials": [
     {
-      "nct_id": "NCT04083976",
+      "nct_id": "NCT05528510",
       "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE2",
-      "last_update_posted": "2026-02-04",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-02-05",
       "linked_assets": []
     },
     {
-      "nct_id": "NCT04119050",
-      "overall_status": "RECRUITING",
-      "phase": "PHASE2,PHASE3",
-      "last_update_posted": "2026-02-04",
-      "linked_assets": [
-        "Gravis"
-      ]
-    },
-    {
-      "nct_id": "NCT04538664",
+      "nct_id": "NCT05197049",
       "overall_status": "ACTIVE_NOT_RECRUITING",
       "phase": "PHASE3",
-      "last_update_posted": "2026-02-04",
-      "linked_assets": [
-        "RYBREVANT",
-        "amivantamab"
-      ]
+      "last_update_posted": "2026-02-05",
+      "linked_assets": []
     },
     {
-      "nct_id": "NCT05663866",
+      "nct_id": "NCT04988295",
       "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE2",
-      "last_update_posted": "2026-02-04",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-02-05",
       "linked_assets": [
-        "RYBREVANT",
-        "amivantamab",
-        "autoleucel"
+        "RYBREVANT"
       ]
     },
     {
@@ -3577,70 +2089,26 @@
       "phase": "PHASE3",
       "last_update_posted": "2026-02-04",
       "linked_assets": [
-        "Gravis",
-        "RYBREVANT",
-        "amivantamab"
+        "RYBREVANT"
       ]
     },
     {
-      "nct_id": "NCT04181827",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-02-04",
-      "linked_assets": [
-        "TALVEY + TECVAYLI"
-      ]
-    },
-    {
-      "nct_id": "NCT04882098",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-02-04",
-      "linked_assets": [
-        "Gravis"
-      ]
-    },
-    {
-      "nct_id": "NCT04936308",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-02-04",
-      "linked_assets": [
-        "Gravis"
-      ]
-    },
-    {
-      "nct_id": "NCT04325828",
+      "nct_id": "NCT05663866",
       "overall_status": "ACTIVE_NOT_RECRUITING",
       "phase": "PHASE2",
       "last_update_posted": "2026-02-04",
       "linked_assets": [
-        "ERLEADA"
+        "RYBREVANT"
       ]
     },
     {
-      "nct_id": "NCT04108208",
+      "nct_id": "NCT04538664",
       "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE4",
+      "phase": "PHASE3",
       "last_update_posted": "2026-02-04",
       "linked_assets": [
-        "ERLEADA",
-        "Gravis"
+        "RYBREVANT"
       ]
-    },
-    {
-      "nct_id": "NCT04113018",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE2",
-      "last_update_posted": "2026-02-03",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT06066346",
-      "overall_status": "RECRUITING",
-      "phase": "PHASE2",
-      "last_update_posted": "2026-02-03",
-      "linked_assets": []
     },
     {
       "nct_id": "NCT05388669",
@@ -3648,93 +2116,8 @@
       "phase": "PHASE3",
       "last_update_posted": "2026-02-02",
       "linked_assets": [
-        "RYBREVANT",
-        "amivantamab"
+        "RYBREVANT"
       ]
-    },
-    {
-      "nct_id": "NCT03390504",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-02-02",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT03462719",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-02-02",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT03901963",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-02-02",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT06266663",
-      "overall_status": "RECRUITING",
-      "phase": null,
-      "last_update_posted": "2026-02-02",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT03596645",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-02-02",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT03451851",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-02-02",
-      "linked_assets": [
-        "Gravis"
-      ]
-    },
-    {
-      "nct_id": "NCT04033445",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE2,PHASE3",
-      "last_update_posted": "2026-02-02",
-      "linked_assets": [
-        "TREMFYA"
-      ]
-    },
-    {
-      "nct_id": "NCT03466411",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE2,PHASE3",
-      "last_update_posted": "2026-02-02",
-      "linked_assets": [
-        "STELARA",
-        "TREMFYA"
-      ]
-    },
-    {
-      "nct_id": "NCT03301220",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-01-30",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT02365597",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE2",
-      "last_update_posted": "2026-01-30",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT03881098",
-      "overall_status": "RECRUITING",
-      "phase": "NA",
-      "last_update_posted": "2026-01-29",
-      "linked_assets": []
     },
     {
       "nct_id": "NCT06319820",
@@ -3746,112 +2129,88 @@
       ]
     },
     {
-      "nct_id": "NCT04557098",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE2",
-      "last_update_posted": "2026-01-27",
-      "linked_assets": [
-        "TALVEY + TECVAYLI"
-      ]
-    },
-    {
-      "nct_id": "NCT05421663",
-      "overall_status": "RECRUITING",
-      "phase": "PHASE1,PHASE2",
-      "last_update_posted": "2026-01-27",
-      "linked_assets": [
-        "JNJ-1900"
-      ]
-    },
-    {
-      "nct_id": "NCT05289687",
-      "overall_status": "RECRUITING",
-      "phase": "PHASE2",
-      "last_update_posted": "2026-01-26",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT06193863",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": null,
-      "last_update_posted": "2026-01-23",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT07245394",
-      "overall_status": "RECRUITING",
-      "phase": null,
-      "last_update_posted": "2026-01-23",
-      "linked_assets": [
-        "Gravis"
-      ]
-    },
-    {
-      "nct_id": "NCT05316155",
-      "overall_status": "RECRUITING",
-      "phase": "PHASE1,PHASE2",
-      "last_update_posted": "2026-01-22",
-      "linked_assets": []
-    },
-    {
       "nct_id": "NCT05601973",
       "overall_status": "ACTIVE_NOT_RECRUITING",
       "phase": "PHASE2",
       "last_update_posted": "2026-01-21",
       "linked_assets": [
-        "amivantamab"
+        "RYBREVANT"
       ]
     },
     {
-      "nct_id": "NCT05900388",
-      "overall_status": "NOT_YET_RECRUITING",
-      "phase": null,
-      "last_update_posted": "2026-01-21",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT04933539",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE2",
-      "last_update_posted": "2026-01-20",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT03652064",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-01-20",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT06220604",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-01-20",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT04267887",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE2",
-      "last_update_posted": "2026-01-20",
-      "linked_assets": [
-        "ERLEADA"
-      ]
-    },
-    {
-      "nct_id": "NCT05972135",
+      "nct_id": "NCT06449651",
       "overall_status": "RECRUITING",
-      "phase": "PHASE2",
-      "last_update_posted": "2026-01-20",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
       "linked_assets": [
-        "TALVEY + TECVAYLI",
-        "TECVAYLI"
+        "Subcutaneous Induction"
       ]
     },
     {
-      "nct_id": "NCT06211764",
+      "nct_id": "NCT05912517",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "Subcutaneous Induction"
+      ]
+    },
+    {
+      "nct_id": "NCT07194070",
+      "overall_status": "RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "nct_id": "NCT05242484",
       "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "nct_id": "NCT05242471",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "nct_id": "NCT04133636",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "nct_id": "NCT06260163",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "nct_id": "NCT06852222",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "Azacitidine"
+      ]
+    },
+    {
+      "nct_id": "NCT05453903",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "Azacitidine"
+      ]
+    },
+    {
+      "nct_id": "NCT06919965",
+      "overall_status": "RECRUITING",
       "phase": "PHASE3",
       "last_update_posted": "2026-01-16",
       "linked_assets": [
@@ -3875,67 +2234,258 @@
       "linked_assets": []
     },
     {
-      "nct_id": "NCT07194070",
+      "nct_id": "NCT06211764",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "INLEXZO"
+      ]
+    },
+    {
+      "nct_id": "NCT06662786",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT02609776",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT06532032",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT05908734",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT06750094",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT07230691",
       "overall_status": "RECRUITING",
       "phase": null,
       "last_update_posted": "2026-01-16",
       "linked_assets": []
     },
     {
-      "nct_id": "NCT02354014",
+      "nct_id": "NCT05498428",
       "overall_status": "RECRUITING",
       "phase": "PHASE2",
       "last_update_posted": "2026-01-16",
-      "linked_assets": []
+      "linked_assets": [
+        "RYBREVANT"
+      ]
     },
     {
-      "nct_id": "NCT06768489",
+      "nct_id": "NCT06667076",
       "overall_status": "RECRUITING",
-      "phase": "PHASE1",
+      "phase": "PHASE2",
       "last_update_posted": "2026-01-16",
-      "linked_assets": []
+      "linked_assets": [
+        "RYBREVANT"
+      ]
     },
     {
-      "nct_id": "NCT06604715",
+      "nct_id": "NCT06120140",
       "overall_status": "RECRUITING",
-      "phase": "PHASE1",
+      "phase": "PHASE2",
       "last_update_posted": "2026-01-16",
-      "linked_assets": []
+      "linked_assets": [
+        "RYBREVANT"
+      ]
     },
     {
-      "nct_id": "NCT05652335",
+      "nct_id": "NCT06385080",
       "overall_status": "RECRUITING",
-      "phase": "PHASE1",
+      "phase": "PHASE1,PHASE2",
       "last_update_posted": "2026-01-16",
-      "linked_assets": []
+      "linked_assets": [
+        "RYBREVANT"
+      ]
     },
     {
-      "nct_id": "NCT05455320",
+      "nct_id": "NCT05488314",
       "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT07227025",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT05379595",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT04892173",
+      "overall_status": "RECRUITING",
       "phase": "PHASE3",
       "last_update_posted": "2026-01-16",
-      "linked_assets": []
+      "linked_assets": [
+        "JNJ-1900"
+      ]
     },
     {
-      "nct_id": "NCT07266441",
-      "overall_status": "NOT_YET_RECRUITING",
-      "phase": "PHASE2",
-      "last_update_posted": "2026-01-16",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT05050097",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "nct_id": "NCT07219212",
+      "overall_status": "RECRUITING",
       "phase": "PHASE1",
       "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "JNJ-1900"
+      ]
+    },
+    {
+      "nct_id": "NCT02436707",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-14",
+      "linked_assets": [
+        "INLEXZO"
+      ]
+    },
+    {
+      "nct_id": "NCT05845671",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-14",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT04606381",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2026-01-13",
       "linked_assets": []
     },
     {
-      "nct_id": "NCT06500884",
+      "nct_id": "NCT07310095",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phase": "PHASE4",
+      "last_update_posted": "2025-12-30",
+      "linked_assets": []
+    },
+    {
+      "nct_id": "NCT05695508",
       "overall_status": "RECRUITING",
       "phase": "PHASE2",
-      "last_update_posted": "2026-01-16",
+      "last_update_posted": "2025-12-24",
       "linked_assets": []
+    },
+    {
+      "nct_id": "NCT04077463",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2025-12-24",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT07276399",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2025-12-19",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT05299125",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-10-01",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT03004287",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-09-10",
+      "linked_assets": [
+        "INLEXZO"
+      ]
+    },
+    {
+      "nct_id": "NCT04023526",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-08-20",
+      "linked_assets": [
+        "Azacitidine",
+        "JNJ-7446"
+      ]
+    },
+    {
+      "nct_id": "NCT05117931",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-07-20",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT07062354",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2025-07-14",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT06632236",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE1",
+      "last_update_posted": "2025-04-25",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
     }
   ]
 }
