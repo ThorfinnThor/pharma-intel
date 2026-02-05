@@ -17,6 +17,8 @@ STOP_ASSET_EXACT = {
     "indication",
     "delivery",
     "intravesical delivery",
+    "intravesical delivery system",
+    "delivery system",
     "system",
     "platform",
     "mechanism",
@@ -28,98 +30,6 @@ STOP_ASSET_EXACT = {
     "select other areas",
     "pediatrics",
     "colitis",
-}
-
-# Common disease/indication terms that frequently get mis-extracted as "assets" from PDFs.
-# This list is intentionally broad; the logic that uses it is conservative (it won't block
-# clear drug/program patterns like JNJ-#### or -mab/-nib single tokens).
-DISEASE_KEYWORDS = {
-    # generic
-    "disease",
-    "disorder",
-    "syndrome",
-    "condition",
-    "pediatric",
-    "pediatrics",
-    "adult",
-    "neonatal",
-    "fetal",
-    "pregnancy",
-    "warm autoimmune",
-    "autoimmune",
-    # hematology
-    "anemia",
-    "thrombocytopenia",
-    "hemolytic",
-    "myeloma",
-    "leukemia",
-    "lymphoma",
-    "aplastic",
-    "neutropenia",
-    # oncology
-    "cancer",
-    "carcinoma",
-    "tumor",
-    "tumour",
-    "sarcoma",
-    "melanoma",
-    "metastatic",
-    "solid tumor",
-    "solid tumour",
-    "colorectal",
-    "prostate",
-    "breast",
-    "ovarian",
-    "lung",
-    "bladder",
-    "renal",
-    "hepatocellular",
-    "glioblastoma",
-    "acute myeloid",
-    "multiple myeloma",
-    # neuro/psych
-    "depression",
-    "major depressive",
-    "ideation",
-    "suicidal",
-    "polyneuropathy",
-    "demyelinating",
-    "alzheimer",
-    "parkinson",
-    # immunology/gastro
-    "colitis",
-    "ulcerative",
-    "psoriasis",
-    "arthritis",
-    "lupus",
-    "asthma",
-    "dermatitis",
-    # infectious / misc
-    "hypertension",
-    "diabetes",
-    "obesity",
-    "infection",
-}
-
-# Tokens that commonly appear in pipeline rows but are not part of an intervention name.
-ROUTE_FORM_TOKENS = {
-    "iv",
-    "sc",
-    "im",
-    "po",
-    "oral",
-    "tablet",
-    "capsule",
-    "solution",
-    "suspension",
-    "injection",
-    "infusion",
-    "subcutaneous",
-    "intravenous",
-    "intramuscular",
-    "intravesical",
-    "delivery",
-    "system",
 }
 
 CORP_TOKENS = {
@@ -137,18 +47,91 @@ CORP_TOKENS = {
 
 # strings that appear as disclaimers in indications and should be cut off
 IND_CUTOFF_PATTERNS = [
+    r"\b(pipeline is based on|pipeline reflects|pipeline reflects the current)\b",
     r"\b(inclusion in|inclusion of)\b",
     r"\bthrough clinical trials\b",
     r"\bto the best of the company'?s knowledge\b",
+    r"\bjohnson\s+assumes\s+no\s+obligation\b",
     r"\bthe company assumes no obligation\b",
+    r"\bthis pipeline is not\b",
+    r"\bforward-looking\s+statements\b",
+    r"\bstrategic partnerships\b",
+]
+
+# If an indication contains these phrases, it's almost certainly a footer/disclaimer
+IND_DROP_IF_CONTAINS = [
+    "pipeline is based",
+    "the company assumes no obligation",
+    "johnson assumes no obligation",
+    "forward-looking statements",
+    "strategic partnerships",
 ]
 
 
+# Common disease/indication terms that frequently get mis-extracted as "assets" from PDFs.
+DISEASE_KEYWORDS = {
+    "disease",
+    "disorder",
+    "syndrome",
+    "condition",
+    "pediatric",
+    "pediatrics",
+    "neonatal",
+    "fetal",
+    "pregnancy",
+    "hemolytic",
+    "anemia",
+    "thrombocytopenia",
+    "polyneuropathy",
+    "demyelinating",
+    "cancer",
+    "carcinoma",
+    "tumor",
+    "tumour",
+    "sarcoma",
+    "melanoma",
+    "leukemia",
+    "lymphoma",
+    "myeloma",
+    "colorectal",
+    "prostate",
+    "bladder",
+    "lung",
+    "breast",
+    "ovarian",
+    "renal",
+    "hepatocellular",
+    "colitis",
+    "ulcerative",
+    "psoriasis",
+    "arthritis",
+    "crohn",
+    "lupus",
+    "asthma",
+    "dermatitis",
+    "hypertension",
+    "diabetes",
+    "depression",
+    "major depressive",
+    "suicidal",
+    "ideation",
+    "leprosy",
+}
+
+_DOSE_OR_DIGIT = re.compile(r"\d|\b(mg|mcg|ug|g|kg|iu|units|mg\/kg)\b", re.IGNORECASE)
+
+# Trial/Study acronym pattern that should *not* be treated as an asset in the pipeline PDF.
+# Examples: ORIGAMI-2, MajesTEC-4, SunRISE-3, ICONIC-CD, ENERGY (often trial name)
+_TRIAL_ACRONYM = re.compile(r"^[A-Za-z][A-Za-z0-9]{2,20}(?:-[A-Za-z0-9]{1,6})+$")
+
+_DRUG_SUFFIX = re.compile(
+    r"(mab|nib|parib|ciclib|stat|navir|vir|prazole|oxetine|afil|zumab|ximab|tinib|lisib)$",
+    re.IGNORECASE,
+)
+
+
 def _collapse_spaced_letters(s: str) -> str:
-    """
-    Fix OCR-like patterns: 'a c t o r X I a' -> 'actorXIa'
-    Only triggers when many single-character tokens are present.
-    """
+    """Fix OCR-like patterns: 'L e p r o s y' -> 'Leprosy'."""
     tokens = s.split()
     if len(tokens) < 6:
         return s
@@ -180,6 +163,11 @@ def sanitize_asset_label(raw: str) -> Optional[str]:
     s = _LEADING_BULLETS.sub("", s.strip())
     s = _WS.sub(" ", s).strip()
 
+    # unwrap pure parenthetical labels: "(PROTOSAR)" -> "PROTOSAR"
+    m = re.match(r"^\(([^\)]+)\)\s*$", s)
+    if m:
+        s = m.group(1).strip()
+
     # Remove known prefix noise like "system) "
     s = _PREFIX_NOISE.sub("", s)
 
@@ -197,6 +185,59 @@ def sanitize_asset_label(raw: str) -> Optional[str]:
 
 def sanitize_alias(raw: str) -> Optional[str]:
     return sanitize_asset_label(raw)
+
+
+def is_trial_acronym(label: str) -> bool:
+    if not label:
+        return False
+    s = label.strip()
+    # allow JNJ-#### codes (assets) even though they match the hyphen pattern
+    if s.lower().startswith("jnj-"):
+        return False
+    # Typical trial/study tags are short and hyphenated
+    if _TRIAL_ACRONYM.match(s) and len(s) <= 22:
+        return True
+    return False
+
+
+def looks_like_indication_label(label: str) -> bool:
+    """Heuristic: does a label look like a disease/indication rather than an asset?"""
+    if not label:
+        return False
+
+    s = label.strip()
+    low = s.lower()
+
+    # program codes survive
+    if low.startswith("jnj-"):
+        return False
+
+    # Single-token drug-like names survive
+    if " " not in s and _DRUG_SUFFIX.search(s):
+        return False
+
+    # If it looks like a trial acronym, treat as non-asset (pipeline uses these as callouts)
+    if is_trial_acronym(s):
+        return True
+
+    # disease keyword hit?
+    hit = any(kw in low for kw in DISEASE_KEYWORDS)
+    if not hit:
+        return False
+
+    # disease keyword + any digit/dose token is almost certainly an indication fragment
+    if _DOSE_OR_DIGIT.search(low):
+        return True
+
+    # Multi-word Title Case diseases (e.g. "Hemolytic Anemia")
+    if len(s.split()) >= 2:
+        return True
+
+    # Single keyword like "Leprosy" / "Cancer" etc.
+    if len(s) <= 16:
+        return True
+
+    return False
 
 
 def is_plausible_asset_label(label: str) -> bool:
@@ -230,76 +271,37 @@ def is_plausible_asset_label(label: str) -> bool:
     if low in {"others", "other", "unknown", "undisclosed"}:
         return False
 
-    # Reject labels that look like indications/diseases.
-    # We only do this when the label is *not* a clear program code or drug-like single token.
+    # reject disease-like labels (this is what fixes your screenshots)
     if looks_like_indication_label(s):
+        return False
+
+    # reject pure trial acronyms
+    if is_trial_acronym(s):
         return False
 
     return True
 
 
-_DRUG_SUFFIX = re.compile(
-    r"(mab|nib|ciclib|stat|navir|vir|prazole|oxetine|afil|imumab|zumab|ximab|tinib|parib|lisib)$",
-    re.IGNORECASE,
-)
-
-
-def looks_like_indication_label(label: str) -> bool:
-    """Heuristic: does a label look like a disease/indication rather than an asset?"""
-    if not label:
-        return False
-
-    s = label.strip()
-    low = s.lower()
-
-    # program codes should survive
-    if "jnj-" in low:
-        return False
-
-    # All-caps short brands are likely assets
-    if s.isupper() and 3 <= len(s) <= 45:
-        return False
-
-    # Single-token drug-like names (e.g., icotrokinra, nipocalimab) should survive
-    if " " not in s:
-        if _DRUG_SUFFIX.search(s):
-            return False
-
-    # If it contains lots of route/formulation tokens, it's not a clean asset label
-    tokens = re.findall(r"[A-Za-z]+", low)
-    if tokens:
-        route_hits = sum(1 for t in tokens if t in ROUTE_FORM_TOKENS)
-        if route_hits >= 2:
-            return True
-
-    # Disease keyword hit: conservative application
-    # - stronger if multi-word or contains commas/semicolons (typical in indications)
-    hit = False
-    for kw in DISEASE_KEYWORDS:
-        if kw in low:
-            hit = True
-            break
-    if not hit:
-        return False
-
-    # Single short token with disease keyword is unlikely; treat as indication if it's clearly disease-like
-    words = s.split()
-    if len(words) == 1 and len(s) <= 12:
-        # "Cancer" / "Colitis" etc.
-        return True
-
-    # multi-word Title Case diseases (e.g., "Hemolytic Anemia")
-    if len(words) >= 2:
-        return True
-
-    return False
+def indication_is_footer_noise(text: str) -> bool:
+    low = (text or "").lower()
+    return any(k in low for k in IND_DROP_IF_CONTAINS)
 
 
 def sanitize_indication_text(raw: str) -> str:
     s = (raw or "").replace("\u00a0", " ")
     s = _WS.sub(" ", s).strip()
 
+    # Collapse OCR spaced letters (e.g. "L e p r o s y")
+    s = _collapse_spaced_letters(s)
+    s = _WS.sub(" ", s).strip()
+
     low = s.lower()
+
+    # Drop entire line if it looks like a footer/disclaimer
+    if indication_is_footer_noise(s):
+        return ""
+
+    # Cut off at first disclaimer phrase
     for pat in IND_CUTOFF_PATTERNS:
         m = re.search(pat, low)
         if m:
