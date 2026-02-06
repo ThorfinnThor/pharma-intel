@@ -1,6 +1,6 @@
 # Pharma Intel
 
-Generated: `2026-02-06T05:35:16Z`
+Generated: `2026-02-06T21:24:31Z`
 
 ## Companies
 

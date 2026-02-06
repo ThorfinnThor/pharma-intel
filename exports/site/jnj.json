@@ -1,7 +1,7 @@
 {
   "company_id": "jnj",
   "company_name": "Johnson & Johnson",
-  "generated_at": "2026-02-06T05:35:16Z",
+  "generated_at": "2026-02-06T21:24:31Z",
   "kpis": {
     "assets_total": 17,
     "assets_with_trials": 5,
@@ -238,8 +238,8 @@
   "recent_changes": [
     {
       "event_type": "trials_ingested",
-      "created_at": "2026-02-06 05:35:14.460936",
-      "occurred_at": "2026-02-06 05:35:14.460936",
+      "created_at": "2026-02-06 21:24:29.168746",
+      "occurred_at": "2026-02-06 21:24:29.168746",
       "payload": {
         "trials_seen": 41,
         "inserted": 41,
@@ -250,8 +250,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:12.381414",
-      "occurred_at": "2026-02-06 05:35:12.381414",
+      "created_at": "2026-02-06 21:24:27.089080",
+      "occurred_at": "2026-02-06 21:24:27.089080",
       "payload": {
         "query_alias": "Azacitidine",
         "added_alias": "ARGX-110",
@@ -262,8 +262,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:12.378285",
-      "occurred_at": "2026-02-06 05:35:12.378285",
+      "created_at": "2026-02-06 21:24:27.086025",
+      "occurred_at": "2026-02-06 21:24:27.086025",
       "payload": {
         "query_alias": "Azacitidine",
         "added_alias": "JNJ-74494550",
@@ -274,8 +274,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:12.374145",
-      "occurred_at": "2026-02-06 05:35:12.374145",
+      "created_at": "2026-02-06 21:24:27.083163",
+      "occurred_at": "2026-02-06 21:24:27.083163",
       "payload": {
         "query_alias": "Azacitidine",
         "added_alias": "Cusatuzumab",
@@ -286,8 +286,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:12.371290",
-      "occurred_at": "2026-02-06 05:35:12.371290",
+      "created_at": "2026-02-06 21:24:27.080207",
+      "occurred_at": "2026-02-06 21:24:27.080207",
       "payload": {
         "query_alias": "Azacitidine",
         "added_alias": "JNJ-75276617",
@@ -298,8 +298,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:12.367779",
-      "occurred_at": "2026-02-06 05:35:12.367779",
+      "created_at": "2026-02-06 21:24:27.076858",
+      "occurred_at": "2026-02-06 21:24:27.076858",
       "payload": {
         "query_alias": "Azacitidine",
         "added_alias": "Bleximenib",
@@ -310,8 +310,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:11.261228",
-      "occurred_at": "2026-02-06 05:35:11.261228",
+      "created_at": "2026-02-06 21:24:25.956148",
+      "occurred_at": "2026-02-06 21:24:25.956148",
       "payload": {
         "nct_id": "NCT04150887",
         "linked_assets": 2
@@ -319,8 +319,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:11.251125",
-      "occurred_at": "2026-02-06 05:35:11.251125",
+      "created_at": "2026-02-06 21:24:25.947957",
+      "occurred_at": "2026-02-06 21:24:25.947957",
       "payload": {
         "nct_id": "NCT04150887",
         "title": "An Open-label, Multicenter, Phase 1b Study of OV-1001 (Cusatuzumab; Anti-CD70 Monoclonal Antibody) in Combination With Background Therapy for the Treatment of Subjects With Acute Myeloid Leukemia"
@@ -328,8 +328,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:10.790867",
-      "occurred_at": "2026-02-06 05:35:10.790867",
+      "created_at": "2026-02-06 21:24:25.466242",
+      "occurred_at": "2026-02-06 21:24:25.466242",
       "payload": {
         "nct_id": "NCT04023526",
         "linked_assets": 2
@@ -337,8 +337,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:10.781935",
-      "occurred_at": "2026-02-06 05:35:10.781935",
+      "created_at": "2026-02-06 21:24:25.457498",
+      "occurred_at": "2026-02-06 21:24:25.457498",
       "payload": {
         "nct_id": "NCT04023526",
         "title": "A Phase 2 Study of Cusatuzumab Plus Azacitidine in Patients With Newly Diagnosed Acute Myeloid Leukemia Who Are Not Candidates for Intensive Chemotherapy"
@@ -346,8 +346,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:10.326844",
-      "occurred_at": "2026-02-06 05:35:10.326844",
+      "created_at": "2026-02-06 21:24:24.979554",
+      "occurred_at": "2026-02-06 21:24:24.979554",
       "payload": {
         "nct_id": "NCT06852222",
         "linked_assets": 1
@@ -355,8 +355,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:10.319214",
-      "occurred_at": "2026-02-06 05:35:10.319214",
+      "created_at": "2026-02-06 21:24:24.971828",
+      "occurred_at": "2026-02-06 21:24:24.971828",
       "payload": {
         "nct_id": "NCT06852222",
         "title": "A Phase 3 Randomized, Double-Blind, Placebo-Controlled, Study of Bleximenib, Venetoclax and Azacitidine for the Treatment of Participants With Newly Diagnosed Acute Myeloid Leukemia Harboring KMT2A Rearrangements or NPM1 Mutations Who Are Ineligible for Intensive Chemotherapy"
@@ -364,8 +364,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:10.310666",
-      "occurred_at": "2026-02-06 05:35:10.310666",
+      "created_at": "2026-02-06 21:24:24.952074",
+      "occurred_at": "2026-02-06 21:24:24.952074",
       "payload": {
         "nct_id": "NCT05453903",
         "linked_assets": 1
@@ -373,8 +373,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:10.302435",
-      "occurred_at": "2026-02-06 05:35:10.302435",
+      "created_at": "2026-02-06 21:24:24.944104",
+      "occurred_at": "2026-02-06 21:24:24.944104",
       "payload": {
         "nct_id": "NCT05453903",
         "title": "A Phase 1b Study of Bleximenib in Combination With AML-Directed Therapies for Participants With Acute Myeloid Leukemia Harboring KMT2A or NPM1 Alterations"
@@ -382,8 +382,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:10.152489",
-      "occurred_at": "2026-02-06 05:35:10.152489",
+      "created_at": "2026-02-06 21:24:24.794688",
+      "occurred_at": "2026-02-06 21:24:24.794688",
       "payload": {
         "query_alias": "gemcitabine",
         "added_alias": "JNJ-63723283",
@@ -394,8 +394,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:10.149455",
-      "occurred_at": "2026-02-06 05:35:10.149455",
+      "created_at": "2026-02-06 21:24:24.791954",
+      "occurred_at": "2026-02-06 21:24:24.791954",
       "payload": {
         "query_alias": "gemcitabine",
         "added_alias": "Cetrelimab",
@@ -406,8 +406,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:10.146294",
-      "occurred_at": "2026-02-06 05:35:10.146294",
+      "created_at": "2026-02-06 21:24:24.789020",
+      "occurred_at": "2026-02-06 21:24:24.789020",
       "payload": {
         "query_alias": "gemcitabine",
         "added_alias": "JNJ-17000139",
@@ -418,8 +418,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:10.143195",
-      "occurred_at": "2026-02-06 05:35:10.143195",
+      "created_at": "2026-02-06 21:24:24.786090",
+      "occurred_at": "2026-02-06 21:24:24.786090",
       "payload": {
         "query_alias": "gemcitabine",
         "added_alias": "TAR-200",
@@ -430,8 +430,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:10.140150",
-      "occurred_at": "2026-02-06 05:35:10.140150",
+      "created_at": "2026-02-06 21:24:24.783112",
+      "occurred_at": "2026-02-06 21:24:24.783112",
       "payload": {
         "query_alias": "gemcitabine",
         "added_alias": "JNJ-42756493",
@@ -442,8 +442,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:10.131163",
-      "occurred_at": "2026-02-06 05:35:10.131163",
+      "created_at": "2026-02-06 21:24:24.779947",
+      "occurred_at": "2026-02-06 21:24:24.779947",
       "payload": {
         "query_alias": "gemcitabine",
         "added_alias": "TAR-210",
@@ -454,8 +454,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:06.258453",
-      "occurred_at": "2026-02-06 05:35:06.258453",
+      "created_at": "2026-02-06 21:24:20.865003",
+      "occurred_at": "2026-02-06 21:24:20.865003",
       "payload": {
         "nct_id": "NCT02436707",
         "linked_assets": 1
@@ -463,8 +463,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:06.249725",
-      "occurred_at": "2026-02-06 05:35:06.249725",
+      "created_at": "2026-02-06 21:24:20.856218",
+      "occurred_at": "2026-02-06 21:24:20.856218",
       "payload": {
         "nct_id": "NCT02436707",
         "title": "A Multi-Stage Randomized Phase II Study of Novel Combination Therapy in the Treatment of Relapsed and Refractory Aggressive B-Cell Lymphoma"
@@ -472,26 +472,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:06.242805",
-      "occurred_at": "2026-02-06 05:35:06.242805",
-      "payload": {
-        "nct_id": "NCT06919965",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:06.235321",
-      "occurred_at": "2026-02-06 05:35:06.235321",
-      "payload": {
-        "nct_id": "NCT06919965",
-        "title": "A Phase 3, Randomized, Open-label, Multicenter Study Evaluating the Efficacy and Safety of TAR-210 Erdafitinib Intravesical Delivery System Versus Investigator's Choice of Intravesical Chemotherapy in Participants With High-risk Non-muscle-invasive Bladder Cancer With Susceptible FGFR Alterations Who Had Received Intravesical Bacillus Calmette-Gu\u00e9rin (BCG)"
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:06.227502",
-      "occurred_at": "2026-02-06 05:35:06.227502",
+      "created_at": "2026-02-06 21:24:20.849739",
+      "occurred_at": "2026-02-06 21:24:20.849739",
       "payload": {
         "nct_id": "NCT04658862",
         "linked_assets": 1
@@ -499,8 +481,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:06.219469",
-      "occurred_at": "2026-02-06 05:35:06.219469",
+      "created_at": "2026-02-06 21:24:20.841287",
+      "occurred_at": "2026-02-06 21:24:20.841287",
       "payload": {
         "nct_id": "NCT04658862",
         "title": "A Phase 3, Multi-center, Randomized Study Evaluating Efficacy of TAR-200 in Combination With Cetrelimab Versus Concurrent Chemoradiotherapy in Participants With Muscle-Invasive Urothelial Carcinoma (MIBC) of the Bladder Who Are Not Receiving Radical Cystectomy"
@@ -508,8 +490,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:06.206043",
-      "occurred_at": "2026-02-06 05:35:06.206043",
+      "created_at": "2026-02-06 21:24:20.827539",
+      "occurred_at": "2026-02-06 21:24:20.827539",
       "payload": {
         "nct_id": "NCT04640623",
         "title": "Phase 2b Clinical Study Evaluating Efficacy and Safety of TAR-200 in Combination With Cetrelimab, TAR-200 Alone, or Cetrelimab Alone in Participants With High-Risk Non-Muscle Invasive Bladder Cancer (NMIBC) Unresponsive to Intravesical Bacillus Calmette-Gu\u00e9rin (BCG) Who Are Ineligible for or Elected Not to Undergo Radical Cystectomy"
@@ -517,8 +499,26 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:06.198680",
-      "occurred_at": "2026-02-06 05:35:06.198680",
+      "created_at": "2026-02-06 21:24:20.819920",
+      "occurred_at": "2026-02-06 21:24:20.819920",
+      "payload": {
+        "nct_id": "NCT06919965",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-06 21:24:20.812638",
+      "occurred_at": "2026-02-06 21:24:20.812638",
+      "payload": {
+        "nct_id": "NCT06919965",
+        "title": "A Phase 3, Randomized, Open-label, Multicenter Study Evaluating the Efficacy and Safety of TAR-210 Erdafitinib Intravesical Delivery System Versus Investigator's Choice of Intravesical Chemotherapy in Participants With High-risk Non-muscle-invasive Bladder Cancer With Susceptible FGFR Alterations Who Had Received Intravesical Bacillus Calmette-Gu\u00e9rin (BCG)"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-06 21:24:20.805202",
+      "occurred_at": "2026-02-06 21:24:20.805202",
       "payload": {
         "nct_id": "NCT06211764",
         "linked_assets": 1
@@ -526,8 +526,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:06.190530",
-      "occurred_at": "2026-02-06 05:35:06.190530",
+      "created_at": "2026-02-06 21:24:20.797682",
+      "occurred_at": "2026-02-06 21:24:20.797682",
       "payload": {
         "nct_id": "NCT06211764",
         "title": "A Phase 3, Randomized, Open-label, Multi-center Study Evaluating the Efficacy and Safety of TAR-200 Versus Investigator's Choice of Intravesical Chemotherapy in Participants Who Received Bacillus Calmette-Gu\u00e9rin (BCG) and Recurred With High-risk Non-muscle-invasive Bladder Cancer (HR-NMIBC) and Who Are Ineligible for or Elected Not to Undergo Radical Cystectomy"
@@ -535,8 +535,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:05.712937",
-      "occurred_at": "2026-02-06 05:35:05.712937",
+      "created_at": "2026-02-06 21:24:20.329983",
+      "occurred_at": "2026-02-06 21:24:20.329983",
       "payload": {
         "nct_id": "NCT06319820",
         "linked_assets": 1
@@ -544,8 +544,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:05.705137",
-      "occurred_at": "2026-02-06 05:35:05.705137",
+      "created_at": "2026-02-06 21:24:20.322628",
+      "occurred_at": "2026-02-06 21:24:20.322628",
       "payload": {
         "nct_id": "NCT06319820",
         "title": "A Phase 3, Randomized Study Evaluating the Efficacy and Safety of TAR-210 Erdafitinib Intravesical Delivery System Versus Single Agent Intravesical Chemotherapy in Participants With Intermediate-risk Non-muscle Invasive Bladder Cancer (IR-NMIBC) and Susceptible FGFR Alterations"
@@ -553,8 +553,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:05.492381",
-      "occurred_at": "2026-02-06 05:35:05.492381",
+      "created_at": "2026-02-06 21:24:20.104373",
+      "occurred_at": "2026-02-06 21:24:20.104373",
       "payload": {
         "query_alias": "amivantamab",
         "added_alias": "Cetuximab",
@@ -565,8 +565,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:05.489271",
-      "occurred_at": "2026-02-06 05:35:05.489271",
+      "created_at": "2026-02-06 21:24:20.101515",
+      "occurred_at": "2026-02-06 21:24:20.101515",
       "payload": {
         "query_alias": "amivantamab",
         "added_alias": "YH25448",
@@ -577,8 +577,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:05.486183",
-      "occurred_at": "2026-02-06 05:35:05.486183",
+      "created_at": "2026-02-06 21:24:20.098660",
+      "occurred_at": "2026-02-06 21:24:20.098660",
       "payload": {
         "query_alias": "amivantamab",
         "added_alias": "JNJ-61186372",
@@ -589,8 +589,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:05.484060",
-      "occurred_at": "2026-02-06 05:35:05.484060",
+      "created_at": "2026-02-06 21:24:20.096878",
+      "occurred_at": "2026-02-06 21:24:20.096878",
       "payload": {
         "query_alias": "amivantamab",
         "added_alias": "YH-25448",
@@ -601,8 +601,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:05.481039",
-      "occurred_at": "2026-02-06 05:35:05.481039",
+      "created_at": "2026-02-06 21:24:20.093953",
+      "occurred_at": "2026-02-06 21:24:20.093953",
       "payload": {
         "query_alias": "amivantamab",
         "added_alias": "JNJ-73841937",
@@ -613,8 +613,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:05.477579",
-      "occurred_at": "2026-02-06 05:35:05.477579",
+      "created_at": "2026-02-06 21:24:20.090840",
+      "occurred_at": "2026-02-06 21:24:20.090840",
       "payload": {
         "query_alias": "amivantamab",
         "added_alias": "Lazertinib",
@@ -625,8 +625,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:05.173938",
-      "occurred_at": "2026-02-06 05:35:05.173938",
+      "created_at": "2026-02-06 21:24:19.786734",
+      "occurred_at": "2026-02-06 21:24:19.786734",
       "payload": {
         "nct_id": "NCT03767075",
         "linked_assets": 1
@@ -634,8 +634,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:05.166288",
-      "occurred_at": "2026-02-06 05:35:05.166288",
+      "created_at": "2026-02-06 21:24:19.779741",
+      "occurred_at": "2026-02-06 21:24:19.779741",
       "payload": {
         "nct_id": "NCT03767075",
         "title": "Basket of Baskets: A Modular, Open-label, Phase II, Multicentre Study To Evaluate Targeted Agents in Molecularly Selected Populations With Advanced Solid Tumours"
@@ -643,8 +643,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:05.159428",
-      "occurred_at": "2026-02-06 05:35:05.159428",
+      "created_at": "2026-02-06 21:24:19.773165",
+      "occurred_at": "2026-02-06 21:24:19.773165",
       "payload": {
         "nct_id": "NCT06816992",
         "linked_assets": 1
@@ -652,8 +652,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:05.151500",
-      "occurred_at": "2026-02-06 05:35:05.151500",
+      "created_at": "2026-02-06 21:24:19.765957",
+      "occurred_at": "2026-02-06 21:24:19.765957",
       "payload": {
         "nct_id": "NCT06816992",
         "title": "Phase 1b Study of ORIC-114 in Combination with Amivantamab in Patients with EGFR Exon20 Insertion Mutant NSCLC"
@@ -661,8 +661,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:05.144649",
-      "occurred_at": "2026-02-06 05:35:05.144649",
+      "created_at": "2026-02-06 21:24:19.759836",
+      "occurred_at": "2026-02-06 21:24:19.759836",
       "payload": {
         "nct_id": "NCT06632236",
         "linked_assets": 1
@@ -670,8 +670,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:05.137135",
-      "occurred_at": "2026-02-06 05:35:05.137135",
+      "created_at": "2026-02-06 21:24:19.752923",
+      "occurred_at": "2026-02-06 21:24:19.752923",
       "payload": {
         "nct_id": "NCT06632236",
         "title": "5G-EMERALD: A Phase 1 Trial of Amivantamab in High Grade Malignant Brain Tumours Within the 5G Platform"
@@ -679,26 +679,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:05.130553",
-      "occurred_at": "2026-02-06 05:35:05.130553",
-      "payload": {
-        "nct_id": "NCT07062354",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:05.122908",
-      "occurred_at": "2026-02-06 05:35:05.122908",
-      "payload": {
-        "nct_id": "NCT07062354",
-        "title": "A Phase II Study of Combined Amivantamab, Carboplatin and Paclitaxel in Unresectable Locally Recurrent or Metastatic Head and Neck Cancer"
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:05.116820",
-      "occurred_at": "2026-02-06 05:35:05.116820",
+      "created_at": "2026-02-06 21:24:19.747139",
+      "occurred_at": "2026-02-06 21:24:19.747139",
       "payload": {
         "nct_id": "NCT05117931",
         "linked_assets": 1
@@ -706,8 +688,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:05.109251",
-      "occurred_at": "2026-02-06 05:35:05.109251",
+      "created_at": "2026-02-06 21:24:19.740856",
+      "occurred_at": "2026-02-06 21:24:19.740856",
       "payload": {
         "nct_id": "NCT05117931",
         "title": "Phase II Study of Amivantamab in EGFR or MET- Amplified Esophagogastric Cancer"
@@ -715,8 +697,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:05.103120",
-      "occurred_at": "2026-02-06 05:35:05.103120",
+      "created_at": "2026-02-06 21:24:19.735072",
+      "occurred_at": "2026-02-06 21:24:19.735072",
       "payload": {
         "nct_id": "NCT05299125",
         "linked_assets": 1
@@ -724,8 +706,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:05.095465",
-      "occurred_at": "2026-02-06 05:35:05.095465",
+      "created_at": "2026-02-06 21:24:19.728182",
+      "occurred_at": "2026-02-06 21:24:19.728182",
       "payload": {
         "nct_id": "NCT05299125",
         "title": "A Single Arm, Phase 2 Study of Amivantamab, Lazertinib and Pemetrexed for First-line Treatment of Recurrent/Metastatic Non-small Cell Lung Cancers (NSCLCs) With EGFR Mutations"
@@ -733,8 +715,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:05.088875",
-      "occurred_at": "2026-02-06 05:35:05.088875",
+      "created_at": "2026-02-06 21:24:19.722163",
+      "occurred_at": "2026-02-06 21:24:19.722163",
       "payload": {
         "nct_id": "NCT04077463",
         "linked_assets": 1
@@ -742,8 +724,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:05.080428",
-      "occurred_at": "2026-02-06 05:35:05.080428",
+      "created_at": "2026-02-06 21:24:19.715118",
+      "occurred_at": "2026-02-06 21:24:19.715118",
       "payload": {
         "nct_id": "NCT04077463",
         "title": "An Open-label Phase 1/1b Study to Evaluate the Safety and Pharmacokinetics of JNJ-73841937 (Lazertinib), a Third Generation EGFR-TKI, as Monotherapy or in Combinations With JNJ-61186372, a Human Bispecific EGFR and cMet Antibody in Participants With Advanced Non-Small Cell Lung Cancer"
@@ -751,8 +733,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:05.068978",
-      "occurred_at": "2026-02-06 05:35:05.068978",
+      "created_at": "2026-02-06 21:24:19.703414",
+      "occurred_at": "2026-02-06 21:24:19.703414",
       "payload": {
         "nct_id": "NCT04606381",
         "title": "An Open-label, Multicenter, Dose Escalation Phase 1b Study to Assess the Safety and Pharmacokinetics of Subcutaneous Delivery of Amivantamab, a Human Bispecific EGFR and cMet Antibody for the Treatment of Advanced Solid Malignancies"
@@ -760,8 +742,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:05.062201",
-      "occurred_at": "2026-02-06 05:35:05.062201",
+      "created_at": "2026-02-06 21:24:19.697753",
+      "occurred_at": "2026-02-06 21:24:19.697753",
       "payload": {
         "nct_id": "NCT05845671",
         "linked_assets": 1
@@ -769,8 +751,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:05.054760",
-      "occurred_at": "2026-02-06 05:35:05.054760",
+      "created_at": "2026-02-06 21:24:19.690904",
+      "occurred_at": "2026-02-06 21:24:19.690904",
       "payload": {
         "nct_id": "NCT05845671",
         "title": "A Phase 1 / 2, Open Label, Study of Amivantamab (JNJ-61186372) Among Participants With Advanced NSCLC Harboring ALK, ROS1, and RET Gene Fusions in Combination With Tyrosine Kinase Inhibitors"
@@ -778,179 +760,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:05.048235",
-      "occurred_at": "2026-02-06 05:35:05.048235",
-      "payload": {
-        "nct_id": "NCT06662786",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:05.039752",
-      "occurred_at": "2026-02-06 05:35:05.039752",
-      "payload": {
-        "nct_id": "NCT06662786",
-        "title": "A Randomized, Open-label Phase 3 Study of Amivantamab and mFOLFOX6 or FOLFIRI Versus Cetuximab and mFOLFOX6 or FOLFIRI as First-line Treatment in Participants With KRAS/NRAS and BRAF Wild-type Unresectable or Metastatic Left-sided Colorectal Cancer"
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:05.030016",
-      "occurred_at": "2026-02-06 05:35:05.030016",
-      "payload": {
-        "nct_id": "NCT02609776",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:05.022098",
-      "occurred_at": "2026-02-06 05:35:05.022098",
-      "payload": {
-        "nct_id": "NCT02609776",
-        "title": "A Phase 1, First-in-Human, Open-Label, Dose Escalation Study of JNJ-61186372, a Human Bispecific EGFR and cMet Antibody, in Subjects With Advanced Non-Small Cell Lung Cancer"
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:05.014169",
-      "occurred_at": "2026-02-06 05:35:05.014169",
-      "payload": {
-        "nct_id": "NCT06532032",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:05.006562",
-      "occurred_at": "2026-02-06 05:35:05.006562",
-      "payload": {
-        "nct_id": "NCT06532032",
-        "title": "A Phase 1/2 Study Evaluating the Safety and Efficacy of Amivantamab and Docetaxel Combination Therapy in Metastatic Non-small Cell Lung Cancer"
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:04.999470",
-      "occurred_at": "2026-02-06 05:35:04.999470",
-      "payload": {
-        "nct_id": "NCT05908734",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.991946",
-      "occurred_at": "2026-02-06 05:35:04.991946",
-      "payload": {
-        "nct_id": "NCT05908734",
-        "title": "A Phase 1/2 Study Evaluating the Safety and Efficacy of Amivantamab and Cetrelimab Combination Therapy in Metastatic Non-small Cell Lung Cancer"
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:04.985487",
-      "occurred_at": "2026-02-06 05:35:04.985487",
-      "payload": {
-        "nct_id": "NCT06750094",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.976898",
-      "occurred_at": "2026-02-06 05:35:04.976898",
-      "payload": {
-        "nct_id": "NCT06750094",
-        "title": "A Randomized, Open-label Phase 3 Study of Amivantamab + FOLFIRI Versus Cetuximab/Bevacizumab + FOLFIRI in Participants With KRAS/NRAS and BRAF Wild-type Recurrent, Unresectable or Metastatic Colorectal Cancer Who Have Received Prior Chemotherapy"
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.963911",
-      "occurred_at": "2026-02-06 05:35:04.963911",
-      "payload": {
-        "nct_id": "NCT07230691",
-        "title": "Prospective, Multi Country, Observational Study of Clinical Outcomes in EGFR-mutated, Advanced Non-Small Cell Lung Cancer (NSCLC) Patients Treated With Approved Amivantamab-containing Regimens Under Standard Clinical Practice"
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:04.957322",
-      "occurred_at": "2026-02-06 05:35:04.957322",
-      "payload": {
-        "nct_id": "NCT05498428",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.949056",
-      "occurred_at": "2026-02-06 05:35:04.949056",
-      "payload": {
-        "nct_id": "NCT05498428",
-        "title": "A Phase 2, Open-Label, Parallel Cohort Study of Subcutaneous Amivantamab in Multiple Regimens in Patients With Advanced or Metastatic Solid Tumors Including EGFR-mutated Non-Small Cell Lung Cancer"
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:04.941510",
-      "occurred_at": "2026-02-06 05:35:04.941510",
-      "payload": {
-        "nct_id": "NCT06667076",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.933431",
-      "occurred_at": "2026-02-06 05:35:04.933431",
-      "payload": {
-        "nct_id": "NCT06667076",
-        "title": "A Phase 2b, Open-Label, Two-cohort Study of Subcutaneous Amivantamab in Combination With Lazertinib as First-Line Treatment, or Subcutaneous Amivantamab in Combination With Platinum-Based Chemotherapy as Second-line Treatment, for Common EGFR-Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer"
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:04.925136",
-      "occurred_at": "2026-02-06 05:35:04.925136",
-      "payload": {
-        "nct_id": "NCT06120140",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.915474",
-      "occurred_at": "2026-02-06 05:35:04.915474",
-      "payload": {
-        "nct_id": "NCT06120140",
-        "title": "A Phase 2, Open-Label, Randomized Trial Evaluating the Impact of Enhanced Versus Standard Dermatologic Management on Selected Dermatologic Adverse Events Among Patients With Locally Advanced or Metastatic EGFR-Mutated NSCLC Treated First-Line With Amivantamab + Lazertinib"
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:04.907707",
-      "occurred_at": "2026-02-06 05:35:04.907707",
-      "payload": {
-        "nct_id": "NCT06385080",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.899551",
-      "occurred_at": "2026-02-06 05:35:04.899551",
-      "payload": {
-        "nct_id": "NCT06385080",
-        "title": "A Phase 1b/2, Open-label Study of Amivantamab Monotherapy and Amivantamab in Addition to Other Therapeutic Agents in Participants With Head and Neck Squamous Cell Carcinoma"
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:04.892866",
-      "occurred_at": "2026-02-06 05:35:04.892866",
+      "created_at": "2026-02-06 21:24:19.685005",
+      "occurred_at": "2026-02-06 21:24:19.685005",
       "payload": {
         "nct_id": "NCT05488314",
         "linked_assets": 1
@@ -958,8 +769,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.884139",
-      "occurred_at": "2026-02-06 05:35:04.884139",
+      "created_at": "2026-02-06 21:24:19.678280",
+      "occurred_at": "2026-02-06 21:24:19.678280",
       "payload": {
         "nct_id": "NCT05488314",
         "title": "A Phase 1/2 Study Evaluating the Safety and Efficacy of Amivantamab and Capmatinib Combination Therapy in Unresectable Metastatic Non-small Cell Lung Cancer"
@@ -967,8 +778,179 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:04.877294",
-      "occurred_at": "2026-02-06 05:35:04.877294",
+      "created_at": "2026-02-06 21:24:19.671692",
+      "occurred_at": "2026-02-06 21:24:19.671692",
+      "payload": {
+        "nct_id": "NCT06662786",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-06 21:24:19.664140",
+      "occurred_at": "2026-02-06 21:24:19.664140",
+      "payload": {
+        "nct_id": "NCT06662786",
+        "title": "A Randomized, Open-label Phase 3 Study of Amivantamab and mFOLFOX6 or FOLFIRI Versus Cetuximab and mFOLFOX6 or FOLFIRI as First-line Treatment in Participants With KRAS/NRAS and BRAF Wild-type Unresectable or Metastatic Left-sided Colorectal Cancer"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-06 21:24:19.655154",
+      "occurred_at": "2026-02-06 21:24:19.655154",
+      "payload": {
+        "nct_id": "NCT05498428",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-06 21:24:19.647399",
+      "occurred_at": "2026-02-06 21:24:19.647399",
+      "payload": {
+        "nct_id": "NCT05498428",
+        "title": "A Phase 2, Open-Label, Parallel Cohort Study of Subcutaneous Amivantamab in Multiple Regimens in Patients With Advanced or Metastatic Solid Tumors Including EGFR-mutated Non-Small Cell Lung Cancer"
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-06 21:24:19.636920",
+      "occurred_at": "2026-02-06 21:24:19.636920",
+      "payload": {
+        "nct_id": "NCT07230691",
+        "title": "Prospective, Multi Country, Observational Study of Clinical Outcomes in EGFR-mutated, Advanced Non-Small Cell Lung Cancer (NSCLC) Patients Treated With Approved Amivantamab-containing Regimens Under Standard Clinical Practice"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-06 21:24:19.631043",
+      "occurred_at": "2026-02-06 21:24:19.631043",
+      "payload": {
+        "nct_id": "NCT06532032",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-06 21:24:19.624419",
+      "occurred_at": "2026-02-06 21:24:19.624419",
+      "payload": {
+        "nct_id": "NCT06532032",
+        "title": "A Phase 1/2 Study Evaluating the Safety and Efficacy of Amivantamab and Docetaxel Combination Therapy in Metastatic Non-small Cell Lung Cancer"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-06 21:24:19.618592",
+      "occurred_at": "2026-02-06 21:24:19.618592",
+      "payload": {
+        "nct_id": "NCT02609776",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-06 21:24:19.611406",
+      "occurred_at": "2026-02-06 21:24:19.611406",
+      "payload": {
+        "nct_id": "NCT02609776",
+        "title": "A Phase 1, First-in-Human, Open-Label, Dose Escalation Study of JNJ-61186372, a Human Bispecific EGFR and cMet Antibody, in Subjects With Advanced Non-Small Cell Lung Cancer"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-06 21:24:19.604880",
+      "occurred_at": "2026-02-06 21:24:19.604880",
+      "payload": {
+        "nct_id": "NCT06385080",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-06 21:24:19.597750",
+      "occurred_at": "2026-02-06 21:24:19.597750",
+      "payload": {
+        "nct_id": "NCT06385080",
+        "title": "A Phase 1b/2, Open-label Study of Amivantamab Monotherapy and Amivantamab in Addition to Other Therapeutic Agents in Participants With Head and Neck Squamous Cell Carcinoma"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-06 21:24:19.591357",
+      "occurred_at": "2026-02-06 21:24:19.591357",
+      "payload": {
+        "nct_id": "NCT05908734",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-06 21:24:19.584453",
+      "occurred_at": "2026-02-06 21:24:19.584453",
+      "payload": {
+        "nct_id": "NCT05908734",
+        "title": "A Phase 1/2 Study Evaluating the Safety and Efficacy of Amivantamab and Cetrelimab Combination Therapy in Metastatic Non-small Cell Lung Cancer"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-06 21:24:19.578397",
+      "occurred_at": "2026-02-06 21:24:19.578397",
+      "payload": {
+        "nct_id": "NCT06750094",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-06 21:24:19.570383",
+      "occurred_at": "2026-02-06 21:24:19.570383",
+      "payload": {
+        "nct_id": "NCT06750094",
+        "title": "A Randomized, Open-label Phase 3 Study of Amivantamab + FOLFIRI Versus Cetuximab/Bevacizumab + FOLFIRI in Participants With KRAS/NRAS and BRAF Wild-type Recurrent, Unresectable or Metastatic Colorectal Cancer Who Have Received Prior Chemotherapy"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-06 21:24:19.561490",
+      "occurred_at": "2026-02-06 21:24:19.561490",
+      "payload": {
+        "nct_id": "NCT06120140",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-06 21:24:19.552925",
+      "occurred_at": "2026-02-06 21:24:19.552925",
+      "payload": {
+        "nct_id": "NCT06120140",
+        "title": "A Phase 2, Open-Label, Randomized Trial Evaluating the Impact of Enhanced Versus Standard Dermatologic Management on Selected Dermatologic Adverse Events Among Patients With Locally Advanced or Metastatic EGFR-Mutated NSCLC Treated First-Line With Amivantamab + Lazertinib"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-06 21:24:19.545472",
+      "occurred_at": "2026-02-06 21:24:19.545472",
+      "payload": {
+        "nct_id": "NCT06667076",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-06 21:24:19.538297",
+      "occurred_at": "2026-02-06 21:24:19.538297",
+      "payload": {
+        "nct_id": "NCT06667076",
+        "title": "A Phase 2b, Open-Label, Two-cohort Study of Subcutaneous Amivantamab in Combination With Lazertinib as First-Line Treatment, or Subcutaneous Amivantamab in Combination With Platinum-Based Chemotherapy as Second-line Treatment, for Common EGFR-Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer"
+      }
+    },
+    {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-06 21:24:19.530394",
+      "occurred_at": "2026-02-06 21:24:19.530394",
       "payload": {
         "nct_id": "NCT05601973",
         "linked_assets": 1
@@ -976,8 +958,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.869755",
-      "occurred_at": "2026-02-06 05:35:04.869755",
+      "created_at": "2026-02-06 21:24:19.523571",
+      "occurred_at": "2026-02-06 21:24:19.523571",
       "payload": {
         "nct_id": "NCT05601973",
         "title": "A Multicentre Single-arm Phase II Trial of Amivantamab, Lazertinib Plus Bevacizumab in Patients With EGFR-mutant Advanced NSCLC With Progression on Previous Third-generation EGFR-TKI"
@@ -985,8 +967,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:04.863167",
-      "occurred_at": "2026-02-06 05:35:04.863167",
+      "created_at": "2026-02-06 21:24:19.517540",
+      "occurred_at": "2026-02-06 21:24:19.517540",
       "payload": {
         "nct_id": "NCT05388669",
         "linked_assets": 1
@@ -994,8 +976,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.855669",
-      "occurred_at": "2026-02-06 05:35:04.855669",
+      "created_at": "2026-02-06 21:24:19.510324",
+      "occurred_at": "2026-02-06 21:24:19.510324",
       "payload": {
         "nct_id": "NCT05388669",
         "title": "A Phase 3, Open-label, Randomized Study of Lazertinib With Subcutaneous Amivantamab Compared With Intravenous Amivantamab in Patients With EGFR-mutated Advanced or Metastatic Non-small Cell Lung Cancer After Progression on Osimertinib and Chemotherapy"
@@ -1003,8 +985,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:04.843640",
-      "occurred_at": "2026-02-06 05:35:04.843640",
+      "created_at": "2026-02-06 21:24:19.497565",
+      "occurred_at": "2026-02-06 21:24:19.497565",
       "payload": {
         "nct_id": "NCT04487080",
         "linked_assets": 1
@@ -1012,8 +994,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.835415",
-      "occurred_at": "2026-02-06 05:35:04.835415",
+      "created_at": "2026-02-06 21:24:19.459583",
+      "occurred_at": "2026-02-06 21:24:19.459583",
       "payload": {
         "nct_id": "NCT04487080",
         "title": "A Phase 3, Randomized Study of Amivantamab and Lazertinib Combination Therapy Versus Osimertinib Versus Lazertinib as First-Line Treatment in Patients With EGFR-Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer."
@@ -1021,8 +1003,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:04.816513",
-      "occurred_at": "2026-02-06 05:35:04.816513",
+      "created_at": "2026-02-06 21:24:19.440729",
+      "occurred_at": "2026-02-06 21:24:19.440729",
       "payload": {
         "nct_id": "NCT05663866",
         "linked_assets": 1
@@ -1030,8 +1012,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.808796",
-      "occurred_at": "2026-02-06 05:35:04.808796",
+      "created_at": "2026-02-06 21:24:19.433574",
+      "occurred_at": "2026-02-06 21:24:19.433574",
       "payload": {
         "nct_id": "NCT05663866",
         "title": "Subcutaneous Methotrexate, Oral Dexamethasone or Oral Montelukast for the Prevention of Infusion Related Reaction Associated With Amivantamab, an EGFR-MET Bispecific Antibody, Among Post-osimertinib Treated EGFRm NSCLC; SKIPPirr, a Phase 2 Study"
@@ -1039,8 +1021,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:04.796978",
-      "occurred_at": "2026-02-06 05:35:04.796978",
+      "created_at": "2026-02-06 21:24:19.422208",
+      "occurred_at": "2026-02-06 21:24:19.422208",
       "payload": {
         "nct_id": "NCT04538664",
         "linked_assets": 1
@@ -1048,8 +1030,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.789574",
-      "occurred_at": "2026-02-06 05:35:04.789574",
+      "created_at": "2026-02-06 21:24:19.415348",
+      "occurred_at": "2026-02-06 21:24:19.415348",
       "payload": {
         "nct_id": "NCT04538664",
         "title": "A Randomized, Open-label Phase 3 Study of Combination Amivantamab and Carboplatin-Pemetrexed Therapy, Compared With Carboplatin-Pemetrexed, in Patients With EGFR Exon 20ins Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer"
@@ -1057,8 +1039,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:04.776855",
-      "occurred_at": "2026-02-06 05:35:04.776855",
+      "created_at": "2026-02-06 21:24:19.402741",
+      "occurred_at": "2026-02-06 21:24:19.402741",
       "payload": {
         "nct_id": "NCT04988295",
         "linked_assets": 1
@@ -1066,17 +1048,35 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.767449",
-      "occurred_at": "2026-02-06 05:35:04.767449",
+      "created_at": "2026-02-06 21:24:19.395462",
+      "occurred_at": "2026-02-06 21:24:19.395462",
       "payload": {
         "nct_id": "NCT04988295",
         "title": "A Phase 3, Open-Label, Randomized Study of Amivantamab and Lazertinib in Combination With Platinum-Based Chemotherapy Compared With Platinum-Based Chemotherapy in Patients With EGFR-Mutated Locally Advanced or Metastatic Non-Small Cell Lung Cancer After Osimertinib Failure"
       }
     },
     {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-06 21:24:19.379121",
+      "occurred_at": "2026-02-06 21:24:19.379121",
+      "payload": {
+        "nct_id": "NCT07062354",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-06 21:24:19.371500",
+      "occurred_at": "2026-02-06 21:24:19.371500",
+      "payload": {
+        "nct_id": "NCT07062354",
+        "title": "A Phase II Study of Combined Amivantamab, Carboplatin and Paclitaxel in Unresectable Locally Recurrent or Metastatic Head and Neck Cancer"
+      }
+    },
+    {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:04.621797",
-      "occurred_at": "2026-02-06 05:35:04.621797",
+      "created_at": "2026-02-06 21:24:19.241542",
+      "occurred_at": "2026-02-06 21:24:19.241542",
       "payload": {
         "query_alias": "RYBREVANT",
         "added_alias": "JNJ-61186372",
@@ -1087,8 +1087,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:35:04.617956",
-      "occurred_at": "2026-02-06 05:35:04.617956",
+      "created_at": "2026-02-06 21:24:19.237647",
+      "occurred_at": "2026-02-06 21:24:19.237647",
       "payload": {
         "query_alias": "RYBREVANT",
         "added_alias": "Amivantamab",
@@ -1099,8 +1099,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:04.315745",
-      "occurred_at": "2026-02-06 05:35:04.315745",
+      "created_at": "2026-02-06 21:24:18.935159",
+      "occurred_at": "2026-02-06 21:24:18.935159",
       "payload": {
         "nct_id": "NCT07276399",
         "linked_assets": 1
@@ -1108,8 +1108,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.307878",
-      "occurred_at": "2026-02-06 05:35:04.307878",
+      "created_at": "2026-02-06 21:24:18.927957",
+      "occurred_at": "2026-02-06 21:24:18.927957",
       "payload": {
         "nct_id": "NCT07276399",
         "title": "A Phase 3, Randomized, Open-Label, Multicenter Study of Amivantamab in Addition to Carboplatin and Pembrolizumab, Compared to Standard of Care Platinum and Pembrolizumab and 5-FU, in Participants With Treatment-Na\u00efve Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma"
@@ -1117,8 +1117,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:04.301505",
-      "occurred_at": "2026-02-06 05:35:04.301505",
+      "created_at": "2026-02-06 21:24:18.921810",
+      "occurred_at": "2026-02-06 21:24:18.921810",
       "payload": {
         "nct_id": "NCT07227025",
         "linked_assets": 1
@@ -1126,8 +1126,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.294144",
-      "occurred_at": "2026-02-06 05:35:04.294144",
+      "created_at": "2026-02-06 21:24:18.914975",
+      "occurred_at": "2026-02-06 21:24:18.914975",
       "payload": {
         "nct_id": "NCT07227025",
         "title": "A Phase 1/2 Study Evaluating the Safety and Efficacy of Amivantamab and Olomorasib Combination Therapy in Metastatic Non-small Cell Lung Cancer"
@@ -1135,8 +1135,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:35:04.288193",
-      "occurred_at": "2026-02-06 05:35:04.288193",
+      "created_at": "2026-02-06 21:24:18.909279",
+      "occurred_at": "2026-02-06 21:24:18.909279",
       "payload": {
         "nct_id": "NCT05379595",
         "linked_assets": 1
@@ -1144,8 +1144,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:35:04.279803",
-      "occurred_at": "2026-02-06 05:35:04.279803",
+      "created_at": "2026-02-06 21:24:18.901461",
+      "occurred_at": "2026-02-06 21:24:18.901461",
       "payload": {
         "nct_id": "NCT05379595",
         "title": "A Phase 1b/2, Open-Label Study of Amivantamab Monotherapy and in Addition to Standard-of-Care Chemotherapy in Participants With Advanced or Metastatic Colorectal Cancer"
@@ -1153,8 +1153,8 @@
     },
     {
       "event_type": "trial_alias_bootstrapped",
-      "created_at": "2026-02-06 05:34:59.736403",
-      "occurred_at": "2026-02-06 05:34:59.736403",
+      "created_at": "2026-02-06 21:24:14.356097",
+      "occurred_at": "2026-02-06 21:24:14.356097",
       "payload": {
         "query_alias": "NBTXR3",
         "added_alias": "JNJ-90301900",
@@ -1165,26 +1165,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:34:59.430430",
-      "occurred_at": "2026-02-06 05:34:59.430430",
-      "payload": {
-        "nct_id": "NCT04892173",
-        "linked_assets": 1
-      }
-    },
-    {
-      "event_type": "trial_added",
-      "created_at": "2026-02-06 05:34:59.421830",
-      "occurred_at": "2026-02-06 05:34:59.421830",
-      "payload": {
-        "nct_id": "NCT04892173",
-        "title": "A Phase 3 Study of NBTXR3 Activated by Investigator's Choice of Radiotherapy Alone or Radiotherapy in Combination With Cetuximab for Platinum-based Chemotherapy-Ineligible Elderly Patients With LA-HNSCC"
-      }
-    },
-    {
-      "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 05:34:59.407587",
-      "occurred_at": "2026-02-06 05:34:59.407587",
+      "created_at": "2026-02-06 21:24:14.050191",
+      "occurred_at": "2026-02-06 21:24:14.050191",
       "payload": {
         "nct_id": "NCT07219212",
         "linked_assets": 1
@@ -1192,17 +1174,35 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 05:34:59.394291",
-      "occurred_at": "2026-02-06 05:34:59.394291",
+      "created_at": "2026-02-06 21:24:14.042109",
+      "occurred_at": "2026-02-06 21:24:14.042109",
       "payload": {
         "nct_id": "NCT07219212",
         "title": "A Study of JNJ-90301900 in Combination With Concurrent Chemoradiation Therapy in Participants With Locally Advanced Head and Neck Squamous Cell Carcinoma"
       }
     },
     {
+      "event_type": "trial_assets_linked",
+      "created_at": "2026-02-06 21:24:14.035511",
+      "occurred_at": "2026-02-06 21:24:14.035511",
+      "payload": {
+        "nct_id": "NCT04892173",
+        "linked_assets": 1
+      }
+    },
+    {
+      "event_type": "trial_added",
+      "created_at": "2026-02-06 21:24:14.021645",
+      "occurred_at": "2026-02-06 21:24:14.021645",
+      "payload": {
+        "nct_id": "NCT04892173",
+        "title": "A Phase 3 Study of NBTXR3 Activated by Investigator's Choice of Radiotherapy Alone or Radiotherapy in Combination With Cetuximab for Platinum-based Chemotherapy-Ineligible Elderly Patients With LA-HNSCC"
+      }
+    },
+    {
       "event_type": "pipeline_ingested",
-      "created_at": "2026-02-06 05:34:56.548963",
-      "occurred_at": "2026-02-06 05:34:56.548963",
+      "created_at": "2026-02-06 21:24:11.201086",
+      "occurred_at": "2026-02-06 21:24:11.201086",
       "payload": {
         "as_of_date": null,
         "pdf_url": "https://s203.q4cdn.com/636242992/files/doc_financials/2025/q4/JNJ-Pipeline-4Q25.pdf",
@@ -1211,8 +1211,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.546844",
-      "occurred_at": "2026-02-06 05:34:56.546844",
+      "created_at": "2026-02-06 21:24:11.199434",
+      "occurred_at": "2026-02-06 21:24:11.199434",
       "payload": {
         "asset": "JNJ-1887 sCD59",
         "indication": "Geographic Atrophy SPRAVATO (esketamine) Major Depressive Disorder Pediatrics",
@@ -1222,8 +1222,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.538077",
-      "occurred_at": "2026-02-06 05:34:56.538077",
+      "created_at": "2026-02-06 21:24:11.191855",
+      "occurred_at": "2026-02-06 21:24:11.191855",
       "payload": {
         "asset": "JNJ-5120",
         "indication": "Major Depressive",
@@ -1233,8 +1233,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.529243",
-      "occurred_at": "2026-02-06 05:34:56.529243",
+      "created_at": "2026-02-06 21:24:11.184118",
+      "occurred_at": "2026-02-06 21:24:11.184118",
       "payload": {
         "asset": "JNJ-4804 Co-antibody",
         "indication": "Crohn's Disease nipocalimab\u200b Idiopathic Inflammatory",
@@ -1244,8 +1244,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.527054",
-      "occurred_at": "2026-02-06 05:34:56.527054",
+      "created_at": "2026-02-06 21:24:11.182142",
+      "occurred_at": "2026-02-06 21:24:11.182142",
       "payload": {
         "asset": "JNJ-4804 Co-antibody",
         "indication": "Psoriatic Arthritis nipocalimab\u200b Systemic Lupus",
@@ -1255,8 +1255,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.515971",
-      "occurred_at": "2026-02-06 05:34:56.515971",
+      "created_at": "2026-02-06 21:24:11.173750",
+      "occurred_at": "2026-02-06 21:24:11.173750",
       "payload": {
         "asset": "JNJ-8543",
         "indication": "Hematological Malignancies",
@@ -1266,8 +1266,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.507882",
-      "occurred_at": "2026-02-06 05:34:56.507882",
+      "created_at": "2026-02-06 21:24:11.166289",
+      "occurred_at": "2026-02-06 21:24:11.166289",
       "payload": {
         "asset": "JNJ-7446",
         "indication": "Lung Cancer",
@@ -1277,8 +1277,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.499480",
-      "occurred_at": "2026-02-06 05:34:56.499480",
+      "created_at": "2026-02-06 21:24:11.158742",
+      "occurred_at": "2026-02-06 21:24:11.158742",
       "payload": {
         "asset": "JNJ-4681",
         "indication": "Hematological Malignancies",
@@ -1288,8 +1288,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.491385",
-      "occurred_at": "2026-02-06 05:34:56.491385",
+      "created_at": "2026-02-06 21:24:11.151157",
+      "occurred_at": "2026-02-06 21:24:11.151157",
       "payload": {
         "asset": "JNJ-3413",
         "indication": "Lymphoma",
@@ -1299,8 +1299,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.482798",
-      "occurred_at": "2026-02-06 05:34:56.482798",
+      "created_at": "2026-02-06 21:24:11.143777",
+      "occurred_at": "2026-02-06 21:24:11.143777",
       "payload": {
         "asset": "JNJ-2175",
         "indication": "Solid Tumors",
@@ -1310,8 +1310,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.473758",
-      "occurred_at": "2026-02-06 05:34:56.473758",
+      "created_at": "2026-02-06 21:24:11.136356",
+      "occurred_at": "2026-02-06 21:24:11.136356",
       "payload": {
         "asset": "JNJ-8377",
         "indication": "Lymphoma",
@@ -1321,8 +1321,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.465420",
-      "occurred_at": "2026-02-06 05:34:56.465420",
+      "created_at": "2026-02-06 21:24:11.128986",
+      "occurred_at": "2026-02-06 21:24:11.128986",
       "payload": {
         "asset": "JNJ-5322",
         "indication": "Multiple Myeloma",
@@ -1332,8 +1332,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.456873",
-      "occurred_at": "2026-02-06 05:34:56.456873",
+      "created_at": "2026-02-06 21:24:11.121168",
+      "occurred_at": "2026-02-06 21:24:11.121168",
       "payload": {
         "asset": "JNJ-4680",
         "indication": "Lung Cancer",
@@ -1343,8 +1343,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.448018",
-      "occurred_at": "2026-02-06 05:34:56.448018",
+      "created_at": "2026-02-06 21:24:11.113410",
+      "occurred_at": "2026-02-06 21:24:11.113410",
       "payload": {
         "asset": "JNJ-2761",
         "indication": "Multiple Myeloma",
@@ -1354,8 +1354,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.439724",
-      "occurred_at": "2026-02-06 05:34:56.439724",
+      "created_at": "2026-02-06 21:24:11.105400",
+      "occurred_at": "2026-02-06 21:24:11.105400",
       "payload": {
         "asset": "JNJ-1493",
         "indication": "Hematological",
@@ -1365,8 +1365,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.431244",
-      "occurred_at": "2026-02-06 05:34:56.431244",
+      "created_at": "2026-02-06 21:24:11.097575",
+      "occurred_at": "2026-02-06 21:24:11.097575",
       "payload": {
         "asset": "JNJ-1900",
         "indication": "Lung Cancer",
@@ -1376,8 +1376,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.418711",
-      "occurred_at": "2026-02-06 05:34:56.418711",
+      "created_at": "2026-02-06 21:24:11.086275",
+      "occurred_at": "2026-02-06 21:24:11.086275",
       "payload": {
         "asset": "Azacitidine",
         "indication": "Cancer (ATLAS) intravesical delivery system) Invasive Bladder Cancer BCG (ORIGAMI-2) Multiple Myeloma CD38 exposed with DR (MajesTEC-7)",
@@ -1387,8 +1387,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.408131",
-      "occurred_at": "2026-02-06 05:34:56.408131",
+      "created_at": "2026-02-06 21:24:11.076263",
+      "occurred_at": "2026-02-06 21:24:11.076263",
       "payload": {
         "asset": "INLEXZO",
         "indication": "High Risk High Risk Non Muscle Experienced (SunRISe-5) RYBREVANT (amivantamab) Colorectal Cancer TALVEY + TECVAYLI Relapsed Refractory (MonumenTAL-6) TALVEY (talquetamab) TIE NDMM in combination",
@@ -1398,8 +1398,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 05:34:56.394453",
-      "occurred_at": "2026-02-06 05:34:56.394453",
+      "created_at": "2026-02-06 21:24:11.062278",
+      "occurred_at": "2026-02-06 21:24:11.062278",
       "payload": {
         "asset": "RYBREVANT",
         "indication": "Frontline Non Small chemotherapy (PAPILLON) Bleximenib Newly Diagnosed AML, with Venetoclax and ERLEADA (apalutamide) ASCT Localized Prostate",
@@ -1409,6 +1409,15 @@
     }
   ],
   "trials": [
+    {
+      "nct_id": "NCT07062354",
+      "overall_status": "NOT_YET_RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-02-06",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
     {
       "nct_id": "NCT04988295",
       "overall_status": "ACTIVE_NOT_RECRUITING",
@@ -1491,15 +1500,6 @@
       ]
     },
     {
-      "nct_id": "NCT06919965",
-      "overall_status": "RECRUITING",
-      "phase": "PHASE3",
-      "last_update_posted": "2026-01-16",
-      "linked_assets": [
-        "INLEXZO"
-      ]
-    },
-    {
       "nct_id": "NCT04658862",
       "overall_status": "ACTIVE_NOT_RECRUITING",
       "phase": "PHASE3",
@@ -1516,6 +1516,15 @@
       "linked_assets": []
     },
     {
+      "nct_id": "NCT06919965",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "INLEXZO"
+      ]
+    },
+    {
       "nct_id": "NCT06211764",
       "overall_status": "ACTIVE_NOT_RECRUITING",
       "phase": "PHASE3",
@@ -1525,9 +1534,43 @@
       ]
     },
     {
+      "nct_id": "NCT05488314",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1,PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
       "nct_id": "NCT06662786",
       "overall_status": "RECRUITING",
       "phase": "PHASE3",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT05498428",
+      "overall_status": "RECRUITING",
+      "phase": "PHASE2",
+      "last_update_posted": "2026-01-16",
+      "linked_assets": [
+        "RYBREVANT"
+      ]
+    },
+    {
+      "nct_id": "NCT07230691",
+      "overall_status": "RECRUITING",
+      "phase": null,
+      "last_update_posted": "2026-01-16",
+      "linked_assets": []
+    },
+    {
+      "nct_id": "NCT06532032",
+      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "phase": "PHASE1,PHASE2",
       "last_update_posted": "2026-01-16",
       "linked_assets": [
         "RYBREVANT"
@@ -1543,8 +1586,8 @@
       ]
     },
     {
-      "nct_id": "NCT06532032",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
+      "nct_id": "NCT06385080",
+      "overall_status": "RECRUITING",
       "phase": "PHASE1,PHASE2",
       "last_update_posted": "2026-01-16",
       "linked_assets": [
@@ -1570,14 +1613,7 @@
       ]
     },
     {
-      "nct_id": "NCT07230691",
-      "overall_status": "RECRUITING",
-      "phase": null,
-      "last_update_posted": "2026-01-16",
-      "linked_assets": []
-    },
-    {
-      "nct_id": "NCT05498428",
+      "nct_id": "NCT06120140",
       "overall_status": "RECRUITING",
       "phase": "PHASE2",
       "last_update_posted": "2026-01-16",
@@ -1589,33 +1625,6 @@
       "nct_id": "NCT06667076",
       "overall_status": "RECRUITING",
       "phase": "PHASE2",
-      "last_update_posted": "2026-01-16",
-      "linked_assets": [
-        "RYBREVANT"
-      ]
-    },
-    {
-      "nct_id": "NCT06120140",
-      "overall_status": "RECRUITING",
-      "phase": "PHASE2",
-      "last_update_posted": "2026-01-16",
-      "linked_assets": [
-        "RYBREVANT"
-      ]
-    },
-    {
-      "nct_id": "NCT06385080",
-      "overall_status": "RECRUITING",
-      "phase": "PHASE1,PHASE2",
-      "last_update_posted": "2026-01-16",
-      "linked_assets": [
-        "RYBREVANT"
-      ]
-    },
-    {
-      "nct_id": "NCT05488314",
-      "overall_status": "ACTIVE_NOT_RECRUITING",
-      "phase": "PHASE1,PHASE2",
       "last_update_posted": "2026-01-16",
       "linked_assets": [
         "RYBREVANT"
@@ -1640,18 +1649,18 @@
       ]
     },
     {
-      "nct_id": "NCT04892173",
+      "nct_id": "NCT07219212",
       "overall_status": "RECRUITING",
-      "phase": "PHASE3",
+      "phase": "PHASE1",
       "last_update_posted": "2026-01-16",
       "linked_assets": [
         "JNJ-1900"
       ]
     },
     {
-      "nct_id": "NCT07219212",
+      "nct_id": "NCT04892173",
       "overall_status": "RECRUITING",
-      "phase": "PHASE1",
+      "phase": "PHASE3",
       "last_update_posted": "2026-01-16",
       "linked_assets": [
         "JNJ-1900"
@@ -1724,15 +1733,6 @@
       "overall_status": "ACTIVE_NOT_RECRUITING",
       "phase": "PHASE2",
       "last_update_posted": "2025-07-20",
-      "linked_assets": [
-        "RYBREVANT"
-      ]
-    },
-    {
-      "nct_id": "NCT07062354",
-      "overall_status": "NOT_YET_RECRUITING",
-      "phase": "PHASE2",
-      "last_update_posted": "2025-07-14",
       "linked_assets": [
         "RYBREVANT"
       ]
