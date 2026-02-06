@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-05T22:12:41Z",
+  "generated_at": "2026-02-06T05:35:16Z",
   "company_id": "jnj",
   "company_name": "Johnson & Johnson",
   "changes": [
@@ -1365,8 +1365,8 @@
       "created_at": null,
       "payload": {
         "asset": "JNJ-4804 Co-antibody",
-        "indication": "Crohn's Disease nipocalimab​ Idiopathic Inflammatory",
-        "stage": "Phase 3",
+        "indication": "Psoriatic Arthritis nipocalimab​ Systemic Lupus",
+        "stage": "Phase 1",
         "therapeutic_area": "Immunology"
       },
       "evidence_id": 1,
@@ -1378,8 +1378,8 @@
       "created_at": null,
       "payload": {
         "asset": "JNJ-4804 Co-antibody",
-        "indication": "Psoriatic Arthritis nipocalimab​ Systemic Lupus",
-        "stage": "Phase 1",
+        "indication": "Crohn's Disease nipocalimab​ Idiopathic Inflammatory",
+        "stage": "Phase 3",
         "therapeutic_area": "Immunology"
       },
       "evidence_id": 1,
