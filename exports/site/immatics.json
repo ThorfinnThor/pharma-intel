@@ -1,7 +1,7 @@
 {
   "company_id": "immatics",
   "company_name": "Immatics",
-  "generated_at": "2026-02-06T21:57:17Z",
+  "generated_at": "2026-02-07T05:25:55Z",
   "kpis": {
     "assets_total": 3,
     "assets_with_trials": 2,
@@ -51,8 +51,8 @@
   "recent_changes": [
     {
       "event_type": "trials_ingested",
-      "created_at": "2026-02-06 21:57:17.273830",
-      "occurred_at": "2026-02-06 21:57:17.273830",
+      "created_at": "2026-02-07 05:25:54.451315",
+      "occurred_at": "2026-02-07 05:25:54.451315",
       "payload": {
         "trials_seen": 2,
         "inserted": 2,
@@ -63,8 +63,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 21:57:16.579990",
-      "occurred_at": "2026-02-06 21:57:16.579990",
+      "created_at": "2026-02-07 05:25:53.755189",
+      "occurred_at": "2026-02-07 05:25:53.755189",
       "payload": {
         "nct_id": "NCT05359445",
         "linked_assets": 1
@@ -72,8 +72,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 21:57:16.571240",
-      "occurred_at": "2026-02-06 21:57:16.571240",
+      "created_at": "2026-02-07 05:25:53.746443",
+      "occurred_at": "2026-02-07 05:25:53.746443",
       "payload": {
         "nct_id": "NCT05359445",
         "title": "A Phase Ia/Ib First-In-Human Clinical Trial to Evaluate the Safety, Tolerability and Initial Anti-Tumor Activity of IMA401, a Bispecific T Cell Engaging Receptor Molecule (TCER\u00ae), as Monotherapy or in Combination With Checkpoint Inhibitor in Patients With Recurrent and/or Refractory Solid Tumors."
@@ -81,8 +81,8 @@
     },
     {
       "event_type": "trial_assets_linked",
-      "created_at": "2026-02-06 21:57:16.174536",
-      "occurred_at": "2026-02-06 21:57:16.174536",
+      "created_at": "2026-02-07 05:25:53.335570",
+      "occurred_at": "2026-02-07 05:25:53.335570",
       "payload": {
         "nct_id": "NCT05958121",
         "linked_assets": 1
@@ -90,8 +90,8 @@
     },
     {
       "event_type": "trial_added",
-      "created_at": "2026-02-06 21:57:16.159754",
-      "occurred_at": "2026-02-06 21:57:16.159754",
+      "created_at": "2026-02-07 05:25:53.320740",
+      "occurred_at": "2026-02-07 05:25:53.320740",
       "payload": {
         "nct_id": "NCT05958121",
         "title": "A Phase I/II First-In-Human Clinical Trial to Evaluate the Safety, Tolerability and Anti-Tumor Activity of IMA402, a Bispecific TCER\u00ae Targeting PRAME, in Patients With Recurrent and/or Refractory Solid Tumors"
@@ -99,8 +99,8 @@
     },
     {
       "event_type": "pipeline_ingested",
-      "created_at": "2026-02-06 21:56:56.791917",
-      "occurred_at": "2026-02-06 21:56:56.791917",
+      "created_at": "2026-02-07 05:25:34.013969",
+      "occurred_at": "2026-02-07 05:25:34.013969",
       "payload": {
         "pipeline_page": "https://immatics.com/our-pipeline/",
         "pipeline_image": "https://immatics.com/wp-content/uploads/2025/12/20251112_IMTX_pipeline_v3-scaled.png",
@@ -109,8 +109,8 @@
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 21:56:56.788265",
-      "occurred_at": "2026-02-06 21:56:56.788265",
+      "created_at": "2026-02-07 05:25:34.010463",
+      "occurred_at": "2026-02-07 05:25:34.010463",
       "payload": {
         "asset": "Undisclosed cell therapy",
         "indication": "Undisclosed",
@@ -120,16 +120,16 @@
     },
     {
       "event_type": "asset_added",
-      "created_at": "2026-02-06 21:56:56.786018",
-      "occurred_at": "2026-02-06 21:56:56.786018",
+      "created_at": "2026-02-07 05:25:34.008380",
+      "occurred_at": "2026-02-07 05:25:34.008380",
       "payload": {
         "asset": "Undisclosed cell therapy"
       }
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 21:56:56.777274",
-      "occurred_at": "2026-02-06 21:56:56.777274",
+      "created_at": "2026-02-07 05:25:33.998448",
+      "occurred_at": "2026-02-07 05:25:33.998448",
       "payload": {
         "asset": "Undisclosed bispecific",
         "indication": "Undisclosed",
@@ -139,16 +139,16 @@
     },
     {
       "event_type": "asset_added",
-      "created_at": "2026-02-06 21:56:56.775174",
-      "occurred_at": "2026-02-06 21:56:56.775174",
+      "created_at": "2026-02-07 05:25:33.996269",
+      "occurred_at": "2026-02-07 05:25:33.996269",
       "payload": {
         "asset": "Undisclosed bispecific"
       }
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 21:56:56.766388",
-      "occurred_at": "2026-02-06 21:56:56.766388",
+      "created_at": "2026-02-07 05:25:33.987577",
+      "occurred_at": "2026-02-07 05:25:33.987577",
       "payload": {
         "asset": "IMA401",
         "indication": "HNSCC, sqNSCLC, other solid cancers",
@@ -158,16 +158,16 @@
     },
     {
       "event_type": "asset_added",
-      "created_at": "2026-02-06 21:56:56.764212",
-      "occurred_at": "2026-02-06 21:56:56.764212",
+      "created_at": "2026-02-07 05:25:33.985614",
+      "occurred_at": "2026-02-07 05:25:33.985614",
       "payload": {
         "asset": "IMA401"
       }
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 21:56:56.746058",
-      "occurred_at": "2026-02-06 21:56:56.746058",
+      "created_at": "2026-02-07 05:25:33.976214",
+      "occurred_at": "2026-02-07 05:25:33.976214",
       "payload": {
         "asset": "IMA402 + ICI",
         "indication": "Melanoma, gynecologic cancers, other solid cancers (combo)",
@@ -177,16 +177,16 @@
     },
     {
       "event_type": "asset_added",
-      "created_at": "2026-02-06 21:56:56.743598",
-      "occurred_at": "2026-02-06 21:56:56.743598",
+      "created_at": "2026-02-07 05:25:33.973863",
+      "occurred_at": "2026-02-07 05:25:33.973863",
       "payload": {
         "asset": "IMA402 + ICI"
       }
     },
     {
       "event_type": "asset_indication_added",
-      "created_at": "2026-02-06 21:56:56.729681",
-      "occurred_at": "2026-02-06 21:56:56.729681",
+      "created_at": "2026-02-07 05:25:33.959183",
+      "occurred_at": "2026-02-07 05:25:33.959183",
       "payload": {
         "asset": "IMA402",
         "indication": "Melanoma, gynecologic cancers, other solid cancers",
@@ -196,8 +196,8 @@
     },
     {
       "event_type": "asset_added",
-      "created_at": "2026-02-06 21:56:56.726659",
-      "occurred_at": "2026-02-06 21:56:56.726659",
+      "created_at": "2026-02-07 05:25:33.956010",
+      "occurred_at": "2026-02-07 05:25:33.956010",
       "payload": {
         "asset": "IMA402"
       }

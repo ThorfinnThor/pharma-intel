@@ -1,6 +1,6 @@
 # Immatics (immatics)
 
-Generated: `2026-02-06T21:57:17Z`
+Generated: `2026-02-07T05:25:55Z`
 
 - Assets: **3**
 - Assets with linked trials: **2**
